@@ -7,14 +7,15 @@ require "csv"
 root_dir = ARGV[0]
 csv_file = ARGV[1]
 
+
 CSV.foreach(csv_file, :headers => true) do |line|
     
     unless line['test_case'].nil? or line['title'].nil?
         filename = line['test_case']
-        directory = line['test_case'].match(/(^\w*?)_\d.*$/)[1]
+        directory = root_dir + "/" + line['test_case'].match(/(^\w*?)_\d.*$/)[1] + "/"
 
         # Open the file to write and write the contents
-        File.open(root_dir + "/" + filename + ".dsc",'w') do |file|
+        File.open(directory + filename + ".dsc",'w') do |file|
 
             # Add the TITLE
             file.puts("TITLE")
@@ -24,7 +25,7 @@ CSV.foreach(csv_file, :headers => true) do |line|
             file.puts("DESCRIPTION")
 
             # Break the description up into < 76 char lines
-            description = line['description'].scan(/.{60,75}\s/)
+            description = line['description'].scan(/.{0,75}[\s\.]/)
             description.each  do |desc_line|
                 file.puts("    #{desc_line}")
             end
