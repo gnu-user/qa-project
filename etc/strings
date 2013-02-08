@@ -41,4 +41,17 @@ Enter the buyer's username:
 Error messages
 ----------------
 
-Invalid transaction, you are already logged in.
+already logged in:
+    Invalid transaction, you are already logged in.
+
+doing a privileged operation as non-priv user:
+    Invalid transaction, you do not have the necessary privileges.
+
+doing anything other than login before logging in:
+    Invalid transaction, only login accepted.
+
+corrupt ATF:
+    An error occurred reading the available tickets file, data corrupted.
+
+invalid user:
+    Invalid username.
