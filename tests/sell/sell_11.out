@@ -1,0 +1,9 @@
+Welcome.
+> 
+Enter username: 
+Username accepted.
+Available tickets file read successfully.
+>
+Enter the event title: 
+Enter the sale price in dollars: 
+Invalid dollars value, amount must be in dollars (e.g. 10.00).
