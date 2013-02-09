@@ -11,6 +11,7 @@ create
 -------
 
 Enter the username to create: 
+Enter the user type: 
 
 
 delete
@@ -55,3 +56,6 @@ corrupt ATF:
 
 invalid user:
     Invalid username.
+
+invalid username length:
+    Invalid username, username cannot exceed 15 characters.
