@@ -6,4 +6,7 @@ Available tickets file read successfully.
 >
 Enter the event title: 
 Enter the sale price in dollars: 
-Invalid sale price, amount cannot exceed 999.99.
+Enter the number of tickets for sale: 
+Tickets listed for sale successfully.
+> 
+Invalid transaction, only one sell transaction per session accepted.
