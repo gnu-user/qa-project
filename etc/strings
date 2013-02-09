@@ -32,6 +32,8 @@ sell
 
 Enter the event title: 
 Enter the sale price in dollars: 
+Enter the number of tickets for sale: 
+Tickets listed for sale successfully.
 
 
 buy
@@ -88,3 +90,15 @@ invalid ticket sale price, must be positive:
 
 invalid ticket sale price, cannot exceed 999.99:
     Invalid sale price, amount cannot exceed 999.99.
+
+invalid ticket volume:
+    Invalid number of tickets, volume must be an integer value (e.g. 25).
+
+invalid ticket volume, must be positive:
+    Invalid number of tickets, volume cannot be less than 0.
+
+invalid ticket volume, cannot exceed 100:
+    Invalid number of tickets, volume cannot exceed 100.
+
+one sell per session.
+    Invalid transaction, only one sell transaction per session accepted.
