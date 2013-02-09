@@ -1,7 +1,3 @@
-logout
-create
-delete
-sell
-buy
-refund
-addcredit
+login
+administrator
+login
