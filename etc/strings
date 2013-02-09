@@ -31,6 +31,7 @@ sell
 -----
 
 Enter the event title: 
+Enter the sale price in dollars: 
 
 
 buy
@@ -72,3 +73,18 @@ invalid username, END is reserved:
 
 invalid username, user exists:
     Invalid username, user already exists.
+
+invalid title length, too long:
+    Invalid event title, event title cannot exceed 25 characters.
+
+title cannot contain END:
+    Invalid event title, event title cannot contain the word "END".
+
+invalid ticket sale price, must be dollars:
+    Invalid dollars value, amount must be in dollars (e.g. 10.00).
+
+invalid ticket sale price, must be positive:
+    Invalid sale price, amount cannot be less than 0.00.
+
+invalid ticket sale price, cannot exceed 999.99:
+    Invalid sale price, amount cannot exceed 999.99.
