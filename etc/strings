@@ -18,6 +18,7 @@ create
 
 Enter the username to create: 
 Enter the user type: 
+User created successfully.
 
 
 delete
@@ -65,3 +66,9 @@ invalid user:
 
 invalid username length:
     Invalid username, username cannot exceed 15 characters.
+
+invalid username, END is reserved:
+    Invalid username, username cannot be "END".
+
+invalid username, user exists:
+    Invalid username, user already exists.
