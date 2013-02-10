@@ -1,6 +1,6 @@
 TITLE
-    Privileged Login (admin)
+    Privileged create
 DESCRIPTION
-    Login using a admin account. Attempt to initiate all transactions. Verify 
-    that each transaction does not produce an error.
+    Login using an admin account. Attempt to initiate the create transaction. 
+    Verify that the command is accepted without error.
 DEPENDENCIES

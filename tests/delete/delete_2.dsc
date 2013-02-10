@@ -5,5 +5,4 @@ DESCRIPTION
     transaction, and enter an existing, valid username when prompted. Verify 
     that the username entered is accepted.
 DEPENDENCIES
-    login Test Suite
     delete_1

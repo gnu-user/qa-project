@@ -5,5 +5,4 @@ DESCRIPTION
     transaction. Enter a valid username, and verify that the user is prompted 
     to enter a user type.
 DEPENDENCIES
-    login Test Suite
     create_2

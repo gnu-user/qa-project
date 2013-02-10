@@ -6,5 +6,4 @@ DESCRIPTION
     sale/purchase when prompted. Verify that the transaction is saved to the 
     daily transaction file.
 DEPENDENCIES
-    login Test Suite
     delete_5

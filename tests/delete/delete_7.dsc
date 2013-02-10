@@ -6,5 +6,4 @@ DESCRIPTION
     sale/purchase when prompted. Verify that the username entered is deleted in 
     the user accounts file.
 DEPENDENCIES
-    login Test Suite
     delete_5

@@ -5,5 +5,4 @@ DESCRIPTION
     transaction, and enter a username which does not exist. Verify that the 
     username entered is rejected, and an error occurs.
 DEPENDENCIES
-    login Test Suite
     delete_1

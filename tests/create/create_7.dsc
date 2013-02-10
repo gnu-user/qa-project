@@ -6,5 +6,4 @@ DESCRIPTION
     user type. Verify that the user type is accepted and the user has been 
     created in the daily transaction file.
 DEPENDENCIES
-    login Test Suite
     create_6

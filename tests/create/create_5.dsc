@@ -5,5 +5,4 @@ DESCRIPTION
     transaction. Enter a valid username (which already exists) and verify that 
     the username is rejected and that an error occurs.
 DEPENDENCIES
-    login Test Suite
     create_1

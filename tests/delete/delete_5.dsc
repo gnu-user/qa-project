@@ -6,5 +6,4 @@ DESCRIPTION
     sale/purchase when prompted. Verify that all corresponding tickets are 
     deleted.
 DEPENDENCIES
-    login Test Suite
     delete_2

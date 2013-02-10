@@ -1,8 +1,7 @@
 TITLE
-    Login Account File
+    Login Account File Prompt
 DESCRIPTION
     Attempt to initiate the login transaction by entering “login” into the 
     input, and then read in the current user accounts file. Verify that the 
-    login account file has been read by logging in using an account read from 
-    the file.
+    output contains a prompt for entry of a username.
 DEPENDENCIES

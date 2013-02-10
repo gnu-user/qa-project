@@ -5,5 +5,4 @@ DESCRIPTION
     transaction, and enter the current active username. Verify that the 
     username entered is rejected, and an error occurs.
 DEPENDENCIES
-    login Test Suite
     delete_1
