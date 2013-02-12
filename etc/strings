@@ -26,7 +26,7 @@ delete
 
 Enter the username to delete:
 User deleted successfully.
-
+User deleted successfully as well as any outstanding tickets.
 
 sell
 -----
@@ -55,6 +55,9 @@ Error messages
 
 already logged in:
     Invalid transaction, you are already logged in.
+
+deleting yourself:
+    Invalid transaction, you can not delete yourself.
 
 doing a privileged operation as non-priv user:
     Invalid transaction, you do not have the necessary privileges.
