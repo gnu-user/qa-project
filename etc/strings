@@ -83,6 +83,9 @@ invalid username, END is reserved:
 invalid username, user exists:
     Invalid username, user already exists.
 
+invalid title name:
+    Invalid event title, event title does not exist.
+
 invalid title length, too long:
     Invalid event title, event title cannot exceed 25 characters.
 
