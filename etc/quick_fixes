@@ -1,0 +1,13 @@
+find -type f -name "*.atf" -exec sed -i 's/END________________________________000_000.00/END_________________________________000_000.00/g' {} \;
+
+find tests/refund/ -type f -name "*.cua" -exec sed -i 's/seller__________SS_000000.00/seller__________SS_000100.00/g' {} \;
+
+
+find -type f -name "*.atf" | xargs -L1 grep -H "^END"
+
+find -type f -name "*.atf" | xargs -L1 grep -v "^END"
+
+END_________________
+________________
+000_
+000.00

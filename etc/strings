@@ -47,6 +47,9 @@ refund
 -------
 
 Enter the buyer's username: 
+Enter the seller's username: 
+Enter the amount of credit to transfer: 
+Buyer refunded successfully.
 
 
 
@@ -98,8 +101,14 @@ invalid ticket sale price, must be dollars:
 invalid ticket sale price, must be positive:
     Invalid sale price, amount cannot be less than 0.00.
 
+invalid credit amount, must be positive:
+    Invalid credit amount, amount cannot be less than 0.00.
+
 invalid ticket sale price, cannot exceed 999.99:
     Invalid sale price, amount cannot exceed 999.99.
+
+invalid credit amount, cannot exceed 999,999:
+    Invalid credit amount, user credit cannot exceed 999999.99.
 
 invalid ticket volume:
     Invalid number of tickets, volume must be an integer value (e.g. 25).
