@@ -7,4 +7,4 @@ Available tickets file read successfully.
 Enter the buyer's username: 
 Enter the seller's username: 
 Enter the amount of credit to transfer: 
-Invalid credit amount, amount cannot be less than 0.00.
+Invalid credit value, amount cannot be less than 0.00.
