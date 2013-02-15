@@ -87,7 +87,7 @@ invalid title name:
     Invalid event title, event title does not exist.
 
 invalid title length, too long:
-    Invalid event title, event title cannot exceed 25 characters.
+    Invalid event title, event title cannot exceed 19 characters.
 
 title cannot contain END:
     Invalid event title, event title cannot contain the word "END".
