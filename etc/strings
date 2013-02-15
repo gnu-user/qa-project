@@ -52,6 +52,13 @@ Enter the amount of credit to transfer:
 Buyer refunded successfully.
 
 
+addcredit
+-----------
+
+Enter the amount of credit to add: 
+Enter the username to which credit is being added: 
+Credit added to user successfully.
+
 
 Error messages
 ----------------
@@ -98,11 +105,19 @@ title cannot contain END:
 invalid ticket sale price, must be dollars:
     Invalid dollars value, amount must be in dollars (e.g. 10.00).
 
+invalid credit amount, must be dollars:
+    Invalid credit value, amount must be in dollars (e.g. 10.00).
+
 invalid ticket sale price, must be positive:
     Invalid sale price, amount cannot be less than 0.00.
 
+
 invalid credit amount, must be positive:
-    Invalid credit amount, amount cannot be less than 0.00.
+    Invalid credit value, amount cannot be less than 0.00.
+
+invalid credit amount, cannot exceed 999.99:
+    Invalid credit value, amount cannot exceed 999.99.
+
 
 invalid ticket sale price, cannot exceed 999.99:
     Invalid sale price, amount cannot exceed 999.99.
