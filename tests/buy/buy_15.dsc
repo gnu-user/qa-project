@@ -1,9 +1,9 @@
 TITLE
-    Ticket Purchase Number (more than 4, admin)
+    Ticket Purchase from Seller (Invalid Seller, does not exist)
 DESCRIPTION
     Run the login transaction using an admin account. Initiate the buy 
     transaction. When prompted, enter a title which exists. When prompted, 
-    enter a number of tickets to purchase which is greater than 4. Verify that 
-    the amount is accepted without error.
+    enter 4 tickets to purchase. When prompted, enter a seller which does not 
+    exist. Verify that the seller is not accepted, and an error occurs.
 DEPENDENCIES
-    buy_8
+    buy_16
