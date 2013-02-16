@@ -41,6 +41,15 @@ buy
 ----
 
 Enter the event title: 
+Enter the number of tickets to purchase: 
+Enter the seller's username: 
+
+Cost per ticket: $10.00
+Total cost of tickets: $40.00
+Purchase tickets? Please confirm (yes/no): 
+
+Ticket purchase transaction canceled.
+Tickets purchased successfully.
 
 
 refund
@@ -99,6 +108,10 @@ invalid username, END is reserved:
 invalid username, user exists:
     Invalid username, user already exists.
 
+invalid username, cannot purchase tickets from self.
+    Invalid username, you cannot purchase tickets from yourself.
+
+
 invalid title name:
     Invalid event title, event title does not exist.
 
@@ -140,5 +153,12 @@ invalid ticket volume, must be positive:
 invalid ticket volume, cannot exceed 100:
     Invalid number of tickets, volume cannot exceed 100.
 
+invalid ticket purchase, cannot buy more than 4:
+    Invalid number of tickets, cannot purchase more than 4 tickets.
+
 one sell per session.
     Invalid transaction, only one sell transaction per session accepted.
+
+
+invalid purchase confirmation, yes/no
+    Invalid confirmation, please enter "yes" or "no".
