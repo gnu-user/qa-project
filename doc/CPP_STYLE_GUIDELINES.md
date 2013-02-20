@@ -44,7 +44,7 @@ Class/OOP Conventions
 Code Formatting
 ----------------
 
-1.  I hate the *80 character* per line limit, if you're still programming on a 80x24 monitor in 2012 then
+1.  I hate the *80 character* per line limit, if you're still programming on a 80x24 monitor in 2013 then
     I will purchase you a new monitor and we can be rid of the 80 character limit!
 
 2.  I like the convention of *aim for 80* with a hard limit ~100, for most non-C code and longer variable names
@@ -196,9 +196,9 @@ Code Formatting
 
         MyClass
         {
-          private:
-            variable;
+          private:            // 2 space indent
+            variable;         // 4 space indent
 
-          public:
-            get_variable();
+          public:             // 2 space indent
+            get_variable();   // 4 space indent
         }
