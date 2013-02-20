@@ -14,6 +14,7 @@ as error/exception handling.
 * AvailableTickets
 * DailyTransaction
 
+
 ### Classes to facilitate program state 
 
 * User
@@ -22,7 +23,7 @@ as error/exception handling.
 
 ### Classes for handling transactions
 
-* (Interface) *Transaction* (implemented by each of the following classes)
+* (Interface) *TransactionInterface* (implemented by each of the following classes)
 * Login
 * Logout
 * Create
@@ -36,6 +37,7 @@ as error/exception handling.
 ### Classes to facilitate input validation (instead of duplicated code)
 
 * Validate
+* FormatTransaction? A possible helper class to format transaction data
 
 
 Other
@@ -173,3 +175,51 @@ tickets for sale, and price per ticket.
 
 #### double get_price()
 * Returns the price per ticket
+
+
+
+
+Transaction Classes
+------------------------
+
+These classes all implement the transaction interface and provide the logic for processing
+each of the transactions.
+
+### TransactionInterface (Interface)
+
+The Transaction interface is a *pure interface*, meaning that **every** transaction code that
+implements the interface must implement the following operations.
+
+#### virtual String get_transaction() = ();
+* This returns the transaction as a String that can be written to the daily transaction file
+
+
+### Login Implements TransactionInterface
+
+The Login transaction implements the transaction interface, contains the login transaction details,
+if the login is successful the login sets a reference to the user that is currently logged in.
+
+#### private String code
+* The login transaction code, "01"
+
+#### private User* user
+* Reference to a user
+
+#### private String transaction
+* The login transaction in the daily transaction file format
+
+#### private void save_transaction()
+* Saves the information for the transaction into the daily transaction format
+* Sets the private transaction member
+
+#### Login(User user)
+* If the user object is null the login transaction succeeds (not currenly logged in), otherwise an
+exception is thrown, the user is already logged in.
+
+#### set_username(String username)
+* Sets the username for the login transaction to the username specified, if the username does not exist,
+or some other error occurs an exception is thrown.
+* If no errors occur executes save_transaction()
+
+#### virtual String get_transaction()
+* Implements the get_transaction() methods, simply returns the private transaction member
