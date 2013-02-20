@@ -197,7 +197,7 @@ implements the interface must implement the following operations.
 ### Login Implements TransactionInterface
 
 The Login transaction implements the transaction interface, contains the login transaction details,
-if the login is successful the login sets a reference to the user that is currently logged in.
+if the login is successful the login returns a reference to the current user that is now logged in.
 
 #### private String code
 * The login transaction code, "01"
@@ -212,14 +212,39 @@ if the login is successful the login sets a reference to the user that is curren
 * Saves the information for the transaction into the daily transaction format
 * Sets the private transaction member
 
-#### Login(User user)
-* If the user object is null the login transaction succeeds (not currenly logged in), otherwise an
-exception is thrown, the user is already logged in.
+#### Login(User current_user)
+* If the user object is null the login transaction succeeds (not currently logged in), otherwise an
+exception is thrown, the user is already logged in if user is not null.
 
-#### set_username(String username)
-* Sets the username for the login transaction to the username specified, if the username does not exist,
+#### User* process_username(String input)
+* Processes the username for the login transaction to the username specified, if the username does not exist,
 or some other error occurs an exception is thrown.
-* If no errors occur executes save_transaction()
+* If no errors occur returns a pointer to the current_user and executes save_transaction()
+
+#### virtual String get_transaction()
+* Implements the get_transaction() methods, simply returns the private transaction member
+
+
+### Logout Implements TransactionInterface
+
+The logout transaction implements the transaction interface, contains the logout transaction details
+
+#### private String code
+* The login transaction code, "00"
+
+#### private User* user
+* Reference to a user
+
+#### private String transaction
+* The login transaction in the daily transaction file format
+
+#### private void save_transaction()
+* Saves the information for the transaction into the daily transaction format
+* Sets the private transaction member
+
+#### Logout(User user)
+* If the user object is null the logout transaction fails and throws an exception (user is not logged in),
+* If no error occurs executes save_transaction()
 
 #### virtual String get_transaction()
 * Implements the get_transaction() methods, simply returns the private transaction member
