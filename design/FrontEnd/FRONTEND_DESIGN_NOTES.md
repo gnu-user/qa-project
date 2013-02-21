@@ -384,4 +384,24 @@ is thrown.
 
 
 
+AddCredit inherits Transaction
+-----------------------------
 
+The addcredit transaction inherits transaction, contains user credit details
+
+### private String username
+* The name of the user to add credit to if executed in admin mode
+
+### private double credit
+
+### AddCredit(User current_user)
+* If the user object is null the transaction fails and throws an exception (user is not logged in)
+* If the current_user does not have privileges exception is thrown
+
+### void process_username(String input, CurrentUserAccounts user_accounts)
+* Processes the username, if the username is valid and exists saves the username, otherwise
+an exception is thrown
+
+### void process_credit(String input)
+* Process the credit amount, if the amount is valid save the credit value, otherwise an exception is thrown.
+* If no error occurs executes save_transaction()
