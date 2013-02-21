@@ -34,7 +34,7 @@ as error/exception handling.
 * AddCredit
 
 
-### Classes to facilitate input validation (instead of duplicated code)
+### Helper Classes (Provide helper/common functionality)
 
 * Validate
 * FormatTransaction? A possible helper class to format transaction data
@@ -405,3 +405,37 @@ an exception is thrown
 ### void process_credit(String input)
 * Process the credit amount, if the amount is valid save the credit value, otherwise an exception is thrown.
 * If no error occurs executes save_transaction()
+
+
+
+
+
+
+Validate
+==============
+
+A simple abstract class that provides basic input validation, does not perform any logical validation.
+
+### public bool username(String username)
+* Validates the username provided, returns TRUE if the username length and characters, are correct 
+and it does not contain reserved words, such as "END"
+
+### public bool event(String event)
+* Validates the event title provided, returns TRUE if the event length and characters, are correct 
+and it does not contain reserved words, such as "END"
+
+### public bool cua_entry(String entry)
+* Validates that an entry in the current user accounts file, returns true if the entry is not corrupted 
+and meets the format specifications
+
+### public bool atf_entry(String entry)
+* Validates that an entry in the available tickets file, returns true if the entry is not corrupted 
+and meets the format specifications
+
+### public bool dollars(String amount, double& converted_amount)
+* Validates the amount entered by the user (string), returns true if it is a valid dollars amount, 
+and coverts the amount.
+
+### public bool volume(String amount, int& converted_volume)
+* Validates the volume entered by the user (string), returns true if it is a valid integer, 
+and coverts the volume to integer.
