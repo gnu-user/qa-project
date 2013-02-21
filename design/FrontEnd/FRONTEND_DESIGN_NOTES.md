@@ -59,10 +59,16 @@ reading file an exception thrown.
 ### private vector<User> users
 * A vector which contains all of the users from the current user accounts file
 
+### private String cua_file
+* The current user accounts tickets file
+
 ### CurrentUserAccount(String cua_file)
 * Constructor which accepts the current user accounts file path
 * throws an exception if file does not exist (DNE) or if corrupted
 * Adds each of the users in the file to the users vector
+
+### private void parse()
+* Parses the CUA and stores the users in a vector
 
 ### bool has_user(String username)
 * Returns true if if the user is found
@@ -81,9 +87,15 @@ if the file is corrupted or any error occurs reading the file an exception is th
 ### private vector<Tickets> tickets
 * A vector which contains all of the tickets from the available tickets file (ATF)
 
+### private String atf_file
+* The available tickets file
+
 ### AvailableTickets(String atf_file)
 * Constructor which accepts the atf file path
 * throws an exception if file does not exist (DNE) or if corrupted
+
+### private void parse()
+* Parses the ATF and stores the users in a vector
 
 ### bool has_event(String event)
 * Returns true if the atf has the event listed
@@ -105,11 +117,16 @@ logging out).
 ### private vector<Transaction> transactions
 * A vector which contains all of the saved transactions in memory
 
+### private String dtf_file
+
+### DailyTransaction(String filename)
+* The filename to write the daily transaction file to
+
 ### void save(Transaction transaction)
 * Saves a transaction in memory, all transactions must implement the Transaction interface
 
-### void write(String filename)
-* Writes the daily transaction file to the file specified, throws an exception if an error occurs
+### void write()
+* Writes the daily transaction file , throws an exception if an error occurs
 
 
 
@@ -196,20 +213,20 @@ Transaction (Abstract)
 The Transaction class is an abstract class that provides the basic functionality every
 subclass must have.
 
-### private User* user
+### protected User* user
 * Reference to a user
 
-### private String code
+### protected String code
 * The transaction code
 
-### private String transaction
+### protected String transaction
 * The transaction in the daily transaction file format
 
-### private virtual void save_transaction()
+### protected virtual void save_transaction() = ();
 * Saves the information for the transaction into the daily transaction format
 * Sets the private transaction member
 
-### String get_transaction() = ();
+### String get_transaction()
 * This returns the transaction as a String that can be written to the daily transaction file
 
 
@@ -223,7 +240,7 @@ if the login is successful the login returns a reference to the current user tha
 * If the user object is null the login transaction succeeds (not currently logged in), otherwise an
 exception is thrown, the user is already logged in if user is not null.
 
-### User* process_username(String input)
+### User* process_username(String input, CurrentUserAccounts user_accounts)
 * Processes the username for the login transaction to the username specified, if the username does not exist,
 or some other error occurs an exception is thrown.
 * If no errors occur returns a pointer to the current_user and executes save_transaction()
@@ -341,7 +358,7 @@ The sell transaction inherits transaction, contains user purchase details
 * Process the ticket volume, if the amount is valid, saves the volume, otherwise an exception
 is thrown
 
-### void process_seller(String input, , AvailableTickets available_tickets)
+### void process_seller(String input, AvailableTickets available_tickets)
 * Process the seller's username, if the seller exists and the event title specified is sold by the seller
 the Ticket object is saved. Otherwise, an exception is thrown if seller does not exist, or seller can not
 be found that is selling tickets for event.
@@ -432,10 +449,10 @@ and meets the format specifications
 * Validates that an entry in the available tickets file, returns true if the entry is not corrupted 
 and meets the format specifications
 
-### public bool dollars(String amount, double& converted_amount)
+### public bool dollars(String amount, double& converted)
 * Validates the amount entered by the user (string), returns true if it is a valid dollars amount, 
 and coverts the amount.
 
-### public bool volume(String amount, int& converted_volume)
+### public bool volume(String amount, int& converted)
 * Validates the volume entered by the user (string), returns true if it is a valid integer, 
 and coverts the volume to integer.
