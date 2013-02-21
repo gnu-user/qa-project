@@ -23,7 +23,7 @@ as error/exception handling.
 
 ### Classes for handling transactions
 
-* (Interface) *TransactionInterface* (implemented by each of the following classes)
+* (Abstract class) *TransactionInterface* (inherited by each of the following classes)
 * Login
 * Logout
 * Create
@@ -182,35 +182,35 @@ tickets for sale, and price per ticket.
 Transaction Classes
 ------------------------
 
-These classes all implement the transaction interface and provide the logic for processing
+These classes all inherit the transaction class and provide the logic for processing
 each of the transactions.
 
-### TransactionInterface (Interface)
+### Transaction (Abstract)
 
-The Transaction interface is a *pure interface*, meaning that **every** transaction code that
-implements the interface must implement the following operations.
-
-#### virtual String get_transaction() = ();
-* This returns the transaction as a String that can be written to the daily transaction file
-
-
-### Login Implements TransactionInterface
-
-The Login transaction implements the transaction interface, contains the login transaction details,
-if the login is successful the login returns a reference to the current user that is now logged in.
+The Transaction class is an abstract class that provides the basic functionality every
+subclass must have.
 
 #### private String code
-* The login transaction code, "01"
+* The transaction code
 
 #### private User* user
 * Reference to a user
 
 #### private String transaction
-* The login transaction in the daily transaction file format
+* The transaction in the daily transaction file format
 
-#### private void save_transaction()
+#### private virtual void save_transaction()
 * Saves the information for the transaction into the daily transaction format
 * Sets the private transaction member
+
+#### String get_transaction() = ();
+* This returns the transaction as a String that can be written to the daily transaction file
+
+
+### Login inherits Transaction
+
+The Login transaction implements the transaction interface, contains the login transaction details,
+if the login is successful the login returns a reference to the current user that is now logged in.
 
 #### Login(User current_user)
 * If the user object is null the login transaction succeeds (not currently logged in), otherwise an
@@ -221,30 +221,12 @@ exception is thrown, the user is already logged in if user is not null.
 or some other error occurs an exception is thrown.
 * If no errors occur returns a pointer to the current_user and executes save_transaction()
 
-#### virtual String get_transaction()
-* Implements the get_transaction() methods, simply returns the private transaction member
-
 
 ### Logout Implements TransactionInterface
 
 The logout transaction implements the transaction interface, contains the logout transaction details
 
-#### private String code
-* The login transaction code, "00"
-
-#### private User* user
-* Reference to a user
-
-#### private String transaction
-* The login transaction in the daily transaction file format
-
-#### private void save_transaction()
-* Saves the information for the transaction into the daily transaction format
-* Sets the private transaction member
-
-#### Logout(User user)
+#### Logout(User current_user)
 * If the user object is null the logout transaction fails and throws an exception (user is not logged in),
 * If no error occurs executes save_transaction()
 
-#### virtual String get_transaction()
-* Implements the get_transaction() methods, simply returns the private transaction member
