@@ -216,7 +216,7 @@ subclass must have.
 Login inherits Transaction
 ----------------------------
 
-The Login transaction implements the transaction interface, contains the login transaction details,
+The Login transaction inherits transaction, contains the login transaction details,
 if the login is successful the login returns a reference to the current user that is now logged in.
 
 ### Login(User current_user)
@@ -229,12 +229,55 @@ or some other error occurs an exception is thrown.
 * If no errors occur returns a pointer to the current_user and executes save_transaction()
 
 
-Logout Implements TransactionInterface
------------------------------------------
+Logout inherits Transaction
+----------------------------
 
-The logout transaction implements the transaction interface, contains the logout transaction details
+The logout transaction inherits transaction, contains the logout transaction details
 
 ### Logout(User current_user)
-* If the user object is null the logout transaction fails and throws an exception (user is not logged in),
+* If the user object is null the transaction fails and throws an exception (user is not logged in),
 * If no error occurs executes save_transaction()
 
+
+Create inherits Transaction
+-----------------------------
+
+The create transaction inherits transaction, contains user creation details
+
+### private String[] types
+* Array of the valid account types the create statement can make
+
+### private String new_username
+* The name of the new user to create
+
+### Create(User current_user)
+* If the user object is null the transaction fails and throws an exception (user is not logged in)
+* If the current_user does not have privileges exception is thrown
+
+### void process_username(String input, CurrentUserAccounts user_accounts())
+* Processes the username, if the username is valid and exists saves the new username, , otherwise
+an exception is thrown
+
+### void process_type(String input)
+* Process the type provided, if the type is valid creates the new user account (in memory), otherwise
+an exception is thrown
+* If no error occurs executes save_transaction()
+
+
+Delete inherits Transaction
+----------------------------
+
+The delete transaction inherits transaction, contains user deletion details
+
+### Delete(User current_user)
+* If the user object is null the transaction fails and throws an exception (user is not logged in)
+* If the current_user does not have privileges exception is thrown
+
+### void process_username(String input, CurrentUserAccounts user_accounts())
+* Processes the username, if the username is valid, exists, and is not the current user saves the
+user details (in memory), otherwise an exception is thrown
+* If no error occurs executes save_transaction()
+
+
+Sell inherits Transaction
+--------------------------
