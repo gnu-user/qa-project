@@ -196,11 +196,11 @@ Transaction (Abstract)
 The Transaction class is an abstract class that provides the basic functionality every
 subclass must have.
 
-### private String code
-* The transaction code
-
 ### private User* user
 * Reference to a user
+
+### private String code
+* The transaction code
 
 ### private String transaction
 * The transaction in the daily transaction file format
@@ -254,7 +254,7 @@ The create transaction inherits transaction, contains user creation details
 * If the user object is null the transaction fails and throws an exception (user is not logged in)
 * If the current_user does not have privileges exception is thrown
 
-### void process_username(String input, CurrentUserAccounts user_accounts())
+### void process_username(String input, CurrentUserAccounts user_accounts)
 * Processes the username, if the username is valid and exists saves the new username, , otherwise
 an exception is thrown
 
@@ -273,7 +273,7 @@ The delete transaction inherits transaction, contains user deletion details
 * If the user object is null the transaction fails and throws an exception (user is not logged in)
 * If the current_user does not have privileges exception is thrown
 
-### void process_username(String input, CurrentUserAccounts user_accounts())
+### void process_username(String input, CurrentUserAccounts user_accounts)
 * Processes the username, if the username is valid, exists, and is not the current user saves the
 user details (in memory), otherwise an exception is thrown
 * If no error occurs executes save_transaction()
@@ -281,3 +281,107 @@ user details (in memory), otherwise an exception is thrown
 
 Sell inherits Transaction
 --------------------------
+
+The sell transaction inherits transaction, contains user sale details
+
+### private Ticket* ticket
+* Reference to a ticket
+
+### private String title
+* The title of the event
+
+### private double price
+* The price of the ticket
+
+### private int volume
+* The volume of tickets for sale
+
+### Sell(User current_user)
+* If the user object is null the transaction fails and throws an exception (user is not logged in)
+* If the current_user does not have privileges exception is thrown
+
+### void process_title(String input)
+* Processes the event title, if the title is valid, saves the title, otherwise an exception is thrown
+
+### void process_price(String input)
+* Process the sale price, if the price is valid (dollars amount) saves price, otherwise an exception
+is thrown
+
+### void process_volume(String input)
+* Process the ticket volume, if the amount is valid, creates a new ticket object, otherwise an exception
+is thrown
+* If no error occurs executes save_transaction()
+
+
+Buy inherits Transaction
+--------------------------
+
+The sell transaction inherits transaction, contains user purchase details
+
+### private Ticket* ticket
+* Reference to a ticket
+
+### private String title
+* The title of the event
+
+### private int volume
+* The volume of tickets for sale
+
+### private String seller
+* The name of the seller
+
+### Buy(User current_user)
+* If the user object is null the transaction fails and throws an exception (user is not logged in)
+* If the current_user does not have privileges exception is thrown
+
+### void process_title(String input, AvailableTickets available_tickets)
+* Processes the event title, if the title is valid and exists saves the title, otherwise an exception is thrown
+
+### void process_volume(String input)
+* Process the ticket volume, if the amount is valid, saves the volume, otherwise an exception
+is thrown
+
+### void process_seller(String input, , AvailableTickets available_tickets)
+* Process the seller's username, if the seller exists and the event title specified is sold by the seller
+the Ticket object is saved. Otherwise, an exception is thrown if seller does not exist, or seller can not
+be found that is selling tickets for event.
+
+### void process_confirmation(String input)
+* If the user confirms the transaction as "yes" the transaction is saved, save_transaction() executed, otherwise
+an exception is thrown and the transaction is discarded.
+* If no error occurs executes save_transaction()
+
+
+
+Refund inherits Transaction
+-----------------------------
+
+The refund transaction inherits transaction, contains user refund details
+
+### private String buyer
+* The name of the buyer
+
+### private String seller
+* The name of the seller
+
+### private double credit
+
+### Refund(User current_user)
+* If the user object is null the transaction fails and throws an exception (user is not logged in)
+* If the current_user does not have privileges exception is thrown
+
+### void process_buyer(String input, CurrentUserAccounts user_accounts)
+* Processes the buyer username, if the username is valid and exists saves the username, otherwise
+an exception is thrown
+
+### void process_seller(String input, AvailableTickets available_tickets)
+* Process the seller's username, if the seller exists, save the seller's username. Otherwise, an exception
+is thrown.
+
+### void process_credit(String input)
+* Process the credit amount, if the amount is valid save the credit value, otherwise an exception is thrown.
+* If no error occurs executes save_transaction()
+
+
+
+
