@@ -17,7 +17,7 @@ int main()
 	trimRightInPlace(s1);            // "Hello, world!"
 	string s2(trim(hello));     // "Hello, world!"
 
-	cout << "Hello, World";
+	cout << s1 << endl << s2 << endl;
 
 	return 0;
 }
