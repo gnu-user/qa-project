@@ -1,3 +1,6 @@
+#ifndef ADDCREDIT_HPP_
+#define ADDCREDIT_HPP_
+
 #include "Transaction.hpp"
 #include "CurrentUserAccounts.hpp"
 #include "User.hpp"
@@ -18,3 +21,4 @@ public:
    
     void process_credit(string input);
 };
+#endif /* ADDCREDIT_HPP_ */

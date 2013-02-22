@@ -1,3 +1,6 @@
+#ifndef DAILYTRANSACTION_HPP_
+#define DAILYTRANSACTION_HPP_
+
 #include "Transaction.hpp"
 #include <string>
 #include <vector>
@@ -18,3 +21,4 @@ public:
    
     void write();
 };
+#endif /* DAILYTRANSACTION_HPP_ */

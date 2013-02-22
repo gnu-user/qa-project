@@ -1,3 +1,6 @@
+#ifndef TICKET_HPP_
+#define TICKET_HPP_
+
 #include <string>
 
 using namespace std;
@@ -20,3 +23,4 @@ public:
    
     double get_price();
 };
+#endif /* TICKET_HPP_ */

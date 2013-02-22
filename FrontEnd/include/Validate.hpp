@@ -1,3 +1,6 @@
+#ifndef VALIDATE_HPP_
+#define VALIDATE_HPP_
+
 #include <string>
 
 using namespace std;
@@ -18,3 +21,4 @@ public:
    
     bool volume(string amount, int& converted);
 };
+#endif /* VALIDATE_HPP_ */

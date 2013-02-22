@@ -1,3 +1,6 @@
+#ifndef BUY_HPP_
+#define BUY_HPP_
+
 #include "Transaction.hpp"
 #include "User.hpp"
 #include "Ticket.hpp"
@@ -25,3 +28,4 @@ public:
    
     void process_confirmation(string input);
 };
+#endif /* BUY_HPP_ */

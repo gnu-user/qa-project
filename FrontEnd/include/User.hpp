@@ -1,3 +1,6 @@
+#ifndef USER_HPP_
+#define USER_HPP_
+
 #include <string>
 #include <vector>
 
@@ -23,3 +26,4 @@ public:
    
     bool has_permissions(string transaction);
 };
+#endif /* USER_HPP_ */

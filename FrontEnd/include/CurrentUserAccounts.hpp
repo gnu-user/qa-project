@@ -1,3 +1,6 @@
+#ifndef CURRENTUSERACCOUNTS_HPP_
+#define CURRENTUSERACCOUNTS_HPP_
+
 #include "User.hpp"
 #include <string>
 #include <vector>
@@ -21,3 +24,4 @@ public:
 private:
     void parse();
 };
+#endif /* CURRENTUSERACCOUNTS_HPP_ */

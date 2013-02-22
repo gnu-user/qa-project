@@ -1,3 +1,6 @@
+#ifndef TRANSACTION_HPP_
+#define TRANSACTION_HPP_
+
 #include "User.hpp"
 #include <string>
 
@@ -16,3 +19,4 @@ protected:
 public:
     string get_transaction();
 };
+#endif /* TRANSACTION_HPP_ */

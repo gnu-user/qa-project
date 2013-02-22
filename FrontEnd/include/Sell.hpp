@@ -1,3 +1,6 @@
+#ifndef SELL_HPP_
+#define SELL_HPP_
+
 #include "Transaction.hpp"
 #include "User.hpp"
 #include "Ticket.hpp"
@@ -23,3 +26,4 @@ public:
    
     void process_volume(string input);
 };
+#endif /* SELL_HPP_ */

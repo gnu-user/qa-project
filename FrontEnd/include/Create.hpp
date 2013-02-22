@@ -1,3 +1,6 @@
+#ifndef CREATE_HPP_
+#define CREATE_HPP_
+
 #include "Transaction.hpp"
 #include "User.hpp"
 #include "CurrentUserAccounts.hpp"
@@ -19,3 +22,4 @@ public:
    
     void process_type(string input);
 };
+#endif /* CREATE_HPP_ */

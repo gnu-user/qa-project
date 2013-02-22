@@ -1,3 +1,6 @@
+#ifndef REFUND_HPP_
+#define REFUND_HPP_
+
 #include "Transaction.hpp"
 #include "User.hpp"
 #include "CurrentUserAccounts.hpp"
@@ -23,3 +26,4 @@ public:
    
     void process_credit(string input);
 };
+#endif /* REFUND_HPP_ */

@@ -1,3 +1,6 @@
+#ifndef AVAILABLETICKETS_HPP_
+#define AVAILABLETICKETS_HPP_
+
 #include "Ticket.hpp"
 #include <string>
 #include <vector>
@@ -23,3 +26,4 @@ public:
 private:
     void parse();
 };
+#endif /* AVAILABLETICKETS_HPP_ */
