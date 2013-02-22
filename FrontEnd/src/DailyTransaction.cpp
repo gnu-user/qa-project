@@ -5,7 +5,7 @@ DailyTransaction::DailyTransaction(string dtf_file)
     throw "Not yet implemented";
 }
 
-void DailyTransaction::save(Transaction transaction)
+void DailyTransaction::save(Transaction& transaction)
 {
     throw "Not yet implemented";
 }

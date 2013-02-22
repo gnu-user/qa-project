@@ -17,7 +17,7 @@ private:
 public:
     DailyTransaction(string dtf_file);
    
-    void save(Transaction transaction);
+    void save(Transaction& transaction);
    
     void write();
 };
