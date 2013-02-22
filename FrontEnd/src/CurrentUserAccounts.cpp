@@ -1,8 +1,22 @@
 #include "../include/CurrentUserAccounts.hpp"
+#include "Poco/File.h"
+#include "Poco/Path.h"
+
+using Poco::File;
+using Poco::Path;
 
 CurrentUserAccounts::CurrentUserAccounts(string cua_file)
 {
-    throw Exception(FAIL);
+	File file = File(cua_file);
+
+	if (file.exists())
+	{
+		this->cua_file = cua_file;
+	}
+	else
+	{
+		throw Exception(CUA_NOT_FOUND);
+	}
 }
 
 bool CurrentUserAccounts::has_user(string username)

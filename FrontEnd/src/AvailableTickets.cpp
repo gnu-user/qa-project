@@ -1,8 +1,22 @@
 #include "../include/AvailableTickets.hpp"
+#include "Poco/File.h"
+#include "Poco/Path.h"
+
+using Poco::File;
+using Poco::Path;
 
 AvailableTickets::AvailableTickets(string atf_file)
 {
-    throw "Not yet implemented";
+	File file = File(atf_file);
+
+	if (file.exists())
+	{
+		this->atf_file = atf_file;
+	}
+	else
+	{
+		throw Exception(ATF_NOT_FOUND);
+	}
 }
 
 bool AvailableTickets::has_event(string event)

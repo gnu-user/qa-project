@@ -2,6 +2,7 @@
 #define AVAILABLETICKETS_HPP_
 
 #include "Ticket.hpp"
+#include "Exception.hpp"
 #include <string>
 #include <vector>
 
