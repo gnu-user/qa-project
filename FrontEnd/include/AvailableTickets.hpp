@@ -2,17 +2,17 @@ class AvailableTickets
 {
 
 private:
-    std::vector<Tickets> tickets;
-    std::string atf_file;
+    vector<Tickets> tickets;
+    string atf_file;
 
 public:
-    AvailableTickets(std::string atf_file);
+    AvailableTickets(string atf_file);
    
-    bool has_event(std::string event);
+    bool has_event(string event);
    
-    bool has_seller(std::string username);
+    bool has_seller(string username);
    
-    Ticket get_ticket(std::string event, std::string username);
+    Ticket get_ticket(string event, string username);
 
 private:
     void parse();

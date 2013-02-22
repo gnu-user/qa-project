@@ -2,11 +2,11 @@ class DailyTransaction
 {
 
 private:
-    std::vector<Transaction> transactions;
-    std::string dtf_file;
+    vector<Transaction> transactions;
+    string dtf_file;
 
 public:
-    DailyTransaction(std::string dtf_file);
+    DailyTransaction(string dtf_file);
    
     void save(Transaction transaction);
    

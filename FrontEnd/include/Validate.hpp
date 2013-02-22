@@ -3,15 +3,15 @@ class Validate
 
 
 public:
-    bool username(std::string username);
+    bool username(string username);
    
-    bool event(std::string event);
+    bool event(string event);
    
-    bool cua_entry(std::string entry);
+    bool cua_entry(string entry);
    
-    bool atf_entry(std::string entry);
+    bool atf_entry(string entry);
    
-    bool dollars(std::string amount, double& converted);
+    bool dollars(string amount, double& converted);
    
-    bool volume(std::string amount, int& converted);
+    bool volume(string amount, int& converted);
 };

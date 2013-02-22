@@ -2,19 +2,19 @@ class User
 {
 
 private:
-    std::string username;
-    std::string type;
+    string username;
+    string type;
     double credit;
-    std::vector<std::string> permissions;
+    vector<string> permissions;
 
 public:
-    User(std::string username, std::string type, double credit);
+    User(string username, string type, double credit);
    
-    std::string get_username();
+    string get_username();
    
-    std::string get_type();
+    string get_type();
    
     double get_credit();
    
-    bool has_permissions(std::string transaction);
+    bool has_permissions(string transaction);
 };
