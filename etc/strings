@@ -90,6 +90,12 @@ doing a privileged operation as non-priv user:
 doing anything other than login before logging in:
     Invalid transaction, only login accepted.
 
+ATF Not found:
+    Available tickets file not found, check arguments provided.
+
+CUA Not found:
+    Current user accounts file not found, check arguments provided.
+
 corrupt ATF:
     An error occurred reading the available tickets file, data corrupted.
 
