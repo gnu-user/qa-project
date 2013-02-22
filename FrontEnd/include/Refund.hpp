@@ -1,3 +1,11 @@
+#include "Transaction.hpp"
+#include "User.hpp"
+#include "CurrentUserAccounts.hpp"
+#include "AvailableTickets.hpp"
+#include <string>
+
+using namespace std;
+
 class Refund : Transaction
 {
 

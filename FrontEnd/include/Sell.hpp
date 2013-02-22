@@ -1,3 +1,10 @@
+#include "Transaction.hpp"
+#include "User.hpp"
+#include "Ticket.hpp"
+#include <string>
+
+using namespace std;
+
 class Sell : Transaction
 {
 

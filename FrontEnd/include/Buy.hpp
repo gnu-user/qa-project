@@ -1,6 +1,13 @@
+#include "Transaction.hpp"
+#include "User.hpp"
+#include "Ticket.hpp"
+#include "AvailableTickets.hpp"
+#include <string>
+
+using namespace std;
+
 class Buy : Transaction
 {
-
 private:
     Ticket* ticket;
     string title;

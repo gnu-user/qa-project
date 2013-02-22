@@ -1,8 +1,14 @@
+#include "Ticket.hpp"
+#include <string>
+#include <vector>
+
+using namespace std;
+
 class AvailableTickets
 {
 
 private:
-    vector<Tickets> tickets;
+    vector<Ticket> tickets;
     string atf_file;
 
 public:

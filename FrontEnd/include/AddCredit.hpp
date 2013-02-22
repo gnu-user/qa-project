@@ -1,7 +1,6 @@
 #include "Transaction.hpp"
 #include "CurrentUserAccounts.hpp"
 #include "User.hpp"
-
 #include <string>
 
 using namespace std;

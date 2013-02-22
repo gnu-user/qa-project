@@ -1,3 +1,9 @@
+#include "User.hpp"
+#include "CurrentUserAccounts.hpp"
+#include <string>
+
+using namespace std;
+
 class Delete
 {
 

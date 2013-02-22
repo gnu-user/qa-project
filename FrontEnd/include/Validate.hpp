@@ -1,6 +1,9 @@
+#include <string>
+
+using namespace std;
+
 class Validate
 {
-
 
 public:
     bool username(string username);

@@ -1,3 +1,9 @@
+#include "Transaction.hpp"
+#include <string>
+#include <vector>
+
+using namespace std;
+
 class DailyTransaction
 {
 

@@ -1,3 +1,8 @@
+#include "User.hpp"
+#include <string>
+
+using namespace std;
+
 class Transaction
 {
 
