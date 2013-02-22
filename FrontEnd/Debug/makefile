@@ -44,7 +44,7 @@ all: FrontEnd
 FrontEnd: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/jon/Source/github/qa-project/FrontEnd/lib/static" -static -o "FrontEnd" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"../lib/static" -static -o "FrontEnd" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
