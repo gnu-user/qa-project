@@ -2,6 +2,7 @@
 #define CURRENTUSERACCOUNTS_HPP_
 
 #include "User.hpp"
+#include "Exception.hpp"
 #include <string>
 #include <vector>
 

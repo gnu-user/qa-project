@@ -2,7 +2,7 @@
 
 CurrentUserAccounts::CurrentUserAccounts(string cua_file)
 {
-    throw "Not yet implemented";
+    throw Exception(FAIL);
 }
 
 bool CurrentUserAccounts::has_user(string username)
