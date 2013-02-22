@@ -11,6 +11,7 @@ CPP_SRCS += \
 ../src/CurrentUserAccounts.cpp \
 ../src/DailyTransaction.cpp \
 ../src/Delete.cpp \
+../src/Exception.cpp \
 ../src/FrontEnd.cpp \
 ../src/Login.cpp \
 ../src/Logout.cpp \
@@ -29,6 +30,7 @@ OBJS += \
 ./src/CurrentUserAccounts.o \
 ./src/DailyTransaction.o \
 ./src/Delete.o \
+./src/Exception.o \
 ./src/FrontEnd.o \
 ./src/Login.o \
 ./src/Logout.o \
@@ -47,6 +49,7 @@ CPP_DEPS += \
 ./src/CurrentUserAccounts.d \
 ./src/DailyTransaction.d \
 ./src/Delete.d \
+./src/Exception.d \
 ./src/FrontEnd.d \
 ./src/Login.d \
 ./src/Logout.d \
@@ -62,7 +65,7 @@ CPP_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"../lib/include" -O0 -g3 -Wall -Wextra -c -fmessage-length=0 -v -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -I"../lib/include" -O0 -g3 -Wall -Wextra -c -fmessage-length=0 -std=c++0x -v -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
