@@ -1,6 +1,6 @@
-#include "DailyTransaction.hpp"
+#include "../include/DailyTransaction.hpp"
 
-DailyTransaction::DailyTransaction(std::string dtf_file)
+DailyTransaction::DailyTransaction(string dtf_file)
 {
     throw "Not yet implemented";
 }

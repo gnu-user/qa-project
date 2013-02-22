@@ -1,16 +1,16 @@
-#include "CurrentUserAccounts.hpp"
+#include "../include/CurrentUserAccounts.hpp"
 
-CurrentUserAccounts::CurrentUserAccounts(std::string cua_file)
+CurrentUserAccounts::CurrentUserAccounts(string cua_file)
 {
     throw "Not yet implemented";
 }
 
-bool CurrentUserAccounts::has_user(std::string username)
+bool CurrentUserAccounts::has_user(string username)
 {
     throw "Not yet implemented";
 }
 
-User CurrentUserAccounts::get_user(std::string username)
+User CurrentUserAccounts::get_user(string username)
 {
     throw "Not yet implemented";
 }

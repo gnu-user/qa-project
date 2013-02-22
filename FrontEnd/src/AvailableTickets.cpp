@@ -1,21 +1,21 @@
-#include "AvailableTickets.hpp"
+#include "../include/AvailableTickets.hpp"
 
-AvailableTickets::AvailableTickets(std::string atf_file)
+AvailableTickets::AvailableTickets(string atf_file)
 {
     throw "Not yet implemented";
 }
 
-bool AvailableTickets::has_event(std::string event)
+bool AvailableTickets::has_event(string event)
 {
     throw "Not yet implemented";
 }
 
-bool AvailableTickets::has_seller(std::string username)
+bool AvailableTickets::has_seller(string username)
 {
     throw "Not yet implemented";
 }
 
-Ticket AvailableTickets::get_ticket(std::string event, std::string username)
+Ticket AvailableTickets::get_ticket(string event, string username)
 {
     throw "Not yet implemented";
 }
