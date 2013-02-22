@@ -93,6 +93,9 @@ doing anything other than login before logging in:
 corrupt ATF:
     An error occurred reading the available tickets file, data corrupted.
 
+corrupt CUA:
+    An error occurred reading the current user account file, data corrupted.
+
 invalid user:
     Invalid username.
 
@@ -122,7 +125,7 @@ title cannot contain END:
     Invalid event title, event title cannot contain the word "END".
 
 invalid ticket sale price, must be dollars:
-    Invalid dollars value, amount must be in dollars (e.g. 10.00).
+    Invalid sale price, amount must be in dollars (e.g. 10.00).
 
 invalid credit amount, must be dollars:
     Invalid credit value, amount must be in dollars (e.g. 10.00).
