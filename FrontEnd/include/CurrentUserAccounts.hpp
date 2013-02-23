@@ -22,6 +22,8 @@ public:
    
     User get_user(string username);
 
+    void display_users();
+
 private:
     void parse();
 };
