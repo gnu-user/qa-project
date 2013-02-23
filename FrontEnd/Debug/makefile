@@ -6,6 +6,11 @@
 
 RM := rm -rf
 
+# Architecture specific build settings
+ARCH := $(shell getconf LONG_BIT)
+LINK_PATH_32 := i686
+LINK_PATH_64 := x86_64
+
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/subdir.mk
@@ -44,7 +49,7 @@ all: FrontEnd
 FrontEnd: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"../lib/static" -static -o "FrontEnd" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"../lib/static/$(LINK_PATH_$(ARCH))" -static -o "FrontEnd" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
