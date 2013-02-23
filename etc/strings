@@ -2,14 +2,15 @@ DEFAULT
 ----------
 
 Welcome.
-
+Current user accounts file read successfully.
+Available tickets file read successfully.
 
 login
 ----------
 
 Enter username: 
 Username accepted.
-Available tickets file read successfully.
+
 
 
 Logout
