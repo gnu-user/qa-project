@@ -51,9 +51,15 @@ int main(int argc, char** argv)
 			cout << "DOES NOT HAVE admin" << endl;
 		}
 
+		User new_user = ptr_cua->get_user("administrator");
+		cout << new_user.get_username() << endl;
 
+
+		/* Available tickets file tests */
 		ptr_atf.reset(new AvailableTickets(argv[2]));
 		cout << "Available tickets file read successfully." << endl;
+
+		ptr_atf->display_tickets();
 
 		// Make a new user
 		User derp = User("derp", "BS", 0.0);

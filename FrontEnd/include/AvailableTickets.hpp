@@ -24,6 +24,8 @@ public:
    
     Ticket get_ticket(string event, string username);
 
+    void display_tickets();
+
 private:
     void parse();
 };
