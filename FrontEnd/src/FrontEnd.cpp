@@ -34,8 +34,22 @@ int main(int argc, char** argv)
 		ptr_cua.reset(new CurrentUserAccounts(argv[1]));
 		cout << "Current user accounts file read successfully." << endl;
 
+		/* Display each user */
+		ptr_cua->display_users();
+
 		ptr_atf.reset(new AvailableTickets(argv[2]));
 		cout << "Available tickets file read successfully." << endl;
+
+		// Make a new user
+		User derp = User("derp", "BS", 0.0);
+		cout << derp.get_username() << " " << derp.get_type() << " " << derp.get_credit() << endl;
+
+		if (derp.has_permissions("buy"))
+		{
+			cout << "HAS PERM" << endl;
+		}
+
+		Ticket ticket = Ticket("Test", "tester", 10, 5.00);
 	}
 	catch (Exception& e)
 	{
