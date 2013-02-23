@@ -2,20 +2,20 @@
 
 Sell::Sell(User current_user)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void Sell::process_title(string input)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void Sell::process_price(string input)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void Sell::process_volume(string input)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }

@@ -43,7 +43,8 @@ enum exception_codes {
 	TICKET_VOLUME_OVERFLOW, // Volume cannot exceed 100.
 	TICKET_VOLUME_USER_MAX, // Non-admin users cannot purchase more than 4 tickets
 	ONE_SELL_PER_SESSION,	// Only one sell transaction per session
-	INVALID_CONFIRMATION	// Confirmation must be yes/no
+	INVALID_CONFIRMATION,	// Confirmation must be yes/no
+	NOT_YET_IMPLEMENTED		// Exception for anyting not implemented yet
 };
 
 class Exception
@@ -79,7 +80,8 @@ private:
 		{TICKET_VOLUME_OVERFLOW, "Invalid number of tickets, volume cannot exceed 100."},
 		{TICKET_VOLUME_USER_MAX, "Invalid number of tickets, cannot purchase more than 4 tickets."},
 		{ONE_SELL_PER_SESSION, "Invalid transaction, only one sell transaction per session accepted."},
-		{INVALID_CONFIRMATION, "Invalid confirmation, please enter \"yes\" or \"no\"."}
+		{INVALID_CONFIRMATION, "Invalid confirmation, please enter \"yes\" or \"no\"."},
+		{NOT_YET_IMPLEMENTED, "Not yet implemented"}
 	};
 	exception_codes code;
 

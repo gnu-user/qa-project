@@ -1,6 +1,7 @@
 #ifndef USER_HPP_
 #define USER_HPP_
 
+#include "Exception.hpp"
 #include <string>
 #include <vector>
 

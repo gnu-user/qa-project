@@ -2,10 +2,10 @@
 
 Login::Login(User current_user)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 User* Login::process_username(string input, CurrentUserAccounts user_account)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }

@@ -29,17 +29,17 @@ AvailableTickets::AvailableTickets(string atf_file)
 
 bool AvailableTickets::has_event(string event)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 bool AvailableTickets::has_seller(string username)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 Ticket AvailableTickets::get_ticket(string event, string username)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void AvailableTickets::parse()

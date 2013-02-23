@@ -2,6 +2,7 @@
 #define DAILYTRANSACTION_HPP_
 
 #include "Transaction.hpp"
+#include "Exception.hpp"
 #include <string>
 #include <vector>
 

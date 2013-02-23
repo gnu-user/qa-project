@@ -1,6 +1,7 @@
 #ifndef VALIDATE_HPP_
 #define VALIDATE_HPP_
 
+#include "Exception.hpp"
 #include <string>
 
 using namespace std;

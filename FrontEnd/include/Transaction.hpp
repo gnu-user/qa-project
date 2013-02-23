@@ -2,6 +2,7 @@
 #define TRANSACTION_HPP_
 
 #include "User.hpp"
+#include "Exception.hpp"
 #include <string>
 
 using namespace std;

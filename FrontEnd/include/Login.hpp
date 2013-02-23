@@ -4,6 +4,7 @@
 #include "Transaction.hpp"
 #include "User.hpp"
 #include "CurrentUserAccounts.hpp"
+#include "Exception.hpp"
 #include <string>
 
 using namespace std;

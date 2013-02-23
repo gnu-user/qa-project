@@ -2,5 +2,5 @@
 
 string Transaction::get_transaction()
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }

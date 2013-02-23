@@ -2,20 +2,20 @@
 
 string Ticket::get_event()
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 string Ticket::get_seller()
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 int Ticket::get_volume()
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 double Ticket::get_price()
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }

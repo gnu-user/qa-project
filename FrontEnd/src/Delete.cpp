@@ -2,10 +2,10 @@
 
 Delete::Delete(User current_user)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void Delete::process_username(string input, CurrentUserAccounts user_accounts)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }

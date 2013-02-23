@@ -29,12 +29,12 @@ CurrentUserAccounts::CurrentUserAccounts(string cua_file)
 
 bool CurrentUserAccounts::has_user(string username)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 User CurrentUserAccounts::get_user(string username)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void CurrentUserAccounts::parse()

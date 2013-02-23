@@ -2,15 +2,15 @@
 
 AddCredit::AddCredit(User current_user)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void AddCredit::process_username(string input, CurrentUserAccounts user_accounts)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void AddCredit::process_credit(string input)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }

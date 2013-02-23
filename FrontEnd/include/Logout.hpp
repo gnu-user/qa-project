@@ -2,6 +2,7 @@
 #define LOGOUT_HPP_
 
 #include "Transaction.hpp"
+#include "Exception.hpp"
 #include "User.hpp"
 
 class Logout : Transaction

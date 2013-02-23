@@ -1,6 +1,7 @@
 #ifndef TICKET_HPP_
 #define TICKET_HPP_
 
+#include "Exception.hpp"
 #include <string>
 
 using namespace std;

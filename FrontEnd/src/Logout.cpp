@@ -2,5 +2,5 @@
 
 Logout::Logout(User current_user)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }

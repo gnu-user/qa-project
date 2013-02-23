@@ -5,6 +5,7 @@
 #include "User.hpp"
 #include "CurrentUserAccounts.hpp"
 #include "AvailableTickets.hpp"
+#include "Exception.hpp"
 #include <string>
 
 using namespace std;

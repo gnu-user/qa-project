@@ -2,15 +2,15 @@
 
 DailyTransaction::DailyTransaction(string dtf_file)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void DailyTransaction::save(Transaction& transaction)
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
 
 void DailyTransaction::write()
 {
-    throw "Not yet implemented";
+    throw Exception(NOT_YET_IMPLEMENTED);
 }
