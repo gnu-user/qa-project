@@ -37,6 +37,21 @@ int main(int argc, char** argv)
 		/* Display each user */
 		ptr_cua->display_users();
 
+		/* Check if user exists */
+		if (ptr_cua->has_user("buyer"))
+		{
+			cout << "HAS buyer" << endl;
+		}
+		if (ptr_cua->has_user("administrator"))
+		{
+			cout << "HAS administrator" << endl;
+		}
+		if (!ptr_cua->has_user("admin"))
+		{
+			cout << "DOES NOT HAVE admin" << endl;
+		}
+
+
 		ptr_atf.reset(new AvailableTickets(argv[2]));
 		cout << "Available tickets file read successfully." << endl;
 

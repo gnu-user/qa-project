@@ -34,7 +34,15 @@ CurrentUserAccounts::CurrentUserAccounts(string cua_file)
 
 bool CurrentUserAccounts::has_user(string username)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+	for (vector<User>::iterator it = this->users.begin(); it != this->users.end(); ++it)
+	{
+		if (it->get_username().compare(username) == 0)
+		{
+			return true;
+		}
+	}
+
+	return false;
 }
 
 User CurrentUserAccounts::get_user(string username)
