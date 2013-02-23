@@ -23,7 +23,10 @@ bool Validate::cua_entry(string entry)
 
 bool Validate::atf_entry(string entry)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+	/* Verify that the available tickets file entry matches format */
+    RegularExpression re("^.{19}_[A-Za-z0-9_]{15}_[0-9]{3}_[0-9]{3}\\.[0-9]{2}$");
+
+    return re.match(entry);
 }
 
 bool Validate::dollars(string amount, double& converted)
