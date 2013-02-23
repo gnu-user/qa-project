@@ -16,6 +16,8 @@ private:
     double price;
 
 public:
+    Ticket(string event, string seller, int volume, double price);
+
     string get_event();
    
     string get_seller();
