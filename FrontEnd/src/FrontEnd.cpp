@@ -1,40 +1,20 @@
 #include "../include/CurrentUserAccounts.hpp"
 #include "../include/AvailableTickets.hpp"
 #include "../include/Exception.hpp"
+#include "../include/TransactionCodes.hpp"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <memory>
 
 using namespace std;
-
-// Value-Defintions of the different String values
-enum transaction_code {
-			_undefined,
-			_login,
-			_logout,
-			_create,
-			_delete,
-			_sell,
-			_buy,
-			_refund,
-			_addcredit
-};
-
-static map<string, transaction_code> map_code = {
-			{"login", _login},
-			{"logout", _logout},
-			{"create", _create},
-			{"delete", _delete},
-			{"sell", _sell },
-			{"buy", _buy},
-			{"refund", _refund},
-			{"addcredit", _addcredit}
-};
-
 
 int main(int argc, char** argv)
 {
 	string input;
+	auto_ptr<CurrentUserAccounts> ptr_cua;
+	auto_ptr<AvailableTickets> ptr_atf;
+
 
 	/* Verify the correct number of arguments provided */
 	if (argc < 4)
@@ -43,19 +23,24 @@ int main(int argc, char** argv)
 			 << "[daily transaction file]" << endl
 			 << "Example: ./FrontEnd user_accounts avail_tickets daily_transaction" << endl;
 
-		//return EXIT_FAILURE;
+		return EXIT_FAILURE;
 	}
 
-	/* Read the input files and parse the contents */
+	/* Start the front end, read the input files and parse the contents */
 	try
 	{
 		cout << "Welcome." << endl;
-		//CurrentUserAccounts cua = CurrentUserAccounts(argv[1]);
-		//AvailableTickets atf = AvailableTickets(argv[2]);
+
+		ptr_cua.reset(new CurrentUserAccounts(argv[1]));
+		cout << "Current user accounts file read successfully." << endl;
+
+		ptr_atf.reset(new AvailableTickets(argv[2]));
+		cout << "Available tickets file read successfully." << endl;
 	}
 	catch (Exception& e)
 	{
 		cerr << e.mesg() << endl;
+		return EXIT_FAILURE;
 	}
 
 	while(true)
