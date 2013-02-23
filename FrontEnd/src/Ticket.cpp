@@ -1,21 +1,29 @@
 #include "../include/Ticket.hpp"
 
+Ticket::Ticket(string event, string seller, int volume, double price)
+{
+	this->event = event;
+	this->seller = seller;
+	this->volume = volume;
+	this->price = price;
+}
+
 string Ticket::get_event()
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    return this->event;
 }
 
 string Ticket::get_seller()
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    return this->seller;
 }
 
 int Ticket::get_volume()
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    return this->volume;
 }
 
 double Ticket::get_price()
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    return this->price;
 }
