@@ -4,6 +4,7 @@
 #include "Exception.hpp"
 #include <string>
 #include <vector>
+#include <map>
 
 using namespace std;
 
@@ -14,7 +15,13 @@ private:
     string username;
     string type;
     double credit;
-    vector<string> permissions;
+    map<string, vector<string>> permissions {
+    	{"AA", {"login", "logout", "create", "delete", "sell", "buy", "refund", "addcredit"}},
+    	{"FS", {"login", "logout", "sell", "buy", "addcredit"}},
+    	{"BS", {"login", "logout", "buy", "addcredit"}},
+    	{"SS", {"login", "logout", "sell", "addcredit"}}
+    };
+
 
 public:
     User(string username, string type, double credit);

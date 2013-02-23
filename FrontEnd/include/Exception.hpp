@@ -24,6 +24,7 @@ enum exception_codes {
 	CORRUPT_CUA,			// Current user accounts file corrupted
 	INVALID_USER,
 	UNKNOWN_USER,
+	INVALID_USER_TYPE,		// Invalid user type
 	INVALID_USER_LENGTH,
 	INVALID_USER_RESERVED,	// Exception for a user with reserved word, like "END"
 	INVALID_USER_EXISTS,
@@ -61,6 +62,7 @@ private:
 		{CORRUPT_CUA, "An error occurred reading the current user account file, data corrupted."},
 		{INVALID_USER, "Invalid username."},
 		{UNKNOWN_USER, "Invalid username, username does not exist."},
+		{INVALID_USER_TYPE, "Invalid user type, type specified does not exist."},
 		{INVALID_USER_LENGTH, " Invalid username, username cannot exceed 15 characters."},
 		{INVALID_USER_RESERVED, "Invalid username, username cannot be \"END\"."},
 		{INVALID_USER_EXISTS, "Invalid username, user already exists."},
