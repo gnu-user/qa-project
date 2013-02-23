@@ -10,16 +10,16 @@ class Validate
 {
 
 public:
-    bool username(string username);
+    static bool username(string username);
    
-    bool event(string event);
+    static bool event(string event);
    
-    bool cua_entry(string entry);
+    static bool cua_entry(string entry);
    
-    bool atf_entry(string entry);
+    static bool atf_entry(string entry);
    
-    bool dollars(string amount, double& converted);
+    static bool dollars(string amount, double& converted);
    
-    bool volume(string amount, int& converted);
+    static bool volume(string amount, int& converted);
 };
 #endif /* VALIDATE_HPP_ */
