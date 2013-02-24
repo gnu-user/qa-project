@@ -4,16 +4,16 @@
 User::User(string username, string type, double credit)
 {
     /* Throws an error if invalid user type specified */
-	if (this->permissions.find(type) != this->permissions.end())
-	{
-		this->username = username;
-		this->type = type;
-		this->credit = credit;
-	}
-	else
-	{
-		throw Exception(INVALID_USER_TYPE);
-	}
+    if (this->permissions.find(type) != this->permissions.end())
+    {
+        this->username = username;
+        this->type = type;
+        this->credit = credit;
+    }
+    else
+    {
+        throw Exception(INVALID_USER_TYPE);
+    }
 }
 
 string User::get_username()
@@ -37,10 +37,10 @@ bool User::has_permissions(string transaction)
 
     if(find(user_perms.begin(), user_perms.end(), transaction) != user_perms.end())
     {
-    	return true;
+        return true;
     }
     else
     {
-    	return false;
+        return false;
     }
 }

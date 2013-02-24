@@ -16,10 +16,10 @@ private:
     string type;
     double credit;
     map<string, vector<string>> permissions {
-    	{"AA", {"login", "logout", "create", "delete", "sell", "buy", "refund", "addcredit"}},
-    	{"FS", {"login", "logout", "sell", "buy", "addcredit"}},
-    	{"BS", {"login", "logout", "buy", "addcredit"}},
-    	{"SS", {"login", "logout", "sell", "addcredit"}}
+        {"AA", {"login", "logout", "create", "delete", "sell", "buy", "refund", "addcredit"}},
+        {"FS", {"login", "logout", "sell", "buy", "addcredit"}},
+        {"BS", {"login", "logout", "buy", "addcredit"}},
+        {"SS", {"login", "logout", "sell", "addcredit"}}
     };
 
 

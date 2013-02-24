@@ -9,16 +9,16 @@
 
 Exception::Exception(exception_codes code)
 {
-	this->code = code;
+    this->code = code;
 }
 
 string Exception::mesg()
 {
-	return code_msg_map[code];
+    return code_msg_map[code];
 }
 
 Exception::~Exception()
 {
-	// TODO Auto-generated destructor stub
+    // TODO Auto-generated destructor stub
 }
 

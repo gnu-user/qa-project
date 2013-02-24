@@ -2,10 +2,10 @@
 
 Ticket::Ticket(string event, string seller, int volume, double price)
 {
-	this->event = event;
-	this->seller = seller;
-	this->volume = volume;
-	this->price = price;
+    this->event = event;
+    this->seller = seller;
+    this->volume = volume;
+    this->price = price;
 }
 
 string Ticket::get_event()
