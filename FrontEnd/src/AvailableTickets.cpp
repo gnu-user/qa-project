@@ -36,17 +36,42 @@ AvailableTickets::AvailableTickets(string atf_file)
 
 bool AvailableTickets::has_event(string event)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    for (vector<Ticket>::iterator it = this->tickets.begin(); it != this->tickets.end(); ++it)
+    {
+        if (it->get_event().compare(event) == 0)
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 bool AvailableTickets::has_seller(string username)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    for (vector<Ticket>::iterator it = this->tickets.begin(); it != this->tickets.end(); ++it)
+    {
+        if (it->get_seller().compare(username) == 0)
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 Ticket AvailableTickets::get_ticket(string event, string username)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    for (vector<Ticket>::iterator it = this->tickets.begin(); it != this->tickets.end(); ++it)
+    {
+        if (   it->get_event().compare(event) == 0
+            && it->get_seller().compare(username) == 0)
+        {
+            return *it;
+        }
+    }
+
+    throw Exception(TICKET_NOT_FOUND);
 }
 
 void AvailableTickets::display_tickets()
