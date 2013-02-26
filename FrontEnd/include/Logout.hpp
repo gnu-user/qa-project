@@ -7,6 +7,8 @@
 
 class Logout : Transaction
 {
+protected:
+    virtual void save_transaction();
 
 public:
     Logout(User current_user);

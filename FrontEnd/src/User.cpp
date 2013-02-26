@@ -47,6 +47,12 @@ void User::login()
     this->login_status = true;
 }
 
+void User::logout()
+{
+    this->login_status = false;
+}
+
+
 bool User::has_permissions(string transaction)
 {
     vector<string> user_perms = this->permissions[this->type];

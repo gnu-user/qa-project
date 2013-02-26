@@ -40,6 +40,8 @@ public:
    
     void login();
 
+    void logout();
+
     bool has_permissions(string transaction);
 };
 #endif /* USER_HPP_ */

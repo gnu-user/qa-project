@@ -3,6 +3,7 @@
 #include "../include/Exception.hpp"
 #include "../include/TransactionCodes.hpp"
 #include "../include/Login.hpp"
+#include "../include/Logout.hpp"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -108,6 +109,8 @@ int main(int argc, char** argv)
               }
               case _logout:
               {
+                  Logout logout = Logout(current_user);
+                  current_user.logout();
                   cout << "Logout complete." << endl;
                   break;
               }
