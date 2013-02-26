@@ -1,6 +1,11 @@
 #include "../include/User.hpp"
 #include <algorithm>
 
+User::User()
+{
+    this->login_status = false;
+}
+
 User::User(string username, string type, double credit)
 {
     /* Throws an error if invalid user type specified */
@@ -9,6 +14,7 @@ User::User(string username, string type, double credit)
         this->username = username;
         this->type = type;
         this->credit = credit;
+        this->login_status = false;
     }
     else
     {
@@ -29,6 +35,16 @@ string User::get_type()
 double User::get_credit()
 {
     return this->credit;
+}
+
+bool User::get_status()
+{
+    return this->login_status;
+}
+
+void User::login()
+{
+    this->login_status = true;
 }
 
 bool User::has_permissions(string transaction)

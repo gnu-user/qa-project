@@ -15,6 +15,7 @@ private:
     string username;
     string type;
     double credit;
+    bool login_status;  // Login status, true if user logged in, default is false
     map<string, vector<string>> permissions {
         {"AA", {"login", "logout", "create", "delete", "sell", "buy", "refund", "addcredit"}},
         {"FS", {"login", "logout", "sell", "buy", "addcredit"}},
@@ -24,6 +25,9 @@ private:
 
 
 public:
+    /* Default empty constructor, used only to simplify declaration of User variable */
+    User();
+
     User(string username, string type, double credit);
    
     string get_username();
@@ -31,7 +35,11 @@ public:
     string get_type();
    
     double get_credit();
+
+    bool get_status();
    
+    void login();
+
     bool has_permissions(string transaction);
 };
 #endif /* USER_HPP_ */
