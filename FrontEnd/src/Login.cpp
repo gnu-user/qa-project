@@ -16,7 +16,7 @@ User Login::process_username(string input, CurrentUserAccounts user_account)
         /* Attempt to validate the username, throw exception if invalid */
         if (Validate::username(input))
         {
-            /* If the username is valid, set the user and save transaction */
+            /* If the username exists, set the user and save transaction */
             if (user_account.has_user(input))
             {
                 this->user = user_account.get_user(input);

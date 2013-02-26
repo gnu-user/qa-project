@@ -2,6 +2,7 @@
 #include "../include/AvailableTickets.hpp"
 #include "../include/Exception.hpp"
 #include "../include/TransactionCodes.hpp"
+#include "../include/Login.hpp"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -14,7 +15,7 @@ int main(int argc, char** argv)
     string input;
     auto_ptr<CurrentUserAccounts> ptr_cua;
     auto_ptr<AvailableTickets> ptr_atf;
-
+    User current_user = User();    // Empty User rather than smart pointers
 
     /* Verify the correct number of arguments provided */
     if (argc < 4)
@@ -23,7 +24,7 @@ int main(int argc, char** argv)
              << "[daily transaction file]" << endl
              << "Example: ./FrontEnd user_accounts avail_tickets daily_transaction" << endl;
 
-        return EXIT_FAILURE;
+        //return EXIT_FAILURE;
     }
 
     /* Start the front end, read the input files and parse the contents */
@@ -61,6 +62,12 @@ int main(int argc, char** argv)
 
         ptr_atf->display_tickets();
 
+        /* Check that a ticket exists */
+        Ticket ticket = ptr_atf->get_ticket("The Godfather III", "seller");
+
+        cout << ticket.get_event() << " " << ticket.get_seller() << endl;
+
+
         // Make a new user
         User derp = User("derp", "BS", 0.0);
         cout << derp.get_username() << " " << derp.get_type() << " " << derp.get_credit() << endl;
@@ -70,12 +77,12 @@ int main(int argc, char** argv)
             cout << "HAS PERM" << endl;
         }
 
-        Ticket ticket = Ticket("Test", "tester", 10, 5.00);
+        ticket = Ticket("Test", "tester", 10, 5.00);
     }
     catch (Exception& e)
     {
         cerr << e.mesg() << endl;
-        return EXIT_FAILURE;
+        //return EXIT_FAILURE;
     }
 
     while(true)
@@ -89,9 +96,14 @@ int main(int argc, char** argv)
             {
               case _login:
               {
-                  throw Exception(ALREADY_LOGIN);
+                  Login login = Login(current_user);
+
                   cout << "Enter username: ";
                   getline(cin, input);
+
+                  /* Attempt to login with username provided */
+                  current_user = login.process_username(input, *ptr_cua);
+                  current_user.login();
                   break;
               }
               case _logout:
