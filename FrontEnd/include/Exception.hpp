@@ -30,6 +30,7 @@ enum exception_codes {
     INVALID_USER_EXISTS,
     SELLER_IS_SELF,           // Trying to purchase tickets from yourself
     TITLE_NOT_FOUND,          // Event title not found
+    TICKET_NOT_FOUND,         // Ticket not found for sale by seller specified
     INVALID_TITLE_LENGTH,
     INVALID_TITLE_RESERVED,
     INVALID_SALE_PRICE,       // Ticket sale price, must be dollars
@@ -63,18 +64,19 @@ private:
         {INVALID_USER, "Invalid username."},
         {UNKNOWN_USER, "Invalid username, username does not exist."},
         {INVALID_USER_TYPE, "Invalid user type, type specified does not exist."},
-        {INVALID_USER_LENGTH, " Invalid username, username cannot exceed 15 characters."},
+        {INVALID_USER_LENGTH, "Invalid username, username cannot exceed 15 characters."},
         {INVALID_USER_RESERVED, "Invalid username, username cannot be \"END\"."},
         {INVALID_USER_EXISTS, "Invalid username, user already exists."},
         {SELLER_IS_SELF, "Invalid username, you cannot purchase tickets from yourself."},
         {TITLE_NOT_FOUND, "Invalid event title, event title does not exist."},
+        {TICKET_NOT_FOUND, "Tickets not found, specified seller is not selling tickets to that event."},
         {INVALID_TITLE_LENGTH, "Invalid event title, event title cannot exceed 19 characters."},
         {INVALID_TITLE_RESERVED, "Invalid event title, event title cannot contain the word \"END\"."},
         {INVALID_SALE_PRICE, "Invalid sale price, amount must be in dollars (e.g. 10.00)."},
         {INVALID_CREDIT_AMOUNT, "Invalid credit value, amount must be in dollars (e.g. 10.00)."},
         {SALE_PRICE_NEGATIVE, "Invalid sale price, amount cannot be less than 0.00."},
         {CREDIT_AMOUNT_NEGATIVE, "Invalid credit value, amount cannot be less than 0.00."},
-        {CREDIT_AMOUNT_OVERFLOW, " Invalid credit value, amount cannot exceed 1000.00."},
+        {CREDIT_AMOUNT_OVERFLOW, "Invalid credit value, amount cannot exceed 1000.00."},
         {SALE_PRICE_OVERFLOW, "Invalid sale price, amount cannot exceed 999.99." },
         {USER_CREDIT_OVERFLOW, "Invalid credit amount, user credit cannot exceed 999999.99."},
         {INVALID_TICKET_VOLUME, "Invalid number of tickets, volume must be an integer value (e.g. 25)."},
