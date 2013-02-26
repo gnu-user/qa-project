@@ -11,10 +11,12 @@ using namespace std;
 
 class Login : Transaction
 {
+protected:
+    virtual void save_transaction();
 
 public:
     Login(User current_user);
    
-    User* process_username(string input, CurrentUserAccounts user_account);
+    User process_username(string input, CurrentUserAccounts user_account);
 };
 #endif /* LOGIN_HPP_ */

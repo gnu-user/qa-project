@@ -11,7 +11,7 @@ class Transaction
 {
 
 protected:
-    User* user;
+    User user;
     string code;
     string transaction;
    
