@@ -1,11 +1,28 @@
 #include "../include/Validate.hpp"
+#include "Poco/String.h"
 #include "Poco/RegularExpression.h"
 
+using Poco::toLower;
 using Poco::RegularExpression;
 
 bool Validate::username(string username)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    /* Verify the username length */
+    if (username.length() > 15)
+    {
+        throw Exception(INVALID_USER_LENGTH);
+    }
+
+    /* Verify the username is not END */
+    if (toLower(username).compare("end") == 0)
+    {
+        throw Exception(INVALID_USER_RESERVED);
+    }
+
+    /* Verify the username matches the format */
+    RegularExpression re("^[A-Za-z0-9_]{1,15}$");
+
+    return re.match(username);
 }
 
 bool Validate::event(string event)
