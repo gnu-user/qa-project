@@ -1,6 +1,91 @@
 #include "../include/Transaction.hpp"
+#include "Poco/String.h"
+#include "Poco/NumberFormatter.h"
+
+using Poco::replace;
+using Poco::NumberFormatter;
 
 string Transaction::get_transaction()
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    return this->transaction;
+}
+
+/**
+ * Formats the transaction as follows:
+ *
+ * XX_UUUUUUUUUUUUUUU_TT_CCCCCCCCC
+ *
+ */
+string Transaction::format(string code, string username, string type, double credit)
+{
+    string transaction;
+
+    /* Format the XX_ */
+    transaction = code + "_";
+
+    /* Format the UUUUUUUUUUUUUUU_ */
+    transaction += string(16, '_').replace(0, username.length(), username);
+
+    /* Format the TT_ */
+    transaction += type + "_";
+
+    /* Format the credit */
+    transaction += replace(NumberFormatter::format(credit, 9, 2), " ", "0");
+
+    return transaction;
+}
+
+/**
+ * This is only used to format a refund transaction, it
+ * formats the transaction as follows:
+ *
+ * XX_UUUUUUUUUUUUUUU_SSSSSSSSSSSSSSS_CCCCCCCCC
+ *
+ */
+string Transaction::format(string code, string username, string type, string seller, double refund)
+{
+    string transaction;
+
+    /* Format the XX_ */
+    transaction = code + "_";
+
+    /* Format the UUUUUUUUUUUUUUU_ */
+    transaction += string(16, '_').replace(0, username.length(), username);
+
+    /* Format the SSSSSSSSSSSSSSS_ */
+    transaction += string(16, '_').replace(0, seller.length(), seller);
+
+    /* Format the refund amount */
+    transaction += replace(NumberFormatter::format(refund, 9, 2), " ", "0");
+
+    return transaction;
+}
+
+/**
+ * This is used to format buy and sell transactions, it formats
+ * the transaction as follows:
+ *
+ * XX_EEEEEEEEEEEEEEEEEEE_SSSSSSSSSSSSSSS_TTT_PPPPPP
+ *
+ */
+string Transaction::format(string code, string event, string seller, int volume, double price)
+{
+    string transaction;
+
+    /* Format the XX_ */
+    transaction = code + "_";
+
+    /* Format the EEEEEEEEEEEEEEEEEEE_ */
+    transaction += replace((string(20, '_').replace(0, event.length(), event)), " ", "_");
+
+    /* Format the SSSSSSSSSSSSSSS_ */
+    transaction += string(16, '_').replace(0, seller.length(), seller);
+
+    /* Format the TTT_ */
+    transaction += NumberFormatter::format0(volume, 3) + "_";
+
+    /* Format the ticket price */
+    transaction += replace(NumberFormatter::format(price, 6, 2), " ", "0");
+
+    return transaction;
 }
