@@ -94,5 +94,21 @@ bool Validate::dollars(string amount, double& converted)
 
 bool Validate::volume(string amount, int& converted)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    /* Verify the amount provided can be converted to int */
+    try
+    {
+        converted = NumberParser::parse(amount);
+    }
+    catch (SyntaxException& s)
+    {
+        throw Exception(INVALID_TICKET_VOLUME);
+    }
+
+    /* Verify the amount is not negative */
+    if (converted < 0)
+    {
+        throw Exception(TICKET_VOLUME_NEGATIVE);
+    }
+
+    return true;
 }
