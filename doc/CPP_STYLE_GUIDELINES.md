@@ -55,7 +55,7 @@ Code Formatting
 
 4.  All code blocks/curly braces MUST ALWAYS be on the next line, no exceptions!
 
-        class Myclass
+        class MyClass
         {
             ...
         }
@@ -196,9 +196,9 @@ Code Formatting
 
         MyClass
         {
-          private:            // 2 space indent
-            variable;         // 4 space indent
+        private:             // 2 space indent
+            variable;        // 4 space indent
 
-          public:             // 2 space indent
-            get_variable();   // 4 space indent
+        public:              // 2 space indent
+            get_variable();  // 4 space indent
         }
