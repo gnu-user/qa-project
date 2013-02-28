@@ -22,6 +22,7 @@ enum exception_codes {
     CUA_NOT_FOUND,            // Current user accounts file not found
     CORRUPT_ATF,              // Available tickets file corrupted
     CORRUPT_CUA,              // Current user accounts file corrupted
+    DTF_WRITE_ERROR,          // Error writing the daily transaction file
     INVALID_USER,
     UNKNOWN_USER,
     INVALID_USER_TYPE,        // Invalid user type
@@ -52,7 +53,7 @@ enum exception_codes {
 class Exception
 {
 private:
-    map<exception_codes, string> code_msg_map {
+    map<exception_codes, string> code_msg {
         {ALREADY_LOGIN, "Invalid transaction, you are already logged in."},
         {DELETE_SELF, "Invalid transaction, you can not delete yourself."},
         {INVALID_PRIV, "Invalid transaction, you do not have the necessary privileges."},
@@ -61,6 +62,7 @@ private:
         {CUA_NOT_FOUND, "Current user accounts file not found, check arguments provided."},
         {CORRUPT_ATF, "An error occurred reading the available tickets file, data corrupted."},
         {CORRUPT_CUA, "An error occurred reading the current user account file, data corrupted."},
+        {DTF_WRITE_ERROR, "An error occurred writing the daily transaction file."},
         {INVALID_USER, "Invalid username."},
         {UNKNOWN_USER, "Invalid username, username does not exist."},
         {INVALID_USER_TYPE, "Invalid user type, type specified does not exist."},

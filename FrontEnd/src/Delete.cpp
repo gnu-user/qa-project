@@ -14,8 +14,3 @@ void Delete::save_transaction()
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
-
-void Delete::save_transaction()
-{
-    throw Exception(NOT_YET_IMPLEMENTED);
-}

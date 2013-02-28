@@ -41,7 +41,7 @@ AvailableTickets::AvailableTickets(string atf_file)
 
 bool AvailableTickets::has_event(string event)
 {
-    for (vector<Ticket>::iterator it = this->tickets.begin(); it != this->tickets.end(); ++it)
+    for (vector<Ticket>::iterator it = tickets.begin(); it != tickets.end(); ++it)
     {
         if (it->get_event().compare(event) == 0)
         {
@@ -54,7 +54,7 @@ bool AvailableTickets::has_event(string event)
 
 bool AvailableTickets::has_seller(string username)
 {
-    for (vector<Ticket>::iterator it = this->tickets.begin(); it != this->tickets.end(); ++it)
+    for (vector<Ticket>::iterator it = tickets.begin(); it != tickets.end(); ++it)
     {
         if (it->get_seller().compare(username) == 0)
         {
@@ -67,7 +67,7 @@ bool AvailableTickets::has_seller(string username)
 
 Ticket AvailableTickets::get_ticket(string event, string username)
 {
-    for (vector<Ticket>::iterator it = this->tickets.begin(); it != this->tickets.end(); ++it)
+    for (vector<Ticket>::iterator it = tickets.begin(); it != tickets.end(); ++it)
     {
         if (   it->get_event().compare(event) == 0
             && it->get_seller().compare(username) == 0)
@@ -81,17 +81,17 @@ Ticket AvailableTickets::get_ticket(string event, string username)
 
 void AvailableTickets::display_tickets()
 {
-    for (vector<Ticket>::iterator it = this->tickets.begin(); it != this->tickets.end(); ++it)
+    for (vector<Ticket>::iterator it = tickets.begin(); it != tickets.end(); ++it)
     {
-        cout << it->get_event() << " " << it->get_seller() << " " << it->get_volume() << " "
-             << it->get_price() << endl;
+        cout << it->get_event()  << " " << it->get_seller() << " "
+             << it->get_volume() << " " << it->get_price() << endl;
     }
 }
 
 void AvailableTickets::parse()
 {
     /* Read the contents of the current user accounts and store each user */
-    FileInputStream fis(this->atf_file);
+    FileInputStream fis(atf_file);
 
     if (fis.good())
     {

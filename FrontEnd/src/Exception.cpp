@@ -14,7 +14,7 @@ Exception::Exception(exception_codes code)
 
 string Exception::mesg()
 {
-    return code_msg_map[code];
+    return code_msg[code];
 }
 
 Exception::~Exception()

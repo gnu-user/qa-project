@@ -10,20 +10,20 @@ Ticket::Ticket(string event, string seller, int volume, double price)
 
 string Ticket::get_event()
 {
-    return this->event;
+    return event;
 }
 
 string Ticket::get_seller()
 {
-    return this->seller;
+    return seller;
 }
 
 int Ticket::get_volume()
 {
-    return this->volume;
+    return volume;
 }
 
 double Ticket::get_price()
 {
-    return this->price;
+    return price;
 }
