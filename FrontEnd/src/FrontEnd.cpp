@@ -14,8 +14,8 @@ using namespace std;
 int main(int argc, char** argv)
 {
     string input;
-    auto_ptr<CurrentUserAccounts> ptr_cua;
-    auto_ptr<AvailableTickets> ptr_atf;
+    CurrentUserAccounts current_accounts;
+    AvailableTickets available_tickets;
     User current_user = User();    // Empty User rather than smart pointers
 
     /* Verify the correct number of arguments provided */
@@ -33,38 +33,38 @@ int main(int argc, char** argv)
     {
         cout << "Welcome." << endl;
 
-        ptr_cua.reset(new CurrentUserAccounts(argv[1]));
+        current_accounts = CurrentUserAccounts(argv[1]);
         cout << "Current user accounts file read successfully." << endl;
 
         /* Display each user */
-        ptr_cua->display_users();
+        current_accounts.display_users();
 
         /* Check if user exists */
-        if (ptr_cua->has_user("buyer"))
+        if (current_accounts.has_user("buyer"))
         {
             cout << "HAS buyer" << endl;
         }
-        if (ptr_cua->has_user("administrator"))
+        if (current_accounts.has_user("administrator"))
         {
             cout << "HAS administrator" << endl;
         }
-        if (!ptr_cua->has_user("admin"))
+        if (!current_accounts.has_user("admin"))
         {
             cout << "DOES NOT HAVE admin" << endl;
         }
 
-        User new_user = ptr_cua->get_user("administrator");
+        User new_user = current_accounts.get_user("administrator");
         cout << new_user.get_username() << endl;
 
 
         /* Available tickets file tests */
-        ptr_atf.reset(new AvailableTickets(argv[2]));
+        available_tickets = AvailableTickets(argv[2]);
         cout << "Available tickets file read successfully." << endl;
 
-        ptr_atf->display_tickets();
+        available_tickets.display_tickets();
 
         /* Check that a ticket exists */
-        Ticket ticket = ptr_atf->get_ticket("The Godfather III", "seller");
+        Ticket ticket = available_tickets.get_ticket("The Godfather III", "seller");
 
         cout << ticket.get_event() << " " << ticket.get_seller() << endl;
 
@@ -103,7 +103,7 @@ int main(int argc, char** argv)
                   getline(cin, input);
 
                   /* Attempt to login with username provided */
-                  current_user = login.process_username(input, *ptr_cua);
+                  current_user = login.process_username(input, current_accounts);
                   current_user.login();
                   break;
               }
