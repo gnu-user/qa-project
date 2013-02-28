@@ -12,7 +12,7 @@ class Validate
 public:
     static bool username(string username);
    
-    static bool event(string event);
+    static bool title(string event);
    
     static bool cua_entry(string entry);
    
