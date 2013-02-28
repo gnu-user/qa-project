@@ -6,6 +6,7 @@
 #include "CurrentUserAccounts.hpp"
 #include "Exception.hpp"
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -13,7 +14,12 @@ class Create : public Transaction
 {
 
 private:
-    string types[];
+    map<string, string> account_types = {
+            {"admin", "AA"},
+            {"full-standard", "FS"},
+            {"buy-standard", "BS"},
+            {"sell-standard", "SS"}
+    };
     string new_username;
 
 protected:
