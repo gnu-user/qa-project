@@ -16,6 +16,9 @@ private:
     string types[];
     string new_username;
 
+protected:
+    virtual void save_transaction();
+
 public:
     Create(User current_user);
    

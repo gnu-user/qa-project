@@ -18,6 +18,9 @@ private:
     double price;
     int volume;
 
+protected:
+    virtual void save_transaction();
+
 public:
     Sell(User current_user);
    

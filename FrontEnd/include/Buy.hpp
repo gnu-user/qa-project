@@ -18,6 +18,9 @@ private:
     int volume;
     string seller;
 
+protected:
+    virtual void save_transaction();
+
 public:
     Buy(User current_user);
    

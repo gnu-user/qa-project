@@ -43,5 +43,6 @@ User Login::process_username(string input, CurrentUserAccounts user_account)
 
 void Login::save_transaction()
 {
+    // TODO The login transaction is not recorded to the DTF, add an exception for this
     throw Exception(NOT_YET_IMPLEMENTED);
 }

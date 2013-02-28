@@ -19,3 +19,8 @@ void Sell::process_volume(string input)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
+
+void Sell::save_transaction()
+{
+    throw Exception(NOT_YET_IMPLEMENTED);
+}

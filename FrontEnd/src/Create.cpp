@@ -14,3 +14,8 @@ void Create::process_type(string input)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
+
+void Create::save_transaction()
+{
+    throw Exception(NOT_YET_IMPLEMENTED);
+}
