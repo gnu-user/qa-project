@@ -34,9 +34,9 @@ public:
     /**
      * process_username Validates and processes a username for
      * deletion.
-     * @param input The username to delete.
+     * @param username The username to delete.
      * @param user_accounts A handle to the current user accounts.
      */
-    void process_username(string input, CurrentUserAccounts user_accounts);
+    void process_username(string username, CurrentUserAccounts user_accounts);
 };
 #endif /* DELETE_HPP_ */

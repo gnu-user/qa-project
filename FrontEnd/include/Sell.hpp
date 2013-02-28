@@ -24,10 +24,10 @@ protected:
 public:
     Sell(User current_user);
    
-    void process_title(string input);
+    void process_title(string title);
    
-    void process_price(string input);
+    void process_price(double price);
    
-    void process_volume(string input);
+    void process_volume(int volume);
 };
 #endif /* SELL_HPP_ */

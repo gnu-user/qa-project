@@ -43,31 +43,31 @@ public:
     /**
      * process_title Validates and processes the transaction based on the
      * event title specified.
-     * @param input The event title for the tickets being purchased.
+     * @param title The event title for the tickets being purchased.
      * @param available_tickets A handle to the available tickets.
      */
-    void process_title(string input, AvailableTickets available_tickets);
+    void process_title(string title, AvailableTickets available_tickets);
    
     /**
      * process_volume Validates and processes the volume of tickets being
      * purchased.
-     * @param input The number of tickets being purchased.
+     * @param volume The number of tickets being purchased.
      */
-    void process_volume(string input);
+    void process_volume(int volume);
    
     /**
      * process_seller Validates and processes the specified seller for the
      * transaction.
-     * @param input The seller's name.
+     * @param username The seller's username.
      * @param available_tickets A handle to the available tickets.
      */
-    void process_seller(string input, AvailableTickets available_tickets);
+    void process_seller(string username, AvailableTickets available_tickets);
    
     /**
      * process_confirmation Validates and processes the confirmation input
      * for whether the user accepts the transaction.
-     * @param input The confirmation, either 'yes' or 'no'.
+     * @param confirm The confirmation, either 'yes' or 'no'.
      */
-    void process_confirmation(string input);
+    void process_confirmation(string confirm);
 };
 #endif /* BUY_HPP_ */

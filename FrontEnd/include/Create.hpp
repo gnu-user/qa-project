@@ -45,16 +45,16 @@ public:
     /**
      * process_username Validates and processes the username entered for
      * creation.
-     * @param input The username to create.
+     * @param username The username to create.
      * @param user_account A handle to the current user accounts.
      */
-    void process_username(string input, CurrentUserAccounts user_account);
+    void process_username(string username, CurrentUserAccounts user_account);
    
     /**
      * process_type Validates and processes the type of user account
      * specified for creation.
-     * @param input The type of user account to create.
+     * @param type The type of user account to create.
      */
-    void process_type(string input);
+    void process_type(string type);
 };
 #endif /* CREATE_HPP_ */

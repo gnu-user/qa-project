@@ -9,18 +9,17 @@ Login::Login(User current_user)
    }
 }
 
-User Login::process_username(string input, CurrentUserAccounts user_account)
+User Login::process_username(string username, CurrentUserAccounts user_account)
 {
     try
     {
         /* Attempt to validate the username, throw exception if invalid */
-        if (Validate::username(input))
+        if (Validate::username(username))
         {
             /* If the username exists, set the user and save transaction */
-            if (user_account.has_user(input))
+            if (user_account.has_user(username))
             {
-                this->user = user_account.get_user(input);
-                //save_transaction();
+                this->user = user_account.get_user(username);
             }
             else
             {

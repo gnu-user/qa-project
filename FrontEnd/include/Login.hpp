@@ -17,6 +17,6 @@ protected:
 public:
     Login(User current_user);
    
-    User process_username(string input, CurrentUserAccounts user_account);
+    User process_username(string username, CurrentUserAccounts user_account);
 };
 #endif /* LOGIN_HPP_ */

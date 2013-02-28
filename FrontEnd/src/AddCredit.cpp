@@ -5,12 +5,12 @@ AddCredit::AddCredit(User current_user)
     throw Exception(NOT_YET_IMPLEMENTED);
 }
 
-void AddCredit::process_username(string input, CurrentUserAccounts user_accounts)
+void AddCredit::process_username(string username, CurrentUserAccounts user_accounts)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
 
-void AddCredit::process_credit(string input)
+void AddCredit::process_credit(double credit)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }

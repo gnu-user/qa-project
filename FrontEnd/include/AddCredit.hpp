@@ -36,15 +36,15 @@ public:
 
    /**
     * process_username Determines the validity of the username specified, and processes that component of the transaction.
-    * @param input The username specified.
+    * @param username The username specified.
     * @param user_accounts Provides a handle to the current user accounts object.
     */
-    void process_username(string input, CurrentUserAccounts user_accounts);
+    void process_username(string username, CurrentUserAccounts user_accounts);
 
    /**
     * process_credit Performs the addition of the credit to the previously specified user account.
-    * @param input The actual amount of credit to add.
+    * @param credit The actual amount of credit to add.
     */
-    void process_credit(string input);
+    void process_credit(double credit);
 };
 #endif /* ADDCREDIT_HPP_ */

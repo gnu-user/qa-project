@@ -19,17 +19,17 @@ Create::Create(User current_user)
     this->code = "01";
 }
 
-void Create::process_username(string input, CurrentUserAccounts user_account)
+void Create::process_username(string username, CurrentUserAccounts user_account)
 {
     try
     {
         /* Attempt to validate the username, throw exception if invalid */
-        if (Validate::username(input))
+        if (Validate::username(username))
         {
             /* Accept the new username if it is unique */
-            if (! user_account.has_user(input))
+            if (! user_account.has_user(username))
             {
-                this->new_username = input;
+                this->new_username = username;
             }
             else
             {
@@ -48,12 +48,12 @@ void Create::process_username(string input, CurrentUserAccounts user_account)
     }
 }
 
-void Create::process_type(string input)
+void Create::process_type(string type)
 {
     /* If the user type matches one of the types supported, create user */
-    if (account_types.find(input) != account_types.end())
+    if (account_types.find(type) != account_types.end())
     {
-        this->user = User(new_username, account_types[input], 0.0);
+        this->user = User(new_username, account_types[type], 0.0);
         save_transaction();
     }
     else
