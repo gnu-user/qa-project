@@ -1,10 +1,3 @@
-/*
- * Exception.hpp
- *
- *  Created on: Feb 22, 2013
- *      Author: jon
- */
-
 #ifndef EXCEPTION_HPP_
 #define EXCEPTION_HPP_
 
@@ -13,27 +6,30 @@
 
 using namespace std;
 
+/**
+ * Exception codes used for various error messages throughout the program.
+ */
 enum exception_codes {
-    ALREADY_LOGIN,
-    DELETE_SELF,
-    INVALID_PRIV,
-    MUST_LOGIN,
+    ALREADY_LOGIN,         //!< ALREADY_LOGIN
+    DELETE_SELF,           //!< DELETE_SELF
+    INVALID_PRIV,          //!< INVALID_PRIV
+    MUST_LOGIN,            //!< MUST_LOGIN
     ATF_NOT_FOUND,            // Available tickets file not found
     CUA_NOT_FOUND,            // Current user accounts file not found
     CORRUPT_ATF,              // Available tickets file corrupted
     CORRUPT_CUA,              // Current user accounts file corrupted
     DTF_WRITE_ERROR,          // Error writing the daily transaction file
-    INVALID_USER,
-    UNKNOWN_USER,
+    INVALID_USER,          //!< INVALID_USER
+    UNKNOWN_USER,          //!< UNKNOWN_USER
     INVALID_USER_TYPE,        // Invalid user type
-    INVALID_USER_LENGTH,
+    INVALID_USER_LENGTH,   //!< INVALID_USER_LENGTH
     INVALID_USER_RESERVED,    // Exception for a user with reserved word, like "END"
-    INVALID_USER_EXISTS,
+    INVALID_USER_EXISTS,   //!< INVALID_USER_EXISTS
     SELLER_IS_SELF,           // Trying to purchase tickets from yourself
     TITLE_NOT_FOUND,          // Event title not found
     TICKET_NOT_FOUND,         // Ticket not found for sale by seller specified
-    INVALID_TITLE_LENGTH,
-    INVALID_TITLE_RESERVED,
+    INVALID_TITLE_LENGTH,  //!< INVALID_TITLE_LENGTH
+    INVALID_TITLE_RESERVED,//!< INVALID_TITLE_RESERVED
     INVALID_SALE_PRICE,       // Ticket sale price, must be dollars
     INVALID_CREDIT_AMOUNT,    // Credit amount must be in dollars
     SALE_PRICE_NEGATIVE,      // Ticket sale price, must be positive
@@ -50,9 +46,15 @@ enum exception_codes {
     NOT_YET_IMPLEMENTED       // Exception for anyting not implemented yet
 };
 
+/**
+ *
+ */
 class Exception
 {
 private:
+	/**
+	 *
+	 */
     map<exception_codes, string> code_msg {
         {ALREADY_LOGIN, "Invalid transaction, you are already logged in."},
         {DELETE_SELF, "Invalid transaction, you can not delete yourself."},
@@ -92,8 +94,21 @@ private:
     exception_codes code;
 
 public:
+    /**
+     *
+     * @param code
+     */
     Exception(exception_codes code);
+
+    /**
+     *
+     * @return
+     */
     string mesg();
+
+    /**
+     *
+     */
     virtual ~Exception();
 };
 
