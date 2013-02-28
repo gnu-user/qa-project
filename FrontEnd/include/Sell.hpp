@@ -26,7 +26,7 @@ public:
    
     void process_title(string title);
    
-    void process_price(double price);
+    void process_price(string price);
    
     void process_volume(int volume);
 };
