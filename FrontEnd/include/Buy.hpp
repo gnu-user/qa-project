@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class Buy : Transaction
+class Buy : public Transaction
 {
 private:
     Ticket* ticket;

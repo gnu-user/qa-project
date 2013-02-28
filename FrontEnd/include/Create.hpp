@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Create : Transaction
+class Create : public Transaction
 {
 
 private:

@@ -5,7 +5,7 @@
 #include "Exception.hpp"
 #include "User.hpp"
 
-class Logout : Transaction
+class Logout : public Transaction
 {
 protected:
     virtual void save_transaction();

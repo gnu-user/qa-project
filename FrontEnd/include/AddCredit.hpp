@@ -14,7 +14,7 @@ using namespace std;
  *
  * Used for the AddCredit transaction functions and attributes.
  */
-class AddCredit : Transaction
+class AddCredit : public Transaction
 {
 private:
 	/**

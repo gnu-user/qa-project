@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Login : Transaction
+class Login : public Transaction
 {
 protected:
     virtual void save_transaction();

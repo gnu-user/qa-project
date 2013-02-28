@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class Delete
+class Delete : public Transaction
 {
 
 public:

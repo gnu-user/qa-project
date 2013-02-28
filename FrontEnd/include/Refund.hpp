@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class Refund : Transaction
+class Refund : public Transaction
 {
 
 private:
