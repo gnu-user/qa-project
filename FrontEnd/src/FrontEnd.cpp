@@ -1,13 +1,16 @@
 #include "../include/CurrentUserAccounts.hpp"
 #include "../include/AvailableTickets.hpp"
+#include "../include/DailyTransaction.hpp"
 #include "../include/Exception.hpp"
 #include "../include/TransactionCodes.hpp"
+#include "../include/Transaction.hpp"
 #include "../include/Login.hpp"
 #include "../include/Logout.hpp"
+#include "../include/Create.hpp"
+#include "../include/Delete.hpp"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-#include <memory>
 
 using namespace std;
 
@@ -16,6 +19,7 @@ int main(int argc, char** argv)
     string input;
     CurrentUserAccounts current_accounts;
     AvailableTickets available_tickets;
+    DailyTransaction daily_transactions;
     User current_user = User();    // Empty User rather than smart pointers
 
     /* Verify the correct number of arguments provided */
@@ -79,6 +83,9 @@ int main(int argc, char** argv)
         }
 
         ticket = Ticket("Test", "tester", 10, 5.00);
+
+        /* Set the filename for the daily transaction file */
+        daily_transactions = DailyTransaction(argv[3]);
     }
     catch (Exception& e)
     {
@@ -112,18 +119,41 @@ int main(int argc, char** argv)
                   Logout logout = Logout(current_user);
                   current_user.logout();
                   cout << "Logout complete." << endl;
+
+                  /* Write all session transactions to daily transaction file */
+                  daily_transactions.save((Transaction) logout);
+                  daily_transactions.write();
                   break;
               }
               case _create:
               {
+                  Create create = Create(current_user);
+
+                  /* Process the username */
                   cout << "Enter the username to create: ";
                   getline(cin, input);
+                  create.process_username(input, current_accounts);
+
+                  /* Process the user type, save transaction if successful */
+                  cout << "Enter the user type: ";
+                  getline(cin, input);
+                  create.process_type(input);
+
+                  daily_transactions.save((Transaction) create);
+                  cout << "User created successfully." << endl;
                   break;
               }
               case _delete:
               {
+                  Delete __delete = Delete(current_user);
+
+                  /* Process the username, save transaction if successful */
                   cout << "Enter the username to delete: ";
                   getline(cin, input);
+                  __delete.process_username(input, current_accounts);
+
+                  daily_transactions.save((Transaction) __delete);
+                  cout << "User deleted successfully as well as any outstanding tickets." << endl;
                   break;
               }
               case _sell:
