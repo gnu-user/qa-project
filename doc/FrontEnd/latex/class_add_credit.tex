@@ -1,0 +1,149 @@
+\hypertarget{class_add_credit}{\section{Add\-Credit Class Reference}
+\label{class_add_credit}\index{Add\-Credit@{Add\-Credit}}
+}
+
+
+\hyperlink{class_add_credit}{Add\-Credit} Class.  
+
+
+
+
+{\ttfamily \#include $<$Add\-Credit.\-hpp$>$}
+
+
+
+Inheritance diagram for Add\-Credit\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_add_credit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Add\-Credit\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_add_credit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_add_credit_a024a07a58635a4f70b71746666ddfbe0}{Add\-Credit} (\hyperlink{class_user}{User} current\-\_\-user)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_add_credit}{Add\-Credit} The constructor for the class, requires a user specified to add the credit to. \end{DoxyCompactList}\item 
+void \hyperlink{class_add_credit_a38a5999e3af1e44149e75f399e2f0846}{process\-\_\-credit} (double \hyperlink{class_add_credit_aa559c3686bb9d38c3335c16bbea07be8}{credit})
+\begin{DoxyCompactList}\small\item\em process\-\_\-credit Performs the addition of the credit to the previously specified user account. \end{DoxyCompactList}\item 
+void \hyperlink{class_add_credit_ac47c27071fa4977b64633b429f2d8bc0}{process\-\_\-username} (string \hyperlink{class_add_credit_aad02f271a6536fa078c6d1369ffdadc4}{username}, \hyperlink{class_current_user_accounts}{Current\-User\-Accounts} user\-\_\-accounts)
+\begin{DoxyCompactList}\small\item\em process\-\_\-username Determines the validity of the username specified, and processes that component of the transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_add_credit_a8e5996ad33eb07eef44f55deba6c298e}{save\-\_\-transaction} ()
+\begin{DoxyCompactList}\small\item\em save\-\_\-transaction Virtual function signature for class abstraction in C++. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_add_credit_aa559c3686bb9d38c3335c16bbea07be8}{credit}
+\item 
+string \hyperlink{class_add_credit_aad02f271a6536fa078c6d1369ffdadc4}{username}
+\begin{DoxyCompactList}\small\item\em username Stores the username used in the transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_add_credit}{Add\-Credit} Class. 
+
+Used for the \hyperlink{class_add_credit}{Add\-Credit} transaction functions and attributes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_add_credit_a024a07a58635a4f70b71746666ddfbe0}{\index{Add\-Credit@{Add\-Credit}!Add\-Credit@{Add\-Credit}}
+\index{Add\-Credit@{Add\-Credit}!AddCredit@{Add\-Credit}}
+\subsubsection[{Add\-Credit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Add\-Credit} (
+\begin{DoxyParamCaption}
+\item[{{\bf User}}]{current\-\_\-user}
+\end{DoxyParamCaption}
+)}}\label{class_add_credit_a024a07a58635a4f70b71746666ddfbe0}
+
+
+\hyperlink{class_add_credit}{Add\-Credit} The constructor for the class, requires a user specified to add the credit to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-user} & The user to add the credit specified to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_add_credit_a38a5999e3af1e44149e75f399e2f0846}{\index{Add\-Credit@{Add\-Credit}!process\-\_\-credit@{process\-\_\-credit}}
+\index{process\-\_\-credit@{process\-\_\-credit}!AddCredit@{Add\-Credit}}
+\subsubsection[{process\-\_\-credit}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-credit (
+\begin{DoxyParamCaption}
+\item[{double}]{credit}
+\end{DoxyParamCaption}
+)}}\label{class_add_credit_a38a5999e3af1e44149e75f399e2f0846}
+
+
+process\-\_\-credit Performs the addition of the credit to the previously specified user account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em credit} & The actual amount of credit to add. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_add_credit_ac47c27071fa4977b64633b429f2d8bc0}{\index{Add\-Credit@{Add\-Credit}!process\-\_\-username@{process\-\_\-username}}
+\index{process\-\_\-username@{process\-\_\-username}!AddCredit@{Add\-Credit}}
+\subsubsection[{process\-\_\-username}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-username (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{{\bf Current\-User\-Accounts}}]{user\-\_\-accounts}
+\end{DoxyParamCaption}
+)}}\label{class_add_credit_ac47c27071fa4977b64633b429f2d8bc0}
+
+
+process\-\_\-username Determines the validity of the username specified, and processes that component of the transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username specified. \\
+\hline
+{\em user\-\_\-accounts} & Provides a handle to the current user accounts object. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_add_credit_a8e5996ad33eb07eef44f55deba6c298e}{\index{Add\-Credit@{Add\-Credit}!save\-\_\-transaction@{save\-\_\-transaction}}
+\index{save\-\_\-transaction@{save\-\_\-transaction}!AddCredit@{Add\-Credit}}
+\subsubsection[{save\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}virtual void save\-\_\-transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_add_credit_a8e5996ad33eb07eef44f55deba6c298e}
+
+
+save\-\_\-transaction Virtual function signature for class abstraction in C++. 
+
+
+
+Reimplemented from \hyperlink{class_transaction_a8e5996ad33eb07eef44f55deba6c298e}{Transaction}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_add_credit_aa559c3686bb9d38c3335c16bbea07be8}{\index{Add\-Credit@{Add\-Credit}!credit@{credit}}
+\index{credit@{credit}!AddCredit@{Add\-Credit}}
+\subsubsection[{credit}]{\setlength{\rightskip}{0pt plus 5cm}double credit\hspace{0.3cm}{\ttfamily [private]}}}\label{class_add_credit_aa559c3686bb9d38c3335c16bbea07be8}
+\hypertarget{class_add_credit_aad02f271a6536fa078c6d1369ffdadc4}{\index{Add\-Credit@{Add\-Credit}!username@{username}}
+\index{username@{username}!AddCredit@{Add\-Credit}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}string username\hspace{0.3cm}{\ttfamily [private]}}}\label{class_add_credit_aad02f271a6536fa078c6d1369ffdadc4}
+
+
+username Stores the username used in the transaction. 
+
+credit Stores the amount of credit to add. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_add_credit_8hpp}{Add\-Credit.\-hpp}\end{DoxyCompactItemize}

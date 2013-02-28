@@ -1,0 +1,95 @@
+\hypertarget{class_exception}{\section{Exception Class Reference}
+\label{class_exception}\index{Exception@{Exception}}
+}
+
+
+\hyperlink{class_exception}{Exception} Class.  
+
+
+
+
+{\ttfamily \#include $<$Exception.\-hpp$>$}
+
+
+
+Collaboration diagram for Exception\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_exception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_exception_a8399a723aeecd6605a083ca6ad0ba5ee}{Exception} (\hyperlink{_exception_8hpp_a7913b361832b19772aa960f7caa626dd}{exception\-\_\-codes} \hyperlink{class_exception_a9aa58ee0368fb1bfbc2335e3f4114aee}{code})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_exception}{Exception} The constructor for the class, requires an exception code. \end{DoxyCompactList}\item 
+string \hyperlink{class_exception_a2fcdf81ddb36b0c8700d4983620976e7}{mesg} ()
+\begin{DoxyCompactList}\small\item\em mesg Outputs an exception message to the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_exception_8hpp_a7913b361832b19772aa960f7caa626dd}{exception\-\_\-codes} \hyperlink{class_exception_a9aa58ee0368fb1bfbc2335e3f4114aee}{code}
+\item 
+map$<$ \hyperlink{_exception_8hpp_a7913b361832b19772aa960f7caa626dd}{exception\-\_\-codes}, string $>$ \hyperlink{class_exception_a8dd5202c91cce5ecb10722d0473c8841}{code\-\_\-msg}
+\begin{DoxyCompactList}\small\item\em code\-\_\-msg Maps the transaction error codes to error messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_exception}{Exception} Class. 
+
+Used for all exceptions within every transaction, and provides functions for providing diagnostic output. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_exception_a8399a723aeecd6605a083ca6ad0ba5ee}{\index{Exception@{Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!Exception@{Exception}}
+\subsubsection[{Exception}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Exception} (
+\begin{DoxyParamCaption}
+\item[{{\bf exception\-\_\-codes}}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_exception_a8399a723aeecd6605a083ca6ad0ba5ee}
+
+
+\hyperlink{class_exception}{Exception} The constructor for the class, requires an exception code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The exception code to use. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_exception_a2fcdf81ddb36b0c8700d4983620976e7}{\index{Exception@{Exception}!mesg@{mesg}}
+\index{mesg@{mesg}!Exception@{Exception}}
+\subsubsection[{mesg}]{\setlength{\rightskip}{0pt plus 5cm}string mesg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_exception_a2fcdf81ddb36b0c8700d4983620976e7}
+
+
+mesg Outputs an exception message to the console. 
+
+\begin{DoxyReturn}{Returns}
+Returns an exception string. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_exception_a9aa58ee0368fb1bfbc2335e3f4114aee}{\index{Exception@{Exception}!code@{code}}
+\index{code@{code}!Exception@{Exception}}
+\subsubsection[{code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf exception\-\_\-codes} code\hspace{0.3cm}{\ttfamily [private]}}}\label{class_exception_a9aa58ee0368fb1bfbc2335e3f4114aee}
+\hypertarget{class_exception_a8dd5202c91cce5ecb10722d0473c8841}{\index{Exception@{Exception}!code\-\_\-msg@{code\-\_\-msg}}
+\index{code\-\_\-msg@{code\-\_\-msg}!Exception@{Exception}}
+\subsubsection[{code\-\_\-msg}]{\setlength{\rightskip}{0pt plus 5cm}map$<${\bf exception\-\_\-codes}, string$>$ code\-\_\-msg\hspace{0.3cm}{\ttfamily [private]}}}\label{class_exception_a8dd5202c91cce5ecb10722d0473c8841}
+
+
+code\-\_\-msg Maps the transaction error codes to error messages. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_exception_8hpp}{Exception.\-hpp}\end{DoxyCompactItemize}

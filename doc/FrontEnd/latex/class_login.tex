@@ -1,0 +1,114 @@
+\hypertarget{class_login}{\section{Login Class Reference}
+\label{class_login}\index{Login@{Login}}
+}
+
+
+\hyperlink{class_login}{Login} Class.  
+
+
+
+
+{\ttfamily \#include $<$Login.\-hpp$>$}
+
+
+
+Inheritance diagram for Login\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_login__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Login\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_login__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_login_a57323a0401a0d1d62b5fbd8da29d8df5}{Login} (\hyperlink{class_user}{User} current\-\_\-user)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_login}{Login} The constructor for the class, requires a handle to the current user logged in (if applicable). \end{DoxyCompactList}\item 
+\hyperlink{class_user}{User} \hyperlink{class_login_a1df0700504a3c9f7f9def1a9591f078e}{process\-\_\-username} (string username, \hyperlink{class_current_user_accounts}{Current\-User\-Accounts} user\-\_\-accounts)
+\begin{DoxyCompactList}\small\item\em process\-\_\-username Validates and processes the username specified to log in with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_login_a8e5996ad33eb07eef44f55deba6c298e}{save\-\_\-transaction} ()
+\begin{DoxyCompactList}\small\item\em save\-\_\-transaction Virtual function signature for class abstraction in C++. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_login}{Login} Class. 
+
+Used for the login transaction functions and attributes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_login_a57323a0401a0d1d62b5fbd8da29d8df5}{\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\subsubsection[{Login}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Login} (
+\begin{DoxyParamCaption}
+\item[{{\bf User}}]{current\-\_\-user}
+\end{DoxyParamCaption}
+)}}\label{class_login_a57323a0401a0d1d62b5fbd8da29d8df5}
+
+
+\hyperlink{class_login}{Login} The constructor for the class, requires a handle to the current user logged in (if applicable). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-user} & The current user logged in. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_login_a1df0700504a3c9f7f9def1a9591f078e}{\index{Login@{Login}!process\-\_\-username@{process\-\_\-username}}
+\index{process\-\_\-username@{process\-\_\-username}!Login@{Login}}
+\subsubsection[{process\-\_\-username}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} process\-\_\-username (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{{\bf Current\-User\-Accounts}}]{user\-\_\-accounts}
+\end{DoxyParamCaption}
+)}}\label{class_login_a1df0700504a3c9f7f9def1a9591f078e}
+
+
+process\-\_\-username Validates and processes the username specified to log in with. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username for the account to log in. \\
+\hline
+{\em user\-\_\-accounts} & A handle to the current user accounts. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a \hyperlink{class_user}{User} object for the user which was logged in, or null if an exception occurs. 
+\end{DoxyReturn}
+\hypertarget{class_login_a8e5996ad33eb07eef44f55deba6c298e}{\index{Login@{Login}!save\-\_\-transaction@{save\-\_\-transaction}}
+\index{save\-\_\-transaction@{save\-\_\-transaction}!Login@{Login}}
+\subsubsection[{save\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}virtual void save\-\_\-transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_login_a8e5996ad33eb07eef44f55deba6c298e}
+
+
+save\-\_\-transaction Virtual function signature for class abstraction in C++. 
+
+
+
+Reimplemented from \hyperlink{class_transaction_a8e5996ad33eb07eef44f55deba6c298e}{Transaction}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_login_8hpp}{Login.\-hpp}\end{DoxyCompactItemize}

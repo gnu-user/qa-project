@@ -1,0 +1,233 @@
+\hypertarget{class_user}{\section{User Class Reference}
+\label{class_user}\index{User@{User}}
+}
+
+
+\hyperlink{class_user}{User} Class.  
+
+
+
+
+{\ttfamily \#include $<$User.\-hpp$>$}
+
+
+
+Collaboration diagram for User\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_user__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_user_aa67031b663e39314207197d3b5dfd735}{User} ()
+\item 
+\hyperlink{class_user_a210671e4ce72c49e0a715066dd1c24a3}{User} (string \hyperlink{class_user_aad02f271a6536fa078c6d1369ffdadc4}{username}, string \hyperlink{class_user_acce15679d830831b0bbe8ebc2a60b2ca}{type}, double \hyperlink{class_user_aa559c3686bb9d38c3335c16bbea07be8}{credit})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_user}{User} The constructor for the class, requires all class attributes to be defined. \end{DoxyCompactList}\item 
+double \hyperlink{class_user_a382625d98be785874d5f8e0081449734}{get\-\_\-credit} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-credit Access method for the user's credit amount. \end{DoxyCompactList}\item 
+bool \hyperlink{class_user_ac8415165728fe9043b6883a6397c6748}{get\-\_\-status} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-status Returns the login status of the user. \end{DoxyCompactList}\item 
+string \hyperlink{class_user_acc00cb8811b76f10a502bd6bc5810cab}{get\-\_\-type} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-type Access method for the user's type. \end{DoxyCompactList}\item 
+string \hyperlink{class_user_a01bfab325cc6e1df7e569c9f09980014}{get\-\_\-username} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-username Access method for the user's name attribute. \end{DoxyCompactList}\item 
+bool \hyperlink{class_user_a2964c826aa9dee508272e6302c4f0892}{has\-\_\-permissions} (string transaction)
+\begin{DoxyCompactList}\small\item\em has\-\_\-permissions Determines whether a user has permissions to execute a specified transaction. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_af76b7b46958dabf5e4ee9a492f0ec3fa}{login} ()
+\begin{DoxyCompactList}\small\item\em login Changes the user's login\-\_\-status attribute to true. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_a1af55df87e37292a150f183f1307ac43}{logout} ()
+\begin{DoxyCompactList}\small\item\em logout Changes the user's login\-\_\-status attribute to false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_user_aa559c3686bb9d38c3335c16bbea07be8}{credit}
+\item 
+bool \hyperlink{class_user_a31c707cfc594c5ea9c710f9a8986401b}{login\-\_\-status}
+\item 
+map$<$ string, vector$<$ string $>$ $>$ \hyperlink{class_user_a57334f6c157620be2c10904a5025fc88}{permissions}
+\begin{DoxyCompactList}\small\item\em permissions Maps the user types to allowed transaction permissions. \end{DoxyCompactList}\item 
+string \hyperlink{class_user_acce15679d830831b0bbe8ebc2a60b2ca}{type}
+\item 
+string \hyperlink{class_user_aad02f271a6536fa078c6d1369ffdadc4}{username}
+\begin{DoxyCompactList}\small\item\em username Stores the user name string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_user}{User} Class. 
+
+Used for storing user data, and provides functions for interacting with them. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_user_aa67031b663e39314207197d3b5dfd735}{\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\subsubsection[{User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_aa67031b663e39314207197d3b5dfd735}
+\hypertarget{class_user_a210671e4ce72c49e0a715066dd1c24a3}{\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\subsubsection[{User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{string}]{type, }
+\item[{double}]{credit}
+\end{DoxyParamCaption}
+)}}\label{class_user_a210671e4ce72c49e0a715066dd1c24a3}
+
+
+\hyperlink{class_user}{User} The constructor for the class, requires all class attributes to be defined. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The specified user name. \\
+\hline
+{\em type} & The user type for the account. \\
+\hline
+{\em credit} & The amount of credit for the user. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_user_a382625d98be785874d5f8e0081449734}{\index{User@{User}!get\-\_\-credit@{get\-\_\-credit}}
+\index{get\-\_\-credit@{get\-\_\-credit}!User@{User}}
+\subsubsection[{get\-\_\-credit}]{\setlength{\rightskip}{0pt plus 5cm}double get\-\_\-credit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_a382625d98be785874d5f8e0081449734}
+
+
+get\-\_\-credit Access method for the user's credit amount. 
+
+\begin{DoxyReturn}{Returns}
+Returns the user's credit amount, in dollars. 
+\end{DoxyReturn}
+\hypertarget{class_user_ac8415165728fe9043b6883a6397c6748}{\index{User@{User}!get\-\_\-status@{get\-\_\-status}}
+\index{get\-\_\-status@{get\-\_\-status}!User@{User}}
+\subsubsection[{get\-\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}bool get\-\_\-status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_ac8415165728fe9043b6883a6397c6748}
+
+
+get\-\_\-status Returns the login status of the user. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if the user is logged in. False if not. 
+\end{DoxyReturn}
+\hypertarget{class_user_acc00cb8811b76f10a502bd6bc5810cab}{\index{User@{User}!get\-\_\-type@{get\-\_\-type}}
+\index{get\-\_\-type@{get\-\_\-type}!User@{User}}
+\subsubsection[{get\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}string get\-\_\-type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_acc00cb8811b76f10a502bd6bc5810cab}
+
+
+get\-\_\-type Access method for the user's type. 
+
+\begin{DoxyReturn}{Returns}
+Returns the user's type, as a string. 
+\end{DoxyReturn}
+\hypertarget{class_user_a01bfab325cc6e1df7e569c9f09980014}{\index{User@{User}!get\-\_\-username@{get\-\_\-username}}
+\index{get\-\_\-username@{get\-\_\-username}!User@{User}}
+\subsubsection[{get\-\_\-username}]{\setlength{\rightskip}{0pt plus 5cm}string get\-\_\-username (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_a01bfab325cc6e1df7e569c9f09980014}
+
+
+get\-\_\-username Access method for the user's name attribute. 
+
+\begin{DoxyReturn}{Returns}
+Returns the user's name as a string. 
+\end{DoxyReturn}
+\hypertarget{class_user_a2964c826aa9dee508272e6302c4f0892}{\index{User@{User}!has\-\_\-permissions@{has\-\_\-permissions}}
+\index{has\-\_\-permissions@{has\-\_\-permissions}!User@{User}}
+\subsubsection[{has\-\_\-permissions}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-\_\-permissions (
+\begin{DoxyParamCaption}
+\item[{string}]{transaction}
+\end{DoxyParamCaption}
+)}}\label{class_user_a2964c826aa9dee508272e6302c4f0892}
+
+
+has\-\_\-permissions Determines whether a user has permissions to execute a specified transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction} & The specified transaction to determine permissions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the user has the appropriate permissions to execute the transaction, false if not. 
+\end{DoxyReturn}
+\hypertarget{class_user_af76b7b46958dabf5e4ee9a492f0ec3fa}{\index{User@{User}!login@{login}}
+\index{login@{login}!User@{User}}
+\subsubsection[{login}]{\setlength{\rightskip}{0pt plus 5cm}void login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_af76b7b46958dabf5e4ee9a492f0ec3fa}
+
+
+login Changes the user's login\-\_\-status attribute to true. 
+
+The user is now logged in. \hypertarget{class_user_a1af55df87e37292a150f183f1307ac43}{\index{User@{User}!logout@{logout}}
+\index{logout@{logout}!User@{User}}
+\subsubsection[{logout}]{\setlength{\rightskip}{0pt plus 5cm}void logout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_a1af55df87e37292a150f183f1307ac43}
+
+
+logout Changes the user's login\-\_\-status attribute to false. 
+
+The user is now logged out. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_user_aa559c3686bb9d38c3335c16bbea07be8}{\index{User@{User}!credit@{credit}}
+\index{credit@{credit}!User@{User}}
+\subsubsection[{credit}]{\setlength{\rightskip}{0pt plus 5cm}double credit\hspace{0.3cm}{\ttfamily [private]}}}\label{class_user_aa559c3686bb9d38c3335c16bbea07be8}
+\hypertarget{class_user_a31c707cfc594c5ea9c710f9a8986401b}{\index{User@{User}!login\-\_\-status@{login\-\_\-status}}
+\index{login\-\_\-status@{login\-\_\-status}!User@{User}}
+\subsubsection[{login\-\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}bool login\-\_\-status\hspace{0.3cm}{\ttfamily [private]}}}\label{class_user_a31c707cfc594c5ea9c710f9a8986401b}
+\hypertarget{class_user_a57334f6c157620be2c10904a5025fc88}{\index{User@{User}!permissions@{permissions}}
+\index{permissions@{permissions}!User@{User}}
+\subsubsection[{permissions}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, vector$<$string$>$ $>$ permissions\hspace{0.3cm}{\ttfamily [private]}}}\label{class_user_a57334f6c157620be2c10904a5025fc88}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \{\textcolor{stringliteral}{"AA"}, \{\textcolor{stringliteral}{"login"}, \textcolor{stringliteral}{"logout"}, \textcolor{stringliteral}{"create"}, \textcolor{stringliteral}{"delete"}, \textcolor{stringliteral}{"sell"}, \textcolor{stringliteral}{"buy"}, \textcolor{stringliteral}{"refund"}, \textcolor{stringliteral}{"addcredit"}\}\},
+        \{\textcolor{stringliteral}{"FS"}, \{\textcolor{stringliteral}{"login"}, \textcolor{stringliteral}{"logout"}, \textcolor{stringliteral}{"sell"}, \textcolor{stringliteral}{"buy"}, \textcolor{stringliteral}{"addcredit"}\}\},
+        \{\textcolor{stringliteral}{"BS"}, \{\textcolor{stringliteral}{"login"}, \textcolor{stringliteral}{"logout"}, \textcolor{stringliteral}{"buy"}, \textcolor{stringliteral}{"addcredit"}\}\},
+        \{\textcolor{stringliteral}{"SS"}, \{\textcolor{stringliteral}{"login"}, \textcolor{stringliteral}{"logout"}, \textcolor{stringliteral}{"sell"}, \textcolor{stringliteral}{"addcredit"}\}\}
+    \}
+\end{DoxyCode}
+
+
+permissions Maps the user types to allowed transaction permissions. 
+
+\hypertarget{class_user_acce15679d830831b0bbe8ebc2a60b2ca}{\index{User@{User}!type@{type}}
+\index{type@{type}!User@{User}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}string type\hspace{0.3cm}{\ttfamily [private]}}}\label{class_user_acce15679d830831b0bbe8ebc2a60b2ca}
+\hypertarget{class_user_aad02f271a6536fa078c6d1369ffdadc4}{\index{User@{User}!username@{username}}
+\index{username@{username}!User@{User}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}string username\hspace{0.3cm}{\ttfamily [private]}}}\label{class_user_aad02f271a6536fa078c6d1369ffdadc4}
+
+
+username Stores the user name string. 
+
+type Stores the user type. credit Stores the user's credit amount. login\-\_\-status Stores whether the user is logged in. True if logged in false, if not. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_user_8hpp}{User.\-hpp}\end{DoxyCompactItemize}

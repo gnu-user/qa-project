@@ -1,0 +1,158 @@
+\hypertarget{class_create}{\section{Create Class Reference}
+\label{class_create}\index{Create@{Create}}
+}
+
+
+\hyperlink{class_create}{Create} Class.  
+
+
+
+
+{\ttfamily \#include $<$Create.\-hpp$>$}
+
+
+
+Inheritance diagram for Create\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_create__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Create\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_create__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_create_ada40d6dcc7cdbbc9455c966e496c12d1}{Create} (\hyperlink{class_user}{User} current\-\_\-user)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_create}{Create} The constructor for the class, requires a reference to the current user initiating the transaction. \end{DoxyCompactList}\item 
+void \hyperlink{class_create_aae29977b8b574eedac47b2ca017731d9}{process\-\_\-type} (string type)
+\begin{DoxyCompactList}\small\item\em process\-\_\-type Validates and processes the type of user account specified for creation. \end{DoxyCompactList}\item 
+void \hyperlink{class_create_ac47c27071fa4977b64633b429f2d8bc0}{process\-\_\-username} (string username, \hyperlink{class_current_user_accounts}{Current\-User\-Accounts} user\-\_\-accounts)
+\begin{DoxyCompactList}\small\item\em process\-\_\-username Validates and processes the username entered for creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_create_a8e5996ad33eb07eef44f55deba6c298e}{save\-\_\-transaction} ()
+\begin{DoxyCompactList}\small\item\em save\-\_\-transaction Virtual function signature for class abstraction in C++. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, string $>$ \hyperlink{class_create_aa1c31e633ab706568edf84799ed3ca54}{account\-\_\-types}
+\begin{DoxyCompactList}\small\item\em types Stores the types of usernames that can be used. \end{DoxyCompactList}\item 
+string \hyperlink{class_create_a19ae5348081200db2e186a7045be5112}{new\-\_\-username}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_create}{Create} Class. 
+
+Used for the create transaction functions and attributes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_create_ada40d6dcc7cdbbc9455c966e496c12d1}{\index{Create@{Create}!Create@{Create}}
+\index{Create@{Create}!Create@{Create}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Create} (
+\begin{DoxyParamCaption}
+\item[{{\bf User}}]{current\-\_\-user}
+\end{DoxyParamCaption}
+)}}\label{class_create_ada40d6dcc7cdbbc9455c966e496c12d1}
+
+
+\hyperlink{class_create}{Create} The constructor for the class, requires a reference to the current user initiating the transaction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-user} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_create_aae29977b8b574eedac47b2ca017731d9}{\index{Create@{Create}!process\-\_\-type@{process\-\_\-type}}
+\index{process\-\_\-type@{process\-\_\-type}!Create@{Create}}
+\subsubsection[{process\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-type (
+\begin{DoxyParamCaption}
+\item[{string}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_create_aae29977b8b574eedac47b2ca017731d9}
+
+
+process\-\_\-type Validates and processes the type of user account specified for creation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of user account to create. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_create_ac47c27071fa4977b64633b429f2d8bc0}{\index{Create@{Create}!process\-\_\-username@{process\-\_\-username}}
+\index{process\-\_\-username@{process\-\_\-username}!Create@{Create}}
+\subsubsection[{process\-\_\-username}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-username (
+\begin{DoxyParamCaption}
+\item[{string}]{username, }
+\item[{{\bf Current\-User\-Accounts}}]{user\-\_\-accounts}
+\end{DoxyParamCaption}
+)}}\label{class_create_ac47c27071fa4977b64633b429f2d8bc0}
+
+
+process\-\_\-username Validates and processes the username entered for creation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username to create. \\
+\hline
+{\em user\-\_\-accounts} & A handle to the current user accounts. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_create_a8e5996ad33eb07eef44f55deba6c298e}{\index{Create@{Create}!save\-\_\-transaction@{save\-\_\-transaction}}
+\index{save\-\_\-transaction@{save\-\_\-transaction}!Create@{Create}}
+\subsubsection[{save\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}virtual void save\-\_\-transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_create_a8e5996ad33eb07eef44f55deba6c298e}
+
+
+save\-\_\-transaction Virtual function signature for class abstraction in C++. 
+
+
+
+Reimplemented from \hyperlink{class_transaction_a8e5996ad33eb07eef44f55deba6c298e}{Transaction}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_create_aa1c31e633ab706568edf84799ed3ca54}{\index{Create@{Create}!account\-\_\-types@{account\-\_\-types}}
+\index{account\-\_\-types@{account\-\_\-types}!Create@{Create}}
+\subsubsection[{account\-\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string, string$>$ account\-\_\-types\hspace{0.3cm}{\ttfamily [private]}}}\label{class_create_aa1c31e633ab706568edf84799ed3ca54}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{
+            \{\textcolor{stringliteral}{"admin"}, \textcolor{stringliteral}{"AA"}\},
+            \{\textcolor{stringliteral}{"full-standard"}, \textcolor{stringliteral}{"FS"}\},
+            \{\textcolor{stringliteral}{"buy-standard"}, \textcolor{stringliteral}{"BS"}\},
+            \{\textcolor{stringliteral}{"sell-standard"}, \textcolor{stringliteral}{"SS"}\}
+    \}
+\end{DoxyCode}
+
+
+types Stores the types of usernames that can be used. 
+
+new\-\_\-username Stores the new username to create. \hypertarget{class_create_a19ae5348081200db2e186a7045be5112}{\index{Create@{Create}!new\-\_\-username@{new\-\_\-username}}
+\index{new\-\_\-username@{new\-\_\-username}!Create@{Create}}
+\subsubsection[{new\-\_\-username}]{\setlength{\rightskip}{0pt plus 5cm}string new\-\_\-username\hspace{0.3cm}{\ttfamily [private]}}}\label{class_create_a19ae5348081200db2e186a7045be5112}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_create_8hpp}{Create.\-hpp}\end{DoxyCompactItemize}

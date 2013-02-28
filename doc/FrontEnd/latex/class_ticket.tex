@@ -1,0 +1,162 @@
+\hypertarget{class_ticket}{\section{Ticket Class Reference}
+\label{class_ticket}\index{Ticket@{Ticket}}
+}
+
+
+\hyperlink{class_ticket}{Ticket} Class.  
+
+
+
+
+{\ttfamily \#include $<$Ticket.\-hpp$>$}
+
+
+
+Collaboration diagram for Ticket\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_ticket__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ticket_af7970b7b7045eed437759b1b16560c7c}{Ticket} (string \hyperlink{class_ticket_ae2d7d5c62721303e8a6fa492dc21a65f}{event}, string \hyperlink{class_ticket_a8cdc0977faad029fbb45ab09035319b9}{seller}, int \hyperlink{class_ticket_aed48ca0bcd2162fd4fd495873e2631f5}{volume}, double \hyperlink{class_ticket_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}{price})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_ticket}{Ticket} The constructor for the class, requires all class attributes to be defined. \end{DoxyCompactList}\item 
+string \hyperlink{class_ticket_a7d92689260064db0b8263acbe3370271}{get\-\_\-event} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-event Access function for the event title. \end{DoxyCompactList}\item 
+double \hyperlink{class_ticket_a91c1ecd18b9ca25105da73692f04085e}{get\-\_\-price} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-price Access function for the ticket price. \end{DoxyCompactList}\item 
+string \hyperlink{class_ticket_a1a250452fb9bf26f05f98bfdf463bbe1}{get\-\_\-seller} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-seller Access function for the seller. \end{DoxyCompactList}\item 
+int \hyperlink{class_ticket_a48ce708d66cc141bd2fded62e66f2771}{get\-\_\-volume} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-volume Access function for the ticket volume. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_ticket_ae2d7d5c62721303e8a6fa492dc21a65f}{event}
+\begin{DoxyCompactList}\small\item\em event The event title for the tickets. \end{DoxyCompactList}\item 
+double \hyperlink{class_ticket_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}{price}
+\item 
+string \hyperlink{class_ticket_a8cdc0977faad029fbb45ab09035319b9}{seller}
+\item 
+int \hyperlink{class_ticket_aed48ca0bcd2162fd4fd495873e2631f5}{volume}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_ticket}{Ticket} Class. 
+
+Used for storing ticket data, and provides functions for interacting with them. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_ticket_af7970b7b7045eed437759b1b16560c7c}{\index{Ticket@{Ticket}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!Ticket@{Ticket}}
+\subsubsection[{Ticket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ticket} (
+\begin{DoxyParamCaption}
+\item[{string}]{event, }
+\item[{string}]{seller, }
+\item[{int}]{volume, }
+\item[{double}]{price}
+\end{DoxyParamCaption}
+)}}\label{class_ticket_af7970b7b7045eed437759b1b16560c7c}
+
+
+\hyperlink{class_ticket}{Ticket} The constructor for the class, requires all class attributes to be defined. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The event title for the tickets. \\
+\hline
+{\em seller} & The seller of the tickets. \\
+\hline
+{\em volume} & The amount of tickets available. \\
+\hline
+{\em price} & The cost of the tickets in dollars. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ticket_a7d92689260064db0b8263acbe3370271}{\index{Ticket@{Ticket}!get\-\_\-event@{get\-\_\-event}}
+\index{get\-\_\-event@{get\-\_\-event}!Ticket@{Ticket}}
+\subsubsection[{get\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}string get\-\_\-event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ticket_a7d92689260064db0b8263acbe3370271}
+
+
+get\-\_\-event Access function for the event title. 
+
+\begin{DoxyReturn}{Returns}
+Returns the event title as a string. 
+\end{DoxyReturn}
+\hypertarget{class_ticket_a91c1ecd18b9ca25105da73692f04085e}{\index{Ticket@{Ticket}!get\-\_\-price@{get\-\_\-price}}
+\index{get\-\_\-price@{get\-\_\-price}!Ticket@{Ticket}}
+\subsubsection[{get\-\_\-price}]{\setlength{\rightskip}{0pt plus 5cm}double get\-\_\-price (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ticket_a91c1ecd18b9ca25105da73692f04085e}
+
+
+get\-\_\-price Access function for the ticket price. 
+
+\begin{DoxyReturn}{Returns}
+Returns the cost of the tickets, in dollars. 
+\end{DoxyReturn}
+\hypertarget{class_ticket_a1a250452fb9bf26f05f98bfdf463bbe1}{\index{Ticket@{Ticket}!get\-\_\-seller@{get\-\_\-seller}}
+\index{get\-\_\-seller@{get\-\_\-seller}!Ticket@{Ticket}}
+\subsubsection[{get\-\_\-seller}]{\setlength{\rightskip}{0pt plus 5cm}string get\-\_\-seller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ticket_a1a250452fb9bf26f05f98bfdf463bbe1}
+
+
+get\-\_\-seller Access function for the seller. 
+
+\begin{DoxyReturn}{Returns}
+Returns the seller as a string. 
+\end{DoxyReturn}
+\hypertarget{class_ticket_a48ce708d66cc141bd2fded62e66f2771}{\index{Ticket@{Ticket}!get\-\_\-volume@{get\-\_\-volume}}
+\index{get\-\_\-volume@{get\-\_\-volume}!Ticket@{Ticket}}
+\subsubsection[{get\-\_\-volume}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ticket_a48ce708d66cc141bd2fded62e66f2771}
+
+
+get\-\_\-volume Access function for the ticket volume. 
+
+\begin{DoxyReturn}{Returns}
+Returns the amount of tickets available as an integer. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_ticket_ae2d7d5c62721303e8a6fa492dc21a65f}{\index{Ticket@{Ticket}!event@{event}}
+\index{event@{event}!Ticket@{Ticket}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}string event\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ticket_ae2d7d5c62721303e8a6fa492dc21a65f}
+
+
+event The event title for the tickets. 
+
+seller The seller of the tickets. volume The amount of tickets available. price The cost of the tickets in dollars. \hypertarget{class_ticket_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}{\index{Ticket@{Ticket}!price@{price}}
+\index{price@{price}!Ticket@{Ticket}}
+\subsubsection[{price}]{\setlength{\rightskip}{0pt plus 5cm}double price\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ticket_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}
+\hypertarget{class_ticket_a8cdc0977faad029fbb45ab09035319b9}{\index{Ticket@{Ticket}!seller@{seller}}
+\index{seller@{seller}!Ticket@{Ticket}}
+\subsubsection[{seller}]{\setlength{\rightskip}{0pt plus 5cm}string seller\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ticket_a8cdc0977faad029fbb45ab09035319b9}
+\hypertarget{class_ticket_aed48ca0bcd2162fd4fd495873e2631f5}{\index{Ticket@{Ticket}!volume@{volume}}
+\index{volume@{volume}!Ticket@{Ticket}}
+\subsubsection[{volume}]{\setlength{\rightskip}{0pt plus 5cm}int volume\hspace{0.3cm}{\ttfamily [private]}}}\label{class_ticket_aed48ca0bcd2162fd4fd495873e2631f5}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ticket_8hpp}{Ticket.\-hpp}\end{DoxyCompactItemize}

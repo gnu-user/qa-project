@@ -1,0 +1,13 @@
+<map id="User.hpp" name="User.hpp">
+<area shape="rect" id="node3" href="$_transaction_8hpp.html" title="Transaction.hpp" alt="" coords="545,80,660,107"/>
+<area shape="rect" id="node5" href="$_add_credit_8hpp.html" title="AddCredit.hpp" alt="" coords="115,155,220,181"/>
+<area shape="rect" id="node7" href="$_buy_8hpp.html" title="Buy.hpp" alt="" coords="741,155,811,181"/>
+<area shape="rect" id="node9" href="$_create_8hpp.html" title="Create.hpp" alt="" coords="5,155,91,181"/>
+<area shape="rect" id="node13" href="$_delete_8hpp.html" title="Delete.hpp" alt="" coords="245,155,331,181"/>
+<area shape="rect" id="node15" href="$_login_8hpp.html" title="Login.hpp" alt="" coords="355,155,433,181"/>
+<area shape="rect" id="node17" href="$_logout_8hpp.html" title="Logout.hpp" alt="" coords="835,155,921,181"/>
+<area shape="rect" id="node19" href="$_refund_8hpp.html" title="Refund.hpp" alt="" coords="458,155,547,181"/>
+<area shape="rect" id="node21" href="$_sell_8hpp.html" title="Sell.hpp" alt="" coords="947,155,1016,181"/>
+<area shape="rect" id="node23" href="$_current_user_accounts_8hpp.html" title="CurrentUserAccounts.hpp" alt="" coords="196,80,369,107"/>
+<area shape="rect" id="node11" href="$_daily_transaction_8hpp.html" title="DailyTransaction.hpp" alt="" coords="571,155,716,181"/>
+</map>

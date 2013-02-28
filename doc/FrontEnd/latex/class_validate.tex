@@ -1,0 +1,160 @@
+\hypertarget{class_validate}{\section{Validate Class Reference}
+\label{class_validate}\index{Validate@{Validate}}
+}
+
+
+\hyperlink{class_validate}{Validate} Class.  
+
+
+
+
+{\ttfamily \#include $<$Validate.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_validate_a91df2ba52155e8442f2ce1461e2cdfdb}{atf\-\_\-entry} (string entry)
+\begin{DoxyCompactList}\small\item\em atf\-\_\-entry Validates available tickets file entries, and determines if they conform to the correct format and constraints. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_validate_a765f4f7ccdcb748919594f228cbe106b}{cua\-\_\-entry} (string entry)
+\begin{DoxyCompactList}\small\item\em cua\-\_\-entry Validates current user accounts file entries, and determines if they conform to the correct format and constraints. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_validate_a9e527b2f81d5fc890cadc2e50c113084}{dollars} (string amount, double \&converted)
+\begin{DoxyCompactList}\small\item\em dollars Accepts a price amount input as a string, validates it, and determines if it conforms to the correct format and constraints, then sets the converted parameter into the converted dollar amount. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_validate_ad2f42f272981ad085addb2c142519317}{title} (string event)
+\begin{DoxyCompactList}\small\item\em title Validates event titles, and determines if they conform to the correct format and constraints. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_validate_a2f90699c3944dcf4d6d2d7207c402693}{username} (string username)
+\begin{DoxyCompactList}\small\item\em username Validates user names, and determines if they conform to the correct format and constraints. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_validate_a65ca9bc93ea9345e59725a06db4374e1}{volume} (string amount, int \&converted)
+\begin{DoxyCompactList}\small\item\em volume Accepts a ticket buy or sell amount as a string, validates it, and determines if it conforms to the correct format and constraints, then sets the converted parameter into the converted volume amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_validate}{Validate} Class. 
+
+Provides functions to validate acceptable inputs and outputs for various other classes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_validate_a91df2ba52155e8442f2ce1461e2cdfdb}{\index{Validate@{Validate}!atf\-\_\-entry@{atf\-\_\-entry}}
+\index{atf\-\_\-entry@{atf\-\_\-entry}!Validate@{Validate}}
+\subsubsection[{atf\-\_\-entry}]{\setlength{\rightskip}{0pt plus 5cm}static bool atf\-\_\-entry (
+\begin{DoxyParamCaption}
+\item[{string}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_validate_a91df2ba52155e8442f2ce1461e2cdfdb}
+
+
+atf\-\_\-entry Validates available tickets file entries, and determines if they conform to the correct format and constraints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & An entry in the available tickets file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the entry is valid, false if not. 
+\end{DoxyReturn}
+\hypertarget{class_validate_a765f4f7ccdcb748919594f228cbe106b}{\index{Validate@{Validate}!cua\-\_\-entry@{cua\-\_\-entry}}
+\index{cua\-\_\-entry@{cua\-\_\-entry}!Validate@{Validate}}
+\subsubsection[{cua\-\_\-entry}]{\setlength{\rightskip}{0pt plus 5cm}static bool cua\-\_\-entry (
+\begin{DoxyParamCaption}
+\item[{string}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_validate_a765f4f7ccdcb748919594f228cbe106b}
+
+
+cua\-\_\-entry Validates current user accounts file entries, and determines if they conform to the correct format and constraints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry} & An entry in the current user accounts file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the entry is valid, false if not. 
+\end{DoxyReturn}
+\hypertarget{class_validate_a9e527b2f81d5fc890cadc2e50c113084}{\index{Validate@{Validate}!dollars@{dollars}}
+\index{dollars@{dollars}!Validate@{Validate}}
+\subsubsection[{dollars}]{\setlength{\rightskip}{0pt plus 5cm}static bool dollars (
+\begin{DoxyParamCaption}
+\item[{string}]{amount, }
+\item[{double \&}]{converted}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_validate_a9e527b2f81d5fc890cadc2e50c113084}
+
+
+dollars Accepts a price amount input as a string, validates it, and determines if it conforms to the correct format and constraints, then sets the converted parameter into the converted dollar amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount specified, unformatted, in dollars. \\
+\hline
+{\em converted} & The variable memory space to output the formatted dollar amount to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the amount specified is a valid amount, false if not. 
+\end{DoxyReturn}
+\hypertarget{class_validate_ad2f42f272981ad085addb2c142519317}{\index{Validate@{Validate}!title@{title}}
+\index{title@{title}!Validate@{Validate}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}static bool title (
+\begin{DoxyParamCaption}
+\item[{string}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_validate_ad2f42f272981ad085addb2c142519317}
+
+
+title Validates event titles, and determines if they conform to the correct format and constraints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The event title to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the event title is valid, false if not. 
+\end{DoxyReturn}
+\hypertarget{class_validate_a2f90699c3944dcf4d6d2d7207c402693}{\index{Validate@{Validate}!username@{username}}
+\index{username@{username}!Validate@{Validate}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}static bool username (
+\begin{DoxyParamCaption}
+\item[{string}]{username}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_validate_a2f90699c3944dcf4d6d2d7207c402693}
+
+
+username Validates user names, and determines if they conform to the correct format and constraints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The user name to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the user name is valid, false if not. 
+\end{DoxyReturn}
+\hypertarget{class_validate_a65ca9bc93ea9345e59725a06db4374e1}{\index{Validate@{Validate}!volume@{volume}}
+\index{volume@{volume}!Validate@{Validate}}
+\subsubsection[{volume}]{\setlength{\rightskip}{0pt plus 5cm}static bool volume (
+\begin{DoxyParamCaption}
+\item[{string}]{amount, }
+\item[{int \&}]{converted}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_validate_a65ca9bc93ea9345e59725a06db4374e1}
+
+
+volume Accepts a ticket buy or sell amount as a string, validates it, and determines if it conforms to the correct format and constraints, then sets the converted parameter into the converted volume amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of tickets for buy/sell. \\
+\hline
+{\em converted} & The variable memory space to output the formatted volume to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the amount specified is a valid amount, false if not. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_validate_8hpp}{Validate.\-hpp}\end{DoxyCompactItemize}

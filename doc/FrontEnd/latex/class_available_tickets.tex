@@ -1,0 +1,183 @@
+\hypertarget{class_available_tickets}{\section{Available\-Tickets Class Reference}
+\label{class_available_tickets}\index{Available\-Tickets@{Available\-Tickets}}
+}
+
+
+\hyperlink{class_available_tickets}{Available\-Tickets} Class.  
+
+
+
+
+{\ttfamily \#include $<$Available\-Tickets.\-hpp$>$}
+
+
+
+Collaboration diagram for Available\-Tickets\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_available_tickets__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_available_tickets_a8fd5fda267fcc507006f3695acda4478}{Available\-Tickets} ()
+\item 
+\hyperlink{class_available_tickets_a89aa95cca16280fe08c3017c16731907}{Available\-Tickets} (string \hyperlink{class_available_tickets_ad677bc95025de980a4144bcf63e5b4ba}{atf\-\_\-file})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_available_tickets}{Available\-Tickets} The constructor for the class, requires the location of the available tickets file on disk. \end{DoxyCompactList}\item 
+void \hyperlink{class_available_tickets_a3cec8a2dd9682f54aaa1c3ea700e3ebf}{display\-\_\-tickets} ()
+\begin{DoxyCompactList}\small\item\em display\-\_\-tickets Displays the tickets which are available. \end{DoxyCompactList}\item 
+\hyperlink{class_ticket}{Ticket} \hyperlink{class_available_tickets_a9c8556ebea6f1ab303df799826e45e6f}{get\-\_\-ticket} (string event, string username)
+\begin{DoxyCompactList}\small\item\em get\-\_\-ticket Gets the tickets for a specific event, from a specified seller. \end{DoxyCompactList}\item 
+bool \hyperlink{class_available_tickets_a535e0bcb13e069687023bbc1aa30f77d}{has\-\_\-event} (string event)
+\begin{DoxyCompactList}\small\item\em has\-\_\-event Determines whether an event exists within the available tickets file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_available_tickets_ad453b1f32a4c98dc793c56a95303bf93}{has\-\_\-seller} (string username)
+\begin{DoxyCompactList}\small\item\em has\-\_\-seller Determines whether a valid seller exists for an event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_available_tickets_ad7c704b34912678d95c13243cacf9d7f}{parse} ()
+\begin{DoxyCompactList}\small\item\em parse Takes in the available ticket file, and parses it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_available_tickets_ad677bc95025de980a4144bcf63e5b4ba}{atf\-\_\-file}
+\item 
+vector$<$ \hyperlink{class_ticket}{Ticket} $>$ \hyperlink{class_available_tickets_ad50ec5da3cb7e33f97d6ed07e362a50a}{tickets}
+\begin{DoxyCompactList}\small\item\em tickets Stores an array of the actual available tickets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_available_tickets}{Available\-Tickets} Class. 
+
+Used for storing the Available Tickets File, and provides functions for interacting with it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_available_tickets_a8fd5fda267fcc507006f3695acda4478}{\index{Available\-Tickets@{Available\-Tickets}!Available\-Tickets@{Available\-Tickets}}
+\index{Available\-Tickets@{Available\-Tickets}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{Available\-Tickets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Available\-Tickets} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_available_tickets_a8fd5fda267fcc507006f3695acda4478}
+\hypertarget{class_available_tickets_a89aa95cca16280fe08c3017c16731907}{\index{Available\-Tickets@{Available\-Tickets}!Available\-Tickets@{Available\-Tickets}}
+\index{Available\-Tickets@{Available\-Tickets}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{Available\-Tickets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Available\-Tickets} (
+\begin{DoxyParamCaption}
+\item[{string}]{atf\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{class_available_tickets_a89aa95cca16280fe08c3017c16731907}
+
+
+\hyperlink{class_available_tickets}{Available\-Tickets} The constructor for the class, requires the location of the available tickets file on disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atf\-\_\-file} & The path to the available tickets file on disk. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_available_tickets_a3cec8a2dd9682f54aaa1c3ea700e3ebf}{\index{Available\-Tickets@{Available\-Tickets}!display\-\_\-tickets@{display\-\_\-tickets}}
+\index{display\-\_\-tickets@{display\-\_\-tickets}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{display\-\_\-tickets}]{\setlength{\rightskip}{0pt plus 5cm}void display\-\_\-tickets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_available_tickets_a3cec8a2dd9682f54aaa1c3ea700e3ebf}
+
+
+display\-\_\-tickets Displays the tickets which are available. 
+
+\hypertarget{class_available_tickets_a9c8556ebea6f1ab303df799826e45e6f}{\index{Available\-Tickets@{Available\-Tickets}!get\-\_\-ticket@{get\-\_\-ticket}}
+\index{get\-\_\-ticket@{get\-\_\-ticket}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{get\-\_\-ticket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ticket} get\-\_\-ticket (
+\begin{DoxyParamCaption}
+\item[{string}]{event, }
+\item[{string}]{username}
+\end{DoxyParamCaption}
+)}}\label{class_available_tickets_a9c8556ebea6f1ab303df799826e45e6f}
+
+
+get\-\_\-ticket Gets the tickets for a specific event, from a specified seller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Specifies which event to obtain tickets for. \\
+\hline
+{\em username} & Specifies which username to use as the seller. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the tickets are available for the given seller and event, false if they are not. 
+\end{DoxyReturn}
+\hypertarget{class_available_tickets_a535e0bcb13e069687023bbc1aa30f77d}{\index{Available\-Tickets@{Available\-Tickets}!has\-\_\-event@{has\-\_\-event}}
+\index{has\-\_\-event@{has\-\_\-event}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{has\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{string}]{event}
+\end{DoxyParamCaption}
+)}}\label{class_available_tickets_a535e0bcb13e069687023bbc1aa30f77d}
+
+
+has\-\_\-event Determines whether an event exists within the available tickets file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Specifies which event to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the event exists, false if it does not. 
+\end{DoxyReturn}
+\hypertarget{class_available_tickets_ad453b1f32a4c98dc793c56a95303bf93}{\index{Available\-Tickets@{Available\-Tickets}!has\-\_\-seller@{has\-\_\-seller}}
+\index{has\-\_\-seller@{has\-\_\-seller}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{has\-\_\-seller}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-\_\-seller (
+\begin{DoxyParamCaption}
+\item[{string}]{username}
+\end{DoxyParamCaption}
+)}}\label{class_available_tickets_ad453b1f32a4c98dc793c56a95303bf93}
+
+
+has\-\_\-seller Determines whether a valid seller exists for an event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Specifies which username to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the seller exists, false if it does not. 
+\end{DoxyReturn}
+\hypertarget{class_available_tickets_ad7c704b34912678d95c13243cacf9d7f}{\index{Available\-Tickets@{Available\-Tickets}!parse@{parse}}
+\index{parse@{parse}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_available_tickets_ad7c704b34912678d95c13243cacf9d7f}
+
+
+parse Takes in the available ticket file, and parses it. 
+
+The output is stored within the \hyperlink{class_available_tickets}{Available\-Tickets} object. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_available_tickets_ad677bc95025de980a4144bcf63e5b4ba}{\index{Available\-Tickets@{Available\-Tickets}!atf\-\_\-file@{atf\-\_\-file}}
+\index{atf\-\_\-file@{atf\-\_\-file}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{atf\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string atf\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{class_available_tickets_ad677bc95025de980a4144bcf63e5b4ba}
+\hypertarget{class_available_tickets_ad50ec5da3cb7e33f97d6ed07e362a50a}{\index{Available\-Tickets@{Available\-Tickets}!tickets@{tickets}}
+\index{tickets@{tickets}!AvailableTickets@{Available\-Tickets}}
+\subsubsection[{tickets}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Ticket}$>$ tickets\hspace{0.3cm}{\ttfamily [private]}}}\label{class_available_tickets_ad50ec5da3cb7e33f97d6ed07e362a50a}
+
+
+tickets Stores an array of the actual available tickets. 
+
+atf\-\_\-file Stores the path to the available tickets file on disk. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_available_tickets_8hpp}{Available\-Tickets.\-hpp}\end{DoxyCompactItemize}

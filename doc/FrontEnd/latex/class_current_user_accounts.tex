@@ -1,0 +1,159 @@
+\hypertarget{class_current_user_accounts}{\section{Current\-User\-Accounts Class Reference}
+\label{class_current_user_accounts}\index{Current\-User\-Accounts@{Current\-User\-Accounts}}
+}
+
+
+\hyperlink{class_current_user_accounts}{Current\-User\-Accounts} Class.  
+
+
+
+
+{\ttfamily \#include $<$Current\-User\-Accounts.\-hpp$>$}
+
+
+
+Collaboration diagram for Current\-User\-Accounts\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_current_user_accounts__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_current_user_accounts_a9476c00001c85287a6e15a04a2de2d69}{Current\-User\-Accounts} ()
+\item 
+\hyperlink{class_current_user_accounts_ac4d0c1a2716e7b618f784ac8f8b65f9e}{Current\-User\-Accounts} (string \hyperlink{class_current_user_accounts_a67f6b5fde524ca7c6a05222c7847b8f5}{cua\-\_\-file})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_current_user_accounts}{Current\-User\-Accounts} The constructor for the class, requires a reference to the current user accounts file path. \end{DoxyCompactList}\item 
+void \hyperlink{class_current_user_accounts_ad47cb0106d6f756714576cffabbf5b5b}{display\-\_\-users} ()
+\begin{DoxyCompactList}\small\item\em display\-\_\-users Displays the users within the current user accounts file. \end{DoxyCompactList}\item 
+\hyperlink{class_user}{User} \hyperlink{class_current_user_accounts_ade606d47cea348cdda1897591f88da82}{get\-\_\-user} (string username)
+\begin{DoxyCompactList}\small\item\em get\-\_\-user Returns a user object based on a user account stored within the current user accounts file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_current_user_accounts_a7c28a4151fa81eaecd599aa4f4525df2}{has\-\_\-user} (string username)
+\begin{DoxyCompactList}\small\item\em has\-\_\-user Validates and verifies whether a user exists within the current user accounts file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_current_user_accounts_ad7c704b34912678d95c13243cacf9d7f}{parse} ()
+\begin{DoxyCompactList}\small\item\em parse Takes in the current user accounts file, and parses it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_current_user_accounts_a67f6b5fde524ca7c6a05222c7847b8f5}{cua\-\_\-file}
+\item 
+vector$<$ \hyperlink{class_user}{User} $>$ \hyperlink{class_current_user_accounts_a99ca3903a33c7cd9a57c4e0b402ee5b2}{users}
+\begin{DoxyCompactList}\small\item\em users The list of current users. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_current_user_accounts}{Current\-User\-Accounts} Class. 
+
+Used for storing the current user accounts file, and provides functions for interacting with it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_current_user_accounts_a9476c00001c85287a6e15a04a2de2d69}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!Current\-User\-Accounts@{Current\-User\-Accounts}}
+\index{Current\-User\-Accounts@{Current\-User\-Accounts}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{Current\-User\-Accounts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Current\-User\-Accounts} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_current_user_accounts_a9476c00001c85287a6e15a04a2de2d69}
+\hypertarget{class_current_user_accounts_ac4d0c1a2716e7b618f784ac8f8b65f9e}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!Current\-User\-Accounts@{Current\-User\-Accounts}}
+\index{Current\-User\-Accounts@{Current\-User\-Accounts}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{Current\-User\-Accounts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Current\-User\-Accounts} (
+\begin{DoxyParamCaption}
+\item[{string}]{cua\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{class_current_user_accounts_ac4d0c1a2716e7b618f784ac8f8b65f9e}
+
+
+\hyperlink{class_current_user_accounts}{Current\-User\-Accounts} The constructor for the class, requires a reference to the current user accounts file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cua\-\_\-file} & The path to the current user accounts file on disk. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_current_user_accounts_ad47cb0106d6f756714576cffabbf5b5b}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!display\-\_\-users@{display\-\_\-users}}
+\index{display\-\_\-users@{display\-\_\-users}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{display\-\_\-users}]{\setlength{\rightskip}{0pt plus 5cm}void display\-\_\-users (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_current_user_accounts_ad47cb0106d6f756714576cffabbf5b5b}
+
+
+display\-\_\-users Displays the users within the current user accounts file. 
+
+\hypertarget{class_current_user_accounts_ade606d47cea348cdda1897591f88da82}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!get\-\_\-user@{get\-\_\-user}}
+\index{get\-\_\-user@{get\-\_\-user}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{get\-\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} get\-\_\-user (
+\begin{DoxyParamCaption}
+\item[{string}]{username}
+\end{DoxyParamCaption}
+)}}\label{class_current_user_accounts_ade606d47cea348cdda1897591f88da82}
+
+
+get\-\_\-user Returns a user object based on a user account stored within the current user accounts file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The name for the user specified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a \hyperlink{class_user}{User} object, containing the data for the user account specified. 
+\end{DoxyReturn}
+\hypertarget{class_current_user_accounts_a7c28a4151fa81eaecd599aa4f4525df2}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!has\-\_\-user@{has\-\_\-user}}
+\index{has\-\_\-user@{has\-\_\-user}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{has\-\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}bool has\-\_\-user (
+\begin{DoxyParamCaption}
+\item[{string}]{username}
+\end{DoxyParamCaption}
+)}}\label{class_current_user_accounts_a7c28a4151fa81eaecd599aa4f4525df2}
+
+
+has\-\_\-user Validates and verifies whether a user exists within the current user accounts file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the user exists, false if it does not. 
+\end{DoxyReturn}
+\hypertarget{class_current_user_accounts_ad7c704b34912678d95c13243cacf9d7f}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!parse@{parse}}
+\index{parse@{parse}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_current_user_accounts_ad7c704b34912678d95c13243cacf9d7f}
+
+
+parse Takes in the current user accounts file, and parses it. 
+
+The output is stored within the \hyperlink{class_current_user_accounts}{Current\-User\-Accounts} object. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_current_user_accounts_a67f6b5fde524ca7c6a05222c7847b8f5}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!cua\-\_\-file@{cua\-\_\-file}}
+\index{cua\-\_\-file@{cua\-\_\-file}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{cua\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string cua\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{class_current_user_accounts_a67f6b5fde524ca7c6a05222c7847b8f5}
+\hypertarget{class_current_user_accounts_a99ca3903a33c7cd9a57c4e0b402ee5b2}{\index{Current\-User\-Accounts@{Current\-User\-Accounts}!users@{users}}
+\index{users@{users}!CurrentUserAccounts@{Current\-User\-Accounts}}
+\subsubsection[{users}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf User}$>$ users\hspace{0.3cm}{\ttfamily [private]}}}\label{class_current_user_accounts_a99ca3903a33c7cd9a57c4e0b402ee5b2}
+
+
+users The list of current users. 
+
+cua\-\_\-file The path to the current user accounts file. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_current_user_accounts_8hpp}{Current\-User\-Accounts.\-hpp}\end{DoxyCompactItemize}

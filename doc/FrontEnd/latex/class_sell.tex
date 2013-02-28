@@ -1,0 +1,174 @@
+\hypertarget{class_sell}{\section{Sell Class Reference}
+\label{class_sell}\index{Sell@{Sell}}
+}
+
+
+\hyperlink{class_sell}{Sell} Class.  
+
+
+
+
+{\ttfamily \#include $<$Sell.\-hpp$>$}
+
+
+
+Inheritance diagram for Sell\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_sell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sell\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sell__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sell_a63670944952b9ec10fa8aa8917f5f765}{Sell} (\hyperlink{class_user}{User} current\-\_\-user)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_sell}{Sell} The constructor of the function, requires a handle to the current user logged in. \end{DoxyCompactList}\item 
+void \hyperlink{class_sell_abd5f98879d9baddc5cbb17ae470f745a}{process\-\_\-price} (string \hyperlink{class_sell_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}{price})
+\begin{DoxyCompactList}\small\item\em process\-\_\-price Validates and processes the specified price for the tickets. \end{DoxyCompactList}\item 
+void \hyperlink{class_sell_a5ba0aa4ff9dfbbb099b444497e4fbb54}{process\-\_\-title} (string \hyperlink{class_sell_a43a5eafe64b96968035e5a4013e47c75}{title})
+\begin{DoxyCompactList}\small\item\em process\-\_\-title Validates and processes the title for the ticket sale. \end{DoxyCompactList}\item 
+void \hyperlink{class_sell_a5ecf23192210c3fa67fd51720a6f8ab6}{process\-\_\-volume} (int \hyperlink{class_sell_aed48ca0bcd2162fd4fd495873e2631f5}{volume})
+\begin{DoxyCompactList}\small\item\em process\-\_\-volume Validates and processes the specified number of tickets to be sold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_sell_a8e5996ad33eb07eef44f55deba6c298e}{save\-\_\-transaction} ()
+\begin{DoxyCompactList}\small\item\em save\-\_\-transaction Virtual function signature for class abstraction in C++. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_sell_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}{price}
+\item 
+\hyperlink{class_ticket}{Ticket} $\ast$ \hyperlink{class_sell_aa32fbb8329d2062760a5954e347970b5}{ticket}
+\begin{DoxyCompactList}\small\item\em ticket Contains the ticket to be sold. \end{DoxyCompactList}\item 
+string \hyperlink{class_sell_a43a5eafe64b96968035e5a4013e47c75}{title}
+\item 
+int \hyperlink{class_sell_aed48ca0bcd2162fd4fd495873e2631f5}{volume}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_sell}{Sell} Class. 
+
+Used for the sell transaction functions and attributes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_sell_a63670944952b9ec10fa8aa8917f5f765}{\index{Sell@{Sell}!Sell@{Sell}}
+\index{Sell@{Sell}!Sell@{Sell}}
+\subsubsection[{Sell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sell} (
+\begin{DoxyParamCaption}
+\item[{{\bf User}}]{current\-\_\-user}
+\end{DoxyParamCaption}
+)}}\label{class_sell_a63670944952b9ec10fa8aa8917f5f765}
+
+
+\hyperlink{class_sell}{Sell} The constructor of the function, requires a handle to the current user logged in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-user} & A handle to the current user. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_sell_abd5f98879d9baddc5cbb17ae470f745a}{\index{Sell@{Sell}!process\-\_\-price@{process\-\_\-price}}
+\index{process\-\_\-price@{process\-\_\-price}!Sell@{Sell}}
+\subsubsection[{process\-\_\-price}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-price (
+\begin{DoxyParamCaption}
+\item[{string}]{price}
+\end{DoxyParamCaption}
+)}}\label{class_sell_abd5f98879d9baddc5cbb17ae470f745a}
+
+
+process\-\_\-price Validates and processes the specified price for the tickets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em price} & The price, in dollars, for the tickets being sold. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_sell_a5ba0aa4ff9dfbbb099b444497e4fbb54}{\index{Sell@{Sell}!process\-\_\-title@{process\-\_\-title}}
+\index{process\-\_\-title@{process\-\_\-title}!Sell@{Sell}}
+\subsubsection[{process\-\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-title (
+\begin{DoxyParamCaption}
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)}}\label{class_sell_a5ba0aa4ff9dfbbb099b444497e4fbb54}
+
+
+process\-\_\-title Validates and processes the title for the ticket sale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title for the event tickets being sold. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_sell_a5ecf23192210c3fa67fd51720a6f8ab6}{\index{Sell@{Sell}!process\-\_\-volume@{process\-\_\-volume}}
+\index{process\-\_\-volume@{process\-\_\-volume}!Sell@{Sell}}
+\subsubsection[{process\-\_\-volume}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-volume (
+\begin{DoxyParamCaption}
+\item[{int}]{volume}
+\end{DoxyParamCaption}
+)}}\label{class_sell_a5ecf23192210c3fa67fd51720a6f8ab6}
+
+
+process\-\_\-volume Validates and processes the specified number of tickets to be sold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The number of tickets to be sold. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_sell_a8e5996ad33eb07eef44f55deba6c298e}{\index{Sell@{Sell}!save\-\_\-transaction@{save\-\_\-transaction}}
+\index{save\-\_\-transaction@{save\-\_\-transaction}!Sell@{Sell}}
+\subsubsection[{save\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}virtual void save\-\_\-transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_sell_a8e5996ad33eb07eef44f55deba6c298e}
+
+
+save\-\_\-transaction Virtual function signature for class abstraction in C++. 
+
+
+
+Reimplemented from \hyperlink{class_transaction_a8e5996ad33eb07eef44f55deba6c298e}{Transaction}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_sell_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}{\index{Sell@{Sell}!price@{price}}
+\index{price@{price}!Sell@{Sell}}
+\subsubsection[{price}]{\setlength{\rightskip}{0pt plus 5cm}double price\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sell_a80d1e9b73edf0b6c8aa055cb5cdaa2f2}
+\hypertarget{class_sell_aa32fbb8329d2062760a5954e347970b5}{\index{Sell@{Sell}!ticket@{ticket}}
+\index{ticket@{ticket}!Sell@{Sell}}
+\subsubsection[{ticket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ticket}$\ast$ ticket\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sell_aa32fbb8329d2062760a5954e347970b5}
+
+
+ticket Contains the ticket to be sold. 
+
+title Contains the title for the ticket sale. price Contains the price for the ticket sales. volume Contains the volume of tickets to sell. \hypertarget{class_sell_a43a5eafe64b96968035e5a4013e47c75}{\index{Sell@{Sell}!title@{title}}
+\index{title@{title}!Sell@{Sell}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}string title\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sell_a43a5eafe64b96968035e5a4013e47c75}
+\hypertarget{class_sell_aed48ca0bcd2162fd4fd495873e2631f5}{\index{Sell@{Sell}!volume@{volume}}
+\index{volume@{volume}!Sell@{Sell}}
+\subsubsection[{volume}]{\setlength{\rightskip}{0pt plus 5cm}int volume\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sell_aed48ca0bcd2162fd4fd495873e2631f5}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sell_8hpp}{Sell.\-hpp}\end{DoxyCompactItemize}

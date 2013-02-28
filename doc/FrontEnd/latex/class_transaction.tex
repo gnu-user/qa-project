@@ -1,0 +1,205 @@
+\hypertarget{class_transaction}{\section{Transaction Class Reference}
+\label{class_transaction}\index{Transaction@{Transaction}}
+}
+
+
+\hyperlink{class_transaction}{Transaction} Class.  
+
+
+
+
+{\ttfamily \#include $<$Transaction.\-hpp$>$}
+
+
+
+Inheritance diagram for Transaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transaction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Transaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transaction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_transaction_a810100a471550d38251b98cc782bc940}{get\-\_\-transaction} ()
+\begin{DoxyCompactList}\small\item\em get\-\_\-transaction Provides the stored formatted transaction string for any transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_transaction_a4cfd9d4cfae996ebb05e38c4f04dae70}{format} (string \hyperlink{class_transaction_abbc0a016a8f13d797228d020eb94a769}{code}, string username, string type, double credit)
+\begin{DoxyCompactList}\small\item\em format Formats transactions which require the usage of a user name, type, and credit amount. \end{DoxyCompactList}\item 
+string \hyperlink{class_transaction_ac0dec986e1f72c7ed0aa867d63b87d1b}{format} (string \hyperlink{class_transaction_abbc0a016a8f13d797228d020eb94a769}{code}, string username, string type, string seller, double refund)
+\begin{DoxyCompactList}\small\item\em format Formats transactions which require the usage of a user name, type, seller, and credit amount. \end{DoxyCompactList}\item 
+string \hyperlink{class_transaction_a74dbd5592b20a901f6c622ab068799cc}{format} (string \hyperlink{class_transaction_abbc0a016a8f13d797228d020eb94a769}{code}, string event, string seller, int volume, double price)
+\begin{DoxyCompactList}\small\item\em format Formats transactions which require the usage of an event title, seller user name, ticket volume, and price. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_transaction_a8e5996ad33eb07eef44f55deba6c298e}{save\-\_\-transaction} ()
+\begin{DoxyCompactList}\small\item\em save\-\_\-transaction Virtual function signature for class abstraction in C++. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_transaction_abbc0a016a8f13d797228d020eb94a769}{code}
+\item 
+string \hyperlink{class_transaction_a84f993feb07edc9840cb7f375b7bf1c3}{transaction}
+\item 
+\hyperlink{class_user}{User} \hyperlink{class_transaction_a7ffd636d88d39d8b4366d5423d352b0b}{user}
+\begin{DoxyCompactList}\small\item\em user Stores the user who performed the transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_transaction}{Transaction} Class. 
+
+Acts as a superclass for the other transaction classes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_transaction_a4cfd9d4cfae996ebb05e38c4f04dae70}{\index{Transaction@{Transaction}!format@{format}}
+\index{format@{format}!Transaction@{Transaction}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}string format (
+\begin{DoxyParamCaption}
+\item[{string}]{code, }
+\item[{string}]{username, }
+\item[{string}]{type, }
+\item[{double}]{credit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_transaction_a4cfd9d4cfae996ebb05e38c4f04dae70}
+
+
+format Formats transactions which require the usage of a user name, type, and credit amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The transaction code for the transaction. \\
+\hline
+{\em username} & The username specified for the transaction. \\
+\hline
+{\em type} & The type of user for the transaction. \\
+\hline
+{\em credit} & The credit amount for the transaction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a formatted transaction string containing all arguments. 
+\end{DoxyReturn}
+\hypertarget{class_transaction_ac0dec986e1f72c7ed0aa867d63b87d1b}{\index{Transaction@{Transaction}!format@{format}}
+\index{format@{format}!Transaction@{Transaction}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}string format (
+\begin{DoxyParamCaption}
+\item[{string}]{code, }
+\item[{string}]{username, }
+\item[{string}]{type, }
+\item[{string}]{seller, }
+\item[{double}]{refund}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_transaction_ac0dec986e1f72c7ed0aa867d63b87d1b}
+
+
+format Formats transactions which require the usage of a user name, type, seller, and credit amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The transaction code for the transaction. \\
+\hline
+{\em username} & The user name specified for the transaction. \\
+\hline
+{\em type} & The type of user for the transaction. \\
+\hline
+{\em seller} & The seller user name specified for the transaction. \\
+\hline
+{\em refund} & The credit amount for the transaction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a formatted transaction string containing all arguments. 
+\end{DoxyReturn}
+\hypertarget{class_transaction_a74dbd5592b20a901f6c622ab068799cc}{\index{Transaction@{Transaction}!format@{format}}
+\index{format@{format}!Transaction@{Transaction}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}string format (
+\begin{DoxyParamCaption}
+\item[{string}]{code, }
+\item[{string}]{event, }
+\item[{string}]{seller, }
+\item[{int}]{volume, }
+\item[{double}]{price}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_transaction_a74dbd5592b20a901f6c622ab068799cc}
+
+
+format Formats transactions which require the usage of an event title, seller user name, ticket volume, and price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The transaction code for the transaction. \\
+\hline
+{\em event} & The event title specified for the transaction. \\
+\hline
+{\em seller} & The seller user name specified for the transaction. \\
+\hline
+{\em volume} & The number of tickets in the transaction. \\
+\hline
+{\em price} & The price of the tickets in the transaction, in dollars. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a formatted transaction string containing all arguments. 
+\end{DoxyReturn}
+\hypertarget{class_transaction_a810100a471550d38251b98cc782bc940}{\index{Transaction@{Transaction}!get\-\_\-transaction@{get\-\_\-transaction}}
+\index{get\-\_\-transaction@{get\-\_\-transaction}!Transaction@{Transaction}}
+\subsubsection[{get\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}string get\-\_\-transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_transaction_a810100a471550d38251b98cc782bc940}
+
+
+get\-\_\-transaction Provides the stored formatted transaction string for any transaction. 
+
+\begin{DoxyReturn}{Returns}
+Returns the formatted transaction string. 
+\end{DoxyReturn}
+\hypertarget{class_transaction_a8e5996ad33eb07eef44f55deba6c298e}{\index{Transaction@{Transaction}!save\-\_\-transaction@{save\-\_\-transaction}}
+\index{save\-\_\-transaction@{save\-\_\-transaction}!Transaction@{Transaction}}
+\subsubsection[{save\-\_\-transaction}]{\setlength{\rightskip}{0pt plus 5cm}virtual void save\-\_\-transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_transaction_a8e5996ad33eb07eef44f55deba6c298e}
+
+
+save\-\_\-transaction Virtual function signature for class abstraction in C++. 
+
+
+
+Reimplemented in \hyperlink{class_refund_a8e5996ad33eb07eef44f55deba6c298e}{Refund}, \hyperlink{class_sell_a8e5996ad33eb07eef44f55deba6c298e}{Sell}, \hyperlink{class_create_a8e5996ad33eb07eef44f55deba6c298e}{Create}, \hyperlink{class_buy_a8e5996ad33eb07eef44f55deba6c298e}{Buy}, \hyperlink{class_add_credit_a8e5996ad33eb07eef44f55deba6c298e}{Add\-Credit}, \hyperlink{class_delete_a8e5996ad33eb07eef44f55deba6c298e}{Delete}, \hyperlink{class_login_a8e5996ad33eb07eef44f55deba6c298e}{Login}, and \hyperlink{class_logout_a8e5996ad33eb07eef44f55deba6c298e}{Logout}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_transaction_abbc0a016a8f13d797228d020eb94a769}{\index{Transaction@{Transaction}!code@{code}}
+\index{code@{code}!Transaction@{Transaction}}
+\subsubsection[{code}]{\setlength{\rightskip}{0pt plus 5cm}string code\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_transaction_abbc0a016a8f13d797228d020eb94a769}
+\hypertarget{class_transaction_a84f993feb07edc9840cb7f375b7bf1c3}{\index{Transaction@{Transaction}!transaction@{transaction}}
+\index{transaction@{transaction}!Transaction@{Transaction}}
+\subsubsection[{transaction}]{\setlength{\rightskip}{0pt plus 5cm}string transaction\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_transaction_a84f993feb07edc9840cb7f375b7bf1c3}
+\hypertarget{class_transaction_a7ffd636d88d39d8b4366d5423d352b0b}{\index{Transaction@{Transaction}!user@{user}}
+\index{user@{user}!Transaction@{Transaction}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} user\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_transaction_a7ffd636d88d39d8b4366d5423d352b0b}
+
+
+user Stores the user who performed the transaction. 
+
+code Stores the transaction code. transaction Stores the formatted transaction string. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_transaction_8hpp}{Transaction.\-hpp}\end{DoxyCompactItemize}

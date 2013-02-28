@@ -1,0 +1,217 @@
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Add\discretionary {-}{}{}Credit Class Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{9}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{9}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Add\discretionary {-}{}{}Credit}{9}{subsubsection.4.1.2.1}
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{9}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}credit}{9}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}process\discretionary {-}{}{}\_\discretionary {-}{}{}username}{9}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{9}{subsubsection.4.1.3.3}
+\contentsline {subsection}{\numberline {4.1.4}Member Data Documentation}{10}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}credit}{10}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}username}{10}{subsubsection.4.1.4.2}
+\contentsline {section}{\numberline {4.2}Available\discretionary {-}{}{}Tickets Class Reference}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{11}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{11}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Available\discretionary {-}{}{}Tickets}{11}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Available\discretionary {-}{}{}Tickets}{11}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{11}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets}{11}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket}{12}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}has\discretionary {-}{}{}\_\discretionary {-}{}{}event}{12}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}has\discretionary {-}{}{}\_\discretionary {-}{}{}seller}{12}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}parse}{12}{subsubsection.4.2.3.5}
+\contentsline {subsection}{\numberline {4.2.4}Member Data Documentation}{12}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}atf\discretionary {-}{}{}\_\discretionary {-}{}{}file}{12}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {4.2.4.2}tickets}{12}{subsubsection.4.2.4.2}
+\contentsline {section}{\numberline {4.3}Buy Class Reference}{13}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{15}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{15}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Buy}{15}{subsubsection.4.3.2.1}
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{15}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation}{15}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}{15}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}process\discretionary {-}{}{}\_\discretionary {-}{}{}title}{16}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}{16}{subsubsection.4.3.3.4}
+\contentsline {subsubsection}{\numberline {4.3.3.5}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{16}{subsubsection.4.3.3.5}
+\contentsline {subsection}{\numberline {4.3.4}Member Data Documentation}{16}{subsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.4.1}seller}{16}{subsubsection.4.3.4.1}
+\contentsline {subsubsection}{\numberline {4.3.4.2}ticket}{16}{subsubsection.4.3.4.2}
+\contentsline {subsubsection}{\numberline {4.3.4.3}title}{16}{subsubsection.4.3.4.3}
+\contentsline {subsubsection}{\numberline {4.3.4.4}volume}{16}{subsubsection.4.3.4.4}
+\contentsline {section}{\numberline {4.4}Create Class Reference}{16}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{18}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{18}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Create}{18}{subsubsection.4.4.2.1}
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{18}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}type}{18}{subsubsection.4.4.3.1}
+\contentsline {subsubsection}{\numberline {4.4.3.2}process\discretionary {-}{}{}\_\discretionary {-}{}{}username}{19}{subsubsection.4.4.3.2}
+\contentsline {subsubsection}{\numberline {4.4.3.3}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{19}{subsubsection.4.4.3.3}
+\contentsline {subsection}{\numberline {4.4.4}Member Data Documentation}{19}{subsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.4.1}account\discretionary {-}{}{}\_\discretionary {-}{}{}types}{19}{subsubsection.4.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.4.2}new\discretionary {-}{}{}\_\discretionary {-}{}{}username}{19}{subsubsection.4.4.4.2}
+\contentsline {section}{\numberline {4.5}Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts Class Reference}{19}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{21}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{21}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}{21}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}{21}{subsubsection.4.5.2.2}
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{21}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}display\discretionary {-}{}{}\_\discretionary {-}{}{}users}{21}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}user}{21}{subsubsection.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.3.3}has\discretionary {-}{}{}\_\discretionary {-}{}{}user}{22}{subsubsection.4.5.3.3}
+\contentsline {subsubsection}{\numberline {4.5.3.4}parse}{22}{subsubsection.4.5.3.4}
+\contentsline {subsection}{\numberline {4.5.4}Member Data Documentation}{22}{subsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.4.1}cua\discretionary {-}{}{}\_\discretionary {-}{}{}file}{22}{subsubsection.4.5.4.1}
+\contentsline {subsubsection}{\numberline {4.5.4.2}users}{22}{subsubsection.4.5.4.2}
+\contentsline {section}{\numberline {4.6}Daily\discretionary {-}{}{}Transaction Class Reference}{22}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{24}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{24}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Daily\discretionary {-}{}{}Transaction}{24}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}Daily\discretionary {-}{}{}Transaction}{24}{subsubsection.4.6.2.2}
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{24}{subsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3.1}save}{24}{subsubsection.4.6.3.1}
+\contentsline {subsubsection}{\numberline {4.6.3.2}write}{24}{subsubsection.4.6.3.2}
+\contentsline {subsection}{\numberline {4.6.4}Member Data Documentation}{24}{subsection.4.6.4}
+\contentsline {subsubsection}{\numberline {4.6.4.1}dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file}{24}{subsubsection.4.6.4.1}
+\contentsline {subsubsection}{\numberline {4.6.4.2}transactions}{24}{subsubsection.4.6.4.2}
+\contentsline {section}{\numberline {4.7}Delete Class Reference}{25}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{27}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{27}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Delete}{27}{subsubsection.4.7.2.1}
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{27}{subsection.4.7.3}
+\contentsline {subsubsection}{\numberline {4.7.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}username}{27}{subsubsection.4.7.3.1}
+\contentsline {subsubsection}{\numberline {4.7.3.2}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{27}{subsubsection.4.7.3.2}
+\contentsline {section}{\numberline {4.8}Exception Class Reference}{27}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{28}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{29}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}Exception}{29}{subsubsection.4.8.2.1}
+\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{29}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}mesg}{29}{subsubsection.4.8.3.1}
+\contentsline {subsection}{\numberline {4.8.4}Member Data Documentation}{29}{subsection.4.8.4}
+\contentsline {subsubsection}{\numberline {4.8.4.1}code}{29}{subsubsection.4.8.4.1}
+\contentsline {subsubsection}{\numberline {4.8.4.2}code\discretionary {-}{}{}\_\discretionary {-}{}{}msg}{29}{subsubsection.4.8.4.2}
+\contentsline {section}{\numberline {4.9}Login Class Reference}{29}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{32}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{32}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}Login}{32}{subsubsection.4.9.2.1}
+\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{32}{subsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}username}{32}{subsubsection.4.9.3.1}
+\contentsline {subsubsection}{\numberline {4.9.3.2}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{32}{subsubsection.4.9.3.2}
+\contentsline {section}{\numberline {4.10}Logout Class Reference}{32}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{35}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{35}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}Logout}{35}{subsubsection.4.10.2.1}
+\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{35}{subsection.4.10.3}
+\contentsline {subsubsection}{\numberline {4.10.3.1}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{35}{subsubsection.4.10.3.1}
+\contentsline {section}{\numberline {4.11}Refund Class Reference}{35}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{38}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{38}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}Refund}{38}{subsubsection.4.11.2.1}
+\contentsline {subsection}{\numberline {4.11.3}Member Function Documentation}{38}{subsection.4.11.3}
+\contentsline {subsubsection}{\numberline {4.11.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer}{38}{subsubsection.4.11.3.1}
+\contentsline {subsubsection}{\numberline {4.11.3.2}process\discretionary {-}{}{}\_\discretionary {-}{}{}credit}{38}{subsubsection.4.11.3.2}
+\contentsline {subsubsection}{\numberline {4.11.3.3}process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}{39}{subsubsection.4.11.3.3}
+\contentsline {subsubsection}{\numberline {4.11.3.4}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{39}{subsubsection.4.11.3.4}
+\contentsline {subsection}{\numberline {4.11.4}Member Data Documentation}{39}{subsection.4.11.4}
+\contentsline {subsubsection}{\numberline {4.11.4.1}buyer}{39}{subsubsection.4.11.4.1}
+\contentsline {subsubsection}{\numberline {4.11.4.2}credit}{39}{subsubsection.4.11.4.2}
+\contentsline {subsubsection}{\numberline {4.11.4.3}seller}{39}{subsubsection.4.11.4.3}
+\contentsline {section}{\numberline {4.12}Sell Class Reference}{39}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{42}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Constructor \& Destructor Documentation}{42}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}Sell}{42}{subsubsection.4.12.2.1}
+\contentsline {subsection}{\numberline {4.12.3}Member Function Documentation}{42}{subsection.4.12.3}
+\contentsline {subsubsection}{\numberline {4.12.3.1}process\discretionary {-}{}{}\_\discretionary {-}{}{}price}{42}{subsubsection.4.12.3.1}
+\contentsline {subsubsection}{\numberline {4.12.3.2}process\discretionary {-}{}{}\_\discretionary {-}{}{}title}{42}{subsubsection.4.12.3.2}
+\contentsline {subsubsection}{\numberline {4.12.3.3}process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}{43}{subsubsection.4.12.3.3}
+\contentsline {subsubsection}{\numberline {4.12.3.4}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{43}{subsubsection.4.12.3.4}
+\contentsline {subsection}{\numberline {4.12.4}Member Data Documentation}{43}{subsection.4.12.4}
+\contentsline {subsubsection}{\numberline {4.12.4.1}price}{43}{subsubsection.4.12.4.1}
+\contentsline {subsubsection}{\numberline {4.12.4.2}ticket}{43}{subsubsection.4.12.4.2}
+\contentsline {subsubsection}{\numberline {4.12.4.3}title}{43}{subsubsection.4.12.4.3}
+\contentsline {subsubsection}{\numberline {4.12.4.4}volume}{43}{subsubsection.4.12.4.4}
+\contentsline {section}{\numberline {4.13}Ticket Class Reference}{43}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{44}{subsection.4.13.1}
+\contentsline {subsection}{\numberline {4.13.2}Constructor \& Destructor Documentation}{45}{subsection.4.13.2}
+\contentsline {subsubsection}{\numberline {4.13.2.1}Ticket}{45}{subsubsection.4.13.2.1}
+\contentsline {subsection}{\numberline {4.13.3}Member Function Documentation}{45}{subsection.4.13.3}
+\contentsline {subsubsection}{\numberline {4.13.3.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}event}{45}{subsubsection.4.13.3.1}
+\contentsline {subsubsection}{\numberline {4.13.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}price}{45}{subsubsection.4.13.3.2}
+\contentsline {subsubsection}{\numberline {4.13.3.3}get\discretionary {-}{}{}\_\discretionary {-}{}{}seller}{45}{subsubsection.4.13.3.3}
+\contentsline {subsubsection}{\numberline {4.13.3.4}get\discretionary {-}{}{}\_\discretionary {-}{}{}volume}{45}{subsubsection.4.13.3.4}
+\contentsline {subsection}{\numberline {4.13.4}Member Data Documentation}{46}{subsection.4.13.4}
+\contentsline {subsubsection}{\numberline {4.13.4.1}event}{46}{subsubsection.4.13.4.1}
+\contentsline {subsubsection}{\numberline {4.13.4.2}price}{46}{subsubsection.4.13.4.2}
+\contentsline {subsubsection}{\numberline {4.13.4.3}seller}{46}{subsubsection.4.13.4.3}
+\contentsline {subsubsection}{\numberline {4.13.4.4}volume}{46}{subsubsection.4.13.4.4}
+\contentsline {section}{\numberline {4.14}Transaction Class Reference}{46}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{48}{subsection.4.14.1}
+\contentsline {subsection}{\numberline {4.14.2}Member Function Documentation}{48}{subsection.4.14.2}
+\contentsline {subsubsection}{\numberline {4.14.2.1}format}{48}{subsubsection.4.14.2.1}
+\contentsline {subsubsection}{\numberline {4.14.2.2}format}{48}{subsubsection.4.14.2.2}
+\contentsline {subsubsection}{\numberline {4.14.2.3}format}{49}{subsubsection.4.14.2.3}
+\contentsline {subsubsection}{\numberline {4.14.2.4}get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{49}{subsubsection.4.14.2.4}
+\contentsline {subsubsection}{\numberline {4.14.2.5}save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}{49}{subsubsection.4.14.2.5}
+\contentsline {subsection}{\numberline {4.14.3}Member Data Documentation}{49}{subsection.4.14.3}
+\contentsline {subsubsection}{\numberline {4.14.3.1}code}{49}{subsubsection.4.14.3.1}
+\contentsline {subsubsection}{\numberline {4.14.3.2}transaction}{49}{subsubsection.4.14.3.2}
+\contentsline {subsubsection}{\numberline {4.14.3.3}user}{49}{subsubsection.4.14.3.3}
+\contentsline {section}{\numberline {4.15}User Class Reference}{50}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{51}{subsection.4.15.1}
+\contentsline {subsection}{\numberline {4.15.2}Constructor \& Destructor Documentation}{51}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}User}{51}{subsubsection.4.15.2.1}
+\contentsline {subsubsection}{\numberline {4.15.2.2}User}{51}{subsubsection.4.15.2.2}
+\contentsline {subsection}{\numberline {4.15.3}Member Function Documentation}{51}{subsection.4.15.3}
+\contentsline {subsubsection}{\numberline {4.15.3.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}credit}{51}{subsubsection.4.15.3.1}
+\contentsline {subsubsection}{\numberline {4.15.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}status}{52}{subsubsection.4.15.3.2}
+\contentsline {subsubsection}{\numberline {4.15.3.3}get\discretionary {-}{}{}\_\discretionary {-}{}{}type}{52}{subsubsection.4.15.3.3}
+\contentsline {subsubsection}{\numberline {4.15.3.4}get\discretionary {-}{}{}\_\discretionary {-}{}{}username}{52}{subsubsection.4.15.3.4}
+\contentsline {subsubsection}{\numberline {4.15.3.5}has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions}{52}{subsubsection.4.15.3.5}
+\contentsline {subsubsection}{\numberline {4.15.3.6}login}{52}{subsubsection.4.15.3.6}
+\contentsline {subsubsection}{\numberline {4.15.3.7}logout}{52}{subsubsection.4.15.3.7}
+\contentsline {subsection}{\numberline {4.15.4}Member Data Documentation}{53}{subsection.4.15.4}
+\contentsline {subsubsection}{\numberline {4.15.4.1}credit}{53}{subsubsection.4.15.4.1}
+\contentsline {subsubsection}{\numberline {4.15.4.2}login\discretionary {-}{}{}\_\discretionary {-}{}{}status}{53}{subsubsection.4.15.4.2}
+\contentsline {subsubsection}{\numberline {4.15.4.3}permissions}{53}{subsubsection.4.15.4.3}
+\contentsline {subsubsection}{\numberline {4.15.4.4}type}{53}{subsubsection.4.15.4.4}
+\contentsline {subsubsection}{\numberline {4.15.4.5}username}{53}{subsubsection.4.15.4.5}
+\contentsline {section}{\numberline {4.16}Validate Class Reference}{53}{section.4.16}
+\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{54}{subsection.4.16.1}
+\contentsline {subsection}{\numberline {4.16.2}Member Function Documentation}{54}{subsection.4.16.2}
+\contentsline {subsubsection}{\numberline {4.16.2.1}atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry}{54}{subsubsection.4.16.2.1}
+\contentsline {subsubsection}{\numberline {4.16.2.2}cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry}{54}{subsubsection.4.16.2.2}
+\contentsline {subsubsection}{\numberline {4.16.2.3}dollars}{54}{subsubsection.4.16.2.3}
+\contentsline {subsubsection}{\numberline {4.16.2.4}title}{54}{subsubsection.4.16.2.4}
+\contentsline {subsubsection}{\numberline {4.16.2.5}username}{55}{subsubsection.4.16.2.5}
+\contentsline {subsubsection}{\numberline {4.16.2.6}volume}{55}{subsubsection.4.16.2.6}
+\contentsline {chapter}{\numberline {5}File Documentation}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}Add\discretionary {-}{}{}Credit.\discretionary {-}{}{}hpp File Reference}{57}{section.5.1}
+\contentsline {section}{\numberline {5.2}Available\discretionary {-}{}{}Tickets.\discretionary {-}{}{}hpp File Reference}{58}{section.5.2}
+\contentsline {section}{\numberline {5.3}Buy.\discretionary {-}{}{}hpp File Reference}{59}{section.5.3}
+\contentsline {section}{\numberline {5.4}Create.\discretionary {-}{}{}hpp File Reference}{60}{section.5.4}
+\contentsline {section}{\numberline {5.5}Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts.\discretionary {-}{}{}hpp File Reference}{61}{section.5.5}
+\contentsline {section}{\numberline {5.6}Daily\discretionary {-}{}{}Transaction.\discretionary {-}{}{}hpp File Reference}{62}{section.5.6}
+\contentsline {section}{\numberline {5.7}Delete.\discretionary {-}{}{}hpp File Reference}{63}{section.5.7}
+\contentsline {section}{\numberline {5.8}Exception.\discretionary {-}{}{}hpp File Reference}{64}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Enumeration Type Documentation}{65}{subsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.1.1}exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes}{66}{subsubsection.5.8.1.1}
+\contentsline {section}{\numberline {5.9}Login.\discretionary {-}{}{}hpp File Reference}{67}{section.5.9}
+\contentsline {section}{\numberline {5.10}Logout.\discretionary {-}{}{}hpp File Reference}{67}{section.5.10}
+\contentsline {section}{\numberline {5.11}Refund.\discretionary {-}{}{}hpp File Reference}{68}{section.5.11}
+\contentsline {section}{\numberline {5.12}Sell.\discretionary {-}{}{}hpp File Reference}{69}{section.5.12}
+\contentsline {section}{\numberline {5.13}Ticket.\discretionary {-}{}{}hpp File Reference}{70}{section.5.13}
+\contentsline {section}{\numberline {5.14}Transaction.\discretionary {-}{}{}hpp File Reference}{71}{section.5.14}
+\contentsline {section}{\numberline {5.15}Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp File Reference}{72}{section.5.15}
+\contentsline {subsection}{\numberline {5.15.1}Enumeration Type Documentation}{73}{subsection.5.15.1}
+\contentsline {subsubsection}{\numberline {5.15.1.1}transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes}{73}{subsubsection.5.15.1.1}
+\contentsline {subsection}{\numberline {5.15.2}Variable Documentation}{74}{subsection.5.15.2}
+\contentsline {subsubsection}{\numberline {5.15.2.1}map\discretionary {-}{}{}\_\discretionary {-}{}{}code}{74}{subsubsection.5.15.2.1}
+\contentsline {section}{\numberline {5.16}User.\discretionary {-}{}{}hpp File Reference}{74}{section.5.16}
+\contentsline {section}{\numberline {5.17}Validate.\discretionary {-}{}{}hpp File Reference}{75}{section.5.17}
+\contentsline {part}{Index}{75}{section*.67}

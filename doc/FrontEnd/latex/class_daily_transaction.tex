@@ -1,0 +1,119 @@
+\hypertarget{class_daily_transaction}{\section{Daily\-Transaction Class Reference}
+\label{class_daily_transaction}\index{Daily\-Transaction@{Daily\-Transaction}}
+}
+
+
+\hyperlink{class_daily_transaction}{Daily\-Transaction} Class.  
+
+
+
+
+{\ttfamily \#include $<$Daily\-Transaction.\-hpp$>$}
+
+
+
+Collaboration diagram for Daily\-Transaction\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_daily_transaction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_daily_transaction_a5e0774feeed7c301fdf41c8355a7379d}{Daily\-Transaction} ()
+\item 
+\hyperlink{class_daily_transaction_a6d37b085e35dffdc5821b591e2e989fa}{Daily\-Transaction} (string \hyperlink{class_daily_transaction_ae77e11b6ea857b9155c8b74d285a7323}{dtf\-\_\-file})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_daily_transaction}{Daily\-Transaction} The constructor for the class, requires a reference to the daily transaction file path. \end{DoxyCompactList}\item 
+void \hyperlink{class_daily_transaction_ad618edc2ee7ccd8a63240f64b91918c6}{save} (\hyperlink{class_transaction}{Transaction} transaction)
+\begin{DoxyCompactList}\small\item\em save Saves a transaction to the daily transaction file. \end{DoxyCompactList}\item 
+void \hyperlink{class_daily_transaction_aac759501cf6c7895a70eecbef0226ae1}{write} ()
+\begin{DoxyCompactList}\small\item\em write Writes the daily transaction file out to disk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_daily_transaction_ae77e11b6ea857b9155c8b74d285a7323}{dtf\-\_\-file}
+\item 
+vector$<$ \hyperlink{class_transaction}{Transaction} $>$ \hyperlink{class_daily_transaction_ad8a3abd39eadee0df36b0211044a9f6d}{transactions}
+\begin{DoxyCompactList}\small\item\em transactions The list of transactions currently in the daily transaction file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_daily_transaction}{Daily\-Transaction} Class. 
+
+Used for storing the daily transaction file and provides functions for interacting with it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_daily_transaction_a5e0774feeed7c301fdf41c8355a7379d}{\index{Daily\-Transaction@{Daily\-Transaction}!Daily\-Transaction@{Daily\-Transaction}}
+\index{Daily\-Transaction@{Daily\-Transaction}!DailyTransaction@{Daily\-Transaction}}
+\subsubsection[{Daily\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Daily\-Transaction} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_daily_transaction_a5e0774feeed7c301fdf41c8355a7379d}
+\hypertarget{class_daily_transaction_a6d37b085e35dffdc5821b591e2e989fa}{\index{Daily\-Transaction@{Daily\-Transaction}!Daily\-Transaction@{Daily\-Transaction}}
+\index{Daily\-Transaction@{Daily\-Transaction}!DailyTransaction@{Daily\-Transaction}}
+\subsubsection[{Daily\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Daily\-Transaction} (
+\begin{DoxyParamCaption}
+\item[{string}]{dtf\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{class_daily_transaction_a6d37b085e35dffdc5821b591e2e989fa}
+
+
+\hyperlink{class_daily_transaction}{Daily\-Transaction} The constructor for the class, requires a reference to the daily transaction file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtf\-\_\-file} & The path to the daily transaction file on disk. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_daily_transaction_ad618edc2ee7ccd8a63240f64b91918c6}{\index{Daily\-Transaction@{Daily\-Transaction}!save@{save}}
+\index{save@{save}!DailyTransaction@{Daily\-Transaction}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void save (
+\begin{DoxyParamCaption}
+\item[{{\bf Transaction}}]{transaction}
+\end{DoxyParamCaption}
+)}}\label{class_daily_transaction_ad618edc2ee7ccd8a63240f64b91918c6}
+
+
+save Saves a transaction to the daily transaction file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction} & The transaction to be saved. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_daily_transaction_aac759501cf6c7895a70eecbef0226ae1}{\index{Daily\-Transaction@{Daily\-Transaction}!write@{write}}
+\index{write@{write}!DailyTransaction@{Daily\-Transaction}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_daily_transaction_aac759501cf6c7895a70eecbef0226ae1}
+
+
+write Writes the daily transaction file out to disk. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_daily_transaction_ae77e11b6ea857b9155c8b74d285a7323}{\index{Daily\-Transaction@{Daily\-Transaction}!dtf\-\_\-file@{dtf\-\_\-file}}
+\index{dtf\-\_\-file@{dtf\-\_\-file}!DailyTransaction@{Daily\-Transaction}}
+\subsubsection[{dtf\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}string dtf\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{class_daily_transaction_ae77e11b6ea857b9155c8b74d285a7323}
+\hypertarget{class_daily_transaction_ad8a3abd39eadee0df36b0211044a9f6d}{\index{Daily\-Transaction@{Daily\-Transaction}!transactions@{transactions}}
+\index{transactions@{transactions}!DailyTransaction@{Daily\-Transaction}}
+\subsubsection[{transactions}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Transaction}$>$ transactions\hspace{0.3cm}{\ttfamily [private]}}}\label{class_daily_transaction_ad8a3abd39eadee0df36b0211044a9f6d}
+
+
+transactions The list of transactions currently in the daily transaction file. 
+
+dtf\-\_\-file The path to the daily transaction file on disk. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_daily_transaction_8hpp}{Daily\-Transaction.\-hpp}\end{DoxyCompactItemize}
