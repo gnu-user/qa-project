@@ -32,7 +32,8 @@ public:
     /**
      * CurrentUserAccounts The constructor for the class,
      * requires a reference to the current user accounts file path.
-     * @param cua_file
+     * @param cua_file The path to the current user accounts file
+     * on disk.
      */
     CurrentUserAccounts(string cua_file);
    
