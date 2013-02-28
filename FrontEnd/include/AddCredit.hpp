@@ -45,6 +45,6 @@ public:
     * process_credit Performs the addition of the credit to the previously specified user account.
     * @param credit The actual amount of credit to add.
     */
-    void process_credit(double credit);
+    void process_credit(string credit);
 };
 #endif /* ADDCREDIT_HPP_ */

@@ -65,6 +65,6 @@ public:
      * for the refund.
      * @param credit The specified refund amount, in dollars.
      */
-    void process_credit(double credit);
+    void process_credit(string credit);
 };
 #endif /* REFUND_HPP_ */

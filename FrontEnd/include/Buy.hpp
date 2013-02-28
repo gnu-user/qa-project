@@ -53,7 +53,7 @@ public:
      * purchased.
      * @param volume The number of tickets being purchased.
      */
-    void process_volume(int volume);
+    void process_volume(string volume);
    
     /**
      * process_seller Validates and processes the specified seller for the

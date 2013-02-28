@@ -10,7 +10,7 @@ void AddCredit::process_username(string username, CurrentUserAccounts user_accou
     throw Exception(NOT_YET_IMPLEMENTED);
 }
 
-void AddCredit::process_credit(double credit)
+void AddCredit::process_credit(string credit)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }

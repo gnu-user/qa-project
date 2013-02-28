@@ -15,7 +15,7 @@ void Refund::process_seller(string seller, AvailableTickets available_tickets)
     throw Exception(NOT_YET_IMPLEMENTED);
 }
 
-void Refund::process_credit(double credit)
+void Refund::process_credit(string credit)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
