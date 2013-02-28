@@ -9,3 +9,8 @@ void Delete::process_username(string input, CurrentUserAccounts user_accounts)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
+
+void Delete::save_transaction()
+{
+    throw Exception(NOT_YET_IMPLEMENTED);
+}
