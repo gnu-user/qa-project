@@ -38,7 +38,7 @@ User Login::process_username(string input, CurrentUserAccounts user_account)
         throw e;
     }
 
-    return this->user;
+    return user;
 }
 
 void Login::save_transaction()
