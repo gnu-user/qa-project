@@ -31,10 +31,8 @@ enum exception_codes {
     INVALID_TITLE,         //!< INVALID_TITLE Invalid title specified.
     INVALID_TITLE_LENGTH,  //!< INVALID_TITLE_LENGTH Invalid title specified, length is invalid.
     INVALID_TITLE_RESERVED,//!< INVALID_TITLE_RESERVED Invalid title specified, contains reserved word.
-    INVALID_SALE_PRICE,    //!< INVALID_SALE_PRICE Invalid ticket sale price, amount must be dollars.
-    INVALID_CREDIT_AMOUNT, //!< INVALID_CREDIT_AMOUNT Invalid credit amount specified, amount must be in dollars.
-    SALE_PRICE_NEGATIVE,   //!< SALE_PRICE_NEGATIVE Invalid ticket sale price specified, amount must be positive.
-    CREDIT_AMOUNT_NEGATIVE,//!< CREDIT_AMOUNT_NEGATIVE Invalid credit amount specified, amount must be a positive value.
+    INVALID_AMOUNT,        //!< INVALID_AMOUNT Invalid value specified, amount must be in dollars.
+    NEGATIVE_AMOUNT,       //!< NEGATIVE_AMOUNT Invalid value specified, amount must be positive.
     CREDIT_AMOUNT_OVERFLOW,//!< CREDIT_AMOUNT_OVERFLOW Invalid credit amount specified, amount cannot exceed 1000.00.
     SALE_PRICE_OVERFLOW,   //!< SALE_PRICE_OVERFLOW Invalid sale price specified, amount cannot exceed 999.99.
     USER_CREDIT_OVERFLOW,  //!< USER_CREDIT_OVERFLOW User credit cannot exceed 999999.99.
@@ -81,10 +79,8 @@ private:
         {INVALID_TITLE, "Invalid event title."},
         {INVALID_TITLE_LENGTH, "Invalid event title, event title cannot exceed 19 characters."},
         {INVALID_TITLE_RESERVED, "Invalid event title, event title cannot contain the word \"END\"."},
-        {INVALID_SALE_PRICE, "Invalid sale price, amount must be in dollars (e.g. 10.00)."},
-        {INVALID_CREDIT_AMOUNT, "Invalid credit value, amount must be in dollars (e.g. 10.00)."},
-        {SALE_PRICE_NEGATIVE, "Invalid sale price, amount cannot be less than 0.00."},
-        {CREDIT_AMOUNT_NEGATIVE, "Invalid credit value, amount cannot be less than 0.00."},
+        {INVALID_AMOUNT, "Invalid value, amount must be in dollars (e.g. 10.00)."},
+        {NEGATIVE_AMOUNT, "Invalid value, amount cannot be less than 0.00."},
         {CREDIT_AMOUNT_OVERFLOW, "Invalid credit value, amount cannot exceed 1000.00."},
         {SALE_PRICE_OVERFLOW, "Invalid sale price, amount cannot exceed 999.99." },
         {USER_CREDIT_OVERFLOW, "Invalid credit amount, user credit cannot exceed 999999.99."},
