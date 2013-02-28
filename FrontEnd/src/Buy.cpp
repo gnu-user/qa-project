@@ -24,3 +24,8 @@ void Buy::process_confirmation(string input)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
+
+void Buy::save_transaction()
+{
+    throw Exception(NOT_YET_IMPLEMENTED);
+}

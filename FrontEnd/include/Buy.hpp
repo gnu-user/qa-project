@@ -29,6 +29,9 @@ private:
     int volume;
     string seller;
 
+protected:
+    virtual void save_transaction();
+
 public:
     /**
      * Buy The constructor for the class, requires a reference to the

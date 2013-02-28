@@ -25,6 +25,9 @@ private:
     string types[];
     string new_username;
 
+protected:
+    virtual void save_transaction();
+
 public:
     /**
      * Create The constructor for the class, requires a reference to the

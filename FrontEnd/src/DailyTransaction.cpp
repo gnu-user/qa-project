@@ -1,6 +1,8 @@
 #include "../include/DailyTransaction.hpp"
+#include "Poco/FileStream.h"
 #include <iostream>
 
+using Poco::FileOutputStream;
 using namespace std;
 
 DailyTransaction::DailyTransaction()
@@ -20,8 +22,17 @@ void DailyTransaction::save(Transaction transaction)
 
 void DailyTransaction::write()
 {
-    for (vector<Transaction>::iterator it = this->transactions.begin(); it != this->transactions.end(); ++it)
+    FileOutputStream fos(dtf_file);
+
+    if (fos.good())
     {
-        cout << it->get_transaction() << endl;
+        for (vector<Transaction>::iterator it = transactions.begin(); it != transactions.end(); ++it)
+        {
+            fos << it->get_transaction() << endl;
+        }
+    }
+    else
+    {
+        throw Exception(DTF_WRITE_ERROR);
     }
 }

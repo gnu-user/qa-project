@@ -24,22 +24,22 @@ User::User(string username, string type, double credit)
 
 string User::get_username()
 {
-    return this->username;
+    return username;
 }
 
 string User::get_type()
 {
-    return this->type;
+    return type;
 }
 
 double User::get_credit()
 {
-    return this->credit;
+    return credit;
 }
 
 bool User::get_status()
 {
-    return this->login_status;
+    return login_status;
 }
 
 void User::login()
@@ -55,7 +55,7 @@ void User::logout()
 
 bool User::has_permissions(string transaction)
 {
-    vector<string> user_perms = this->permissions[this->type];
+    vector<string> user_perms = permissions[type];
 
     if(find(user_perms.begin(), user_perms.end(), transaction) != user_perms.end())
     {

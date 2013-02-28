@@ -19,3 +19,8 @@ void Refund::process_credit(string input)
 {
     throw Exception(NOT_YET_IMPLEMENTED);
 }
+
+void Refund::save_transaction()
+{
+    throw Exception(NOT_YET_IMPLEMENTED);
+}

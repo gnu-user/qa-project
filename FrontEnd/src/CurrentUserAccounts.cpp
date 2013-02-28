@@ -39,7 +39,7 @@ CurrentUserAccounts::CurrentUserAccounts(string cua_file)
 
 bool CurrentUserAccounts::has_user(string username)
 {
-    for (vector<User>::iterator it = this->users.begin(); it != this->users.end(); ++it)
+    for (vector<User>::iterator it = users.begin(); it != users.end(); ++it)
     {
         if (it->get_username().compare(username) == 0)
         {
@@ -52,7 +52,7 @@ bool CurrentUserAccounts::has_user(string username)
 
 User CurrentUserAccounts::get_user(string username)
 {
-    for (vector<User>::iterator it = this->users.begin(); it != this->users.end(); ++it)
+    for (vector<User>::iterator it = users.begin(); it != users.end(); ++it)
     {
         if (it->get_username().compare(username) == 0)
         {
@@ -65,16 +65,17 @@ User CurrentUserAccounts::get_user(string username)
 
 void CurrentUserAccounts::display_users()
 {
-    for (vector<User>::iterator it = this->users.begin(); it != this->users.end(); ++it)
+    for (vector<User>::iterator it = users.begin(); it != users.end(); ++it)
     {
-        cout << it->get_username() << " " << it->get_type() << " " << it->get_credit() << endl;
+        cout << it->get_username() << " " << it->get_type() << " "
+             << it->get_credit() << endl;
     }
 }
 
 void CurrentUserAccounts::parse()
 {
     /* Read the contents of the current user accounts and store each user */
-    FileInputStream fis(this->cua_file);
+    FileInputStream fis(cua_file);
 
     if (fis.good())
     {

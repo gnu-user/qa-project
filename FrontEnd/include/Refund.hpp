@@ -18,6 +18,9 @@ private:
     string seller;
     double credit;
 
+protected:
+    virtual void save_transaction();
+
 public:
     Refund(User current_user);
    

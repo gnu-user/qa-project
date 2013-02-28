@@ -24,6 +24,9 @@ private:
     string username;
     double credit;
 
+protected:
+    virtual void save_transaction();
+
 public:
     /**
      * AddCredit The constructor for the class, requires a user specified to add the credit to.
