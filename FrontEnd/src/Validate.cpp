@@ -33,8 +33,14 @@ bool Validate::title(string title)
         throw Exception(INVALID_TITLE_LENGTH);
     }
 
-    /* Verify the title does not have "END " (with a space) */
-    if (toLower(title).compare("end ") == 0)
+    /* Verify the title does not have and of the following instances of "END":
+     * END (one word)
+     * The END (last word)
+     * END of world (END with space on right)
+     * The END of fun (END with spaces)
+     */
+    RegularExpression re_end("(^END$)|(^END\\s.*$)|(^.*?\\sEND$)|(^.*?\\sEND\\s.*$)");
+    if (re_end.match(title))
     {
         throw Exception(INVALID_TITLE_RESERVED);
     }
