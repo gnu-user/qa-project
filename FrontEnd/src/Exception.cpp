@@ -16,9 +16,3 @@ string Exception::mesg()
 {
     return code_msg[code];
 }
-
-Exception::~Exception()
-{
-    // TODO Auto-generated destructor stub
-}
-

@@ -110,11 +110,6 @@ public:
      * @return Returns an exception string.
      */
     string mesg();
-
-    /**
-     * ~Exception Virtual object for interface usage in C++.
-     */
-    virtual ~Exception();
 };
 
 #endif /* EXCEPTION_HPP_ */
