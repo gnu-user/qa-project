@@ -57,7 +57,7 @@ private:
 	 */
     map<exception_codes, string> code_msg {
         {ALREADY_LOGIN, "Invalid transaction, you are already logged in."},
-        {DELETE_SELF, "Invalid transaction, you can not delete yourself."},
+        {DELETE_SELF, "Invalid transaction, you cannot delete yourself."},
         {INVALID_PRIV, "Invalid transaction, you do not have the necessary privileges."},
         {MUST_LOGIN, "Invalid transaction, only login accepted."},
         {ATF_NOT_FOUND, "Available tickets file not found, check arguments provided."},
