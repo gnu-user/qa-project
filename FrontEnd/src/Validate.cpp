@@ -25,9 +25,24 @@ bool Validate::username(string username)
     return re.match(username);
 }
 
-bool Validate::event(string event)
+bool Validate::title(string title)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    /* Verify the title length */
+    if (title.length() > 19)
+    {
+        throw Exception(INVALID_TITLE_LENGTH);
+    }
+
+    /* Verify the title does not have "END " (with a space) */
+    if (toLower(title).compare("end ") == 0)
+    {
+        throw Exception(INVALID_TITLE_RESERVED);
+    }
+
+    /* Verify the event matches the format */
+    RegularExpression re("^.{1,19}$");
+
+    return re.match(title);
 }
 
 bool Validate::cua_entry(string entry)

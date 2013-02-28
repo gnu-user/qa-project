@@ -28,6 +28,7 @@ enum exception_codes {
     SELLER_IS_SELF,        // Trying to purchase tickets from yourself
     TITLE_NOT_FOUND,       // Event title not found
     TICKET_NOT_FOUND,      // Ticket not found for sale by seller specified
+    INVALID_TITLE,         // Generic invalid title
     INVALID_TITLE_LENGTH,  // Invalid title specified, length is invalid
     INVALID_TITLE_RESERVED,// Invalid title specified, uses reserved word
     INVALID_SALE_PRICE,    // Ticket sale price, must be dollars
@@ -77,6 +78,7 @@ private:
         {SELLER_IS_SELF, "Invalid username, you cannot purchase tickets from yourself."},
         {TITLE_NOT_FOUND, "Invalid event title, event title does not exist."},
         {TICKET_NOT_FOUND, "Tickets not found, specified seller is not selling tickets to that event."},
+        {INVALID_TITLE, "Invalid event title."},
         {INVALID_TITLE_LENGTH, "Invalid event title, event title cannot exceed 19 characters."},
         {INVALID_TITLE_RESERVED, "Invalid event title, event title cannot contain the word \"END\"."},
         {INVALID_SALE_PRICE, "Invalid sale price, amount must be in dollars (e.g. 10.00)."},
