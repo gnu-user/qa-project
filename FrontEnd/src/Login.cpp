@@ -9,7 +9,7 @@ Login::Login(User current_user)
    }
 }
 
-User Login::process_username(string username, CurrentUserAccounts user_account)
+User Login::process_username(string username, CurrentUserAccounts user_accounts)
 {
     try
     {
@@ -17,9 +17,9 @@ User Login::process_username(string username, CurrentUserAccounts user_account)
         if (Validate::username(username))
         {
             /* If the username exists, set the user and save transaction */
-            if (user_account.has_user(username))
+            if (user_accounts.has_user(username))
             {
-                this->user = user_account.get_user(username);
+                this->user = user_accounts.get_user(username);
             }
             else
             {

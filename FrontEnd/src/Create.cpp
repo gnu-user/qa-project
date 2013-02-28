@@ -19,7 +19,7 @@ Create::Create(User current_user)
     this->code = "01";
 }
 
-void Create::process_username(string username, CurrentUserAccounts user_account)
+void Create::process_username(string username, CurrentUserAccounts user_accounts)
 {
     try
     {
@@ -27,7 +27,7 @@ void Create::process_username(string username, CurrentUserAccounts user_account)
         if (Validate::username(username))
         {
             /* Accept the new username if it is unique */
-            if (! user_account.has_user(username))
+            if (! user_accounts.has_user(username))
             {
                 this->new_username = username;
             }

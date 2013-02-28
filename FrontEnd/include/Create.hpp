@@ -46,9 +46,9 @@ public:
      * process_username Validates and processes the username entered for
      * creation.
      * @param username The username to create.
-     * @param user_account A handle to the current user accounts.
+     * @param user_accounts A handle to the current user accounts.
      */
-    void process_username(string username, CurrentUserAccounts user_account);
+    void process_username(string username, CurrentUserAccounts user_accounts);
    
     /**
      * process_type Validates and processes the type of user account
