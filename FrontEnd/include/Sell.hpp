@@ -56,7 +56,7 @@ public:
      * for the tickets.
      * @param price The price, in dollars, for the tickets being sold.
      */
-    void process_price(double price);
+    void process_price(string price);
    
     /**
      * process_volume Validates and processes the specified number

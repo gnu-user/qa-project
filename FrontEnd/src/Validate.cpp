@@ -1,8 +1,12 @@
 #include "../include/Validate.hpp"
 #include "Poco/String.h"
+#include "Poco/Exception.h"
+#include "Poco/NumberParser.h"
 #include "Poco/RegularExpression.h"
 
 using Poco::toLower;
+using Poco::NumberParser;
+using Poco::SyntaxException;
 using Poco::RegularExpression;
 
 bool Validate::username(string username)
@@ -69,7 +73,23 @@ bool Validate::atf_entry(string entry)
 
 bool Validate::dollars(string amount, double& converted)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    /* Verify the amount provided can be converted to float */
+    try
+    {
+        converted = NumberParser::parseFloat(amount);
+    }
+    catch (SyntaxException& s)
+    {
+        throw Exception(INVALID_SALE_PRICE);
+    }
+
+    /* Verify the amount is not negative */
+    if (converted < 0.0)
+    {
+        throw Exception(SALE_PRICE_NEGATIVE);
+    }
+
+    return true;
 }
 
 bool Validate::volume(string amount, int& converted)

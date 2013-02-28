@@ -40,9 +40,31 @@ void Sell::process_title(string title)
     }
 }
 
-void Sell::process_price(double price)
+void Sell::process_price(string price)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    double tmp_price = 0.0;
+
+    try
+    {
+        /* Validate the price is in dollars amount */
+        if (Validate::dollars(price, tmp_price))
+        {
+            /* Verify ticket price is less than maximum, 999.99 */
+            if (tmp_price <= 999.99)
+            {
+                this->price = tmp_price;
+            }
+            else
+            {
+                throw Exception(SALE_PRICE_OVERFLOW);
+            }
+        }
+    }
+    /* Catch any exceptions and throw them to the calling function */
+    catch (Exception& e)
+    {
+        throw e;
+    }
 }
 
 void Sell::process_volume(int volume)
