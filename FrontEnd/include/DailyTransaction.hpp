@@ -16,9 +16,12 @@ private:
     string dtf_file;
 
 public:
+    /* Default nullary constructor */
+    DailyTransaction();
+
     DailyTransaction(string dtf_file);
    
-    void save(Transaction& transaction);
+    void save(Transaction transaction);
    
     void write();
 };

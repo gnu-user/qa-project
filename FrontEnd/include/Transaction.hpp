@@ -15,7 +15,7 @@ protected:
     string code;
     string transaction;
    
-    virtual void save_transaction() = 0;
+    virtual void save_transaction();
 
     /* Transaction formatting helpers, overloads for each type of transaction format */
     // TODO fix this, have two overloads that are the same... not possible

@@ -89,3 +89,8 @@ string Transaction::format(string code, string event, string seller, int volume,
 
     return transaction;
 }
+
+void Transaction::save_transaction()
+{
+    throw Exception(NOT_YET_IMPLEMENTED);
+}

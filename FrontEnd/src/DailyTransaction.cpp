@@ -1,16 +1,27 @@
 #include "../include/DailyTransaction.hpp"
+#include <iostream>
+
+using namespace std;
+
+DailyTransaction::DailyTransaction()
+{
+
+}
 
 DailyTransaction::DailyTransaction(string dtf_file)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    this->dtf_file = dtf_file;
 }
 
-void DailyTransaction::save(Transaction& transaction)
+void DailyTransaction::save(Transaction transaction)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    this->transactions.push_back(transaction);
 }
 
 void DailyTransaction::write()
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    for (vector<Transaction>::iterator it = this->transactions.begin(); it != this->transactions.end(); ++it)
+    {
+        cout << it->get_transaction() << endl;
+    }
 }
