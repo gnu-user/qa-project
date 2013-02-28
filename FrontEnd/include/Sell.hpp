@@ -63,6 +63,6 @@ public:
      * of tickets to be sold.
      * @param volume The number of tickets to be sold.
      */
-    void process_volume(int volume);
+    void process_volume(string volume);
 };
 #endif /* SELL_HPP_ */

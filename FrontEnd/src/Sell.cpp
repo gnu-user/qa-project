@@ -67,12 +67,41 @@ void Sell::process_price(string price)
     }
 }
 
-void Sell::process_volume(int volume)
+void Sell::process_volume(string volume)
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    int tmp_volume = 0;
+
+    try
+    {
+        /* Validate the volume is a valid integer */
+        if (Validate::volume(volume, tmp_volume))
+        {
+            /* Verify the volume of tickets is less than maximum, 100 */
+            if (tmp_volume <= 100)
+            {
+                this->volume = tmp_volume;
+                save_transaction();
+            }
+            else
+            {
+                throw Exception(TICKET_VOLUME_OVERFLOW);
+            }
+        }
+    }
+    /* Catch any exceptions and throw them to the calling function */
+    catch (Exception& e)
+    {
+        throw e;
+    }
 }
 
 void Sell::save_transaction()
 {
-    throw Exception(NOT_YET_IMPLEMENTED);
+    this->transaction = format(
+                            code,
+                            title,
+                            user.get_username(),
+                            volume,
+                            price
+                        );
 }
