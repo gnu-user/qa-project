@@ -10,51 +10,54 @@ using namespace std;
  * Exception codes used for various error messages throughout the program.
  */
 enum exception_codes {
-    ALREADY_LOGIN,         //!< ALREADY_LOGIN
-    DELETE_SELF,           //!< DELETE_SELF
-    INVALID_PRIV,          //!< INVALID_PRIV
-    MUST_LOGIN,            //!< MUST_LOGIN
-    ATF_NOT_FOUND,            // Available tickets file not found
-    CUA_NOT_FOUND,            // Current user accounts file not found
-    CORRUPT_ATF,              // Available tickets file corrupted
-    CORRUPT_CUA,              // Current user accounts file corrupted
-    DTF_WRITE_ERROR,          // Error writing the daily transaction file
-    INVALID_USER,          //!< INVALID_USER
-    UNKNOWN_USER,          //!< UNKNOWN_USER
-    INVALID_USER_TYPE,        // Invalid user type
-    INVALID_USER_LENGTH,   //!< INVALID_USER_LENGTH
-    INVALID_USER_RESERVED,    // Exception for a user with reserved word, like "END"
-    INVALID_USER_EXISTS,   //!< INVALID_USER_EXISTS
-    SELLER_IS_SELF,           // Trying to purchase tickets from yourself
-    TITLE_NOT_FOUND,          // Event title not found
-    TICKET_NOT_FOUND,         // Ticket not found for sale by seller specified
-    INVALID_TITLE,            // Generic invalid title
-    INVALID_TITLE_LENGTH,  //!< INVALID_TITLE_LENGTH
-    INVALID_TITLE_RESERVED,//!< INVALID_TITLE_RESERVED
-    INVALID_SALE_PRICE,       // Ticket sale price, must be dollars
-    INVALID_CREDIT_AMOUNT,    // Credit amount must be in dollars
-    SALE_PRICE_NEGATIVE,      // Ticket sale price, must be positive
-    CREDIT_AMOUNT_NEGATIVE,   // Credit amount, must be positive
-    CREDIT_AMOUNT_OVERFLOW,   // Credit amount, cannot exceed 1000.00
-    SALE_PRICE_OVERFLOW,      // Sale price, cannot exceed 999.99
-    USER_CREDIT_OVERFLOW,     // User credit cannot exceed 999999.99.
-    INVALID_TICKET_VOLUME,    // Volume must be an integer value
-    TICKET_VOLUME_NEGATIVE,   // Volume cannot be less than 0
-    TICKET_VOLUME_OVERFLOW,   // Volume cannot exceed 100.
-    TICKET_VOLUME_USER_MAX,   // Non-admin users cannot purchase more than 4 tickets
-    ONE_SELL_PER_SESSION,     // Only one sell transaction per session
-    INVALID_CONFIRMATION,     // Confirmation must be yes/no
-    NOT_YET_IMPLEMENTED       // Exception for anyting not implemented yet
+    ALREADY_LOGIN,         // User is already logged in
+    DELETE_SELF,           // Cannot delete a user account that is logged in
+    INVALID_PRIV,          // Insufficient privileges to execute transaction
+    MUST_LOGIN,            // User must be logged in
+    ATF_NOT_FOUND,         // Available tickets file not found
+    CUA_NOT_FOUND,         // Current user accounts file not found
+    CORRUPT_ATF,           // Available tickets file corrupted
+    CORRUPT_CUA,           // Current user accounts file corrupted
+    DTF_WRITE_ERROR,       // Error writing the daily transaction file
+    INVALID_USER,          // Invalid user specified
+    UNKNOWN_USER,          // User specified is unknown
+    INVALID_USER_TYPE,     // Invalid user type
+    INVALID_USER_LENGTH,   // Invalid user name specified, length is invalid
+    INVALID_USER_RESERVED, // Exception for a user with reserved word, like "END"
+    INVALID_USER_EXISTS,   // Invalid user specified, user already exists
+    SELLER_IS_SELF,        // Trying to purchase tickets from yourself
+    TITLE_NOT_FOUND,       // Event title not found
+    TICKET_NOT_FOUND,      // Ticket not found for sale by seller specified
+    INVALID_TITLE,         // Generic invalid title
+    INVALID_TITLE_LENGTH,  // Invalid title specified, length is invalid
+    INVALID_TITLE_RESERVED,// Invalid title specified, uses reserved word
+    INVALID_SALE_PRICE,    // Ticket sale price, must be dollars
+    INVALID_CREDIT_AMOUNT, // Credit amount must be in dollars
+    SALE_PRICE_NEGATIVE,   // Ticket sale price, must be positive
+    CREDIT_AMOUNT_NEGATIVE,// Credit amount, must be positive
+    CREDIT_AMOUNT_OVERFLOW,// Credit amount, cannot exceed 1000.00
+    SALE_PRICE_OVERFLOW,   // Sale price, cannot exceed 999.99
+    USER_CREDIT_OVERFLOW,  // User credit cannot exceed 999999.99.
+    INVALID_TICKET_VOLUME, // Volume must be an integer value
+    TICKET_VOLUME_NEGATIVE,// Volume cannot be less than 0
+    TICKET_VOLUME_OVERFLOW,// Volume cannot exceed 100.
+    TICKET_VOLUME_USER_MAX,// Non-admin users cannot purchase more than 4 tickets
+    ONE_SELL_PER_SESSION,  // Only one sell transaction per session
+    INVALID_CONFIRMATION,  // Confirmation must be yes/no
+    NOT_YET_IMPLEMENTED    // Exception for anything not implemented yet
 };
 
 /**
+ *  Exception Class
  *
+ *  Used for all exceptions within every transaction, and provides
+ *  functions for providing diagnostic output.
  */
 class Exception
 {
 private:
 	/**
-	 *
+	 * code_msg Maps the transaction error codes to error messages.
 	 */
     map<exception_codes, string> code_msg {
         {ALREADY_LOGIN, "Invalid transaction, you are already logged in."},
@@ -97,19 +100,19 @@ private:
 
 public:
     /**
-     *
-     * @param code
+     * Exception The constructor for the class, requires an exception code.
+     * @param code The exception code to use.
      */
     Exception(exception_codes code);
 
     /**
-     *
-     * @return
+     * mesg Outputs an exception message to the console.
+     * @return Returns an exception string.
      */
     string mesg();
 
     /**
-     *
+     * ~Exception Virtual object for interface usage in C++.
      */
     virtual ~Exception();
 };
