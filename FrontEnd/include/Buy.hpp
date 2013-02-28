@@ -10,9 +10,20 @@
 
 using namespace std;
 
+/**
+ * Buy Class
+ *
+ * Used for the Buy transaction functions and attributes.
+ */
 class Buy : public Transaction
 {
 private:
+	/**
+	 * ticket Stores a pointer to the ticket being purchased.
+	 * title Stores the title of the event for purchase.
+	 * volume Stores the volume of tickets to purchase.
+	 * seller Stores the name of the seller for the transaction.
+	 */
     Ticket* ticket;
     string title;
     int volume;
@@ -22,14 +33,41 @@ protected:
     virtual void save_transaction();
 
 public:
+    /**
+     * Buy The constructor for the class, requires a reference to the
+     * current user who is initiating the transaction.
+     * @param current_user
+     */
     Buy(User current_user);
    
+    /**
+     * process_title Validates and processes the transaction based on the
+     * event title specified.
+     * @param input The event title for the tickets being purchased.
+     * @param available_tickets A handle to the available tickets.
+     */
     void process_title(string input, AvailableTickets available_tickets);
    
+    /**
+     * process_volume Validates and processes the volume of tickets being
+     * purchased.
+     * @param input The number of tickets being purchased.
+     */
     void process_volume(string input);
    
+    /**
+     * process_seller Validates and processes the specified seller for the
+     * transaction.
+     * @param input The seller's name.
+     * @param available_tickets A handle to the available tickets.
+     */
     void process_seller(string input, AvailableTickets available_tickets);
    
+    /**
+     * process_confirmation Validates and processes the confirmation input
+     * for whether the user accepts the transaction.
+     * @param input The confirmation, either 'yes' or 'no'.
+     */
     void process_confirmation(string input);
 };
 #endif /* BUY_HPP_ */
