@@ -88,7 +88,7 @@ already logged in:
     Invalid transaction, you are already logged in.
 
 deleting yourself:
-    Invalid transaction, you can not delete yourself.
+    Invalid transaction, you cannot delete yourself.
 
 doing a privileged operation as non-priv user:
     Invalid transaction, you do not have the necessary privileges.
@@ -127,7 +127,10 @@ invalid username, cannot purchase tickets from self.
     Invalid username, you cannot purchase tickets from yourself.
 
 
-invalid title name:
+invalid title name, too short?
+    Invalid event title.
+
+invalid title name, does not exist:
     Invalid event title, event title does not exist.
 
 invalid title length, too long:
