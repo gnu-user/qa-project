@@ -171,6 +171,14 @@ int main(int argc, char** argv)
                   cout << "Enter the sale price in dollars: ";
                   getline(cin, input);
                   sell.process_price(input);
+
+                  /* Process the volume, save transaction if successful */
+                  cout << "Enter the number of tickets for sale: ";
+                  getline(cin, input);
+                  sell.process_volume(input);
+
+                  daily_transactions.save((Transaction) sell);
+                  cout << "Tickets listed for sale successfully." << endl;
                   break;
               }
               case _buy:
