@@ -80,13 +80,13 @@ bool Validate::dollars(string amount, double& converted)
     }
     catch (SyntaxException& s)
     {
-        throw Exception(INVALID_SALE_PRICE);
+        throw Exception(INVALID_AMOUNT);
     }
 
     /* Verify the amount is not negative */
     if (converted < 0.0)
     {
-        throw Exception(SALE_PRICE_NEGATIVE);
+        throw Exception(NEGATIVE_AMOUNT);
     }
 
     return true;

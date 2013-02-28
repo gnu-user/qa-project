@@ -8,6 +8,8 @@
 #include "../include/Logout.hpp"
 #include "../include/Create.hpp"
 #include "../include/Delete.hpp"
+#include "../include/Sell.hpp"
+
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -158,8 +160,17 @@ int main(int argc, char** argv)
               }
               case _sell:
               {
+                  Sell sell = Sell(current_user);
+
+                  /* Process the event title */
                   cout << "Enter the event title: ";
                   getline(cin, input);
+                  sell.process_title(input);
+
+                  /* Process sale price */
+                  cout << "Enter the sale price in dollars: ";
+                  getline(cin, input);
+                  sell.process_price(input);
                   break;
               }
               case _buy:
