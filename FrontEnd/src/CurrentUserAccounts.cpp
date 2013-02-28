@@ -15,6 +15,11 @@ using Poco::FileInputStream;
 using Poco::RegularExpression;
 using Poco::NumberParser;
 
+CurrentUserAccounts::CurrentUserAccounts()
+{
+
+}
+
 CurrentUserAccounts::CurrentUserAccounts(string cua_file)
 {
     File file = File(cua_file);

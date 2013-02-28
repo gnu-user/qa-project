@@ -16,6 +16,9 @@ private:
     string cua_file;
 
 public:
+    /* Default nullary constructor */
+    CurrentUserAccounts();
+
     CurrentUserAccounts(string cua_file);
    
     bool has_user(string username);

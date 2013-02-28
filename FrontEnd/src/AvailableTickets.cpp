@@ -17,6 +17,11 @@ using Poco::FileInputStream;
 using Poco::RegularExpression;
 using Poco::NumberParser;
 
+AvailableTickets::AvailableTickets()
+{
+
+}
+
 AvailableTickets::AvailableTickets(string atf_file)
 {
     File file = File(atf_file);

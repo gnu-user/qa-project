@@ -16,6 +16,9 @@ private:
     string atf_file;
 
 public:
+    /* Default nullary constructor */
+    AvailableTickets();
+
     AvailableTickets(string atf_file);
    
     bool has_event(string event);

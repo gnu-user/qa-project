@@ -25,7 +25,7 @@ private:
 
 
 public:
-    /* Default empty constructor, used only to simplify declaration of User variable */
+    /* Default nullary constructor */
     User();
 
     User(string username, string type, double credit);
