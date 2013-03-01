@@ -9,6 +9,7 @@
 #include "../include/Create.hpp"
 #include "../include/Delete.hpp"
 #include "../include/Sell.hpp"
+#include "../include/Buy.hpp"
 
 #include <iostream>
 #include <string>
@@ -183,8 +184,30 @@ int main(int argc, char** argv)
               }
               case _buy:
               {
+                  Buy buy = Buy(current_user);
+
+                  /* Process the event title */
                   cout << "Enter the event title: ";
                   getline(cin, input);
+                  buy.process_title(input, available_tickets);
+
+                  /* Process the volume */
+                  cout << "Enter the number of tickets to purchase: ";
+                  getline(cin, input);
+                  buy.process_volume(input);
+
+                  /* Process the seller */
+                  cout << "Enter the seller's username: ";
+                  getline(cin, input);
+                  buy.process_seller(input, available_tickets);
+
+                  /* Display the confirmation, save transaction if confirmed */
+                  cout << "Purchase tickets? Please confirm (yes/no): ";
+                  getline(cin, input);
+                  buy.process_confirmation(input);
+
+                  daily_transactions.save((Transaction) buy);
+                  cout << "Tickets purchased successfully." << endl;
                   break;
               }
               case _refund:
