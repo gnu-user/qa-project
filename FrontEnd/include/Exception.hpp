@@ -12,6 +12,7 @@ using namespace std;
 enum exception_codes {
     ALREADY_LOGIN,         //!< ALREADY_LOGIN User is already logged in.
     DELETE_SELF,           //!< DELETE_SELF Cannot delete a user account that is logged in.
+    INVALID_TRANSACTION,   //!< INVALID_TRANSACTION Generic invalid transaction
     INVALID_PRIV,          //!< INVALID_PRIV Insufficient privileges to execute transaction.
     MUST_LOGIN,            //!< MUST_LOGIN User must be logged in.
     ATF_NOT_FOUND,         //!< ATF_NOT_FOUND Available tickets file not found.
@@ -62,6 +63,7 @@ private:
     map<exception_codes, string> code_msg = {
         {ALREADY_LOGIN, "Invalid transaction, you are already logged in."},
         {DELETE_SELF, "Invalid transaction, you cannot delete yourself."},
+        {INVALID_TRANSACTION, "Invalid transaction."},
         {INVALID_PRIV, "Invalid transaction, you do not have the necessary privileges."},
         {MUST_LOGIN, "Invalid transaction, only login accepted."},
         {ATF_NOT_FOUND, "Available tickets file not found, check arguments provided."},
