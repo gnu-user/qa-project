@@ -148,6 +148,9 @@ invalid credit amount, must be dollars:
 invalid ticket sale price, must be positive:
     Invalid sale price, amount cannot be less than 0.00.
 
+seller not found listed in ATF selling any tickets...
+    "Invalid seller username, seller is not selling any tickets."
+
 ticket not found, event title and seller both exist, but no ticket with the
 title provided was found being sold by the seller:
     Tickets not found, specified seller is not selling tickets to that event.
