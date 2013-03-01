@@ -247,6 +247,11 @@ int main(int argc, char** argv)
                   addcredit.process_credit(input);
 
                   /* Process the username if applicable */
+                  addcredit.process_username(current_accounts);
+
+                  /* Add the transaction to the daily transaction file */
+                  daily_transactions.save((Transaction) addcredit);
+                  cout << "Credit added successfully." << endl;
                   break;
               }
               default:
