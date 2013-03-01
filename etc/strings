@@ -96,6 +96,9 @@ doing a privileged operation as non-priv user:
 doing anything other than login before logging in:
     Invalid transaction, only login accepted.
 
+generic invalid transaction, when logged in:
+    Invalid transaction.
+
 ATF Not found:
     Available tickets file not found, check arguments provided.
 
