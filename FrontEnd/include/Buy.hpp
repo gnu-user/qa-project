@@ -24,7 +24,7 @@ private:
 	 * volume Stores the volume of tickets to purchase.
 	 * seller Stores the name of the seller for the transaction.
 	 */
-    Ticket* ticket;
+    Ticket ticket;
     string title;
     int volume;
     string seller;
@@ -63,6 +63,12 @@ public:
      */
     void process_seller(string username, AvailableTickets available_tickets);
    
+    /**
+     * display_cost displays the cost per ticket and a total summary of the
+     * cost of the tickets.
+     */
+    void display_cost();
+
     /**
      * process_confirmation Validates and processes the confirmation input
      * for whether the user accepts the transaction.
