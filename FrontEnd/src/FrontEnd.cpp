@@ -220,12 +220,12 @@ int main(int argc, char** argv)
                   /* Process buyer's username */
                   cout << "Enter the buyer's username: ";
                   getline(cin, input);
-                  refund.process_buyer(input);
+                  refund.process_buyer(input, current_accounts);
 
                   /* Process the seller's username */
                   cout << "Enter the seller's username: ";
                   getline(cin, input);
-                  refund.process_seller(input);
+                  refund.process_seller(input, current_accounts);
 
                   /* Refund the credit amount specified */
                   cout << "Enter the amount of credit to transfer: ";

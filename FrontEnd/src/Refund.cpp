@@ -49,7 +49,7 @@ void Refund::process_buyer(string buyer, CurrentUserAccounts user_accounts)
     }
 }
 
-void Refund::process_seller(string seller, AvailableTickets available_tickets)
+void Refund::process_seller(string seller, CurrentUserAccounts user_accounts)
 {
     try
     {
@@ -89,7 +89,7 @@ void Refund::process_credit(string credit)
             if (Validate::dollars(credit, tmp_credit))
             {
                 /* Verify credit is less than overflow, 999999.99 */
-                if (credit <= 999999.99)
+                if (tmp_credit <= 999999.99)
                 {
                     this->credit = tmp_credit;
                 }

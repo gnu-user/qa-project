@@ -56,9 +56,9 @@ public:
      * process_seller Validates and processes the specified seller for
      * the refund.
      * @param seller The seller for the sale to be refunded.
-     * @param available_tickets A handle to the available tickets file.
+     * @param user_accounts A handle to the current user accounts.
      */
-    void process_seller(string seller, AvailableTickets available_tickets);
+    void process_seller(string seller, CurrentUserAccounts user_accounts);
    
     /**
      * process_credit Validates and processes the specified amount
