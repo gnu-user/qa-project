@@ -18,10 +18,8 @@ class AddCredit : public Transaction
 {
 private:
 	/**
-	 * username Stores the username used in the transaction.
 	 * credit Stores the amount of credit to add.
 	 */
-    string username;
     double credit;
 
 protected:
@@ -34,17 +32,16 @@ public:
      */
     AddCredit(User current_user);
 
-   /**
-    * process_username Determines the validity of the username specified, and processes that component of the transaction.
-    * @param username The username specified.
-    * @param user_accounts Provides a handle to the current user accounts object.
-    */
-    void process_username(string username, CurrentUserAccounts user_accounts);
+    /**
+     * process_credit Performs the addition of the credit to the previously specified user account.
+     * @param credit The actual amount of credit to add.
+     */
+     void process_credit(string credit);
 
    /**
-    * process_credit Performs the addition of the credit to the previously specified user account.
-    * @param credit The actual amount of credit to add.
+    * process_username Determines the validity of the username specified, and processes that component of the transaction.
+    * @param user_accounts Provides a handle to the current user accounts object.
     */
-    void process_credit(string credit);
+    void process_username(CurrentUserAccounts user_accounts);
 };
 #endif /* ADDCREDIT_HPP_ */
