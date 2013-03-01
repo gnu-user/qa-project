@@ -118,7 +118,7 @@ void AvailableTickets::parse()
 
                 string seller = read.substr(matches[2].offset, matches[2].length);
                 int volume = NumberParser::parse((read.substr(matches[3].offset, matches[3].length)));
-                double price = NumberParser::parseFloat(read.substr(matches[3].offset, matches[3].length));
+                double price = NumberParser::parseFloat(read.substr(matches[4].offset, matches[4].length));
 
                 /* Add the ticket to the list of tickets */
                 this->tickets.push_back(Ticket(event, seller, volume, price));
