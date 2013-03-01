@@ -26,7 +26,7 @@ int main(int argc, char** argv)
     CurrentUserAccounts current_accounts;
     AvailableTickets available_tickets;
     DailyTransaction daily_transactions;
-    User current_user = User();    // Empty User rather than smart pointers
+    User current_user;
 
     /* Verify the correct number of arguments provided */
     if (argc < 4)
@@ -35,7 +35,7 @@ int main(int argc, char** argv)
              << "[daily transaction file]" << endl
              << "Example: ./FrontEnd user_accounts avail_tickets daily_transaction" << endl;
 
-        //return EXIT_FAILURE;
+        return EXIT_FAILURE;
     }
 
     /* Start the front end, read the input files and parse the contents */
@@ -43,52 +43,13 @@ int main(int argc, char** argv)
     {
         cout << "Welcome." << endl;
 
+        /* Parase the current user accounts file */
         current_accounts = CurrentUserAccounts(argv[1]);
         cout << "Current user accounts file read successfully." << endl;
 
-        /* Display each user */
-        current_accounts.display_users();
-
-        /* Check if user exists */
-        if (current_accounts.has_user("buyer"))
-        {
-            cout << "HAS buyer" << endl;
-        }
-        if (current_accounts.has_user("administrator"))
-        {
-            cout << "HAS administrator" << endl;
-        }
-        if (!current_accounts.has_user("admin"))
-        {
-            cout << "DOES NOT HAVE admin" << endl;
-        }
-
-        User new_user = current_accounts.get_user("administrator");
-        cout << new_user.get_username() << endl;
-
-
-        /* Available tickets file tests */
+        /* Parse the available tickets file */
         available_tickets = AvailableTickets(argv[2]);
         cout << "Available tickets file read successfully." << endl;
-
-        available_tickets.display_tickets();
-
-        /* Check that a ticket exists */
-        Ticket ticket = available_tickets.get_ticket("The Godfather III", "seller");
-
-        cout << ticket.get_event() << " " << ticket.get_seller() << endl;
-
-
-        // Make a new user
-        User derp = User("derp", "BS", 0.0);
-        cout << derp.get_username() << " " << derp.get_type() << " " << derp.get_credit() << endl;
-
-        if (derp.has_permissions("buy"))
-        {
-            cout << "HAS PERM" << endl;
-        }
-
-        ticket = Ticket("Test", "tester", 10, 5.00);
 
         /* Set the filename for the daily transaction file */
         daily_transactions = DailyTransaction(argv[3]);
@@ -96,7 +57,7 @@ int main(int argc, char** argv)
     catch (Exception& e)
     {
         cerr << e.mesg() << endl;
-        //return EXIT_FAILURE;
+        return EXIT_FAILURE;
     }
 
     while(true)
