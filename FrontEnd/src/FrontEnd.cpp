@@ -6,6 +6,7 @@
 #include "../include/Transaction.hpp"
 #include "../include/Login.hpp"
 #include "../include/Logout.hpp"
+#include "../include/Refund.hpp"
 #include "../include/Create.hpp"
 #include "../include/Delete.hpp"
 #include "../include/Sell.hpp"
@@ -214,8 +215,26 @@ int main(int argc, char** argv)
               }
               case _refund:
               {
+                  Refund refund = Refund(current_user);
+
+                  /* Process buyer's username */
                   cout << "Enter the buyer's username: ";
                   getline(cin, input);
+                  refund.process_buyer(input);
+
+                  /* Process the seller's username */
+                  cout << "Enter the seller's username: ";
+                  getline(cin, input);
+                  refund.process_seller(input);
+
+                  /* Refund the credit amount specified */
+                  cout << "Enter the amount of credit to transfer: ";
+                  getline(cin, input);
+                  refund.process_credit(input);
+
+                  /* Add the transaction to the daily transaction file */
+                  daily_transactions.save((Transaction) refund);
+                  cout << "Buyer refunded successfully." << endl;
                   break;
               }
               case _addcredit:
