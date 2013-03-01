@@ -27,6 +27,9 @@ private:
     double price;
 
 public:
+    /* Default nullary constructor */
+    Ticket();
+
     /**
      * Ticket The constructor for the class, requires all class attributes
      * to be defined.

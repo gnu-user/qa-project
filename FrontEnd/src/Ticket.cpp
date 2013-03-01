@@ -1,5 +1,10 @@
 #include "../include/Ticket.hpp"
 
+Ticket::Ticket()
+{
+
+}
+
 Ticket::Ticket(string event, string seller, int volume, double price)
 {
     this->event = event;

@@ -24,7 +24,7 @@ private:
      * price Contains the price for the ticket sales.
      * volume Contains the volume of tickets to sell.
      */
-    Ticket* ticket;
+    Ticket ticket;
     string title;
     double price;
     int volume;

@@ -31,7 +31,7 @@ private:
     /**
      * permissions Maps the user types to allowed transaction permissions.
      */
-    map<string, vector<string>> permissions {
+    map<string, vector<string>> permissions = {
         {"AA", {"login", "logout", "create", "delete", "sell", "buy", "refund", "addcredit"}},
         {"FS", {"login", "logout", "sell", "buy", "addcredit"}},
         {"BS", {"login", "logout", "buy", "addcredit"}},
