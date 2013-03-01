@@ -78,7 +78,7 @@ void AddCredit::process_username(CurrentUserAccounts user_accounts)
             }
             else
             {
-                throw Exception(INVALID_USER);
+                throw Exception(UNKNOWN_USER);
             }
         }
         else
