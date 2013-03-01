@@ -10,6 +10,8 @@
 #include "../include/Delete.hpp"
 #include "../include/Sell.hpp"
 #include "../include/Buy.hpp"
+#include "../include/Refund.hpp"
+#include "../include/AddCredit.hpp"
 
 #include <iostream>
 #include <string>
@@ -218,12 +220,19 @@ int main(int argc, char** argv)
               }
               case _addcredit:
               {
+                  AddCredit addcredit = AddCredit(current_user);
+
+                  /* Process amount of credit to add */
                   cout << "Enter the amount of credit to add: ";
                   getline(cin, input);
+                  addcredit.process_credit(input);
+
+                  /* Process the username if applicable */
                   break;
               }
               default:
               {
+                  throw Exception(INVALID_TRANSACTION);
                   break;
               }
             }
