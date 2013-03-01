@@ -27,6 +27,7 @@ enum exception_codes {
     INVALID_USER_EXISTS,   //!< INVALID_USER_EXISTS Invalid user specified, user already exists.
     SELLER_IS_SELF,        //!< SELLER_IS_SELF Trying to purchase tickets from yourself.
     TITLE_NOT_FOUND,       //!< TITLE_NOT_FOUND Event title not found.
+    SELLER_NOT_FOUND,      //!< SELLER_NOT_FOUND The seller was not found selling any tickets
     TICKET_NOT_FOUND,      //!< TICKET_NOT_FOUND Ticket not found for sale by seller specified.
     INVALID_TITLE,         //!< INVALID_TITLE Invalid title specified.
     INVALID_TITLE_LENGTH,  //!< INVALID_TITLE_LENGTH Invalid title specified, length is invalid.
@@ -41,6 +42,7 @@ enum exception_codes {
     TICKET_VOLUME_OVERFLOW,//!< TICKET_VOLUME_OVERFLOW Ticket volume cannot exceed 100.
     TICKET_VOLUME_USER_MAX,//!< TICKET_VOLUME_USER_MAX Non-admin users cannot purchase more than 4 tickets per session.
     ONE_SELL_PER_SESSION,  //!< ONE_SELL_PER_SESSION Only one sell transaction may occur per session.
+    PURCHASE_CANCELED,    //!< PURCHASE_CANCELLED User canceled the ticket purchase
     INVALID_CONFIRMATION,  //!< INVALID_CONFIRMATION Confirmation must be 'yes' or 'no'.
     NOT_YET_IMPLEMENTED    //!< NOT_YET_IMPLEMENTED Exception used for anything not implemented yet.
 };
@@ -57,7 +59,7 @@ private:
 	/**
 	 * code_msg Maps the transaction error codes to error messages.
 	 */
-    map<exception_codes, string> code_msg {
+    map<exception_codes, string> code_msg = {
         {ALREADY_LOGIN, "Invalid transaction, you are already logged in."},
         {DELETE_SELF, "Invalid transaction, you cannot delete yourself."},
         {INVALID_PRIV, "Invalid transaction, you do not have the necessary privileges."},
@@ -75,6 +77,7 @@ private:
         {INVALID_USER_EXISTS, "Invalid username, user already exists."},
         {SELLER_IS_SELF, "Invalid username, you cannot purchase tickets from yourself."},
         {TITLE_NOT_FOUND, "Invalid event title, event title does not exist."},
+        {SELLER_NOT_FOUND, "Invalid seller username, seller is not selling any tickets."},
         {TICKET_NOT_FOUND, "Tickets not found, specified seller is not selling tickets to that event."},
         {INVALID_TITLE, "Invalid event title."},
         {INVALID_TITLE_LENGTH, "Invalid event title, event title cannot exceed 19 characters."},
@@ -89,6 +92,7 @@ private:
         {TICKET_VOLUME_OVERFLOW, "Invalid number of tickets, volume cannot exceed 100."},
         {TICKET_VOLUME_USER_MAX, "Invalid number of tickets, cannot purchase more than 4 tickets."},
         {ONE_SELL_PER_SESSION, "Invalid transaction, only one sell transaction per session accepted."},
+        {PURCHASE_CANCELED, "Ticket purchase transaction canceled."},
         {INVALID_CONFIRMATION, "Invalid confirmation, please enter \"yes\" or \"no\"."},
         {NOT_YET_IMPLEMENTED, "Not yet implemented"}
     };
