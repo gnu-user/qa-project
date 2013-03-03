@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.1.20)  28 FEB 2013 13:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.1.20)  3 MAR 2013 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1123,15 +1123,15 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 65.
  [2] [3] [4] [5] [6]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 217.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 217.
+(Font)              scaled to size 10.79993pt on input line 218.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 217.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 218.
 )
 \tf@toc=\write5
 \openout5 = `refman.toc'.
@@ -1177,440 +1177,445 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
  (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<class_add_credit__inherit__graph.pdf, id=1289, 148.555pt x 156.585pt>
+<class_add_credit__inherit__graph.pdf, id=1294, 148.555pt x 156.585pt>
 File: class_add_credit__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_add_credit__inherit__graph.pdf>
 Package pdftex.def Info: class_add_credit__inherit__graph.pdf used on input lin
-e 20.
+e 19.
 (pdftex.def)             Requested size: 148.0pt x 156.0064pt.
 
-<class_add_credit__coll__graph.pdf, id=1290, 421.575pt x 511.9125pt>
+<class_add_credit__coll__graph.pdf, id=1295, 328.22626pt x 511.9125pt>
 File: class_add_credit__coll__graph.pdf Graphic file (type pdf)
 
 <use class_add_credit__coll__graph.pdf>
-Package pdftex.def Info: class_add_credit__coll__graph.pdf used on input line 3
-0.
-(pdftex.def)             Requested size: 350.0pt x 425.00444pt.
+Package pdftex.def Info: class_add_credit__coll__graph.pdf used on input line 2
+8.
+(pdftex.def)             Requested size: 327.0pt x 510.00533pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7 <./class_add_credit__inherit__graph.pdf>]
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 33.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 36.
+(Font)              scaled to size 10.79993pt on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 34.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 36.
+(Font)              scaled to size 8.99994pt on input line 34.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 37.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 37.
+(Font)              scaled to size 8.09995pt on input line 35.
  [8 <./class_add_credit__coll__graph.pdf>]
 LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 69.
+(Font)              scaled to size 8.99994pt on input line 65.
 LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
-(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 69.
+(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 65.
 LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 69.
+(Font)              scaled to size 8.99994pt on input line 65.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 76.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 72.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 76.
+(Font)              scaled to size 8.99994pt on input line 72.
 
-Underfull \vbox (badness 10000) detected at line 78
+Underfull \vbox (badness 10000) detected at line 74
  []
 
 
-Underfull \vbox (badness 10000) detected at line 97
+Underfull \vbox (badness 10000) detected at line 93
  []
 
 
-Underfull \vbox (badness 10000) detected at line 116
+Underfull \vbox (badness 10000) detected at line 109
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 123.
+[9]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 116.
 
-(/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
 LaTeX Font Warning: Font shape `OT1/pcr/bc/n' undefined
-(Font)              using `OT1/pcr/m/n' instead on input line 123.
+(Font)              using `OT1/pcr/m/n' instead on input line 116.
 
-[9]) (./class_available_tickets.tex
-<class_available_tickets__coll__graph.pdf, id=1354, 234.8775pt x 373.395pt>
+) (./class_available_tickets.tex
+<class_available_tickets__coll__graph.pdf, id=1355, 234.8775pt x 373.395pt>
 File: class_available_tickets__coll__graph.pdf Graphic file (type pdf)
 
 <use class_available_tickets__coll__graph.pdf>
 Package pdftex.def Info: class_available_tickets__coll__graph.pdf used on input
- line 20.
+ line 19.
 (pdftex.def)             Requested size: 234.0pt x 371.99818pt.
- [10 <./class_available_tickets__coll__graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 80
- []
 
-[11]
-Underfull \vbox (badness 10000) detected at line 113
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) detected at line 132
+ [10]
+[11 <./class_available_tickets__coll__graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 79
  []
 
 
-Underfull \vbox (badness 10000) detected at line 151
+Underfull \vbox (badness 10000) detected at line 112
  []
 
-[12]) (./class_buy.tex
+[12]
+Underfull \vbox (badness 10000) detected at line 131
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 150
+ []
+
+) (./class_buy.tex
 <class_buy__inherit__graph.pdf, id=1408, 148.555pt x 156.585pt>
 File: class_buy__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_buy__inherit__graph.pdf>
-Package pdftex.def Info: class_buy__inherit__graph.pdf used on input line 20.
+Package pdftex.def Info: class_buy__inherit__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 148.0pt x 156.0064pt.
 
-<class_buy__coll__graph.pdf, id=1409, 422.57875pt x 531.9875pt>
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
+ [13]
+<class_buy__coll__graph.pdf, id=1415, 422.57875pt x 531.9875pt>
 File: class_buy__coll__graph.pdf Graphic file (type pdf)
 
 <use class_buy__coll__graph.pdf>
-Package pdftex.def Info: class_buy__coll__graph.pdf used on input line 30.
+Package pdftex.def Info: class_buy__coll__graph.pdf used on input line 28.
 (pdftex.def)             Requested size: 350.0pt x 440.63225pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./class_buy__inherit__graph.pdf>] [14 <./class_buy__coll__graph.pdf>]
+ [14 <./class_buy__inherit__graph.pdf>] [15 <./class_buy__coll__graph.pdf>]
 Underfull \vbox (badness 10000) detected at line 86
  []
 
 
-Underfull \vbox (badness 10000) detected at line 105
- []
-
-
-Underfull \vbox (badness 10000) detected at line 124
- []
-
-[15]
-Underfull \vbox (badness 10000) detected at line 143
- []
-
-
-Underfull \vbox (badness 10000) detected at line 159
- []
-
-) (./class_create.tex
-<class_create__inherit__graph.pdf, id=1476, 148.555pt x 156.585pt>
-File: class_create__inherit__graph.pdf Graphic file (type pdf)
-
-<use class_create__inherit__graph.pdf>
-Package pdftex.def Info: class_create__inherit__graph.pdf used on input line 20
-.
-(pdftex.def)             Requested size: 148.0pt x 156.0064pt.
- [16]
-<class_create__coll__graph.pdf, id=1484, 501.875pt x 521.95pt>
-File: class_create__coll__graph.pdf Graphic file (type pdf)
-
-<use class_create__coll__graph.pdf>
-Package pdftex.def Info: class_create__coll__graph.pdf used on input line 30.
-(pdftex.def)             Requested size: 350.0pt x 364.01653pt.
-
-Underfull \vbox (badness 1728) has occurred while \output is active []
-
- [17 <./class_create__inherit__graph.pdf> <./class_create__coll__graph.pdf
-
-pdfTeX warning: pdflatex (file ./class_create__coll__graph.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) detected at line 78
- []
-
-
-Underfull \vbox (badness 10000) detected at line 97
- []
-
-[18]
 Underfull \vbox (badness 10000) detected at line 116
  []
 
+[16]
+Underfull \vbox (badness 10000) detected at line 135
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 154
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 170
+ []
+
+) (./class_create.tex [17]
+<class_create__inherit__graph.pdf, id=1490, 148.555pt x 156.585pt>
+File: class_create__inherit__graph.pdf Graphic file (type pdf)
+
+<use class_create__inherit__graph.pdf>
+Package pdftex.def Info: class_create__inherit__graph.pdf used on input line 19
+.
+(pdftex.def)             Requested size: 148.0pt x 156.0064pt.
+
+<class_create__coll__graph.pdf, id=1491, 501.875pt x 521.95pt>
+File: class_create__coll__graph.pdf Graphic file (type pdf)
+
+<use class_create__coll__graph.pdf>
+Package pdftex.def Info: class_create__coll__graph.pdf used on input line 28.
+(pdftex.def)             Requested size: 350.0pt x 364.01653pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./class_create__inherit__graph.pdf>] [19 <./class_create__coll__graph.pdf
+>]
+Underfull \vbox (badness 10000) detected at line 76
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 95
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 114
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 139.
-) (./class_current_user_accounts.tex
-<class_current_user_accounts__coll__graph.pdf, id=1530, 353.32pt x 521.95pt>
+(Font)              scaled to size 6.29996pt on input line 137.
+[20]) (./class_current_user_accounts.tex
+<class_current_user_accounts__coll__graph.pdf, id=1543, 353.32pt x 521.95pt>
 File: class_current_user_accounts__coll__graph.pdf Graphic file (type pdf)
 
 <use class_current_user_accounts__coll__graph.pdf>
 Package pdftex.def Info: class_current_user_accounts__coll__graph.pdf used on i
-nput line 20.
+nput line 19.
 (pdftex.def)             Requested size: 350.0pt x 517.05066pt.
 
-Underfull \vbox (badness 3579) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-[20 <./class_current_user_accounts__coll__graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 78
+ [21]
+[22 <./class_current_user_accounts__coll__graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 77
  []
 
 
-Underfull \vbox (badness 10000) detected at line 108
+Underfull \vbox (badness 10000) detected at line 107
  []
 
-[21]
-Underfull \vbox (badness 10000) detected at line 127
+[23]
+Underfull \vbox (badness 10000) detected at line 126
  []
 
 ) (./class_daily_transaction.tex
-<class_daily_transaction__coll__graph.pdf, id=1583, 428.60126pt x 590.205pt>
+<class_daily_transaction__coll__graph.pdf, id=1595, 428.60126pt x 590.205pt>
 File: class_daily_transaction__coll__graph.pdf Graphic file (type pdf)
 
 <use class_daily_transaction__coll__graph.pdf>
 Package pdftex.def Info: class_daily_transaction__coll__graph.pdf used on input
- line 20.
+ line 19.
 (pdftex.def)             Requested size: 350.0pt x 481.97194pt.
 
 Underfull \vbox (badness 7344) has occurred while \output is active []
 
- [22]
-[23 <./class_daily_transaction__coll__graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 71
+ [24]
+[25 <./class_daily_transaction__coll__graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 70
  []
 
 
-Underfull \vbox (badness 10000) detected at line 90
+Underfull \vbox (badness 10000) detected at line 89
  []
 
-) (./class_delete.tex [24]
-<class_delete__inherit__graph.pdf, id=1627, 148.555pt x 156.585pt>
+) (./class_delete.tex [26]
+<class_delete__inherit__graph.pdf, id=1639, 148.555pt x 156.585pt>
 File: class_delete__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_delete__inherit__graph.pdf>
-Package pdftex.def Info: class_delete__inherit__graph.pdf used on input line 20
+Package pdftex.def Info: class_delete__inherit__graph.pdf used on input line 19
 .
 (pdftex.def)             Requested size: 148.0pt x 156.0064pt.
 
-<class_delete__coll__graph.pdf, id=1628, 357.335pt x 511.9125pt>
+<class_delete__coll__graph.pdf, id=1640, 357.335pt x 511.9125pt>
 File: class_delete__coll__graph.pdf Graphic file (type pdf)
 
 <use class_delete__coll__graph.pdf>
-Package pdftex.def Info: class_delete__coll__graph.pdf used on input line 30.
+Package pdftex.def Info: class_delete__coll__graph.pdf used on input line 28.
 (pdftex.def)             Requested size: 350.0pt x 501.4287pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./class_delete__inherit__graph.pdf>] [26 <./class_delete__coll__graph.pdf
->]
-Underfull \vbox (badness 10000) detected at line 69
- []
-
-
-Underfull \vbox (badness 10000) detected at line 91
- []
-
-) (./class_exception.tex
-<class_exception__coll__graph.pdf, id=1663, 200.75pt x 307.1475pt>
-File: class_exception__coll__graph.pdf Graphic file (type pdf)
-
-<use class_exception__coll__graph.pdf>
-Package pdftex.def Info: class_exception__coll__graph.pdf used on input line 20
-.
-(pdftex.def)             Requested size: 200.0pt x 306.02193pt.
- [27] [28 <./class_exception__coll__graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 60
- []
-
-) (./class_login.tex
-<class_login__inherit__graph.pdf, id=1705, 148.555pt x 156.585pt>
-File: class_login__inherit__graph.pdf Graphic file (type pdf)
-
-<use class_login__inherit__graph.pdf>
-Package pdftex.def Info: class_login__inherit__graph.pdf used on input line 20.
-
-(pdftex.def)             Requested size: 148.0pt x 156.0064pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-<class_login__coll__graph.pdf, id=1711, 357.335pt x 511.9125pt>
-File: class_login__coll__graph.pdf Graphic file (type pdf)
-
-<use class_login__coll__graph.pdf>
-Package pdftex.def Info: class_login__coll__graph.pdf used on input line 30.
-(pdftex.def)             Requested size: 350.0pt x 501.4287pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30 <./class_login__inherit__graph.pdf>] [31 <./class_login__coll__graph.pdf>]
-
-Underfull \vbox (badness 10000) detected at line 69
- []
-
-
-Underfull \vbox (badness 10000) detected at line 91
- []
-
-) (./class_logout.tex [32]
-<class_logout__inherit__graph.pdf, id=1758, 148.555pt x 156.585pt>
-File: class_logout__inherit__graph.pdf Graphic file (type pdf)
-
-<use class_logout__inherit__graph.pdf>
-Package pdftex.def Info: class_logout__inherit__graph.pdf used on input line 20
-.
-(pdftex.def)             Requested size: 148.0pt x 156.0064pt.
-
-<class_logout__coll__graph.pdf, id=1759, 357.335pt x 511.9125pt>
-File: class_logout__coll__graph.pdf Graphic file (type pdf)
-
-<use class_logout__coll__graph.pdf>
-Package pdftex.def Info: class_logout__coll__graph.pdf used on input line 30.
-(pdftex.def)             Requested size: 350.0pt x 501.4287pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33 <./class_logout__inherit__graph.pdf>] [34 <./class_logout__coll__graph.pdf
+ [27 <./class_delete__inherit__graph.pdf>] [28 <./class_delete__coll__graph.pdf
 >]
 Underfull \vbox (badness 10000) detected at line 67
  []
 
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+) (./class_exception.tex
+<class_exception__coll__graph.pdf, id=1676, 200.75pt x 307.1475pt>
+File: class_exception__coll__graph.pdf Graphic file (type pdf)
+
+<use class_exception__coll__graph.pdf>
+Package pdftex.def Info: class_exception__coll__graph.pdf used on input line 19
+.
+(pdftex.def)             Requested size: 200.0pt x 306.02193pt.
+ [29] [30 <./class_exception__coll__graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 59
+ []
+
+) (./class_login.tex
+<class_login__inherit__graph.pdf, id=1717, 148.555pt x 156.585pt>
+File: class_login__inherit__graph.pdf Graphic file (type pdf)
+
+<use class_login__inherit__graph.pdf>
+Package pdftex.def Info: class_login__inherit__graph.pdf used on input line 19.
+
+(pdftex.def)             Requested size: 148.0pt x 156.0064pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+<class_login__coll__graph.pdf, id=1723, 357.335pt x 511.9125pt>
+File: class_login__coll__graph.pdf Graphic file (type pdf)
+
+<use class_login__coll__graph.pdf>
+Package pdftex.def Info: class_login__coll__graph.pdf used on input line 28.
+(pdftex.def)             Requested size: 350.0pt x 501.4287pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <./class_login__inherit__graph.pdf>] [33 <./class_login__coll__graph.pdf>]
+
+Underfull \vbox (badness 10000) detected at line 67
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+) (./class_logout.tex [34]
+<class_logout__inherit__graph.pdf, id=1771, 148.555pt x 156.585pt>
+File: class_logout__inherit__graph.pdf Graphic file (type pdf)
+
+<use class_logout__inherit__graph.pdf>
+Package pdftex.def Info: class_logout__inherit__graph.pdf used on input line 19
+.
+(pdftex.def)             Requested size: 148.0pt x 156.0064pt.
+
+<class_logout__coll__graph.pdf, id=1772, 357.335pt x 511.9125pt>
+File: class_logout__coll__graph.pdf Graphic file (type pdf)
+
+<use class_logout__coll__graph.pdf>
+Package pdftex.def Info: class_logout__coll__graph.pdf used on input line 28.
+(pdftex.def)             Requested size: 350.0pt x 501.4287pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <./class_logout__inherit__graph.pdf>] [36 <./class_logout__coll__graph.pdf
+>]
+Underfull \vbox (badness 10000) detected at line 65
+ []
+
 ) (./class_refund.tex
-<class_refund__inherit__graph.pdf, id=1792, 148.555pt x 156.585pt>
+<class_refund__inherit__graph.pdf, id=1804, 148.555pt x 156.585pt>
 File: class_refund__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_refund__inherit__graph.pdf>
-Package pdftex.def Info: class_refund__inherit__graph.pdf used on input line 20
+Package pdftex.def Info: class_refund__inherit__graph.pdf used on input line 19
 .
 (pdftex.def)             Requested size: 148.0pt x 156.0064pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
-<class_refund__coll__graph.pdf, id=1801, 400.49625pt x 521.95pt>
+ [37]
+<class_refund__coll__graph.pdf, id=1813, 400.49625pt x 521.95pt>
 File: class_refund__coll__graph.pdf Graphic file (type pdf)
 
 <use class_refund__coll__graph.pdf>
-Package pdftex.def Info: class_refund__coll__graph.pdf used on input line 30.
+Package pdftex.def Info: class_refund__coll__graph.pdf used on input line 28.
 (pdftex.def)             Requested size: 350.0pt x 456.16354pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36 <./class_refund__inherit__graph.pdf>] [37 <./class_refund__coll__graph.pdf
+ [38 <./class_refund__inherit__graph.pdf>] [39 <./class_refund__coll__graph.pdf
 >]
-Underfull \vbox (badness 10000) detected at line 82
+Underfull \vbox (badness 10000) detected at line 80
  []
 
 
-Underfull \vbox (badness 10000) detected at line 104
+Underfull \vbox (badness 10000) detected at line 102
  []
 
 
-Underfull \vbox (badness 10000) detected at line 120
+Underfull \vbox (badness 10000) detected at line 118
  []
 
-[38]
-Underfull \vbox (badness 10000) detected at line 139
+[40]
+Underfull \vbox (badness 10000) detected at line 137
  []
 
 ) (./class_sell.tex
-<class_sell__inherit__graph.pdf, id=1861, 148.555pt x 156.585pt>
+<class_sell__inherit__graph.pdf, id=1875, 148.555pt x 156.585pt>
 File: class_sell__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_sell__inherit__graph.pdf>
-Package pdftex.def Info: class_sell__inherit__graph.pdf used on input line 20.
+Package pdftex.def Info: class_sell__inherit__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 148.0pt x 156.0064pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-<class_sell__coll__graph.pdf, id=1869, 422.57875pt x 521.95pt>
+ [41]
+<class_sell__coll__graph.pdf, id=1881, 422.57875pt x 521.95pt>
 File: class_sell__coll__graph.pdf Graphic file (type pdf)
 
 <use class_sell__coll__graph.pdf>
-Package pdftex.def Info: class_sell__coll__graph.pdf used on input line 30.
+Package pdftex.def Info: class_sell__coll__graph.pdf used on input line 28.
 (pdftex.def)             Requested size: 350.0pt x 432.31842pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40 <./class_sell__inherit__graph.pdf>] [41 <./class_sell__coll__graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 84
+ [42 <./class_sell__inherit__graph.pdf>] [43 <./class_sell__coll__graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 82
  []
 
 
-Underfull \vbox (badness 10000) detected at line 103
+Underfull \vbox (badness 10000) detected at line 101
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 117
+ []
+
+[44]
+Underfull \vbox (badness 10000) detected at line 133
+ []
+
+) (./class_ticket.tex
+<class_ticket__coll__graph.pdf, id=1942, 184.69pt x 236.885pt>
+File: class_ticket__coll__graph.pdf Graphic file (type pdf)
+
+<use class_ticket__coll__graph.pdf>
+Package pdftex.def Info: class_ticket__coll__graph.pdf used on input line 19.
+(pdftex.def)             Requested size: 184.0pt x 236.00246pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+[46 <./class_ticket__coll__graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 87
+ []
+
+[47]) (./class_transaction.tex
+<class_transaction__inherit__graph.pdf, id=1996, 561.09625pt x 156.585pt>
+File: class_transaction__inherit__graph.pdf Graphic file (type pdf)
+
+<use class_transaction__inherit__graph.pdf>
+Package pdftex.def Info: class_transaction__inherit__graph.pdf used on input li
+ne 19.
+(pdftex.def)             Requested size: 350.0pt x 97.67422pt.
+
+<class_transaction__coll__graph.pdf, id=1997, 357.335pt x 453.695pt>
+File: class_transaction__coll__graph.pdf Graphic file (type pdf)
+
+<use class_transaction__coll__graph.pdf>
+Package pdftex.def Info: class_transaction__coll__graph.pdf used on input line 
+28.
+(pdftex.def)             Requested size: 350.0pt x 444.40346pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48 <./class_transaction__inherit__graph.pdf>] [49 <./class_transaction__coll_
+_graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 88
  []
 
 
 Underfull \vbox (badness 10000) detected at line 119
  []
 
-[42]
-Underfull \vbox (badness 10000) detected at line 135
+[50]
+Underfull \vbox (badness 10000) detected at line 150
  []
 
-) (./class_ticket.tex
-<class_ticket__coll__graph.pdf, id=1930, 184.69pt x 236.885pt>
-File: class_ticket__coll__graph.pdf Graphic file (type pdf)
-
-<use class_ticket__coll__graph.pdf>
-Package pdftex.def Info: class_ticket__coll__graph.pdf used on input line 20.
-(pdftex.def)             Requested size: 184.0pt x 236.00246pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]
-[44 <./class_ticket__coll__graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 79
- []
-
-[45]) (./class_transaction.tex
-<class_transaction__inherit__graph.pdf, id=1982, 561.09625pt x 156.585pt>
-File: class_transaction__inherit__graph.pdf Graphic file (type pdf)
-
-<use class_transaction__inherit__graph.pdf>
-Package pdftex.def Info: class_transaction__inherit__graph.pdf used on input li
-ne 20.
-(pdftex.def)             Requested size: 350.0pt x 97.67422pt.
-
-<class_transaction__coll__graph.pdf, id=1983, 357.335pt x 453.695pt>
-File: class_transaction__coll__graph.pdf Graphic file (type pdf)
-
-<use class_transaction__coll__graph.pdf>
-Package pdftex.def Info: class_transaction__coll__graph.pdf used on input line 
-30.
-(pdftex.def)             Requested size: 350.0pt x 444.40346pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46 <./class_transaction__inherit__graph.pdf>] [47 <./class_transaction__coll_
-_graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 90
- []
-
-
-Underfull \vbox (badness 10000) detected at line 121
- []
-
-[48]
-Underfull \vbox (badness 10000) detected at line 152
- []
-
-) (./class_user.tex [49]
-<class_user__coll__graph.pdf, id=2049, 262.9825pt x 385.44pt>
+) (./class_user.tex [51]
+<class_user__coll__graph.pdf, id=2064, 262.9825pt x 385.44pt>
 File: class_user__coll__graph.pdf Graphic file (type pdf)
 
 <use class_user__coll__graph.pdf>
-Package pdftex.def Info: class_user__coll__graph.pdf used on input line 20.
+Package pdftex.def Info: class_user__coll__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 262.0pt x 384.01576pt.
- [50 <./class_user__coll__graph.pdf>]
-Underfull \vbox (badness 10000) detected at line 93
+ [52 <./class_user__coll__graph.pdf>]
+Underfull \vbox (badness 10000) detected at line 92
  []
 
-[51]
-Underfull \vbox (badness 10000) detected at line 168
+[53]
+Underfull \vbox (badness 10000) detected at line 167
  []
 
-[52]) (./class_validate.tex [53]
+[54]) (./class_validate.tex [55]
 Underfull \vbox (badness 10000) detected at line 51
  []
 
@@ -1622,7 +1627,7 @@ Underfull \vbox (badness 10000) detected at line 70
 Underfull \vbox (badness 10000) detected at line 92
  []
 
-[54]
+[56]
 Underfull \vbox (badness 10000) detected at line 111
  []
 
@@ -1634,250 +1639,250 @@ Underfull \vbox (badness 10000) detected at line 130
 Underfull \vbox (badness 10000) detected at line 152
  []
 
-) [55] [56
+) [57] [58
 
 ]
 Chapter 5.
 (./_add_credit_8hpp.tex
-<_add_credit_8hpp__incl.pdf, id=2147, 392.46625pt x 325.215pt>
+<_add_credit_8hpp__incl.pdf, id=2162, 392.46625pt x 325.215pt>
 File: _add_credit_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _add_credit_8hpp__incl.pdf>
-Package pdftex.def Info: _add_credit_8hpp__incl.pdf used on input line 14.
+Package pdftex.def Info: _add_credit_8hpp__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 290.04584pt.
 
 Underfull \vbox (badness 3000) has occurred while \output is active []
 
- [57 <./_add_credit_8hpp__incl.pdf>]) (./_available_tickets_8hpp.tex
-<_available_tickets_8hpp__incl.pdf, id=2161, 304.13625pt x 269.005pt>
+ [59 <./_add_credit_8hpp__incl.pdf>]) (./_available_tickets_8hpp.tex
+<_available_tickets_8hpp__incl.pdf, id=2175, 304.13625pt x 269.005pt>
 File: _available_tickets_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _available_tickets_8hpp__incl.pdf>
 Package pdftex.def Info: _available_tickets_8hpp__incl.pdf used on input line 1
-3.
+2.
 (pdftex.def)             Requested size: 303.0pt x 268.00688pt.
 
-<_available_tickets_8hpp__dep__incl.pdf, id=2162, 217.81375pt x 156.585pt>
+<_available_tickets_8hpp__dep__incl.pdf, id=2176, 217.81375pt x 156.585pt>
 File: _available_tickets_8hpp__dep__incl.pdf Graphic file (type pdf)
 
 <use _available_tickets_8hpp__dep__incl.pdf>
 Package pdftex.def Info: _available_tickets_8hpp__dep__incl.pdf used on input l
-ine 21.
+ine 19.
 (pdftex.def)             Requested size: 217.0pt x 155.99922pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58 <./_available_tickets_8hpp__incl.pdf>]) (./_buy_8hpp.tex
-<_buy_8hpp__incl.pdf, id=2176, 423.5825pt x 325.215pt>
+ [60 <./_available_tickets_8hpp__incl.pdf>]) (./_buy_8hpp.tex
+<_buy_8hpp__incl.pdf, id=2190, 423.5825pt x 325.215pt>
 File: _buy_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _buy_8hpp__incl.pdf>
-Package pdftex.def Info: _buy_8hpp__incl.pdf used on input line 15.
+Package pdftex.def Info: _buy_8hpp__incl.pdf used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 268.72748pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59 <./_available_tickets_8hpp__dep__incl.pdf>]) (./_create_8hpp.tex
-<_create_8hpp__incl.pdf, id=2190, 445.665pt x 325.215pt>
+ [61 <./_available_tickets_8hpp__dep__incl.pdf>]) (./_create_8hpp.tex
+<_create_8hpp__incl.pdf, id=2204, 445.665pt x 325.215pt>
 File: _create_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _create_8hpp__incl.pdf>
-Package pdftex.def Info: _create_8hpp__incl.pdf used on input line 15.
+Package pdftex.def Info: _create_8hpp__incl.pdf used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 255.40846pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60 <./_buy_8hpp__incl.pdf>]) (./_current_user_accounts_8hpp.tex
-<_current_user_accounts_8hpp__incl.pdf, id=2204, 311.1625pt x 269.005pt>
+ [62 <./_buy_8hpp__incl.pdf>]) (./_current_user_accounts_8hpp.tex
+<_current_user_accounts_8hpp__incl.pdf, id=2218, 311.1625pt x 269.005pt>
 File: _current_user_accounts_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _current_user_accounts_8hpp__incl.pdf>
 Package pdftex.def Info: _current_user_accounts_8hpp__incl.pdf used on input li
-ne 13.
+ne 12.
 (pdftex.def)             Requested size: 310.0pt x 268.00278pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61 <./_create_8hpp__incl.pdf>]
-<_current_user_accounts_8hpp__dep__incl.pdf, id=2216, 487.8225pt x 156.585pt>
+ [63 <./_create_8hpp__incl.pdf>]
+<_current_user_accounts_8hpp__dep__incl.pdf, id=2232, 487.8225pt x 156.585pt>
 File: _current_user_accounts_8hpp__dep__incl.pdf Graphic file (type pdf)
 
 <use _current_user_accounts_8hpp__dep__incl.pdf>
 Package pdftex.def Info: _current_user_accounts_8hpp__dep__incl.pdf used on inp
-ut line 21.
+ut line 19.
 (pdftex.def)             Requested size: 350.0pt x 112.34686pt.
 )
 (./_daily_transaction_8hpp.tex
-<_daily_transaction_8hpp__incl.pdf, id=2219, 316.18124pt x 325.215pt>
+<_daily_transaction_8hpp__incl.pdf, id=2235, 316.18124pt x 325.215pt>
 File: _daily_transaction_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _daily_transaction_8hpp__incl.pdf>
 Package pdftex.def Info: _daily_transaction_8hpp__incl.pdf used on input line 1
-3.
+2.
 (pdftex.def)             Requested size: 315.0pt x 324.02322pt.
- [62 <./_current_user_accounts_8hpp__incl.pdf> <./_current_user_accounts_8hpp__
+ [64 <./_current_user_accounts_8hpp__incl.pdf> <./_current_user_accounts_8hpp__
 dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_current_user_accounts_8hpp__dep__incl.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]) (./_delete_8hpp.tex
-<_delete_8hpp__incl.pdf, id=2239, 392.46625pt x 325.215pt>
+<_delete_8hpp__incl.pdf, id=2254, 392.46625pt x 325.215pt>
 File: _delete_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _delete_8hpp__incl.pdf>
-Package pdftex.def Info: _delete_8hpp__incl.pdf used on input line 14.
+Package pdftex.def Info: _delete_8hpp__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 290.04584pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63 <./_daily_transaction_8hpp__incl.pdf>]) (./_exception_8hpp.tex
-<_exception_8hpp__incl.pdf, id=2254, 173.64874pt x 156.585pt>
+ [65 <./_daily_transaction_8hpp__incl.pdf>]) (./_exception_8hpp.tex
+<_exception_8hpp__incl.pdf, id=2268, 173.64874pt x 156.585pt>
 File: _exception_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _exception_8hpp__incl.pdf>
-Package pdftex.def Info: _exception_8hpp__incl.pdf used on input line 11.
+Package pdftex.def Info: _exception_8hpp__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 173.0pt x 156.0064pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64 <./_delete_8hpp__incl.pdf>]
-<_exception_8hpp__dep__incl.pdf, id=2266, 1214.5375pt x 269.005pt>
+ [66 <./_delete_8hpp__incl.pdf>]
+<_exception_8hpp__dep__incl.pdf, id=2280, 1214.5375pt x 269.005pt>
 File: _exception_8hpp__dep__incl.pdf Graphic file (type pdf)
 
 <use _exception_8hpp__dep__incl.pdf>
-Package pdftex.def Info: _exception_8hpp__dep__incl.pdf used on input line 19.
+Package pdftex.def Info: _exception_8hpp__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 77.51688pt.
- [65 <./_exception_8hpp__incl.pdf> <./_exception_8hpp__dep__incl.pdf
+ [67 <./_exception_8hpp__incl.pdf> <./_exception_8hpp__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_exception_8hpp__dep__incl.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >]
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 89.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 89.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 8.99994pt on input line 89.
+(Font)              scaled to size 8.99994pt on input line 90.
 
-Underfull \hbox (badness 945) in paragraph at lines 115--117
+Underfull \hbox (badness 945) in paragraph at lines 118--120
 []\T1/phv/m/n/10 I-N-V-A-L-I-D-_--U-S-E-R-_--R-E-S-E-R-V-E-D In-valid user name
  spec-i-fied, con-tains re-served
  []
 
-) (./_login_8hpp.tex <_login_8hpp__incl.pdf, id=2364, 392.46625pt x 325.215pt>
+) (./_login_8hpp.tex <_login_8hpp__incl.pdf, id=2387, 392.46625pt x 325.215pt>
 File: _login_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _login_8hpp__incl.pdf>
-Package pdftex.def Info: _login_8hpp__incl.pdf used on input line 14.
+Package pdftex.def Info: _login_8hpp__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 290.04584pt.
- [66]) (./_logout_8hpp.tex
-<_logout_8hpp__incl.pdf, id=2373, 308.15125pt x 325.215pt>
+ [68]) (./_logout_8hpp.tex
+<_logout_8hpp__incl.pdf, id=2395, 308.15125pt x 325.215pt>
 File: _logout_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _logout_8hpp__incl.pdf>
-Package pdftex.def Info: _logout_8hpp__incl.pdf used on input line 12.
+Package pdftex.def Info: _logout_8hpp__incl.pdf used on input line 11.
 (pdftex.def)             Requested size: 307.0pt x 324.02322pt.
 
 Underfull \vbox (badness 6510) has occurred while \output is active []
 
- [67 <./_login_8hpp__incl.pdf>]) (./_refund_8hpp.tex
-<_refund_8hpp__incl.pdf, id=2387, 544.0325pt x 325.215pt>
+ [69 <./_login_8hpp__incl.pdf>]) (./_refund_8hpp.tex
+<_refund_8hpp__incl.pdf, id=2410, 544.0325pt x 325.215pt>
 File: _refund_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _refund_8hpp__incl.pdf>
-Package pdftex.def Info: _refund_8hpp__incl.pdf used on input line 15.
+Package pdftex.def Info: _refund_8hpp__incl.pdf used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 209.23357pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68 <./_logout_8hpp__incl.pdf>]) (./_sell_8hpp.tex
-<_sell_8hpp__incl.pdf, id=2401, 386.44376pt x 325.215pt>
+ [70 <./_logout_8hpp__incl.pdf>]) (./_sell_8hpp.tex
+<_sell_8hpp__incl.pdf, id=2424, 386.44376pt x 325.215pt>
 File: _sell_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _sell_8hpp__incl.pdf>
-Package pdftex.def Info: _sell_8hpp__incl.pdf used on input line 14.
+Package pdftex.def Info: _sell_8hpp__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 294.54672pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69 <./_refund_8hpp__incl.pdf>]) (./_ticket_8hpp.tex
-<_ticket_8hpp__incl.pdf, id=2416, 201.75375pt x 212.795pt>
+ [71 <./_refund_8hpp__incl.pdf>]) (./_ticket_8hpp.tex
+<_ticket_8hpp__incl.pdf, id=2438, 201.75375pt x 212.795pt>
 File: _ticket_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _ticket_8hpp__incl.pdf>
-Package pdftex.def Info: _ticket_8hpp__incl.pdf used on input line 11.
+Package pdftex.def Info: _ticket_8hpp__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 201.0pt x 212.0022pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70 <./_sell_8hpp__incl.pdf>]
-<_ticket_8hpp__dep__incl.pdf, id=2428, 311.1625pt x 212.795pt>
+ [72 <./_sell_8hpp__incl.pdf>]
+<_ticket_8hpp__dep__incl.pdf, id=2451, 311.1625pt x 212.795pt>
 File: _ticket_8hpp__dep__incl.pdf Graphic file (type pdf)
 
 <use _ticket_8hpp__dep__incl.pdf>
-Package pdftex.def Info: _ticket_8hpp__dep__incl.pdf used on input line 19.
+Package pdftex.def Info: _ticket_8hpp__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 310.0pt x 212.0022pt.
 ) (./_transaction_8hpp.tex
-<_transaction_8hpp__incl.pdf, id=2431, 310.15875pt x 269.005pt>
+<_transaction_8hpp__incl.pdf, id=2454, 310.15875pt x 269.005pt>
 File: _transaction_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _transaction_8hpp__incl.pdf>
-Package pdftex.def Info: _transaction_8hpp__incl.pdf used on input line 12.
+Package pdftex.def Info: _transaction_8hpp__incl.pdf used on input line 11.
 (pdftex.def)             Requested size: 309.0pt x 267.99867pt.
- [71 <./_ticket_8hpp__incl.pdf> <./_ticket_8hpp__dep__incl.pdf
+ [73 <./_ticket_8hpp__incl.pdf> <./_ticket_8hpp__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_ticket_8hpp__dep__incl.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
->] <_transaction_8hpp__dep__incl.pdf, id=2449, 841.1425pt x 156.585pt>
+>] <_transaction_8hpp__dep__incl.pdf, id=2471, 841.1425pt x 156.585pt>
 File: _transaction_8hpp__dep__incl.pdf Graphic file (type pdf)
 
 <use _transaction_8hpp__dep__incl.pdf>
-Package pdftex.def Info: _transaction_8hpp__dep__incl.pdf used on input line 20
+Package pdftex.def Info: _transaction_8hpp__dep__incl.pdf used on input line 18
 .
 (pdftex.def)             Requested size: 350.0pt x 65.15598pt.
 ) (./_transaction_codes_8hpp.tex
-<_transaction_codes_8hpp__incl.pdf, id=2452, 194.7275pt x 156.585pt>
+<_transaction_codes_8hpp__incl.pdf, id=2474, 194.7275pt x 156.585pt>
 File: _transaction_codes_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _transaction_codes_8hpp__incl.pdf>
-Package pdftex.def Info: _transaction_codes_8hpp__incl.pdf used on input line 1
-0.
+Package pdftex.def Info: _transaction_codes_8hpp__incl.pdf used on input line 9
+.
 (pdftex.def)             Requested size: 194.0pt x 156.0064pt.
 
 Underfull \vbox (badness 2726) has occurred while \output is active []
 
- [72 <./_transaction_8hpp__incl.pdf> <./_transaction_8hpp__dep__incl.pdf
+ [74 <./_transaction_8hpp__incl.pdf> <./_transaction_8hpp__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_transaction_8hpp__dep__incl.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] [73 <./_transaction_codes_8hpp__incl.pdf>]) (./_user_8hpp.tex
-<_user_8hpp__incl.pdf, id=2514, 303.1325pt x 212.795pt>
+>] [75 <./_transaction_codes_8hpp__incl.pdf>]) (./_user_8hpp.tex
+<_user_8hpp__incl.pdf, id=2537, 303.1325pt x 212.795pt>
 File: _user_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _user_8hpp__incl.pdf>
-Package pdftex.def Info: _user_8hpp__incl.pdf used on input line 13.
+Package pdftex.def Info: _user_8hpp__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 302.0pt x 212.0022pt.
 
-<_user_8hpp__dep__incl.pdf, id=2515, 841.1425pt x 212.795pt>
+<_user_8hpp__dep__incl.pdf, id=2538, 841.1425pt x 212.795pt>
 File: _user_8hpp__dep__incl.pdf Graphic file (type pdf)
 
 <use _user_8hpp__dep__incl.pdf>
-Package pdftex.def Info: _user_8hpp__dep__incl.pdf used on input line 21.
+Package pdftex.def Info: _user_8hpp__dep__incl.pdf used on input line 19.
 (pdftex.def)             Requested size: 350.0pt x 88.5453pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74 <./_user_8hpp__incl.pdf>]) (./_validate_8hpp.tex
-<_validate_8hpp__incl.pdf, id=2528, 201.75375pt x 212.795pt>
+ [76 <./_user_8hpp__incl.pdf>]) (./_validate_8hpp.tex
+<_validate_8hpp__incl.pdf, id=2552, 201.75375pt x 212.795pt>
 File: _validate_8hpp__incl.pdf Graphic file (type pdf)
 
 <use _validate_8hpp__incl.pdf>
-Package pdftex.def Info: _validate_8hpp__incl.pdf used on input line 11.
+Package pdftex.def Info: _validate_8hpp__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 201.0pt x 212.0022pt.
 )
 No file refman.ind.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
-[75 <./_user_8hpp__dep__incl.pdf> <./_validate_8hpp__incl.pdf
+[77 <./_user_8hpp__dep__incl.pdf> <./_validate_8hpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_validate_8hpp__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
@@ -1887,7 +1892,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 578AC51FFFDED55ED07D46602CAE0C8B;34222.
+(rerunfilecheck)             Checksum: A33660494B3410888CF4862F6B2973C0;34350.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1895,25 +1900,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 15029 strings out of 493488
- 226890 string characters out of 3146892
- 307681 words of memory out of 3000000
- 17390 multiletter control sequences out of 15000+200000
- 76635 words of font info for 112 fonts, out of 3000000 for 9000
+ 15038 strings out of 493488
+ 227512 string characters out of 3146892
+ 311835 words of memory out of 3000000
+ 17395 multiletter control sequences out of 15000+200000
+ 75062 words of font info for 109 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,13n,58p,619b,520s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.
-pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/
-urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8
-ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/t
-exmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (85 pages, 374793 bytes).
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/urw/c
+ourier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></
+usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dis
+t/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/type1/urw/h
+elvetic/uhvbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (87 pages, 370188 bytes).
 PDF statistics:
- 2707 PDF objects out of 2984 (max. 8388607)
- 2492 compressed objects within 25 object streams
- 594 named destinations out of 1000 (max. 500000)
- 1972 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2729 PDF objects out of 2984 (max. 8388607)
+ 2512 compressed objects within 26 object streams
+ 601 named destinations out of 1000 (max. 500000)
+ 1980 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,6 @@
 var class_ticket =
 [
+    [ "Ticket", "class_ticket.html#acb3217611e420c807c693f3e7995a6fb", null ],
     [ "Ticket", "class_ticket.html#af7970b7b7045eed437759b1b16560c7c", null ],
     [ "get_event", "class_ticket.html#a7d92689260064db0b8263acbe3370271", null ],
     [ "get_price", "class_ticket.html#a91c1ecd18b9ca25105da73692f04085e", null ],

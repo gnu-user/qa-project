@@ -7,6 +7,7 @@ var searchData=
   ['invalid_5ftitle',['INVALID_TITLE',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626dda65ceee985ca764f5e400a28e22de12ad',1,'Exception.hpp']]],
   ['invalid_5ftitle_5flength',['INVALID_TITLE_LENGTH',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626ddabaada478ddcea7945696758f29bc0777',1,'Exception.hpp']]],
   ['invalid_5ftitle_5freserved',['INVALID_TITLE_RESERVED',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626ddae26968de30bcb8c3b3ae2b43af98a282',1,'Exception.hpp']]],
+  ['invalid_5ftransaction',['INVALID_TRANSACTION',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626dda88ce2be556997883687a17c3bd1e199e',1,'Exception.hpp']]],
   ['invalid_5fuser',['INVALID_USER',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626dda1dbf923bd60da7209a684ed484935973',1,'Exception.hpp']]],
   ['invalid_5fuser_5fexists',['INVALID_USER_EXISTS',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626dda5e3d6312c007be8d8c88d1803afe5572',1,'Exception.hpp']]],
   ['invalid_5fuser_5flength',['INVALID_USER_LENGTH',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626ddaefa12b81123c6a5b8cd3531900adb6be',1,'Exception.hpp']]],

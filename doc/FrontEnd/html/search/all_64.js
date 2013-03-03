@@ -5,6 +5,7 @@ var searchData=
   ['delete',['Delete',['../class_delete.html',1,'Delete'],['../class_delete.html#a04541bdc69f519da4e16e59151b236f7',1,'Delete::Delete()']]],
   ['delete_2ehpp',['Delete.hpp',['../_delete_8hpp.html',1,'']]],
   ['delete_5fself',['DELETE_SELF',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626dda6203de53e1ea92a2d02c6e3a426c77b0',1,'Exception.hpp']]],
+  ['display_5fcost',['display_cost',['../class_buy.html#a34d2435f657e8a28db2950343206f87a',1,'Buy']]],
   ['display_5ftickets',['display_tickets',['../class_available_tickets.html#a3cec8a2dd9682f54aaa1c3ea700e3ebf',1,'AvailableTickets']]],
   ['display_5fusers',['display_users',['../class_current_user_accounts.html#ad47cb0106d6f756714576cffabbf5b5b',1,'CurrentUserAccounts']]],
   ['dollars',['dollars',['../class_validate.html#a9e527b2f81d5fc890cadc2e50c113084',1,'Validate']]],

@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_buy_8hpp_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_buy.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_buy.html" title="Buy Class.">Buy</a> : <span class="keyword">public</span> <a class="code" href="class_transaction.html" title="Transaction Class.">Transaction</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_buy.html#aa32fbb8329d2062760a5954e347970b5">   27</a></span>&#160;    <a class="code" href="class_ticket.html" title="Ticket Class.">Ticket</a>* <a class="code" href="class_buy.html#aa32fbb8329d2062760a5954e347970b5" title="ticket Stores a pointer to the ticket being purchased.">ticket</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_buy.html#a6717a14bf73091b2dc94a3908cbd03ac">   27</a></span>&#160;    <a class="code" href="class_ticket.html" title="Ticket Class.">Ticket</a> <a class="code" href="class_buy.html#a6717a14bf73091b2dc94a3908cbd03ac" title="ticket Stores a pointer to the ticket being purchased.">ticket</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_buy.html#a43a5eafe64b96968035e5a4013e47c75">   28</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_buy.html#a43a5eafe64b96968035e5a4013e47c75">title</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_buy.html#aed48ca0bcd2162fd4fd495873e2631f5">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_buy.html#aed48ca0bcd2162fd4fd495873e2631f5">volume</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_buy.html#a8cdc0977faad029fbb45ab09035319b9">   30</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_buy.html#a8cdc0977faad029fbb45ab09035319b9">seller</a>;</div>
@@ -134,20 +134,22 @@ $(document).ready(function(){initNavTree('_buy_8hpp_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> process_title(<span class="keywordtype">string</span> title, <a class="code" href="class_available_tickets.html" title="AvailableTickets Class.">AvailableTickets</a> available_tickets);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> process_volume(<span class="keywordtype">int</span> volume);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> process_volume(<span class="keywordtype">string</span> volume);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;   </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> process_seller(<span class="keywordtype">string</span> username, <a class="code" href="class_available_tickets.html" title="AvailableTickets Class.">AvailableTickets</a> available_tickets);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> process_confirmation(<span class="keywordtype">string</span> confirm);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BUY_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> display_cost();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> process_confirmation(<span class="keywordtype">string</span> confirm);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BUY_HPP_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_buy_8hpp.html">Buy.hpp</a></li>
-    <li class="footer">Generated on Thu Feb 28 2013 13:52:56 for Swift Ticket by
+    <li class="footer">Generated on Sun Mar 3 2013 16:53:44 for Swift Ticket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

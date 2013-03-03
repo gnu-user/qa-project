@@ -12,8 +12,7 @@
 
 
 
-Inheritance diagram for Buy\-:
-\nopagebreak
+Inheritance diagram for Buy\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,8 +21,7 @@ Inheritance diagram for Buy\-:
 \end{figure}
 
 
-Collaboration diagram for Buy\-:
-\nopagebreak
+Collaboration diagram for Buy\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -35,13 +33,15 @@ Collaboration diagram for Buy\-:
 \item 
 \hyperlink{class_buy_af64c082bb6e6faa31f6176daaaf6ee9c}{Buy} (\hyperlink{class_user}{User} current\-\_\-user)
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_buy}{Buy} The constructor for the class, requires a reference to the current user who is initiating the transaction. \end{DoxyCompactList}\item 
+void \hyperlink{class_buy_a34d2435f657e8a28db2950343206f87a}{display\-\_\-cost} ()
+\begin{DoxyCompactList}\small\item\em display\-\_\-cost displays the cost per ticket and a total summary of the cost of the tickets. \end{DoxyCompactList}\item 
 void \hyperlink{class_buy_a1a848e03cb750d1df2e393f0a28742aa}{process\-\_\-confirmation} (string confirm)
 \begin{DoxyCompactList}\small\item\em process\-\_\-confirmation Validates and processes the confirmation input for whether the user accepts the transaction. \end{DoxyCompactList}\item 
 void \hyperlink{class_buy_a618b3b65c7438cec7a8dc10d9176f397}{process\-\_\-seller} (string username, \hyperlink{class_available_tickets}{Available\-Tickets} available\-\_\-tickets)
 \begin{DoxyCompactList}\small\item\em process\-\_\-seller Validates and processes the specified seller for the transaction. \end{DoxyCompactList}\item 
 void \hyperlink{class_buy_a178c9b58b5d6e9eff49a075583d0e565}{process\-\_\-title} (string \hyperlink{class_buy_a43a5eafe64b96968035e5a4013e47c75}{title}, \hyperlink{class_available_tickets}{Available\-Tickets} available\-\_\-tickets)
 \begin{DoxyCompactList}\small\item\em process\-\_\-title Validates and processes the transaction based on the event title specified. \end{DoxyCompactList}\item 
-void \hyperlink{class_buy_a5ecf23192210c3fa67fd51720a6f8ab6}{process\-\_\-volume} (int \hyperlink{class_buy_aed48ca0bcd2162fd4fd495873e2631f5}{volume})
+void \hyperlink{class_buy_a2ebcdb886e993032835b7c621588ac76}{process\-\_\-volume} (string \hyperlink{class_buy_aed48ca0bcd2162fd4fd495873e2631f5}{volume})
 \begin{DoxyCompactList}\small\item\em process\-\_\-volume Validates and processes the volume of tickets being purchased. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -53,7 +53,7 @@ virtual void \hyperlink{class_buy_a8e5996ad33eb07eef44f55deba6c298e}{save\-\_\-t
 \item 
 string \hyperlink{class_buy_a8cdc0977faad029fbb45ab09035319b9}{seller}
 \item 
-\hyperlink{class_ticket}{Ticket} $\ast$ \hyperlink{class_buy_aa32fbb8329d2062760a5954e347970b5}{ticket}
+\hyperlink{class_ticket}{Ticket} \hyperlink{class_buy_a6717a14bf73091b2dc94a3908cbd03ac}{ticket}
 \begin{DoxyCompactList}\small\item\em ticket Stores a pointer to the ticket being purchased. \end{DoxyCompactList}\item 
 string \hyperlink{class_buy_a43a5eafe64b96968035e5a4013e47c75}{title}
 \item 
@@ -87,6 +87,17 @@ Used for the \hyperlink{class_buy}{Buy} transaction functions and attributes.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_buy_a34d2435f657e8a28db2950343206f87a}{\index{Buy@{Buy}!display\-\_\-cost@{display\-\_\-cost}}
+\index{display\-\_\-cost@{display\-\_\-cost}!Buy@{Buy}}
+\subsubsection[{display\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}void display\-\_\-cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_buy_a34d2435f657e8a28db2950343206f87a}
+
+
+display\-\_\-cost displays the cost per ticket and a total summary of the cost of the tickets. 
+
 \hypertarget{class_buy_a1a848e03cb750d1df2e393f0a28742aa}{\index{Buy@{Buy}!process\-\_\-confirmation@{process\-\_\-confirmation}}
 \index{process\-\_\-confirmation@{process\-\_\-confirmation}!Buy@{Buy}}
 \subsubsection[{process\-\_\-confirmation}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-confirmation (
@@ -141,13 +152,13 @@ process\-\_\-title Validates and processes the transaction based on the event ti
 {\em available\-\_\-tickets} & A handle to the available tickets. \\
 \hline
 \end{DoxyParams}
-\hypertarget{class_buy_a5ecf23192210c3fa67fd51720a6f8ab6}{\index{Buy@{Buy}!process\-\_\-volume@{process\-\_\-volume}}
+\hypertarget{class_buy_a2ebcdb886e993032835b7c621588ac76}{\index{Buy@{Buy}!process\-\_\-volume@{process\-\_\-volume}}
 \index{process\-\_\-volume@{process\-\_\-volume}!Buy@{Buy}}
 \subsubsection[{process\-\_\-volume}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-volume (
 \begin{DoxyParamCaption}
-\item[{int}]{volume}
+\item[{string}]{volume}
 \end{DoxyParamCaption}
-)}}\label{class_buy_a5ecf23192210c3fa67fd51720a6f8ab6}
+)}}\label{class_buy_a2ebcdb886e993032835b7c621588ac76}
 
 
 process\-\_\-volume Validates and processes the volume of tickets being purchased. 
@@ -178,9 +189,9 @@ Reimplemented from \hyperlink{class_transaction_a8e5996ad33eb07eef44f55deba6c298
 \hypertarget{class_buy_a8cdc0977faad029fbb45ab09035319b9}{\index{Buy@{Buy}!seller@{seller}}
 \index{seller@{seller}!Buy@{Buy}}
 \subsubsection[{seller}]{\setlength{\rightskip}{0pt plus 5cm}string seller\hspace{0.3cm}{\ttfamily [private]}}}\label{class_buy_a8cdc0977faad029fbb45ab09035319b9}
-\hypertarget{class_buy_aa32fbb8329d2062760a5954e347970b5}{\index{Buy@{Buy}!ticket@{ticket}}
+\hypertarget{class_buy_a6717a14bf73091b2dc94a3908cbd03ac}{\index{Buy@{Buy}!ticket@{ticket}}
 \index{ticket@{ticket}!Buy@{Buy}}
-\subsubsection[{ticket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ticket}$\ast$ ticket\hspace{0.3cm}{\ttfamily [private]}}}\label{class_buy_aa32fbb8329d2062760a5954e347970b5}
+\subsubsection[{ticket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ticket} ticket\hspace{0.3cm}{\ttfamily [private]}}}\label{class_buy_a6717a14bf73091b2dc94a3908cbd03ac}
 
 
 ticket Stores a pointer to the ticket being purchased. 

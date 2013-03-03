@@ -12,8 +12,7 @@
 
 
 
-Inheritance diagram for Refund\-:
-\nopagebreak
+Inheritance diagram for Refund\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,8 +21,7 @@ Inheritance diagram for Refund\-:
 \end{figure}
 
 
-Collaboration diagram for Refund\-:
-\nopagebreak
+Collaboration diagram for Refund\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -37,9 +35,9 @@ Collaboration diagram for Refund\-:
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_refund}{Refund} The constructor for the class, requires a handle to the current user logged in. \end{DoxyCompactList}\item 
 void \hyperlink{class_refund_a90ef039ccc4d01ff299ddaef920da75c}{process\-\_\-buyer} (string \hyperlink{class_refund_a6b1f8b7205b4bb4f3dfa0cba13c39bac}{buyer}, \hyperlink{class_current_user_accounts}{Current\-User\-Accounts} user\-\_\-accounts)
 \begin{DoxyCompactList}\small\item\em process\-\_\-buyer Validates and processes the specified buyer for the refund. \end{DoxyCompactList}\item 
-void \hyperlink{class_refund_a38a5999e3af1e44149e75f399e2f0846}{process\-\_\-credit} (double \hyperlink{class_refund_aa559c3686bb9d38c3335c16bbea07be8}{credit})
+void \hyperlink{class_refund_a50d6983ac76a6d99fd57444be9732322}{process\-\_\-credit} (string \hyperlink{class_refund_aa559c3686bb9d38c3335c16bbea07be8}{credit})
 \begin{DoxyCompactList}\small\item\em process\-\_\-credit Validates and processes the specified amount for the refund. \end{DoxyCompactList}\item 
-void \hyperlink{class_refund_a49057e08f942f1fbabcdae180a9ab134}{process\-\_\-seller} (string \hyperlink{class_refund_a8cdc0977faad029fbb45ab09035319b9}{seller}, \hyperlink{class_available_tickets}{Available\-Tickets} available\-\_\-tickets)
+void \hyperlink{class_refund_a16c95fcef98ca691f9799852478a926d}{process\-\_\-seller} (string \hyperlink{class_refund_a8cdc0977faad029fbb45ab09035319b9}{seller}, \hyperlink{class_current_user_accounts}{Current\-User\-Accounts} user\-\_\-accounts)
 \begin{DoxyCompactList}\small\item\em process\-\_\-seller Validates and processes the specified seller for the refund. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -102,13 +100,13 @@ process\-\_\-buyer Validates and processes the specified buyer for the refund.
 {\em user\-\_\-accounts} & A handle to the current user accounts. \\
 \hline
 \end{DoxyParams}
-\hypertarget{class_refund_a38a5999e3af1e44149e75f399e2f0846}{\index{Refund@{Refund}!process\-\_\-credit@{process\-\_\-credit}}
+\hypertarget{class_refund_a50d6983ac76a6d99fd57444be9732322}{\index{Refund@{Refund}!process\-\_\-credit@{process\-\_\-credit}}
 \index{process\-\_\-credit@{process\-\_\-credit}!Refund@{Refund}}
 \subsubsection[{process\-\_\-credit}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-credit (
 \begin{DoxyParamCaption}
-\item[{double}]{credit}
+\item[{string}]{credit}
 \end{DoxyParamCaption}
-)}}\label{class_refund_a38a5999e3af1e44149e75f399e2f0846}
+)}}\label{class_refund_a50d6983ac76a6d99fd57444be9732322}
 
 
 process\-\_\-credit Validates and processes the specified amount for the refund. 
@@ -118,14 +116,14 @@ process\-\_\-credit Validates and processes the specified amount for the refund.
 {\em credit} & The specified refund amount, in dollars. \\
 \hline
 \end{DoxyParams}
-\hypertarget{class_refund_a49057e08f942f1fbabcdae180a9ab134}{\index{Refund@{Refund}!process\-\_\-seller@{process\-\_\-seller}}
+\hypertarget{class_refund_a16c95fcef98ca691f9799852478a926d}{\index{Refund@{Refund}!process\-\_\-seller@{process\-\_\-seller}}
 \index{process\-\_\-seller@{process\-\_\-seller}!Refund@{Refund}}
 \subsubsection[{process\-\_\-seller}]{\setlength{\rightskip}{0pt plus 5cm}void process\-\_\-seller (
 \begin{DoxyParamCaption}
 \item[{string}]{seller, }
-\item[{{\bf Available\-Tickets}}]{available\-\_\-tickets}
+\item[{{\bf Current\-User\-Accounts}}]{user\-\_\-accounts}
 \end{DoxyParamCaption}
-)}}\label{class_refund_a49057e08f942f1fbabcdae180a9ab134}
+)}}\label{class_refund_a16c95fcef98ca691f9799852478a926d}
 
 
 process\-\_\-seller Validates and processes the specified seller for the refund. 
@@ -134,7 +132,7 @@ process\-\_\-seller Validates and processes the specified seller for the refund.
 \begin{DoxyParams}{Parameters}
 {\em seller} & The seller for the sale to be refunded. \\
 \hline
-{\em available\-\_\-tickets} & A handle to the available tickets file. \\
+{\em user\-\_\-accounts} & A handle to the current user accounts. \\
 \hline
 \end{DoxyParams}
 \hypertarget{class_refund_a8e5996ad33eb07eef44f55deba6c298e}{\index{Refund@{Refund}!save\-\_\-transaction@{save\-\_\-transaction}}

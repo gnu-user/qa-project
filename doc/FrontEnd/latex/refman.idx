@@ -9,337 +9,345 @@
 \indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!AddCredit@{Add\discretionary {-}{}{}Credit}|hyperpage}{9}
 \indexentry{Add\discretionary {-}{}{}Credit@{Add\discretionary {-}{}{}Credit}!credit@{credit}|hyperpage}{10}
 \indexentry{credit@{credit}!AddCredit@{Add\discretionary {-}{}{}Credit}|hyperpage}{10}
-\indexentry{Add\discretionary {-}{}{}Credit@{Add\discretionary {-}{}{}Credit}!username@{username}|hyperpage}{10}
-\indexentry{username@{username}!AddCredit@{Add\discretionary {-}{}{}Credit}|hyperpage}{10}
 \indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{10}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{11}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{11}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{11}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{11}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets@{display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets}|hyperpage}{11}
-\indexentry{display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets@{display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{11}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket@{get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket}|hyperpage}{11}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket@{get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{11}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets@{display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets}|hyperpage}{12}
+\indexentry{display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets@{display\discretionary {-}{}{}\_\discretionary {-}{}{}tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket@{get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket}|hyperpage}{12}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket@{get\discretionary {-}{}{}\_\discretionary {-}{}{}ticket}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
 \indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!has\discretionary {-}{}{}\_\discretionary {-}{}{}event@{has\discretionary {-}{}{}\_\discretionary {-}{}{}event}|hyperpage}{12}
 \indexentry{has\discretionary {-}{}{}\_\discretionary {-}{}{}event@{has\discretionary {-}{}{}\_\discretionary {-}{}{}event}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!has\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{has\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{12}
-\indexentry{has\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{has\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!parse@{parse}|hyperpage}{12}
-\indexentry{parse@{parse}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!atf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}file}|hyperpage}{12}
-\indexentry{atf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}file}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
-\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!tickets@{tickets}|hyperpage}{12}
-\indexentry{tickets@{tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{12}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!has\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{has\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{13}
+\indexentry{has\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{has\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{13}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!parse@{parse}|hyperpage}{13}
+\indexentry{parse@{parse}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{13}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!atf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}file}|hyperpage}{13}
+\indexentry{atf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}file}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{13}
+\indexentry{Available\discretionary {-}{}{}Tickets@{Available\discretionary {-}{}{}Tickets}!tickets@{tickets}|hyperpage}{13}
+\indexentry{tickets@{tickets}!AvailableTickets@{Available\discretionary {-}{}{}Tickets}|hyperpage}{13}
 \indexentry{Buy@{Buy}|hyperpage}{13}
-\indexentry{Buy@{Buy}!Buy@{Buy}|hyperpage}{15}
-\indexentry{Buy@{Buy}!Buy@{Buy}|hyperpage}{15}
-\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation@{process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation}|hyperpage}{15}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation@{process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation}!Buy@{Buy}|hyperpage}{15}
-\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{15}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!Buy@{Buy}|hyperpage}{15}
-\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}|hyperpage}{15}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}!Buy@{Buy}|hyperpage}{15}
-\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}|hyperpage}{16}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}!Buy@{Buy}|hyperpage}{16}
-\indexentry{Buy@{Buy}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{16}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Buy@{Buy}|hyperpage}{16}
-\indexentry{Buy@{Buy}!seller@{seller}|hyperpage}{16}
-\indexentry{seller@{seller}!Buy@{Buy}|hyperpage}{16}
-\indexentry{Buy@{Buy}!ticket@{ticket}|hyperpage}{16}
-\indexentry{ticket@{ticket}!Buy@{Buy}|hyperpage}{16}
-\indexentry{Buy@{Buy}!title@{title}|hyperpage}{16}
-\indexentry{title@{title}!Buy@{Buy}|hyperpage}{16}
-\indexentry{Buy@{Buy}!volume@{volume}|hyperpage}{16}
-\indexentry{volume@{volume}!Buy@{Buy}|hyperpage}{16}
-\indexentry{Create@{Create}|hyperpage}{16}
-\indexentry{Create@{Create}!Create@{Create}|hyperpage}{18}
-\indexentry{Create@{Create}!Create@{Create}|hyperpage}{18}
-\indexentry{Create@{Create}!process\discretionary {-}{}{}\_\discretionary {-}{}{}type@{process\discretionary {-}{}{}\_\discretionary {-}{}{}type}|hyperpage}{18}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}type@{process\discretionary {-}{}{}\_\discretionary {-}{}{}type}!Create@{Create}|hyperpage}{18}
-\indexentry{Create@{Create}!process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{18}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Create@{Create}|hyperpage}{18}
-\indexentry{Create@{Create}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{19}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Create@{Create}|hyperpage}{19}
-\indexentry{Create@{Create}!account\discretionary {-}{}{}\_\discretionary {-}{}{}types@{account\discretionary {-}{}{}\_\discretionary {-}{}{}types}|hyperpage}{19}
-\indexentry{account\discretionary {-}{}{}\_\discretionary {-}{}{}types@{account\discretionary {-}{}{}\_\discretionary {-}{}{}types}!Create@{Create}|hyperpage}{19}
-\indexentry{Create@{Create}!new\discretionary {-}{}{}\_\discretionary {-}{}{}username@{new\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{19}
-\indexentry{new\discretionary {-}{}{}\_\discretionary {-}{}{}username@{new\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Create@{Create}|hyperpage}{19}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{19}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{21}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{21}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{21}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{21}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!display\discretionary {-}{}{}\_\discretionary {-}{}{}users@{display\discretionary {-}{}{}\_\discretionary {-}{}{}users}|hyperpage}{21}
-\indexentry{display\discretionary {-}{}{}\_\discretionary {-}{}{}users@{display\discretionary {-}{}{}\_\discretionary {-}{}{}users}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{21}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!get\discretionary {-}{}{}\_\discretionary {-}{}{}user@{get\discretionary {-}{}{}\_\discretionary {-}{}{}user}|hyperpage}{21}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}user@{get\discretionary {-}{}{}\_\discretionary {-}{}{}user}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{21}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!has\discretionary {-}{}{}\_\discretionary {-}{}{}user@{has\discretionary {-}{}{}\_\discretionary {-}{}{}user}|hyperpage}{22}
-\indexentry{has\discretionary {-}{}{}\_\discretionary {-}{}{}user@{has\discretionary {-}{}{}\_\discretionary {-}{}{}user}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{22}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!parse@{parse}|hyperpage}{22}
-\indexentry{parse@{parse}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{22}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!cua\discretionary {-}{}{}\_\discretionary {-}{}{}file@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}file}|hyperpage}{22}
-\indexentry{cua\discretionary {-}{}{}\_\discretionary {-}{}{}file@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}file}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{22}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!users@{users}|hyperpage}{22}
-\indexentry{users@{users}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{22}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{22}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!save@{save}|hyperpage}{24}
-\indexentry{save@{save}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!write@{write}|hyperpage}{24}
-\indexentry{write@{write}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file}|hyperpage}{24}
-\indexentry{dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!transactions@{transactions}|hyperpage}{24}
-\indexentry{transactions@{transactions}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
-\indexentry{Delete@{Delete}|hyperpage}{25}
-\indexentry{Delete@{Delete}!Delete@{Delete}|hyperpage}{27}
-\indexentry{Delete@{Delete}!Delete@{Delete}|hyperpage}{27}
-\indexentry{Delete@{Delete}!process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{27}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Delete@{Delete}|hyperpage}{27}
-\indexentry{Delete@{Delete}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{27}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Delete@{Delete}|hyperpage}{27}
-\indexentry{Exception@{Exception}|hyperpage}{27}
-\indexentry{Exception@{Exception}!Exception@{Exception}|hyperpage}{29}
-\indexentry{Exception@{Exception}!Exception@{Exception}|hyperpage}{29}
-\indexentry{Exception@{Exception}!mesg@{mesg}|hyperpage}{29}
-\indexentry{mesg@{mesg}!Exception@{Exception}|hyperpage}{29}
-\indexentry{Exception@{Exception}!code@{code}|hyperpage}{29}
-\indexentry{code@{code}!Exception@{Exception}|hyperpage}{29}
-\indexentry{Exception@{Exception}!code\discretionary {-}{}{}\_\discretionary {-}{}{}msg@{code\discretionary {-}{}{}\_\discretionary {-}{}{}msg}|hyperpage}{29}
-\indexentry{code\discretionary {-}{}{}\_\discretionary {-}{}{}msg@{code\discretionary {-}{}{}\_\discretionary {-}{}{}msg}!Exception@{Exception}|hyperpage}{29}
-\indexentry{Login@{Login}|hyperpage}{29}
-\indexentry{Login@{Login}!Login@{Login}|hyperpage}{32}
-\indexentry{Login@{Login}!Login@{Login}|hyperpage}{32}
-\indexentry{Login@{Login}!process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{32}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Login@{Login}|hyperpage}{32}
-\indexentry{Login@{Login}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{32}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Login@{Login}|hyperpage}{32}
-\indexentry{Logout@{Logout}|hyperpage}{32}
-\indexentry{Logout@{Logout}!Logout@{Logout}|hyperpage}{35}
-\indexentry{Logout@{Logout}!Logout@{Logout}|hyperpage}{35}
-\indexentry{Logout@{Logout}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{35}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Logout@{Logout}|hyperpage}{35}
-\indexentry{Refund@{Refund}|hyperpage}{35}
-\indexentry{Refund@{Refund}!Refund@{Refund}|hyperpage}{38}
-\indexentry{Refund@{Refund}!Refund@{Refund}|hyperpage}{38}
-\indexentry{Refund@{Refund}!process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer@{process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer}|hyperpage}{38}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer@{process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer}!Refund@{Refund}|hyperpage}{38}
-\indexentry{Refund@{Refund}!process\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{process\discretionary {-}{}{}\_\discretionary {-}{}{}credit}|hyperpage}{38}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{process\discretionary {-}{}{}\_\discretionary {-}{}{}credit}!Refund@{Refund}|hyperpage}{38}
-\indexentry{Refund@{Refund}!process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{38}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!Refund@{Refund}|hyperpage}{38}
-\indexentry{Refund@{Refund}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{39}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Refund@{Refund}|hyperpage}{39}
-\indexentry{Refund@{Refund}!buyer@{buyer}|hyperpage}{39}
-\indexentry{buyer@{buyer}!Refund@{Refund}|hyperpage}{39}
-\indexentry{Refund@{Refund}!credit@{credit}|hyperpage}{39}
-\indexentry{credit@{credit}!Refund@{Refund}|hyperpage}{39}
-\indexentry{Refund@{Refund}!seller@{seller}|hyperpage}{39}
-\indexentry{seller@{seller}!Refund@{Refund}|hyperpage}{39}
-\indexentry{Sell@{Sell}|hyperpage}{39}
-\indexentry{Sell@{Sell}!Sell@{Sell}|hyperpage}{42}
-\indexentry{Sell@{Sell}!Sell@{Sell}|hyperpage}{42}
-\indexentry{Sell@{Sell}!process\discretionary {-}{}{}\_\discretionary {-}{}{}price@{process\discretionary {-}{}{}\_\discretionary {-}{}{}price}|hyperpage}{42}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}price@{process\discretionary {-}{}{}\_\discretionary {-}{}{}price}!Sell@{Sell}|hyperpage}{42}
-\indexentry{Sell@{Sell}!process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}|hyperpage}{42}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}!Sell@{Sell}|hyperpage}{42}
-\indexentry{Sell@{Sell}!process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}|hyperpage}{42}
-\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}!Sell@{Sell}|hyperpage}{42}
-\indexentry{Sell@{Sell}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{43}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Sell@{Sell}|hyperpage}{43}
-\indexentry{Sell@{Sell}!price@{price}|hyperpage}{43}
-\indexentry{price@{price}!Sell@{Sell}|hyperpage}{43}
-\indexentry{Sell@{Sell}!ticket@{ticket}|hyperpage}{43}
-\indexentry{ticket@{ticket}!Sell@{Sell}|hyperpage}{43}
-\indexentry{Sell@{Sell}!title@{title}|hyperpage}{43}
-\indexentry{title@{title}!Sell@{Sell}|hyperpage}{43}
-\indexentry{Sell@{Sell}!volume@{volume}|hyperpage}{43}
-\indexentry{volume@{volume}!Sell@{Sell}|hyperpage}{43}
-\indexentry{Ticket@{Ticket}|hyperpage}{43}
-\indexentry{Ticket@{Ticket}!Ticket@{Ticket}|hyperpage}{45}
-\indexentry{Ticket@{Ticket}!Ticket@{Ticket}|hyperpage}{45}
-\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}event@{get\discretionary {-}{}{}\_\discretionary {-}{}{}event}|hyperpage}{45}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}event@{get\discretionary {-}{}{}\_\discretionary {-}{}{}event}!Ticket@{Ticket}|hyperpage}{45}
-\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}price@{get\discretionary {-}{}{}\_\discretionary {-}{}{}price}|hyperpage}{45}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}price@{get\discretionary {-}{}{}\_\discretionary {-}{}{}price}!Ticket@{Ticket}|hyperpage}{45}
-\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{get\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{45}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{get\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!Ticket@{Ticket}|hyperpage}{45}
-\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{get\discretionary {-}{}{}\_\discretionary {-}{}{}volume}|hyperpage}{45}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{get\discretionary {-}{}{}\_\discretionary {-}{}{}volume}!Ticket@{Ticket}|hyperpage}{45}
-\indexentry{Ticket@{Ticket}!event@{event}|hyperpage}{46}
-\indexentry{event@{event}!Ticket@{Ticket}|hyperpage}{46}
-\indexentry{Ticket@{Ticket}!price@{price}|hyperpage}{46}
-\indexentry{price@{price}!Ticket@{Ticket}|hyperpage}{46}
-\indexentry{Ticket@{Ticket}!seller@{seller}|hyperpage}{46}
-\indexentry{seller@{seller}!Ticket@{Ticket}|hyperpage}{46}
-\indexentry{Ticket@{Ticket}!volume@{volume}|hyperpage}{46}
-\indexentry{volume@{volume}!Ticket@{Ticket}|hyperpage}{46}
-\indexentry{Transaction@{Transaction}|hyperpage}{46}
-\indexentry{Transaction@{Transaction}!format@{format}|hyperpage}{48}
-\indexentry{format@{format}!Transaction@{Transaction}|hyperpage}{48}
-\indexentry{Transaction@{Transaction}!format@{format}|hyperpage}{48}
-\indexentry{format@{format}!Transaction@{Transaction}|hyperpage}{48}
-\indexentry{Transaction@{Transaction}!format@{format}|hyperpage}{49}
-\indexentry{format@{format}!Transaction@{Transaction}|hyperpage}{49}
-\indexentry{Transaction@{Transaction}!get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{49}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Transaction@{Transaction}|hyperpage}{49}
-\indexentry{Transaction@{Transaction}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{49}
-\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Transaction@{Transaction}|hyperpage}{49}
-\indexentry{Transaction@{Transaction}!code@{code}|hyperpage}{49}
-\indexentry{code@{code}!Transaction@{Transaction}|hyperpage}{49}
-\indexentry{Transaction@{Transaction}!transaction@{transaction}|hyperpage}{49}
-\indexentry{transaction@{transaction}!Transaction@{Transaction}|hyperpage}{49}
-\indexentry{Transaction@{Transaction}!user@{user}|hyperpage}{49}
-\indexentry{user@{user}!Transaction@{Transaction}|hyperpage}{49}
-\indexentry{User@{User}|hyperpage}{50}
-\indexentry{User@{User}!User@{User}|hyperpage}{51}
-\indexentry{User@{User}!User@{User}|hyperpage}{51}
-\indexentry{User@{User}!User@{User}|hyperpage}{51}
-\indexentry{User@{User}!User@{User}|hyperpage}{51}
-\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{get\discretionary {-}{}{}\_\discretionary {-}{}{}credit}|hyperpage}{51}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{get\discretionary {-}{}{}\_\discretionary {-}{}{}credit}!User@{User}|hyperpage}{51}
-\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}status@{get\discretionary {-}{}{}\_\discretionary {-}{}{}status}|hyperpage}{51}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}status@{get\discretionary {-}{}{}\_\discretionary {-}{}{}status}!User@{User}|hyperpage}{51}
-\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}type@{get\discretionary {-}{}{}\_\discretionary {-}{}{}type}|hyperpage}{52}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}type@{get\discretionary {-}{}{}\_\discretionary {-}{}{}type}!User@{User}|hyperpage}{52}
-\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}username@{get\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{52}
-\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}username@{get\discretionary {-}{}{}\_\discretionary {-}{}{}username}!User@{User}|hyperpage}{52}
-\indexentry{User@{User}!has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions@{has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions}|hyperpage}{52}
-\indexentry{has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions@{has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions}!User@{User}|hyperpage}{52}
-\indexentry{User@{User}!login@{login}|hyperpage}{52}
-\indexentry{login@{login}!User@{User}|hyperpage}{52}
-\indexentry{User@{User}!logout@{logout}|hyperpage}{52}
-\indexentry{logout@{logout}!User@{User}|hyperpage}{52}
-\indexentry{User@{User}!credit@{credit}|hyperpage}{53}
-\indexentry{credit@{credit}!User@{User}|hyperpage}{53}
-\indexentry{User@{User}!login\discretionary {-}{}{}\_\discretionary {-}{}{}status@{login\discretionary {-}{}{}\_\discretionary {-}{}{}status}|hyperpage}{53}
-\indexentry{login\discretionary {-}{}{}\_\discretionary {-}{}{}status@{login\discretionary {-}{}{}\_\discretionary {-}{}{}status}!User@{User}|hyperpage}{53}
-\indexentry{User@{User}!permissions@{permissions}|hyperpage}{53}
-\indexentry{permissions@{permissions}!User@{User}|hyperpage}{53}
-\indexentry{User@{User}!type@{type}|hyperpage}{53}
-\indexentry{type@{type}!User@{User}|hyperpage}{53}
-\indexentry{User@{User}!username@{username}|hyperpage}{53}
-\indexentry{username@{username}!User@{User}|hyperpage}{53}
-\indexentry{Validate@{Validate}|hyperpage}{53}
-\indexentry{Validate@{Validate}!atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry}|hyperpage}{54}
-\indexentry{atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry}!Validate@{Validate}|hyperpage}{54}
-\indexentry{Validate@{Validate}!cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry}|hyperpage}{54}
-\indexentry{cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry}!Validate@{Validate}|hyperpage}{54}
-\indexentry{Validate@{Validate}!dollars@{dollars}|hyperpage}{54}
-\indexentry{dollars@{dollars}!Validate@{Validate}|hyperpage}{54}
-\indexentry{Validate@{Validate}!title@{title}|hyperpage}{54}
-\indexentry{title@{title}!Validate@{Validate}|hyperpage}{54}
-\indexentry{Validate@{Validate}!username@{username}|hyperpage}{55}
-\indexentry{username@{username}!Validate@{Validate}|hyperpage}{55}
-\indexentry{Validate@{Validate}!volume@{volume}|hyperpage}{55}
-\indexentry{volume@{volume}!Validate@{Validate}|hyperpage}{55}
-\indexentry{Add\discretionary {-}{}{}Credit.\discretionary {-}{}{}hpp@{Add\discretionary {-}{}{}Credit.\discretionary {-}{}{}hpp}|hyperpage}{57}
-\indexentry{Available\discretionary {-}{}{}Tickets.\discretionary {-}{}{}hpp@{Available\discretionary {-}{}{}Tickets.\discretionary {-}{}{}hpp}|hyperpage}{58}
-\indexentry{Buy.\discretionary {-}{}{}hpp@{Buy.\discretionary {-}{}{}hpp}|hyperpage}{59}
-\indexentry{Create.\discretionary {-}{}{}hpp@{Create.\discretionary {-}{}{}hpp}|hyperpage}{60}
-\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts.\discretionary {-}{}{}hpp@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts.\discretionary {-}{}{}hpp}|hyperpage}{61}
-\indexentry{Daily\discretionary {-}{}{}Transaction.\discretionary {-}{}{}hpp@{Daily\discretionary {-}{}{}Transaction.\discretionary {-}{}{}hpp}|hyperpage}{62}
-\indexentry{Delete.\discretionary {-}{}{}hpp@{Delete.\discretionary {-}{}{}hpp}|hyperpage}{63}
-\indexentry{Exception.\discretionary {-}{}{}hpp@{Exception.\discretionary {-}{}{}hpp}|hyperpage}{64}
-\indexentry{Exception.\discretionary {-}{}{}hpp@{Exception.\discretionary {-}{}{}hpp}!exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes}|hyperpage}{65}
-\indexentry{exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes}!Exception.hpp@{Exception.\discretionary {-}{}{}hpp}|hyperpage}{65}
-\indexentry{A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N@{A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N@{A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N}|hyperpage}{66}
-\indexentry{D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F@{D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F@{D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V@{I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V@{I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V}|hyperpage}{66}
-\indexentry{M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N@{M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N@{M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N}|hyperpage}{66}
-\indexentry{A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{66}
-\indexentry{C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{66}
-\indexentry{C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F@{C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F@{C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F}|hyperpage}{66}
-\indexentry{C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A@{C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A@{C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A}|hyperpage}{66}
-\indexentry{D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R@{D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R@{D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R}|hyperpage}{66}
-\indexentry{U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R@{U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R@{U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S}|hyperpage}{66}
-\indexentry{S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F@{S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F@{S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F}|hyperpage}{66}
-\indexentry{T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{66}
-\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T@{I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T@{I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T}|hyperpage}{66}
-\indexentry{N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T@{N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T@{N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T}|hyperpage}{66}
-\indexentry{C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{66}
-\indexentry{S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{66}
-\indexentry{U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E}|hyperpage}{66}
-\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E}|hyperpage}{66}
-\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{66}
-\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}|hyperpage}{66}
-\indexentry{O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N@{O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N@{O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N}|hyperpage}{66}
-\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N@{I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N@{I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N}|hyperpage}{66}
-\indexentry{N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D@{N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{66}
-\indexentry{Exception.\-hpp@{Exception.\-hpp}!N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D@{N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D}|hyperpage}{66}
-\indexentry{Login.\discretionary {-}{}{}hpp@{Login.\discretionary {-}{}{}hpp}|hyperpage}{67}
-\indexentry{Logout.\discretionary {-}{}{}hpp@{Logout.\discretionary {-}{}{}hpp}|hyperpage}{67}
-\indexentry{Refund.\discretionary {-}{}{}hpp@{Refund.\discretionary {-}{}{}hpp}|hyperpage}{68}
-\indexentry{Sell.\discretionary {-}{}{}hpp@{Sell.\discretionary {-}{}{}hpp}|hyperpage}{69}
-\indexentry{Ticket.\discretionary {-}{}{}hpp@{Ticket.\discretionary {-}{}{}hpp}|hyperpage}{70}
-\indexentry{Transaction.\discretionary {-}{}{}hpp@{Transaction.\discretionary {-}{}{}hpp}|hyperpage}{71}
-\indexentry{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}|hyperpage}{72}
-\indexentry{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}!transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes}|hyperpage}{73}
-\indexentry{transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes}!TransactionCodes.hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}|hyperpage}{73}
-\indexentry{\-\_\-undefined@{\-\_\-undefined}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-undefined@{\-\_\-undefined}|hyperpage}{73}
-\indexentry{\-\_\-login@{\-\_\-login}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-login@{\-\_\-login}|hyperpage}{73}
-\indexentry{\-\_\-logout@{\-\_\-logout}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-logout@{\-\_\-logout}|hyperpage}{73}
-\indexentry{\-\_\-create@{\-\_\-create}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-create@{\-\_\-create}|hyperpage}{73}
-\indexentry{\-\_\-delete@{\-\_\-delete}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-delete@{\-\_\-delete}|hyperpage}{73}
-\indexentry{\-\_\-sell@{\-\_\-sell}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-sell@{\-\_\-sell}|hyperpage}{73}
-\indexentry{\-\_\-buy@{\-\_\-buy}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-buy@{\-\_\-buy}|hyperpage}{73}
-\indexentry{\-\_\-refund@{\-\_\-refund}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-refund@{\-\_\-refund}|hyperpage}{73}
-\indexentry{\-\_\-addcredit@{\-\_\-addcredit}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{73}
-\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-addcredit@{\-\_\-addcredit}|hyperpage}{73}
-\indexentry{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}!map\discretionary {-}{}{}\_\discretionary {-}{}{}code@{map\discretionary {-}{}{}\_\discretionary {-}{}{}code}|hyperpage}{74}
-\indexentry{map\discretionary {-}{}{}\_\discretionary {-}{}{}code@{map\discretionary {-}{}{}\_\discretionary {-}{}{}code}!TransactionCodes.hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}|hyperpage}{74}
-\indexentry{User.\discretionary {-}{}{}hpp@{User.\discretionary {-}{}{}hpp}|hyperpage}{74}
-\indexentry{Validate.\discretionary {-}{}{}hpp@{Validate.\discretionary {-}{}{}hpp}|hyperpage}{75}
+\indexentry{Buy@{Buy}!Buy@{Buy}|hyperpage}{16}
+\indexentry{Buy@{Buy}!Buy@{Buy}|hyperpage}{16}
+\indexentry{Buy@{Buy}!display\discretionary {-}{}{}\_\discretionary {-}{}{}cost@{display\discretionary {-}{}{}\_\discretionary {-}{}{}cost}|hyperpage}{16}
+\indexentry{display\discretionary {-}{}{}\_\discretionary {-}{}{}cost@{display\discretionary {-}{}{}\_\discretionary {-}{}{}cost}!Buy@{Buy}|hyperpage}{16}
+\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation@{process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation}|hyperpage}{16}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation@{process\discretionary {-}{}{}\_\discretionary {-}{}{}confirmation}!Buy@{Buy}|hyperpage}{16}
+\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{16}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!Buy@{Buy}|hyperpage}{16}
+\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}|hyperpage}{17}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}!Buy@{Buy}|hyperpage}{17}
+\indexentry{Buy@{Buy}!process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}|hyperpage}{17}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}!Buy@{Buy}|hyperpage}{17}
+\indexentry{Buy@{Buy}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{17}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Buy@{Buy}|hyperpage}{17}
+\indexentry{Buy@{Buy}!seller@{seller}|hyperpage}{17}
+\indexentry{seller@{seller}!Buy@{Buy}|hyperpage}{17}
+\indexentry{Buy@{Buy}!ticket@{ticket}|hyperpage}{17}
+\indexentry{ticket@{ticket}!Buy@{Buy}|hyperpage}{17}
+\indexentry{Buy@{Buy}!title@{title}|hyperpage}{17}
+\indexentry{title@{title}!Buy@{Buy}|hyperpage}{17}
+\indexentry{Buy@{Buy}!volume@{volume}|hyperpage}{17}
+\indexentry{volume@{volume}!Buy@{Buy}|hyperpage}{17}
+\indexentry{Create@{Create}|hyperpage}{18}
+\indexentry{Create@{Create}!Create@{Create}|hyperpage}{20}
+\indexentry{Create@{Create}!Create@{Create}|hyperpage}{20}
+\indexentry{Create@{Create}!process\discretionary {-}{}{}\_\discretionary {-}{}{}type@{process\discretionary {-}{}{}\_\discretionary {-}{}{}type}|hyperpage}{20}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}type@{process\discretionary {-}{}{}\_\discretionary {-}{}{}type}!Create@{Create}|hyperpage}{20}
+\indexentry{Create@{Create}!process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{20}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Create@{Create}|hyperpage}{20}
+\indexentry{Create@{Create}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{20}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Create@{Create}|hyperpage}{20}
+\indexentry{Create@{Create}!account\discretionary {-}{}{}\_\discretionary {-}{}{}types@{account\discretionary {-}{}{}\_\discretionary {-}{}{}types}|hyperpage}{20}
+\indexentry{account\discretionary {-}{}{}\_\discretionary {-}{}{}types@{account\discretionary {-}{}{}\_\discretionary {-}{}{}types}!Create@{Create}|hyperpage}{20}
+\indexentry{Create@{Create}!new\discretionary {-}{}{}\_\discretionary {-}{}{}username@{new\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{21}
+\indexentry{new\discretionary {-}{}{}\_\discretionary {-}{}{}username@{new\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Create@{Create}|hyperpage}{21}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{21}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{23}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{23}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{23}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{23}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!display\discretionary {-}{}{}\_\discretionary {-}{}{}users@{display\discretionary {-}{}{}\_\discretionary {-}{}{}users}|hyperpage}{23}
+\indexentry{display\discretionary {-}{}{}\_\discretionary {-}{}{}users@{display\discretionary {-}{}{}\_\discretionary {-}{}{}users}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{23}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!get\discretionary {-}{}{}\_\discretionary {-}{}{}user@{get\discretionary {-}{}{}\_\discretionary {-}{}{}user}|hyperpage}{23}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}user@{get\discretionary {-}{}{}\_\discretionary {-}{}{}user}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{23}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!has\discretionary {-}{}{}\_\discretionary {-}{}{}user@{has\discretionary {-}{}{}\_\discretionary {-}{}{}user}|hyperpage}{24}
+\indexentry{has\discretionary {-}{}{}\_\discretionary {-}{}{}user@{has\discretionary {-}{}{}\_\discretionary {-}{}{}user}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{24}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!parse@{parse}|hyperpage}{24}
+\indexentry{parse@{parse}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{24}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!cua\discretionary {-}{}{}\_\discretionary {-}{}{}file@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}file}|hyperpage}{24}
+\indexentry{cua\discretionary {-}{}{}\_\discretionary {-}{}{}file@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}file}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{24}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}!users@{users}|hyperpage}{24}
+\indexentry{users@{users}!CurrentUserAccounts@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts}|hyperpage}{24}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{24}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!save@{save}|hyperpage}{26}
+\indexentry{save@{save}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!write@{write}|hyperpage}{26}
+\indexentry{write@{write}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file}|hyperpage}{26}
+\indexentry{dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file@{dtf\discretionary {-}{}{}\_\discretionary {-}{}{}file}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Daily\discretionary {-}{}{}Transaction@{Daily\discretionary {-}{}{}Transaction}!transactions@{transactions}|hyperpage}{26}
+\indexentry{transactions@{transactions}!DailyTransaction@{Daily\discretionary {-}{}{}Transaction}|hyperpage}{26}
+\indexentry{Delete@{Delete}|hyperpage}{27}
+\indexentry{Delete@{Delete}!Delete@{Delete}|hyperpage}{29}
+\indexentry{Delete@{Delete}!Delete@{Delete}|hyperpage}{29}
+\indexentry{Delete@{Delete}!process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{29}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Delete@{Delete}|hyperpage}{29}
+\indexentry{Delete@{Delete}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{29}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Delete@{Delete}|hyperpage}{29}
+\indexentry{Exception@{Exception}|hyperpage}{29}
+\indexentry{Exception@{Exception}!Exception@{Exception}|hyperpage}{31}
+\indexentry{Exception@{Exception}!Exception@{Exception}|hyperpage}{31}
+\indexentry{Exception@{Exception}!mesg@{mesg}|hyperpage}{31}
+\indexentry{mesg@{mesg}!Exception@{Exception}|hyperpage}{31}
+\indexentry{Exception@{Exception}!code@{code}|hyperpage}{31}
+\indexentry{code@{code}!Exception@{Exception}|hyperpage}{31}
+\indexentry{Exception@{Exception}!code\discretionary {-}{}{}\_\discretionary {-}{}{}msg@{code\discretionary {-}{}{}\_\discretionary {-}{}{}msg}|hyperpage}{31}
+\indexentry{code\discretionary {-}{}{}\_\discretionary {-}{}{}msg@{code\discretionary {-}{}{}\_\discretionary {-}{}{}msg}!Exception@{Exception}|hyperpage}{31}
+\indexentry{Login@{Login}|hyperpage}{31}
+\indexentry{Login@{Login}!Login@{Login}|hyperpage}{34}
+\indexentry{Login@{Login}!Login@{Login}|hyperpage}{34}
+\indexentry{Login@{Login}!process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{34}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}username@{process\discretionary {-}{}{}\_\discretionary {-}{}{}username}!Login@{Login}|hyperpage}{34}
+\indexentry{Login@{Login}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{34}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Login@{Login}|hyperpage}{34}
+\indexentry{Logout@{Logout}|hyperpage}{34}
+\indexentry{Logout@{Logout}!Logout@{Logout}|hyperpage}{37}
+\indexentry{Logout@{Logout}!Logout@{Logout}|hyperpage}{37}
+\indexentry{Logout@{Logout}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{37}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Logout@{Logout}|hyperpage}{37}
+\indexentry{Refund@{Refund}|hyperpage}{37}
+\indexentry{Refund@{Refund}!Refund@{Refund}|hyperpage}{40}
+\indexentry{Refund@{Refund}!Refund@{Refund}|hyperpage}{40}
+\indexentry{Refund@{Refund}!process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer@{process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer}|hyperpage}{40}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer@{process\discretionary {-}{}{}\_\discretionary {-}{}{}buyer}!Refund@{Refund}|hyperpage}{40}
+\indexentry{Refund@{Refund}!process\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{process\discretionary {-}{}{}\_\discretionary {-}{}{}credit}|hyperpage}{40}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{process\discretionary {-}{}{}\_\discretionary {-}{}{}credit}!Refund@{Refund}|hyperpage}{40}
+\indexentry{Refund@{Refund}!process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{40}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{process\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!Refund@{Refund}|hyperpage}{40}
+\indexentry{Refund@{Refund}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{41}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Refund@{Refund}|hyperpage}{41}
+\indexentry{Refund@{Refund}!buyer@{buyer}|hyperpage}{41}
+\indexentry{buyer@{buyer}!Refund@{Refund}|hyperpage}{41}
+\indexentry{Refund@{Refund}!credit@{credit}|hyperpage}{41}
+\indexentry{credit@{credit}!Refund@{Refund}|hyperpage}{41}
+\indexentry{Refund@{Refund}!seller@{seller}|hyperpage}{41}
+\indexentry{seller@{seller}!Refund@{Refund}|hyperpage}{41}
+\indexentry{Sell@{Sell}|hyperpage}{41}
+\indexentry{Sell@{Sell}!Sell@{Sell}|hyperpage}{44}
+\indexentry{Sell@{Sell}!Sell@{Sell}|hyperpage}{44}
+\indexentry{Sell@{Sell}!process\discretionary {-}{}{}\_\discretionary {-}{}{}price@{process\discretionary {-}{}{}\_\discretionary {-}{}{}price}|hyperpage}{44}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}price@{process\discretionary {-}{}{}\_\discretionary {-}{}{}price}!Sell@{Sell}|hyperpage}{44}
+\indexentry{Sell@{Sell}!process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}|hyperpage}{44}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}title@{process\discretionary {-}{}{}\_\discretionary {-}{}{}title}!Sell@{Sell}|hyperpage}{44}
+\indexentry{Sell@{Sell}!process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}|hyperpage}{44}
+\indexentry{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{process\discretionary {-}{}{}\_\discretionary {-}{}{}volume}!Sell@{Sell}|hyperpage}{44}
+\indexentry{Sell@{Sell}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{45}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Sell@{Sell}|hyperpage}{45}
+\indexentry{Sell@{Sell}!price@{price}|hyperpage}{45}
+\indexentry{price@{price}!Sell@{Sell}|hyperpage}{45}
+\indexentry{Sell@{Sell}!ticket@{ticket}|hyperpage}{45}
+\indexentry{ticket@{ticket}!Sell@{Sell}|hyperpage}{45}
+\indexentry{Sell@{Sell}!title@{title}|hyperpage}{45}
+\indexentry{title@{title}!Sell@{Sell}|hyperpage}{45}
+\indexentry{Sell@{Sell}!volume@{volume}|hyperpage}{45}
+\indexentry{volume@{volume}!Sell@{Sell}|hyperpage}{45}
+\indexentry{Ticket@{Ticket}|hyperpage}{45}
+\indexentry{Ticket@{Ticket}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}event@{get\discretionary {-}{}{}\_\discretionary {-}{}{}event}|hyperpage}{47}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}event@{get\discretionary {-}{}{}\_\discretionary {-}{}{}event}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}price@{get\discretionary {-}{}{}\_\discretionary {-}{}{}price}|hyperpage}{47}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}price@{get\discretionary {-}{}{}\_\discretionary {-}{}{}price}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{get\discretionary {-}{}{}\_\discretionary {-}{}{}seller}|hyperpage}{47}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}seller@{get\discretionary {-}{}{}\_\discretionary {-}{}{}seller}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!get\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{get\discretionary {-}{}{}\_\discretionary {-}{}{}volume}|hyperpage}{47}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}volume@{get\discretionary {-}{}{}\_\discretionary {-}{}{}volume}!Ticket@{Ticket}|hyperpage}{47}
+\indexentry{Ticket@{Ticket}!event@{event}|hyperpage}{48}
+\indexentry{event@{event}!Ticket@{Ticket}|hyperpage}{48}
+\indexentry{Ticket@{Ticket}!price@{price}|hyperpage}{48}
+\indexentry{price@{price}!Ticket@{Ticket}|hyperpage}{48}
+\indexentry{Ticket@{Ticket}!seller@{seller}|hyperpage}{48}
+\indexentry{seller@{seller}!Ticket@{Ticket}|hyperpage}{48}
+\indexentry{Ticket@{Ticket}!volume@{volume}|hyperpage}{48}
+\indexentry{volume@{volume}!Ticket@{Ticket}|hyperpage}{48}
+\indexentry{Transaction@{Transaction}|hyperpage}{48}
+\indexentry{Transaction@{Transaction}!format@{format}|hyperpage}{50}
+\indexentry{format@{format}!Transaction@{Transaction}|hyperpage}{50}
+\indexentry{Transaction@{Transaction}!format@{format}|hyperpage}{50}
+\indexentry{format@{format}!Transaction@{Transaction}|hyperpage}{50}
+\indexentry{Transaction@{Transaction}!format@{format}|hyperpage}{51}
+\indexentry{format@{format}!Transaction@{Transaction}|hyperpage}{51}
+\indexentry{Transaction@{Transaction}!get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{51}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{get\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Transaction@{Transaction}|hyperpage}{51}
+\indexentry{Transaction@{Transaction}!save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}|hyperpage}{51}
+\indexentry{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction@{save\discretionary {-}{}{}\_\discretionary {-}{}{}transaction}!Transaction@{Transaction}|hyperpage}{51}
+\indexentry{Transaction@{Transaction}!code@{code}|hyperpage}{51}
+\indexentry{code@{code}!Transaction@{Transaction}|hyperpage}{51}
+\indexentry{Transaction@{Transaction}!transaction@{transaction}|hyperpage}{51}
+\indexentry{transaction@{transaction}!Transaction@{Transaction}|hyperpage}{51}
+\indexentry{Transaction@{Transaction}!user@{user}|hyperpage}{51}
+\indexentry{user@{user}!Transaction@{Transaction}|hyperpage}{51}
+\indexentry{User@{User}|hyperpage}{52}
+\indexentry{User@{User}!User@{User}|hyperpage}{53}
+\indexentry{User@{User}!User@{User}|hyperpage}{53}
+\indexentry{User@{User}!User@{User}|hyperpage}{53}
+\indexentry{User@{User}!User@{User}|hyperpage}{53}
+\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{get\discretionary {-}{}{}\_\discretionary {-}{}{}credit}|hyperpage}{53}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}credit@{get\discretionary {-}{}{}\_\discretionary {-}{}{}credit}!User@{User}|hyperpage}{53}
+\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}status@{get\discretionary {-}{}{}\_\discretionary {-}{}{}status}|hyperpage}{53}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}status@{get\discretionary {-}{}{}\_\discretionary {-}{}{}status}!User@{User}|hyperpage}{53}
+\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}type@{get\discretionary {-}{}{}\_\discretionary {-}{}{}type}|hyperpage}{54}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}type@{get\discretionary {-}{}{}\_\discretionary {-}{}{}type}!User@{User}|hyperpage}{54}
+\indexentry{User@{User}!get\discretionary {-}{}{}\_\discretionary {-}{}{}username@{get\discretionary {-}{}{}\_\discretionary {-}{}{}username}|hyperpage}{54}
+\indexentry{get\discretionary {-}{}{}\_\discretionary {-}{}{}username@{get\discretionary {-}{}{}\_\discretionary {-}{}{}username}!User@{User}|hyperpage}{54}
+\indexentry{User@{User}!has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions@{has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions}|hyperpage}{54}
+\indexentry{has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions@{has\discretionary {-}{}{}\_\discretionary {-}{}{}permissions}!User@{User}|hyperpage}{54}
+\indexentry{User@{User}!login@{login}|hyperpage}{54}
+\indexentry{login@{login}!User@{User}|hyperpage}{54}
+\indexentry{User@{User}!logout@{logout}|hyperpage}{54}
+\indexentry{logout@{logout}!User@{User}|hyperpage}{54}
+\indexentry{User@{User}!credit@{credit}|hyperpage}{55}
+\indexentry{credit@{credit}!User@{User}|hyperpage}{55}
+\indexentry{User@{User}!login\discretionary {-}{}{}\_\discretionary {-}{}{}status@{login\discretionary {-}{}{}\_\discretionary {-}{}{}status}|hyperpage}{55}
+\indexentry{login\discretionary {-}{}{}\_\discretionary {-}{}{}status@{login\discretionary {-}{}{}\_\discretionary {-}{}{}status}!User@{User}|hyperpage}{55}
+\indexentry{User@{User}!permissions@{permissions}|hyperpage}{55}
+\indexentry{permissions@{permissions}!User@{User}|hyperpage}{55}
+\indexentry{User@{User}!type@{type}|hyperpage}{55}
+\indexentry{type@{type}!User@{User}|hyperpage}{55}
+\indexentry{User@{User}!username@{username}|hyperpage}{55}
+\indexentry{username@{username}!User@{User}|hyperpage}{55}
+\indexentry{Validate@{Validate}|hyperpage}{55}
+\indexentry{Validate@{Validate}!atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry}|hyperpage}{56}
+\indexentry{atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{atf\discretionary {-}{}{}\_\discretionary {-}{}{}entry}!Validate@{Validate}|hyperpage}{56}
+\indexentry{Validate@{Validate}!cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry}|hyperpage}{56}
+\indexentry{cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry@{cua\discretionary {-}{}{}\_\discretionary {-}{}{}entry}!Validate@{Validate}|hyperpage}{56}
+\indexentry{Validate@{Validate}!dollars@{dollars}|hyperpage}{56}
+\indexentry{dollars@{dollars}!Validate@{Validate}|hyperpage}{56}
+\indexentry{Validate@{Validate}!title@{title}|hyperpage}{56}
+\indexentry{title@{title}!Validate@{Validate}|hyperpage}{56}
+\indexentry{Validate@{Validate}!username@{username}|hyperpage}{57}
+\indexentry{username@{username}!Validate@{Validate}|hyperpage}{57}
+\indexentry{Validate@{Validate}!volume@{volume}|hyperpage}{57}
+\indexentry{volume@{volume}!Validate@{Validate}|hyperpage}{57}
+\indexentry{Add\discretionary {-}{}{}Credit.\discretionary {-}{}{}hpp@{Add\discretionary {-}{}{}Credit.\discretionary {-}{}{}hpp}|hyperpage}{59}
+\indexentry{Available\discretionary {-}{}{}Tickets.\discretionary {-}{}{}hpp@{Available\discretionary {-}{}{}Tickets.\discretionary {-}{}{}hpp}|hyperpage}{60}
+\indexentry{Buy.\discretionary {-}{}{}hpp@{Buy.\discretionary {-}{}{}hpp}|hyperpage}{61}
+\indexentry{Create.\discretionary {-}{}{}hpp@{Create.\discretionary {-}{}{}hpp}|hyperpage}{62}
+\indexentry{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts.\discretionary {-}{}{}hpp@{Current\discretionary {-}{}{}User\discretionary {-}{}{}Accounts.\discretionary {-}{}{}hpp}|hyperpage}{63}
+\indexentry{Daily\discretionary {-}{}{}Transaction.\discretionary {-}{}{}hpp@{Daily\discretionary {-}{}{}Transaction.\discretionary {-}{}{}hpp}|hyperpage}{64}
+\indexentry{Delete.\discretionary {-}{}{}hpp@{Delete.\discretionary {-}{}{}hpp}|hyperpage}{65}
+\indexentry{Exception.\discretionary {-}{}{}hpp@{Exception.\discretionary {-}{}{}hpp}|hyperpage}{66}
+\indexentry{Exception.\discretionary {-}{}{}hpp@{Exception.\discretionary {-}{}{}hpp}!exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes}|hyperpage}{67}
+\indexentry{exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{exception\discretionary {-}{}{}\_\discretionary {-}{}{}codes}!Exception.hpp@{Exception.\discretionary {-}{}{}hpp}|hyperpage}{67}
+\indexentry{A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N@{A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N@{A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-G\-I\-N}|hyperpage}{68}
+\indexentry{D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F@{D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F@{D\-E\-L\-E\-T\-E\-\_\-\-S\-E\-L\-F}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-R\-A\-N\-S\-A\-C\-T\-I\-O\-N}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V@{I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V@{I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-I\-V}|hyperpage}{68}
+\indexentry{M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N@{M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N@{M\-U\-S\-T\-\_\-\-L\-O\-G\-I\-N}|hyperpage}{68}
+\indexentry{A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{A\-T\-F\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{68}
+\indexentry{C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{C\-U\-A\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{68}
+\indexentry{C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F@{C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F@{C\-O\-R\-R\-U\-P\-T\-\_\-\-A\-T\-F}|hyperpage}{68}
+\indexentry{C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A@{C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A@{C\-O\-R\-R\-U\-P\-T\-\_\-\-C\-U\-A}|hyperpage}{68}
+\indexentry{D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R@{D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R@{D\-T\-F\-\_\-\-W\-R\-I\-T\-E\-\_\-\-E\-R\-R\-O\-R}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R}|hyperpage}{68}
+\indexentry{U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R@{U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R@{U\-N\-K\-N\-O\-W\-N\-\_\-\-U\-S\-E\-R}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-T\-Y\-P\-E}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S@{I\-N\-V\-A\-L\-I\-D\-\_\-\-U\-S\-E\-R\-\_\-\-E\-X\-I\-S\-T\-S}|hyperpage}{68}
+\indexentry{S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F@{S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F@{S\-E\-L\-L\-E\-R\-\_\-\-I\-S\-\_\-\-S\-E\-L\-F}|hyperpage}{68}
+\indexentry{T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-T\-L\-E\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{68}
+\indexentry{S\-E\-L\-L\-E\-R\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{S\-E\-L\-L\-E\-R\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!S\-E\-L\-L\-E\-R\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{S\-E\-L\-L\-E\-R\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{68}
+\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D@{T\-I\-C\-K\-E\-T\-\_\-\-N\-O\-T\-\_\-\-F\-O\-U\-N\-D}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-L\-E\-N\-G\-T\-H}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-T\-L\-E\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T@{I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T@{I\-N\-V\-A\-L\-I\-D\-\_\-\-A\-M\-O\-U\-N\-T}|hyperpage}{68}
+\indexentry{N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T@{N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T@{N\-E\-G\-A\-T\-I\-V\-E\-\_\-\-A\-M\-O\-U\-N\-T}|hyperpage}{68}
+\indexentry{C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{C\-R\-E\-D\-I\-T\-\_\-\-A\-M\-O\-U\-N\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{68}
+\indexentry{S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{S\-A\-L\-E\-\_\-\-P\-R\-I\-C\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{68}
+\indexentry{U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{U\-S\-E\-R\-\_\-\-C\-R\-E\-D\-I\-T\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E@{I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E}|hyperpage}{68}
+\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-N\-E\-G\-A\-T\-I\-V\-E}|hyperpage}{68}
+\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W}|hyperpage}{68}
+\indexentry{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X@{T\-I\-C\-K\-E\-T\-\_\-\-V\-O\-L\-U\-M\-E\-\_\-\-U\-S\-E\-R\-\_\-\-M\-A\-X}|hyperpage}{68}
+\indexentry{O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N@{O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N@{O\-N\-E\-\_\-\-S\-E\-L\-L\-\_\-\-P\-E\-R\-\_\-\-S\-E\-S\-S\-I\-O\-N}|hyperpage}{68}
+\indexentry{P\-U\-R\-C\-H\-A\-S\-E\-\_\-\-C\-A\-N\-C\-E\-L\-E\-D@{P\-U\-R\-C\-H\-A\-S\-E\-\_\-\-C\-A\-N\-C\-E\-L\-E\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!P\-U\-R\-C\-H\-A\-S\-E\-\_\-\-C\-A\-N\-C\-E\-L\-E\-D@{P\-U\-R\-C\-H\-A\-S\-E\-\_\-\-C\-A\-N\-C\-E\-L\-E\-D}|hyperpage}{68}
+\indexentry{I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N@{I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N@{I\-N\-V\-A\-L\-I\-D\-\_\-\-C\-O\-N\-F\-I\-R\-M\-A\-T\-I\-O\-N}|hyperpage}{68}
+\indexentry{N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D@{N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D}!Exception.\-hpp@{Exception.\-hpp}|hyperpage}{68}
+\indexentry{Exception.\-hpp@{Exception.\-hpp}!N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D@{N\-O\-T\-\_\-\-Y\-E\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D}|hyperpage}{68}
+\indexentry{Login.\discretionary {-}{}{}hpp@{Login.\discretionary {-}{}{}hpp}|hyperpage}{69}
+\indexentry{Logout.\discretionary {-}{}{}hpp@{Logout.\discretionary {-}{}{}hpp}|hyperpage}{69}
+\indexentry{Refund.\discretionary {-}{}{}hpp@{Refund.\discretionary {-}{}{}hpp}|hyperpage}{70}
+\indexentry{Sell.\discretionary {-}{}{}hpp@{Sell.\discretionary {-}{}{}hpp}|hyperpage}{71}
+\indexentry{Ticket.\discretionary {-}{}{}hpp@{Ticket.\discretionary {-}{}{}hpp}|hyperpage}{72}
+\indexentry{Transaction.\discretionary {-}{}{}hpp@{Transaction.\discretionary {-}{}{}hpp}|hyperpage}{73}
+\indexentry{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}|hyperpage}{74}
+\indexentry{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}!transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes}|hyperpage}{75}
+\indexentry{transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes@{transaction\discretionary {-}{}{}\_\discretionary {-}{}{}codes}!TransactionCodes.hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}|hyperpage}{75}
+\indexentry{\-\_\-undefined@{\-\_\-undefined}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-undefined@{\-\_\-undefined}|hyperpage}{75}
+\indexentry{\-\_\-login@{\-\_\-login}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-login@{\-\_\-login}|hyperpage}{75}
+\indexentry{\-\_\-logout@{\-\_\-logout}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-logout@{\-\_\-logout}|hyperpage}{75}
+\indexentry{\-\_\-create@{\-\_\-create}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-create@{\-\_\-create}|hyperpage}{75}
+\indexentry{\-\_\-delete@{\-\_\-delete}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-delete@{\-\_\-delete}|hyperpage}{75}
+\indexentry{\-\_\-sell@{\-\_\-sell}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-sell@{\-\_\-sell}|hyperpage}{75}
+\indexentry{\-\_\-buy@{\-\_\-buy}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-buy@{\-\_\-buy}|hyperpage}{75}
+\indexentry{\-\_\-refund@{\-\_\-refund}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-refund@{\-\_\-refund}|hyperpage}{75}
+\indexentry{\-\_\-addcredit@{\-\_\-addcredit}!Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}|hyperpage}{75}
+\indexentry{Transaction\-Codes.\-hpp@{Transaction\-Codes.\-hpp}!\-\_\-addcredit@{\-\_\-addcredit}|hyperpage}{75}
+\indexentry{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}!map\discretionary {-}{}{}\_\discretionary {-}{}{}code@{map\discretionary {-}{}{}\_\discretionary {-}{}{}code}|hyperpage}{76}
+\indexentry{map\discretionary {-}{}{}\_\discretionary {-}{}{}code@{map\discretionary {-}{}{}\_\discretionary {-}{}{}code}!TransactionCodes.hpp@{Transaction\discretionary {-}{}{}Codes.\discretionary {-}{}{}hpp}|hyperpage}{76}
+\indexentry{User.\discretionary {-}{}{}hpp@{User.\discretionary {-}{}{}hpp}|hyperpage}{76}
+\indexentry{Validate.\discretionary {-}{}{}hpp@{Validate.\discretionary {-}{}{}hpp}|hyperpage}{77}

@@ -120,27 +120,26 @@ $(document).ready(function(){initNavTree('_add_credit_8hpp_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_add_credit.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_add_credit.html" title="AddCredit Class.">AddCredit</a> : <span class="keyword">public</span> <a class="code" href="class_transaction.html" title="Transaction Class.">Transaction</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_add_credit.html#aad02f271a6536fa078c6d1369ffdadc4">   24</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_add_credit.html#aad02f271a6536fa078c6d1369ffdadc4" title="username Stores the username used in the transaction.">username</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_add_credit.html#aa559c3686bb9d38c3335c16bbea07be8">   25</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_add_credit.html#aa559c3686bb9d38c3335c16bbea07be8">credit</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> save_transaction();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_add_credit.html" title="AddCredit Class.">AddCredit</a>(<a class="code" href="class_user.html" title="User Class.">User</a> current_user);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> process_username(<span class="keywordtype">string</span> username, <a class="code" href="class_current_user_accounts.html" title="CurrentUserAccounts Class.">CurrentUserAccounts</a> user_accounts);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> process_credit(<span class="keywordtype">double</span> credit);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ADDCREDIT_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_add_credit.html#aa559c3686bb9d38c3335c16bbea07be8">   23</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_add_credit.html#aa559c3686bb9d38c3335c16bbea07be8" title="credit Stores the amount of credit to add.">credit</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> save_transaction();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_add_credit.html" title="AddCredit Class.">AddCredit</a>(<a class="code" href="class_user.html" title="User Class.">User</a> current_user);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <span class="keywordtype">void</span> process_credit(<span class="keywordtype">string</span> credit);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> process_username(<a class="code" href="class_current_user_accounts.html" title="CurrentUserAccounts Class.">CurrentUserAccounts</a> user_accounts);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ADDCREDIT_HPP_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_add_credit_8hpp.html">AddCredit.hpp</a></li>
-    <li class="footer">Generated on Thu Feb 28 2013 13:52:56 for Swift Ticket by
+    <li class="footer">Generated on Sun Mar 3 2013 16:53:44 for Swift Ticket by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

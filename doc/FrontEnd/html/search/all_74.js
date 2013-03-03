@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ticket',['Ticket',['../class_ticket.html',1,'Ticket'],['../class_buy.html#aa32fbb8329d2062760a5954e347970b5',1,'Buy::ticket()'],['../class_sell.html#aa32fbb8329d2062760a5954e347970b5',1,'Sell::ticket()'],['../class_ticket.html#af7970b7b7045eed437759b1b16560c7c',1,'Ticket::Ticket()']]],
+  ['ticket',['Ticket',['../class_ticket.html',1,'Ticket'],['../class_buy.html#a6717a14bf73091b2dc94a3908cbd03ac',1,'Buy::ticket()'],['../class_sell.html#a6717a14bf73091b2dc94a3908cbd03ac',1,'Sell::ticket()'],['../class_ticket.html#acb3217611e420c807c693f3e7995a6fb',1,'Ticket::Ticket()'],['../class_ticket.html#af7970b7b7045eed437759b1b16560c7c',1,'Ticket::Ticket(string event, string seller, int volume, double price)']]],
   ['ticket_2ehpp',['Ticket.hpp',['../_ticket_8hpp.html',1,'']]],
   ['ticket_5fnot_5ffound',['TICKET_NOT_FOUND',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626dda817a15e6e8f81e365f585a35cdc40f6c',1,'Exception.hpp']]],
   ['ticket_5fvolume_5fnegative',['TICKET_VOLUME_NEGATIVE',['../_exception_8hpp.html#a7913b361832b19772aa960f7caa626ddab98bf77fc37928f4616310f69f56ca54',1,'Exception.hpp']]],
