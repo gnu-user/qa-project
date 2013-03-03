@@ -92,6 +92,7 @@ void Refund::process_credit(string credit)
                 if (tmp_credit <= 999999.99)
                 {
                     this->credit = tmp_credit;
+                    save_transaction();
                 }
                 else
                 {
