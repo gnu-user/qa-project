@@ -6,7 +6,8 @@ has to be submitted as 6/10 marks for phase 2 is based on our code structure, na
 consistency, etc..
 
 
-*We are using our own style guideline based off google's and ____ *
+*We are using our own style guideline based slightly off of Google's with some pragmatic improvements
+targeted at modern C++ development. *
 
 
 File Naming Convention
@@ -22,11 +23,8 @@ File Naming Convention
 Variable Convention
 -----------------------
 
-1.  I am really indecsive about this, Google's recommends variable names like_this but I prefer
-    camel case for OOP
-
-2.  Perhaps a trade off is camel-case for OOP (ie. String object, and other class objects) and
-    underscore_variables for primitive types?
+1.  The variable naming conventional uses underscores such as like_this or
+    a_long_variable_name.
 
 
 Class/OOP Conventions
@@ -190,15 +188,15 @@ Code Formatting
 
 ### Classes
 
-1.  Public and private, the public and private fields must be indented exactly two spaces, the statements
-    for each are indented four spaces
+1.  Public and private, the public and private fields must be aligned with the curly braces, the statements
+    for each method and member are indented four spaces.
 
 
         MyClass
         {
-        private:             // 2 space indent
+        private:
             variable;        // 4 space indent
 
-        public:              // 2 space indent
+        public:
             get_variable();  // 4 space indent
         }
