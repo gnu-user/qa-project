@@ -235,6 +235,18 @@ int main(int argc, char** argv)
                   cout << "Credit added successfully." << endl;
                   break;
               }
+              case _quit:
+              {
+                  /* If the user is not logged in terminate the program */
+                  if (! current_user.get_status())
+                  {
+                      return EXIT_SUCCESS;
+                  }
+                  else
+                  {
+                      throw Exception(INVALID_TRANSACTION);
+                  }
+              }
               default:
               {
                   throw Exception(INVALID_TRANSACTION);
