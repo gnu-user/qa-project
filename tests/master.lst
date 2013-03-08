@@ -1,6 +1,7 @@
 # The master test list, this contains the list of all the test suites
 # to be executed as part of the testing for the application.
 login
+quit
 logout
 create
 delete
