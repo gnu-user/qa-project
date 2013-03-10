@@ -28,8 +28,14 @@ make -j4
 
 
 
+
 OS X
 -----------------------
+
+**NOTE: OS X CANNOT BUILD WITH STATIC LIBRARIES **
+
+./configure --config=Darwin64-clang-libc++ --prefix=lib/ --no-tests --shared --omit=Crypto,Data,Net,Util/Units,Util/Units/Internal,XML,Zip
+
 
 
 
