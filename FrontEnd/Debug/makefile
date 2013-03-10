@@ -7,9 +7,24 @@
 RM := rm -rf
 
 # Architecture specific build settings
+UNAME := $(shell uname)
 ARCH := $(shell getconf LONG_BIT)
 LINK_PATH_32 := i686
 LINK_PATH_64 := x86_64
+
+# Set the build and linker specific settings
+ifeq ($(UNAME),Linux)
+BUILD_MSG := 'Invoking: GCC C++ Compiler'
+LINK_MSG := 'Invoking: GCC C++ Linker'
+BUILD_COMMAND := g++ -I"../lib/include" -O0 -g3 -pedantic -Wall -Wextra -c -fmessage-length=0 -std=c++0x
+LINK_COMMAND := g++ -L"../lib/static/$(UNAME)/$(LINK_PATH_$(ARCH))" -static
+endif
+ifeq ($(UNAME),Darwin)
+BUILD_MSG := 'Invoking: Clang C++ Compiler'
+LINK_MSG := 'Invoking: Clang C++ Linker'
+BUILD_COMMAND := clang++ -I"../lib/include" -O0 -g3 -pedantic -Wall -Wextra -c -fmessage-length=0 -U__STRICT_ANSI__ -std=c++0x -stdlib=libc++
+LINK_COMMAND := clang++ -L"../lib/shared/$(UNAME)/$(LINK_PATH_$(ARCH))" -stdlib=libc++
+endif
 
 # All of the sources participating in the build are defined here
 -include sources.mk
@@ -48,8 +63,8 @@ all: FrontEnd
 # Tool invocations
 FrontEnd: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"../lib/static/$(LINK_PATH_$(ARCH))" -static -o "FrontEnd" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo $(LINK_MSG)
+	$(LINK_COMMAND) -o "FrontEnd" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
