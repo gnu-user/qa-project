@@ -143,10 +143,10 @@ title cannot contain END:
     Invalid event title, event title cannot contain the word "END".
 
 invalid ticket sale price, must be dollars:
-    Invalid sale price, amount must be in dollars (e.g. 10.00).
+    Invalid value, amount must be in dollars (e.g. 10.00).
 
 invalid credit amount, must be dollars:
-    Invalid credit value, amount must be in dollars (e.g. 10.00).
+    Invalid value, amount must be in dollars (e.g. 10.00).
 
 invalid ticket sale price, must be positive:
     Invalid sale price, amount cannot be less than 0.00.

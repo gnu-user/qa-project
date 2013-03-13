@@ -8,37 +8,10 @@ but there is no title AND seller found that matches.
 	--> Tickets not found, specified seller is not selling tickets to that event.
 
 
-
-Changed the "can not" in delete self error message to the following:
-deleting yourself:
-    Invalid transaction, you cannot delete yourself.
-
-    --> MUST GO AND FIX TESTS TO USE NEW ERROR MSG.
-
-
-
-
 Added additional error message, update tests:
 
 	invalid title name, too short?
     	Invalid event title.
-
-
-
-
-Additional exception for generic invalid dollars amount, update tests
-there is no specific message for credit/price they are 1 error message now:
-
-    {INVALID_SALE_PRICE, "Invalid sale price, amount must be in dollars (e.g. 10.00)."},
-    {INVALID_CREDIT_AMOUNT, "Invalid credit value, amount must be in dollars (e.g. 10.00)."},
-
-    	--> INVALID_AMOUNT, "Invalid value, amount must be in dollars (e.g. 10.00)."
-
-    {SALE_PRICE_NEGATIVE, "Invalid sale price, amount cannot be less than 0.00."},
-    {CREDIT_AMOUNT_NEGATIVE, "Invalid credit value, amount cannot be less than 0.00."},
-
-    	--> NEGATIVE_AMOUNT, "Invalid value, amount cannot be less than 0.00."
-
 
 
 
