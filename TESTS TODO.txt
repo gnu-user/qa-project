@@ -1,13 +1,6 @@
 TESTS TODO
 =======================
 
-
-Need to add test case for the new error message when a title and seller are both valid
-but there is no title AND seller found that matches.
-
-	--> Tickets not found, specified seller is not selling tickets to that event.
-
-
 Added additional error message, update tests:
 
 	invalid title name, too short?
