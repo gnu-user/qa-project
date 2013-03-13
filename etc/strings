@@ -84,6 +84,9 @@ Credit added successfully.
 Error messages
 ----------------
 
+garbage transaction:
+    Invalid transaction.
+
 already logged in:
     Invalid transaction, you are already logged in.
 
@@ -149,7 +152,7 @@ invalid credit amount, must be dollars:
     Invalid value, amount must be in dollars (e.g. 10.00).
 
 invalid ticket sale price, must be positive:
-    Invalid sale price, amount cannot be less than 0.00.
+    Invalid value, amount cannot be less than 0.00.
 
 seller not found listed in ATF selling any tickets...
     "Invalid seller username, seller is not selling any tickets."
@@ -159,8 +162,9 @@ title provided was found being sold by the seller:
     Tickets not found, specified seller is not selling tickets to that event.
 
 
+
 invalid credit amount, must be positive:
-    Invalid credit value, amount cannot be less than 0.00.
+    Invalid value, amount cannot be less than 0.00.
 
 invalid credit amount, cannot exceed 1000.00:
     Invalid credit value, amount cannot exceed 1000.00.

@@ -20,23 +20,5 @@ Deleting any outstanding tickets after a user has been deleted....
 	--> Not sure how to handle the user in memory after they've been deleted...
 		that is stateful... should be the backend's job...
 
-
-
-
-Added new error message if seller username provided not found, update tests!
-
-"Invalid seller username, seller is not selling any tickets."
-
-
-
-
-Added a generic invalid transaction message, update the tests if needed:
-
-generic invalid transaction, when logged in:
-    Invalid transaction.
-
-
-
-
 FOR ADDCREDIT TRANSACTION, JUST USING THE MESSAGE
 "Credit added successfully." IF IT COMPLETED SUCCESSFULLY
