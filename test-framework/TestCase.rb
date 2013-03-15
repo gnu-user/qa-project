@@ -27,7 +27,7 @@ class TestCase
 	attr_accessor	:name, 
 					:title, 
 					:description, 
-					:depenedencies,	# Array of test case dependencies
+					:dependencies,	# Array of test case dependencies
 					:status			# Status of test case, pass, fail, or unmet dependencies
 
 	def initialize(name)
@@ -60,5 +60,11 @@ class TestCase
         else
         	raise "File: #{file_path} not found!"
         end
+	end
+
+	# Sets the status for the test case, which can be one of the following
+	# Pass, Fail, or Unmet Dependencies
+	def set_status(status)
+		@status = status
 	end
 end

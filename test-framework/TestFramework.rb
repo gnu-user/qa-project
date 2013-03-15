@@ -21,6 +21,24 @@
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ###############################################################################
+require 'TestSuite'
+require 'TestCase'
+require 'colorize'
+
+
+# Simple function which verifies if a test case or test suite
+# has unmet dependencies, which is any test case or test suite that
+# has been executed, but has not passed
+def unmet_dependencies?(test, test_history)
+	test.dependencies.each() do |dependency|
+		# If the test dependency has been executed and failed return false
+		if test_history.has_key?(dependency) and test_history[dependency] != "Passed"
+			return true
+		end
+	end
+
+	return false
+end
 
 
 # Array of test suites to execute, the master test list
@@ -48,6 +66,9 @@ tests_path = ARGV[1]
 output_path = ARGV[2]
 
 
+
+
+
 # Parse each test suite and all test cases and store the objects
 # in the master test list array
 if File.exists?("#{tests_path}/master.lst")
@@ -67,17 +88,26 @@ else
 	raise "#{tests_path}/master.lst not found!"
 end
 
-
-#test = TestSuite.new("login")
-#test.parse_description("../tests")
-#test.parse_testlist("../tests")
-
+# For each test suite verify that the test case dependencies have
+# been met then execute each of the test cases
 master_testlist.each() do |test_suite|
+	puts "Executing #{test_suite.title}"
+	puts "=" * 40 + "\n"
+	# If the test suite has test suite dependencies that have not 
+	# been met, then the test suite cannot be executed
+	if unmet_dependencies?(test_suite, test_history)
+		# Test suite failed, unmet dependencies
+		puts "#{test_suite.title} Failed due to the following unmet dependencies".red
+		test_suite.dependencies.each() do |dependency|
+			puts "#{dependency}".light_blue
+		end
+	end
+
 	puts "-----------------------------------------------"
 	puts test_suite.name
 	puts test_suite.title
 	puts test_suite.description
-	puts test_suite.depenedencies
+	puts test_suite.dependencies
 	puts "\n"
 	
 	test_suite.test_cases.each() do |test_case|

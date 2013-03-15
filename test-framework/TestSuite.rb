@@ -27,13 +27,13 @@ class TestSuite
 	attr_accessor 	:name, 
 					:title, 
 					:description, 
-					:depenedencies,	# Array of test suite dependencies 
+					:dependencies,	# Array of test suite dependencies 
 					:test_cases,	# Array of test cases for the test suite
 					:status			# Status of test suite, pass, fail, or unmet dependencies
 
 	def initialize(name)
 		@name = name
-		@depenedencies = []
+		@dependencies = []
 		@test_cases = []
 	end
 
@@ -84,5 +84,11 @@ class TestSuite
 		else
 			raise "File: #{file_path} not found!"
 		end
+	end
+
+	# Sets the status for the test suite, which can be one of the following
+	# Pass, Fail, or Unmet Dependencies
+	def set_status(status)
+		@status = status
 	end
 end
