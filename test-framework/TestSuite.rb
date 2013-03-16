@@ -24,9 +24,9 @@
 
 # The main test suite class
 class TestSuite
-	attr_accessor 	:name, 
-					:title, 
-					:description, 
+	attr_accessor 	:name, 			# The actual directory name for test suite
+					:title, 		# Test suite title
+					:description, 	# Test suite description
 					:dependencies,	# Array of test suite dependencies 
 					:test_cases,	# Array of test cases for the test suite
 					:status			# Status of test suite, pass, fail, or unmet dependencies
@@ -87,7 +87,7 @@ class TestSuite
 	end
 
 	# Sets the status for the test suite, which can be one of the following
-	# Pass, Fail, or Unmet Dependencies
+	# Passed, Failed, or Unmet Dependencies
 	def set_status(status)
 		@status = status
 	end

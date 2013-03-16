@@ -24,10 +24,10 @@
 
 # The test case class
 class TestCase
-	attr_accessor	:name, 
-					:title, 
-					:description, 
-					:dependencies,	# Array of test case dependencies
+	attr_accessor 	:name, 			# The actual directory name for test suite
+					:title, 		# Test suite title
+					:description, 	# Test suite description
+					:dependencies,	# Array of test suite dependencies 
 					:status			# Status of test case, pass, fail, or unmet dependencies
 
 	def initialize(name)
