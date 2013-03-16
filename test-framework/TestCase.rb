@@ -46,7 +46,7 @@ class TestCase
     			if (line =~ /^TITLE\n$/)
     				next
     			elsif (line =~ /^DESCRIPTION\n$/)
-    				@title = content
+    				@title = content.strip
     				content = ""
     			elsif (line =~ /^DEPENDENCIES\n*$/)
     				@description = content
@@ -63,7 +63,7 @@ class TestCase
 	end
 
 	# Sets the status for the test case, which can be one of the following
-	# Pass, Fail, or Unmet Dependencies
+	# Passed, Failed, or Unmet Dependencies
 	def set_status(status)
 		@status = status
 	end
