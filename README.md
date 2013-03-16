@@ -2,7 +2,7 @@ Quality Assurance Project
 =========================
 
 Contains the quality assurance project which involves a front-end and back-end
-for a movie ticket service. The test cases, test framework are design documents
+for a movie ticket service. The test cases, test framework, and design documents
 are an important part of the quality assurance project.
 
 
