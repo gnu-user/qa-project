@@ -63,9 +63,10 @@ enum exception_codes {
     TICKET_VOLUME_OVERFLOW,//!< TICKET_VOLUME_OVERFLOW Ticket volume cannot exceed 100.
     TICKET_VOLUME_USER_MAX,//!< TICKET_VOLUME_USER_MAX Non-admin users cannot purchase more than 4 tickets per session.
     ONE_SELL_PER_SESSION,  //!< ONE_SELL_PER_SESSION Only one sell transaction may occur per session.
-    PURCHASE_CANCELED,    //!< PURCHASE_CANCELLED User canceled the ticket purchase
+    PURCHASE_CANCELED,     //!< PURCHASE_CANCELLED User canceled the ticket purchase
     INVALID_CONFIRMATION,  //!< INVALID_CONFIRMATION Confirmation must be 'yes' or 'no'.
-    NOT_YET_IMPLEMENTED    //!< NOT_YET_IMPLEMENTED Exception used for anything not implemented yet.
+    NOT_YET_IMPLEMENTED,   //!< NOT_YET_IMPLEMENTED Exception used for anything not implemented yet.
+    EOF_INPUT               //!< NO_INPUT EOF input provided, usually from test harness
 };
 
 /**
@@ -116,6 +117,7 @@ private:
         {ONE_SELL_PER_SESSION, "Invalid transaction, only one sell transaction per session accepted."},
         {PURCHASE_CANCELED, "Ticket purchase transaction canceled."},
         {INVALID_CONFIRMATION, "Invalid confirmation, please enter \"yes\" or \"no\"."},
+        {EOF_INPUT, ""},
         {NOT_YET_IMPLEMENTED, "Not yet implemented"}
     };
     exception_codes code;
