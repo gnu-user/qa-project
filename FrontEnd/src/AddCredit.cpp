@@ -20,6 +20,7 @@
  */
 #include "../include/AddCredit.hpp"
 #include "../include/Validate.hpp"
+#include "../include/FrontEnd.hpp"
 #include <iostream>
 
 using namespace std;
@@ -77,7 +78,7 @@ void AddCredit::process_username(CurrentUserAccounts user_accounts)
     if (user.get_type().compare("AA") == 0)
     {
         cout << "Enter the username to which credit is being added: ";
-        getline(cin, input);
+        get_input(cin, input), cout << endl;
     }
     else
     {

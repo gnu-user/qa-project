@@ -40,6 +40,30 @@
 
 using namespace std;
 
+
+istream& get_input(istream& input_stream, string& target)
+{
+    string input;
+    char ch;
+    input_stream.get(ch);
+
+    /* Throw EOF exception if EOF found */
+    if (input_stream.eof())
+    {
+        throw Exception(EOF_INPUT);
+    }
+
+    while (ch!='\n' && !input_stream.eof()) //check for end of file
+    {
+        input += ch;
+        input_stream.get(ch);
+    }
+
+    target = input;
+    return input_stream;
+}
+
+
 int main(int argc, char** argv)
 {
     string input;
@@ -80,10 +104,11 @@ int main(int argc, char** argv)
         return EXIT_FAILURE;
     }
 
-    while(true)
+
+    cout << "> ";
+    while(getline(cin, input))
     {
-        cout << "> ";
-        getline(cin, input);
+        cout << endl;
 
         try
         {
@@ -94,11 +119,12 @@ int main(int argc, char** argv)
                   Login login = Login(current_user);
 
                   cout << "Enter username: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
 
                   /* Attempt to login with username provided */
                   current_user = login.process_username(input, current_accounts);
                   current_user.login();
+                  cout << "Username accepted." << endl;
                   break;
               }
               case _logout:
@@ -118,12 +144,12 @@ int main(int argc, char** argv)
 
                   /* Process the username */
                   cout << "Enter the username to create: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   create.process_username(input, current_accounts);
 
                   /* Process the user type, save transaction if successful */
                   cout << "Enter the user type: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   create.process_type(input);
 
                   daily_transactions.save((Transaction) create);
@@ -136,7 +162,7 @@ int main(int argc, char** argv)
 
                   /* Process the username, save transaction if successful */
                   cout << "Enter the username to delete: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   __delete.process_username(input, current_accounts);
 
                   daily_transactions.save((Transaction) __delete);
@@ -149,17 +175,17 @@ int main(int argc, char** argv)
 
                   /* Process the event title */
                   cout << "Enter the event title: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   sell.process_title(input);
 
                   /* Process sale price */
                   cout << "Enter the sale price in dollars: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   sell.process_price(input);
 
                   /* Process the volume, save transaction if successful */
                   cout << "Enter the number of tickets for sale: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   sell.process_volume(input);
 
                   daily_transactions.save((Transaction) sell);
@@ -172,22 +198,22 @@ int main(int argc, char** argv)
 
                   /* Process the event title */
                   cout << "Enter the event title: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   buy.process_title(input, available_tickets);
 
                   /* Process the volume */
                   cout << "Enter the number of tickets to purchase: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   buy.process_volume(input);
 
                   /* Process the seller */
                   cout << "Enter the seller's username: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   buy.process_seller(input, available_tickets);
 
                   /* Display the confirmation, save transaction if confirmed */
                   cout << "Purchase tickets? Please confirm (yes/no): ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   buy.process_confirmation(input);
 
                   daily_transactions.save((Transaction) buy);
@@ -200,17 +226,17 @@ int main(int argc, char** argv)
 
                   /* Process buyer's username */
                   cout << "Enter the buyer's username: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   refund.process_buyer(input, current_accounts);
 
                   /* Process the seller's username */
                   cout << "Enter the seller's username: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   refund.process_seller(input, current_accounts);
 
                   /* Refund the credit amount specified */
                   cout << "Enter the amount of credit to transfer: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   refund.process_credit(input);
 
                   /* Add the transaction to the daily transaction file */
@@ -224,7 +250,7 @@ int main(int argc, char** argv)
 
                   /* Process amount of credit to add */
                   cout << "Enter the amount of credit to add: ";
-                  getline(cin, input);
+                  get_input(cin, input), cout << endl;
                   addcredit.process_credit(input);
 
                   /* Process the username if applicable */
@@ -240,6 +266,7 @@ int main(int argc, char** argv)
                   /* If the user is not logged in terminate the program */
                   if (! current_user.get_status())
                   {
+                      cout << "Goodbye." << endl;
                       return EXIT_SUCCESS;
                   }
                   else
@@ -261,6 +288,7 @@ int main(int argc, char** argv)
 
         // Flush the stream
         cout.flush();
+        cout << "> ";
     }
 
     return 0;
