@@ -1,4 +1,6 @@
 Welcome.
+Current user accounts file read successfully.
+Available tickets file read successfully.
 > 
 Invalid transaction, only login accepted.
 > 
@@ -13,3 +15,4 @@ Invalid transaction, only login accepted.
 Invalid transaction, only login accepted.
 > 
 Invalid transaction, only login accepted.
+> 
