@@ -166,7 +166,7 @@ int main(int argc, char** argv)
                   __delete.process_username(input, current_accounts);
 
                   daily_transactions.save((Transaction) __delete);
-                  cout << "User deleted successfully as well as any outstanding tickets." << endl;
+                  cout << "User deleted successfully." << endl;
                   break;
               }
               case _sell:
