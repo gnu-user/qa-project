@@ -93,6 +93,14 @@ bool Validate::atf_entry(string entry)
 
 bool Validate::dollars(string amount, double& converted)
 {
+    /* Verify that the amount is in dollars, contains 2 decimals (e.g. 10.00) */
+    RegularExpression re("^-?[0-9]+\\.[0-9]{2}$");
+
+    if (! re.match(amount))
+    {
+        throw Exception(INVALID_AMOUNT);
+    }
+
     /* Verify the amount provided can be converted to float */
     try
     {
