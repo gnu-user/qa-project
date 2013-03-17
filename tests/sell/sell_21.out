@@ -11,3 +11,6 @@ Enter the number of tickets for sale:
 Tickets listed for sale successfully.
 > 
 Invalid transaction, only one sell transaction per session accepted.
+> 
+Logout complete.
+> 
