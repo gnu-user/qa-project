@@ -131,6 +131,8 @@ int main(int argc, char** argv)
               {
                   Logout logout = Logout(current_user);
                   current_user.logout();
+                  current_user.reset_sell_status();
+
                   cout << "Logout complete." << endl;
 
                   /* Write all session transactions to daily transaction file */
@@ -187,6 +189,9 @@ int main(int argc, char** argv)
                   cout << "Enter the number of tickets for sale: ";
                   get_input(cin, input), cout << endl;
                   sell.process_volume(input);
+
+                  /* Record that the user has sold tickets this session */
+                  current_user.tickets_sold();
 
                   daily_transactions.save((Transaction) sell);
                   cout << "Tickets listed for sale successfully." << endl;

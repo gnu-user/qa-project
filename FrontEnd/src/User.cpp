@@ -62,6 +62,11 @@ bool User::get_status()
     return login_status;
 }
 
+bool User::get_sell_status()
+{
+    return sell_status;
+}
+
 void User::login()
 {
     this->login_status = true;
@@ -72,6 +77,15 @@ void User::logout()
     this->login_status = false;
 }
 
+void User::tickets_sold()
+{
+    this->sell_status = true;
+}
+
+void User::reset_sell_status()
+{
+    this->sell_status = false;
+}
 
 bool User::has_permissions(string transaction)
 {

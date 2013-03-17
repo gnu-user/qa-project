@@ -42,11 +42,13 @@ private:
      * type Stores the user type.
      * credit Stores the user's credit amount.
      * login_status Stores whether the user is logged in. True if logged in false, if not.
+     * sell_status Stores whether the user has sold tickets. True if user has sold tickets, false, if not.
      */
     string username;
     string type;
     double credit;
     bool login_status;
+    bool sell_status;
 
     /**
      * permissions Maps the user types to allowed transaction permissions.
@@ -94,6 +96,12 @@ public:
      * @return Returns true if the user is logged in. False if not.
      */
     bool get_status();
+
+    /**
+     * get_sell_status Retuns the sell status of the user.
+     * @return Returns true if user has sold tickets, false, if not.
+     */
+    bool get_sell_status();
    
     /**
      * login Changes the user's login_status attribute to true. The user
@@ -106,6 +114,18 @@ public:
      * is now logged out.
      */
     void logout();
+
+    /**
+     * tickets_sold Changes the user's sell_status attribute to true, The user
+     * has now sold tickets this session.
+     */
+    void tickets_sold();
+
+    /**
+     * reset_sell_status Resets the user's sell_status attribute to false,
+     * the user can now sell tickets during their next session.
+     */
+    void reset_sell_status();
 
     /**
      * has_permissions Determines whether a user has permissions to execute

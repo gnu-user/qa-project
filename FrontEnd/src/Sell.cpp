@@ -29,6 +29,12 @@ Sell::Sell(User current_user)
         throw Exception(MUST_LOGIN);
     }
 
+    /* If the user has already sold tickets this session throw exception */
+    if (current_user.get_sell_status())
+    {
+        throw Exception(ONE_SELL_PER_SESSION);
+    }
+
     /* Verify the user has the necessary privileges */
     if (! current_user.has_permissions("sell"))
     {
