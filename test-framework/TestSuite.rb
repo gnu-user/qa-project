@@ -51,15 +51,15 @@ class TestSuite
     			elsif (line =~ /^DESCRIPTION\n$/)
     				@title = content.strip
     				content = ""
-    			elsif (line =~ /^DEPENDENCIES\n*$/)
+    			elsif (line =~ /^DEPENDENCIES\n*?$/)
     				@description = content
     				content = ""
 				else
 					content += line.lstrip
     			end
-    			# Set the list of test suite dependencies
-    			@dependencies = content.split('\n')
         	end
+			# Set the list of test suite dependencies
+			@dependencies = content.split(/\r?\n/)
         else
         	raise "File: #{file_path} not found!"
         end
