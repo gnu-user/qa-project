@@ -1,7 +1,7 @@
-*** ../tests/buy/buy_23.out	2013-03-16 22:29:19.750002470 -0400
---- ../tests-results/buy/buy_23.out	2013-03-18 15:58:47.960029380 -0400
+*** ../tests/buy/buy_11.out	2013-03-16 22:29:19.763335804 -0400
+--- ../tests-results/buy/buy_11.out	2013-03-18 15:58:47.850029379 -0400
 ***************
-*** 1,8 ****
+*** 1,9 ****
   Welcome.
   > 
   Enter username: 
@@ -10,7 +10,9 @@
   >
   Enter the event title:
   Enter the number of tickets to purchase: 
---- 1,9 ----
+  Enter the seller's username: 
+
+--- 1,11 ----
   Welcome.
 + Current user accounts file read successfully.
 + Available tickets file read successfully.
@@ -20,11 +22,6 @@
   > 
   Enter the event title: 
   Enter the number of tickets to purchase: 
-***************
-*** 11,13 ****
---- 12,15 ----
-  Total cost of tickets: $40.00
-  Purchase tickets? Please confirm (yes/no): 
-  Tickets purchased successfully.
+  Enter the seller's username: 
 + > 
 
