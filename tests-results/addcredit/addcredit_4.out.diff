@@ -1,7 +1,7 @@
-*** ../tests/addcredit/addcredit_1.out	2013-03-16 22:29:19.380002470 -0400
---- ../tests-results/addcredit/addcredit_1.out	2013-03-18 15:51:19.970024504 -0400
+*** ../tests/addcredit/addcredit_4.out	2013-03-16 22:29:19.396669137 -0400
+--- ../tests-results/addcredit/addcredit_4.out	2013-03-18 15:51:45.130024778 -0400
 ***************
-*** 1,7 ****
+*** 1,8 ****
   Welcome.
   > 
   Enter username: 
@@ -9,8 +9,9 @@
 - Available tickets file read successfully.
   >
   Enter the amount of credit to add: 
+  Invalid value, amount cannot be less than 0.00.
 
---- 1,9 ----
+--- 1,10 ----
   Welcome.
 + Current user accounts file read successfully.
 + Available tickets file read successfully.
@@ -19,5 +20,6 @@
   Username accepted.
   > 
   Enter the amount of credit to add: 
+  Invalid value, amount cannot be less than 0.00.
 + > 
 
