@@ -1,5 +1,5 @@
-*** ../tests/refund/refund_5.out	2013-03-16 22:29:19.610002471 -0400
---- ../tests-results/refund/refund_5.out	2013-03-18 16:28:26.513382073 -0400
+*** ../tests/refund/refund_7.out	2013-03-16 22:29:19.586669137 -0400
+--- ../tests-results/refund/refund_7.out	2013-03-18 16:29:36.196716164 -0400
 ***************
 *** 1,9 ****
   Welcome.
@@ -10,7 +10,7 @@
   >
   Enter the buyer's username: 
   Enter the seller's username: 
-  Invalid username, username does not exist.
+  Enter the amount of credit to transfer: 
 
 --- 1,11 ----
   Welcome.
@@ -22,6 +22,6 @@
   > 
   Enter the buyer's username: 
   Enter the seller's username: 
-  Invalid username, username does not exist.
+  Enter the amount of credit to transfer: 
 + > 
 
