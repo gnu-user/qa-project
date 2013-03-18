@@ -1,9 +1,11 @@
 Welcome.
+Current user accounts file read successfully.
+Available tickets file read successfully.
 > 
 Enter username: 
 Username accepted.
-Available tickets file read successfully.
->
+> 
 Enter the amount of credit to add: 
 Enter the username to which credit is being added: 
 Credit added successfully.
+> 
