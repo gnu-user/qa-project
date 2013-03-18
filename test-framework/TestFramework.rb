@@ -65,7 +65,7 @@ end
 # Array of test suites to execute, the master test list
 master_testlist = []
 
-# History of each test case and suite executed and the outcome
+# History of each test case and suite executed and the result
 test_history = {}
 
 
@@ -107,8 +107,7 @@ else
 end
 
 
-# For each test suite verify that the test suite dependencies have
-# been met then execute each of the test cases
+# Execute each test suite and verify that the test suite dependencies have been met
 master_testlist.each() do |test_suite|
 	puts "\n\nExecuting #{test_suite.title}"
 	printf "%-40s\n", "=" * 40
@@ -124,8 +123,9 @@ master_testlist.each() do |test_suite|
 	if unmet_dependencies?(test_suite, test_history)
 
 		test_suite.set_status("Unmet Dependencies")
+		
 		printf "%-70s %s\n", test_suite.title, "FAILED".red
-		puts "Failed due to the following unmet dependencies:"
+		puts "Failed due to the following unmet dependencies:".light_cyan
 		
 		failed_dependencies(test_suite, test_history) do |dependency|
 			puts "#{dependency.title}".yellow
@@ -163,7 +163,7 @@ master_testlist.each() do |test_suite|
 			test_case.set_status("Unmet Dependencies")
 
 			printf "%-70s %s\n", test_case.title, "FAILED".red
-			puts "Failed due to the following unmet dependencies:"
+			puts "Failed due to the following unmet dependencies:".light_cyan
 			
 			failed_dependencies(test_case, test_history) do |dependency|
 				puts "#{dependency.title}".yellow
@@ -173,17 +173,17 @@ master_testlist.each() do |test_suite|
 		end
 
 		# Execute the test case and save the console output
-		system("#{binary_path} #{test_file}.cua #{test_file}.atf #{result_file}.dtf.test " +
-			   " < #{test_file}.inp &> #{result_file}.out.test")
+		system("#{binary_path} #{test_file}.cua #{test_file}.atf #{result_file}.dtf " +
+			   " < #{test_file}.inp &> #{result_file}.out")
 
 		# Diff the expected console output and the daily transaction file
 		# if there are any differences the test case has failed
-		system("diff -sq #{test_file}.out #{result_file}.out.test > /dev/null")
+		system("diff -sbBaq #{test_file}.out #{result_file}.out > /dev/null")
 		out_status = $?.exitstatus
 
 		# Diff the daily transaction files if one was created
 		unless File.zero?("#{test_file}.dtf")
-			system("diff -sq #{test_file}.dtf #{result_file}.dtf.test > /dev/null")
+			system("diff -sbBaq #{test_file}.dtf #{result_file}.dtf > /dev/null")
 			dtf_status = $?.exitstatus
 		end
 
@@ -195,12 +195,12 @@ master_testlist.each() do |test_suite|
 
 			# If the daily transaction files differ save the diff output
 			if dtf_status != 0
-				diff_files("#{test_file}.dtf", "#{result_file}.dtf.test")
+				diff_files("#{test_file}.dtf", "#{result_file}.dtf")
 			end
 
 			# If the console output differs save the diff output
 			if out_status != 0
-				diff_files("#{test_file}.out", "#{result_file}.out.test")
+				diff_files("#{test_file}.out", "#{result_file}.out")
 			end
 		else
 			# Display the results of the test case, set test case status
@@ -220,17 +220,10 @@ master_testlist.each() do |test_suite|
 	# Display the horizontal bar at bottom of test suite results
 	printf "%-40s %s %s\n", "-" * 40, " " * 28, "-" * 8
 
-	if test_suite.status != "Failed" and test_suite.status != "Unmet Dependencies"
+	if test_suite.status.nil?
 		test_suite.set_status("Passed")
 		printf "%-70s %s\n", test_suite.title, "PASSED".green
 	else
 		printf "%-70s %s\n", test_suite.title, "FAILED".red
 	end
 end
-
-
-#test_history.each() do |key, value|
-#	puts key
-#	puts value.title
-#	puts value.status, "\n"
-#end
