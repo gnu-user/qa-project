@@ -1,0 +1,60 @@
+PHASE 3 CHANGES
+================================
+
+1.	Corrected spelling mistakes and other typos in the test files
+
+2.	Added test files for the new test cases such as "quit" and 
+	buy transaction where the event and seller username are correct
+	but seller is not selling tickets to the event...
+
+3.	Every applicable test case needed to have the following added
+
+	+ Current user accounts file read successfully.
+	+ Available tickets file read successfully.
+
+	and at the end
+
+	>
+
+4a.	Had to add a custom get_input method which is almost identical to the built-in
+	getline function except that it looks ahead in the buffer and throws an EOF_INPUT
+	exception which is caught before the program is terminated by the parent shell.
+
+	This results in the front end producing output that matches our initially intended
+	test case output files.
+
+
+4b.	Had to correct the contents of our output files for each test case to match
+	the actual output for the program due to the fact that redirecting the files
+	as input results in the program terminating
+
+	--> We cannot log prompts for data to the output file as we had expected, instead
+		due to the < redirection the shell terminates once EOF of input has been reached
+
+5.	Had test cases which had incorrect cua, dtf, atf files that were accidentally
+	copied and renamed.
+
+6.	Had to make corrections to the create test cases, where necessary input instructions
+	(logout), which are needed in order for the daily transaction file to be created
+	had been left out
+
+7.	Corrected output files to match the exception messages in front end which were worded
+	differently or modified in the front end. Such as having two similarly worded error
+	messages combined into one error message, or error messages that were re-worded
+
+	--> For example delete_2.out, now the message just says "User deleted successfully." 
+
+8.	Had to correct test cases which were accidentally copied, (ie. delete_5.inp) which was
+	copied from delete_4.inp (deleting yourself test case) and obviously broke the test case
+
+
+9.	ACTUAL BUGS IN FRONT END FOUND, test cases sell_11 and sell_21 found actual bugs in the front
+	end based on the requirements, there was no error checking for dollar input to verify that
+	it contained decimal (e.g. 10 would not cause an error, when it really needed to be 10.00)
+
+	Sell_21 caught a bug in the front end where I had forgot to add support for one sell transaction
+	per session.
+
+	--> Both of these required updating the front end source code.	
+
+10.	Added a new test case, sell_22 which verifies that tickets can be sold over multiple new sessions.
