@@ -1,0 +1,25 @@
+*** ../tests/refund/refund_4.out	2013-03-16 22:29:19.600002470 -0400
+--- ../tests-results/refund/refund_4.out	2013-03-18 16:26:16.616713992 -0400
+***************
+*** 1,8 ****
+  Welcome.
+  > 
+  Enter username: 
+  Username accepted.
+- Available tickets file read successfully.
+  >
+  Enter the buyer's username: 
+  Enter the seller's username: 
+
+--- 1,10 ----
+  Welcome.
++ Current user accounts file read successfully.
++ Available tickets file read successfully.
+  > 
+  Enter username: 
+  Username accepted.
+  > 
+  Enter the buyer's username: 
+  Enter the seller's username: 
++ > 
+
