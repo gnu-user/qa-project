@@ -1,0 +1,10 @@
+Welcome.
+Current user accounts file read successfully.
+Available tickets file read successfully.
+> 
+Enter username: 
+Username accepted.
+> 
+Enter the username to create: 
+Invalid username, user already exists.
+> 

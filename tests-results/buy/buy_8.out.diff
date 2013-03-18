@@ -1,0 +1,25 @@
+*** ../tests/buy/buy_8.out	2013-03-16 22:29:19.780002471 -0400
+--- ../tests-results/buy/buy_8.out	2013-03-18 15:42:48.626685604 -0400
+***************
+*** 1,8 ****
+  Welcome.
+  > 
+  Enter username: 
+  Username accepted.
+- Available tickets file read successfully.
+  >
+  Enter the event title:
+  Enter the number of tickets to purchase: 
+
+--- 1,10 ----
+  Welcome.
++ Current user accounts file read successfully.
++ Available tickets file read successfully.
+  > 
+  Enter username: 
+  Username accepted.
+  > 
+  Enter the event title: 
+  Enter the number of tickets to purchase: 
++ > 
+
