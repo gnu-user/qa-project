@@ -1,14 +1,23 @@
 TESTS TODO
 =======================
 
+1.	Add logout test suite dependency to ANY test suites that have test cases which
+	involve creating a daily transaction file, as the DTF is created on logout. This
+	pretty much involves every single test suite (create, buy, sell, refund, etc...)
+
+	Add a brief section to the description about logging out and verifying that the
+	transaction has been saved to the daily transaction file.
+
+	--> example: delete_5 involves logging to the daily transaction file a user that
+		was deleted
+
+	--> sell_20 write to DTF
+
+	--> refund_13 write to DTF
+
+
+
 Added additional error message, update tests:
 
 	invalid title name, too short?
     	Invalid event title.
-
-
-
-Deleting any outstanding tickets after a user has been deleted....
-	--> Not sure how to implement this....
-	--> Not sure how to handle the user in memory after they've been deleted...
-		that is stateful... should be the backend's job...
