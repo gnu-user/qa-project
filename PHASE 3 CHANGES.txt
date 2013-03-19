@@ -58,3 +58,13 @@ PHASE 3 CHANGES
 	--> Both of these required updating the front end source code.	
 
 10.	Added a new test case, sell_22 which verifies that tickets can be sold over multiple new sessions.
+
+11.	Test case refund_12 revealed a bug in the software, the actual limit for the test case is
+	999,999.99 not $1000.00, the front end had to be updated to correct the issue and display
+	a new error message. As well the test case output for refund_12 had to be corrected.
+
+11.	 Had to update the test case dependencies for many of the buy
+	 test cases due to the fact that irrelevant (backend-specific)
+	 tests were removed.
+
+	 --> Added a new test case, buy_17_1, (buy 17.1)
