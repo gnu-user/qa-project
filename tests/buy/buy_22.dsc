@@ -7,4 +7,4 @@ DESCRIPTION
     When prompted, enter “yes” as a response to the confirmation. Verify that 
     the conformation is accepted without error.
 DEPENDENCIES
-    buy_21
+    buy_19

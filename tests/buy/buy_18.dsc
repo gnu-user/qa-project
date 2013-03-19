@@ -7,4 +7,4 @@ DESCRIPTION
     Verify that the cost per ticket and total cost of the 4 tickets is 
     displayed.
 DEPENDENCIES
-    buy_19
+    buy_17

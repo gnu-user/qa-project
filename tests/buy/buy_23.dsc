@@ -7,4 +7,4 @@ DESCRIPTION
     When prompted, enter “yes” as a response to the confirmation. Verify that 
     the transaction saved to the daily transaction file.
 DEPENDENCIES
-    buy_26
+    buy_22

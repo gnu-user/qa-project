@@ -6,4 +6,4 @@ DESCRIPTION
     enter 4 tickets to purchase. When prompted, enter a seller which exists. 
     Verify that the seller is accepted without error.
 DEPENDENCIES
-    buy_16
+    buy_14

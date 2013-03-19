@@ -6,4 +6,4 @@ DESCRIPTION
     enter 4 tickets to purchase. When prompted, enter the currently active 
     username. Verify that the seller is not accepted, and an error occurs.
 DEPENDENCIES
-    buy_16
+    buy_14

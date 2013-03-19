@@ -8,4 +8,4 @@ DESCRIPTION
     the conformation is accepted without error, and the transaction is 
     cancelled.
 DEPENDENCIES
-    buy_21
+    buy_19

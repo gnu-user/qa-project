@@ -7,4 +7,4 @@ DESCRIPTION
     When prompted, enter an invalid garbage response to the confirmation. 
     Verify that the confirmation is not accepted and an error occurs.
 DEPENDENCIES
-    buy_21
+    buy_19
