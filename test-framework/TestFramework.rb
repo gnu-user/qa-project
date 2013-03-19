@@ -83,8 +83,8 @@ ARGV.each() do |argument|
 end
 
 binary_path = ARGV[0]
-tests_path = ARGV[1]
-output_path = ARGV[2]
+tests_path = ARGV[1].sub(/\/$/, '')
+output_path = ARGV[2].sub(/\/$/, '')
 
 
 # Parse each test suite and all test cases and store the objects
