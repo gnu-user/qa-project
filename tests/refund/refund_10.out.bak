@@ -1,0 +1,10 @@
+Welcome.
+> 
+Enter username: 
+Username accepted.
+Available tickets file read successfully.
+>
+Enter the buyer's username: 
+Enter the seller's username: 
+Enter the amount of credit to transfer: 
+Invalid value, amount cannot be less than 0.00.

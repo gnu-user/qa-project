@@ -1,0 +1,8 @@
+Welcome.
+> 
+Enter username: 
+Username accepted.
+Available tickets file read successfully.
+>
+Enter the amount of credit to add: 
+Invalid value, amount must be in dollars (e.g. 10.00).
