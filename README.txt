@@ -5,6 +5,8 @@ FRONT END README
 How to Build
 ------------------------------
 
+The following has been tested thoroughly on Ubuntu 12.10 64-bit.
+
 To build the front end you will need to go to the Debug directory located
 in the FrontEnd source folder (FrontEnd/Debug) and execute the make file. 
 The project has been designed for Linux systems, but should also work on 
@@ -54,8 +56,8 @@ Prerequisites
 ------------------------------
 
 The test framework has been designed for Linux and has been thoroughly tested on
-Ubuntu 12.04 and should work on any system which supports Bash and Ruby. If your 
-system does not have Ruby installed by default, such as Ubuntu, you can simply 
+Ubuntu 12.10 64-bit and should work on any system which supports Bash and Ruby. 
+If your system does not have Ruby installed by default, such as Ubuntu, you can simply 
 install Ruby using the following command on most Debian-based Linux distributions.
 
     sudo apt-get install ruby
