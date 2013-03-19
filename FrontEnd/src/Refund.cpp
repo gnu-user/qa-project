@@ -116,7 +116,7 @@ void Refund::process_credit(string credit)
                 }
                 else
                 {
-                    throw Exception(CREDIT_AMOUNT_OVERFLOW);
+                    throw Exception(USER_CREDIT_OVERFLOW);
                 }
             }
         }
