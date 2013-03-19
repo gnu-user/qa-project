@@ -23,8 +23,9 @@ Debug folder.
 How to Execute
 ------------------------------
 
-Please see the next section for instructions on executing the test framework 
-which will automatically test the front end against all of the test suites.
+Please see the test framework README section for instructions on executing the
+test framework which will automatically test the front end against all of the
+test suites.
 
 To execute the program you must provide a valid current user accounts file,
 available tickets file, and daily transactions file. Example files have been
