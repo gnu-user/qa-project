@@ -16,20 +16,12 @@ PHASE 3 CHANGES
 
 	>
 
-4a.	Had to add a custom get_input method which is almost identical to the built-in
+4.	Had to add a custom get_input method which is almost identical to the built-in
 	getline function except that it looks ahead in the buffer and throws an EOF_INPUT
 	exception which is caught before the program is terminated by the parent shell.
 
 	This results in the front end producing output that matches our initially intended
 	test case output files.
-
-
-4b.	Had to correct the contents of our output files for each test case to match
-	the actual output for the program due to the fact that redirecting the files
-	as input results in the program terminating
-
-	--> We cannot log prompts for data to the output file as we had expected, instead
-		due to the < redirection the shell terminates once EOF of input has been reached
 
 5.	Had test cases which had incorrect cua, dtf, atf files that were accidentally
 	copied and renamed.
@@ -63,8 +55,8 @@ PHASE 3 CHANGES
 	999,999.99 not $1000.00, the front end had to be updated to correct the issue and display
 	a new error message. As well the test case output for refund_12 had to be corrected.
 
-11.	 Had to update the test case dependencies for many of the buy
+12.	 Had to update the test case dependencies for many of the buy
 	 test cases due to the fact that irrelevant (backend-specific)
-	 tests were removed.
+	 tests were removed which offset the numbering.
 
 	 --> Added a new test case, buy_17_1, (buy 17.1)
