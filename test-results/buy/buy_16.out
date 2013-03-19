@@ -8,10 +8,5 @@ Username accepted.
 Enter the event title: 
 Enter the number of tickets to purchase: 
 Enter the seller's username: 
-Cost per ticket: $10.00
-Total cost of tickets: $40.00
-Purchase tickets? Please confirm (yes/no): 
-Tickets purchased successfully.
-> 
-Logout complete.
+Invalid username, you cannot purchase tickets from yourself.
 > 
