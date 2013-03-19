@@ -8,5 +8,5 @@ Username accepted.
 Enter the buyer's username: 
 Enter the seller's username: 
 Enter the amount of credit to transfer: 
-Invalid credit value, amount cannot exceed 1000.00.
+Invalid credit amount, user credit cannot exceed 999999.99.
 > 

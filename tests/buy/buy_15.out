@@ -1,10 +1,12 @@
 Welcome.
+Current user accounts file read successfully.
+Available tickets file read successfully.
 > 
 Enter username: 
 Username accepted.
-Available tickets file read successfully.
->
-Enter the event title:
+> 
+Enter the event title: 
 Enter the number of tickets to purchase: 
 Enter the seller's username: 
-Invalid username, username does not exist.
+Invalid seller username, seller is not selling any tickets.
+> 
