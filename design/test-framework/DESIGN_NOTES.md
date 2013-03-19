@@ -43,8 +43,6 @@ Test Framework Design Notes
     with # is skipped (comment) and any line starting with @ the test suite/case
     is skipped.
 
-      --> The test suite/case that is skipped MUST be displayed
-
 5.  Test suites must have a test case list file with the same name as the test
     suite (ie. login test suite has login.lst)
 
@@ -86,7 +84,6 @@ Test Framework Design Notes
     by performing a diff of the *.test files and the expected result files in
     for the test case. Any difference between the two files is marked as a failure
 
-    --> perhaps have diff also identify the difference (output it) or perhaps
-        output a *.diff file????
+    --> It must output a *.diff file
 
 
