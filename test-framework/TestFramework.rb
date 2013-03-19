@@ -73,7 +73,7 @@ test_history = {}
 if ARGV.length <  3
 	abort("Invalid number of arguments provided!\n" +
 		  "USAGE:   TestFramework.rb [front end binary] [test suite directory] [output directory]\n" +
-		  "EXAMPLE: TestFramework.rb ../FrontEnd/Debug/FrontEnd ../tests ../tests/output")	
+		  "EXAMPLE: ruby TestFramework.rb ../FrontEnd/Debug/FrontEnd ../tests ../test-results")
 end
 
 ARGV.each() do |argument|
@@ -174,7 +174,7 @@ master_testlist.each() do |test_suite|
 
 		# Execute the test case and save the console output
 		system("#{binary_path} #{test_file}.cua #{test_file}.atf #{result_file}.dtf " +
-			   " < #{test_file}.inp &> #{result_file}.out")
+			   " < #{test_file}.inp > #{result_file}.out 2>&1")
 
 		# Diff the expected console output and the daily transaction file
 		# if there are any differences the test case has failed
