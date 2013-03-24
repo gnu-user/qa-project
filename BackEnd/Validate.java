@@ -20,32 +20,55 @@
  */
 public abstract class Validate
 {
-
     /**
-     * 
-     * @param entry
+     * Validates available tickets file entries, and
+     * determines if they conform to the correct format and constraints.
+     *
+     * @param entry An entry in the available tickets file.
+     * @return Returns true if the entry is valid, false if not.
      */
     public static boolean atfEntry(String entry)
     {
-        throw new UnsupportedOperationException();
+    	return entry.matches("^.{19}_[A-Za-z0-9_]{15}_[0-9]{3}_[0-9]{3}\\.[0-9]{2}$");
     }
 
     /**
+     * Validates current user accounts file entries, and
+     * determines if they conform to the correct format and constraints.
      * 
-     * @param entry
+     * @param entry An entry in the current user accounts file.
+     * @return Returns true if the entry is valid, false if not.
      */
     public static boolean cuaEntry(String entry)
     {
-        throw new UnsupportedOperationException();
+    	return entry.matches("^[A-Za-z0-9_]{15}_(AA|FS|BS|SS)_[0-9]{6}\\.[0-9]{2}$");
     }
 
     /**
+     * Validates daily transaction file entries and determines if they
+     * conforms to the correct format and constraints.
      * 
-     * @param entry
+     * @param entry An entry in the daily transaction file.
+     * @return Returns true if the entry is valid, false if not.
      */
     public static boolean dtfEntry(String entry)
     {
-        throw new UnsupportedOperationException();
+        /* Daily transaction entry matches logout, create, delete, or addcredit */
+        if (entry.matches("^(00|01|02|06)_[A-Za-z0-9_]{15}_(AA|FS|BS|SS)_[0-9]{6}\\.[0-9]{2}$"))
+        {
+            return true;
+        }
+        /* Daily transaction entry matches refund */
+        else if (entry.matches("^05_[A-Za-z0-9_]{15}_[A-Za-z0-9_]{15}_[0-9]{6}\\.[0-9]{2}$"))
+        {
+            return true;
+        }
+        /* Daily transaction entry matches buy or sell */
+        else if (entry.matches("^(03|04)_.{19}_[A-Za-z0-9_]{15}_[0-9]{3}_[0-9]{3}\\.[0-9]{2}$"))
+        {
+            return true;
+        }
+        
+        return false;
     }
-
 }
