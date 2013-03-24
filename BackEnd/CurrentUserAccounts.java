@@ -18,7 +18,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CurrentUserAccounts
 {
@@ -29,10 +36,24 @@ public class CurrentUserAccounts
     /**
      * 
      * @param cuaFile
+     * @throws FatalError 
      */
-    public CurrentUserAccounts(String cuaFile)
+    public CurrentUserAccounts(String cuaFile) throws FatalError
     {
-        throw new UnsupportedOperationException();
+        File file = new File(cuaFile);
+
+        if (file.exists())
+        {
+            this.cuaFile = cuaFile;
+            this.users = new ArrayList<User>();
+            
+            /* Parse the current user accounts file */
+            parse();
+        }
+        else
+        {
+            throw new FatalError(ExceptionCodes.CUA_NOT_FOUND, cuaFile);
+        }
     }
 
     /**
@@ -41,7 +62,7 @@ public class CurrentUserAccounts
      */
     public void addUser(User user)
     {
-        throw new UnsupportedOperationException();
+        users.add(user);
     }
 
     /**
@@ -50,7 +71,14 @@ public class CurrentUserAccounts
      */
     public void deleteUser(String username)
     {
-        throw new UnsupportedOperationException();
+        for (User user : users)
+        {
+            if (user.getUsername().equals(username))
+            {
+                users.remove(user);
+                break;
+            }
+        }
     }
 
     /**
@@ -59,7 +87,15 @@ public class CurrentUserAccounts
      */
     public User getUser(String username)
     {
-        throw new UnsupportedOperationException();
+        for (User user : users)
+        {
+            if (user.getUsername().equals(username))
+            {
+                return user;
+            }
+        }
+        
+        return null;
     }
 
     /**
@@ -68,17 +104,98 @@ public class CurrentUserAccounts
      */
     public boolean hasUser(String username)
     {
-        throw new UnsupportedOperationException();
+        for (User user : users)
+        {
+            if (user.getUsername().equals(username))
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
 
+    public void diplayUsers()
+    {
+        for (User user : users)
+        {
+            System.out.println(user.getUsername() + " " + user.getType() + " " + user.getCredit());
+        }
+    }
+    
     public void write()
     {
         throw new UnsupportedOperationException();
     }
 
-    private void parse()
+    private void parse() throws FatalError
     {
-        throw new UnsupportedOperationException();
-    }
+        BufferedReader reader;
 
+        String line;
+        Pattern re = Pattern.compile("^([A-Za-z0-9_]{1,15}?)_+(AA|FS|BS|SS)_([0-9]{6}\\.[0-9]{2})$");
+        Pattern re_end = Pattern.compile("END_{16}0{6}\\.0{2}");
+        Matcher match;
+
+        try
+        {
+            reader = new BufferedReader(new FileReader(cuaFile));
+        }
+        catch (FileNotFoundException e1)
+        {
+            e1.printStackTrace();
+            throw new FatalError(ExceptionCodes.CUA_NOT_FOUND, cuaFile);
+        }
+
+        try
+        {
+            while ((line = reader.readLine()) != null)
+            {
+                /* Stop if END of file reached */
+                if (re_end.matcher(line).matches())
+                {
+                    break;
+                }
+
+                match = re.matcher(line);
+                
+                /* Add each ticket found to the list of tickets */
+                if (Validate.cuaEntry(line) && match.matches())
+                {
+                    /* Get each match from the entry in the file */
+                    String username = match.group(1);
+                    String type = match.group(2);
+                    Double credit = Double.parseDouble(match.group(3));
+
+                    /* Add the ticket object to the array of tickets */
+                    users.add(new User(username, type, credit));
+                }
+                else
+                {
+                    throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
+                }
+            }
+            reader.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+            throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
+        }
+        finally
+        {
+            try
+            {
+                if (reader != null)
+                {
+                    reader.close();
+                }
+            }
+            catch (IOException ex)
+            {
+                ex.printStackTrace();
+                throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
+            }
+        }
+    }
 }
