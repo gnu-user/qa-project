@@ -46,7 +46,8 @@ public class AvailableTickets
         if (file.exists())
         {
             this.atfFile = atfFile;
-
+            this.tickets = new ArrayList<Ticket>();
+            
             /* Parse the available tickets file */
             parse();
         }
@@ -57,12 +58,13 @@ public class AvailableTickets
     }
 
     /**
+     * Adds a ticket to the available tickets file
      * 
      * @param ticket
      */
     public void addTicket(Ticket ticket)
     {
-        throw new UnsupportedOperationException();
+        tickets.add(ticket);
     }
 
     /**
@@ -105,6 +107,20 @@ public class AvailableTickets
         return false;
     }
 
+    public void displayTickets()
+    {
+        for (Ticket ticket : tickets)
+        {
+            System.out.println(ticket.getEvent() + " " + ticket.getSeller() + " "
+                    + ticket.getVolume() + " " + ticket.getPrice());
+
+        }
+    }
+    
+    /**
+     * Write the available tickets file in memory to file, over-writing
+     * the old available tickets file.
+     */
     public void write()
     {
         throw new UnsupportedOperationException();
@@ -139,11 +155,11 @@ public class AvailableTickets
                     break;
                 }
 
+                match = re.matcher(line);
+                
                 /* Add each ticket found to the list of tickets */
-                if (Validate.atfEntry(line))
+                if (Validate.atfEntry(line) && match.matches())
                 {
-                    match = re.matcher(line);
-
                     /* Replace each _ in the event title with a space character */
                     String event = match.group(1).replace('_', ' ');
 

@@ -32,11 +32,30 @@ public class Ticket
      * @param volume
      * @param price
      */
-    public Ticket(String event, Integer volume, Double price)
+    public Ticket(String event, String seller, Integer volume, Double price)
     {
-        throw new UnsupportedOperationException();
+        this.event = event;
+        this.seller = seller;
+        this.volume = volume;
+        this.price = price;
     }
 
+    /**
+     * @return the event
+     */
+    public String getEvent()
+    {
+        return event;
+    }
+
+    /**
+     * @return the seller
+     */
+    public String getSeller()
+    {
+        return seller;
+    }
+    
     public Integer getVolume()
     {
         return this.volume;
