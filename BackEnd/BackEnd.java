@@ -34,8 +34,29 @@ public class BackEnd
 	 */
 	public static void main(String[] args)
 	{
-		// TODO Auto-generated method stub
-
+	    if (args.length < 3)
+	    {
+	        System.err.println("Usage:   java BackEnd [current user accounts] [available tickets] "
+                             + "[daily transactions directory]");
+	        System.err.println("Example: java BackEnd accounts.cua tickets.atf transactions/");
+	        
+	        System.exit(1);
+	    }
+		try
+        {
+            AvailableTickets availableTickets = new AvailableTickets(args[0]);
+            System.out.println("Current user accounts file read successfully.");
+            availableTickets.displayTickets();
+            
+            CurrentUserAccounts currentAccounts = new CurrentUserAccounts(args[1]);
+            System.out.println("Available tickets file read successfully.");
+            currentAccounts.diplayUsers();
+        }
+        catch (FatalError e)
+        {
+            System.err.println(e.getMessage());
+            System.err.println("File that caused error: " + e.getCause().getMessage());
+            System.exit(1);
+        }
 	}
-
 }
