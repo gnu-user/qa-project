@@ -18,11 +18,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class FailedConstraint
+public class FailedConstraint extends Exception
 {
-    private ExceptionCodes exception;
-    private String transaction;
-
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 2801771587969692843L;
 
     /**
      * 
@@ -31,7 +32,7 @@ public class FailedConstraint
      */
     public FailedConstraint(ExceptionCodes exception, String transaction)
     {
-        throw new UnsupportedOperationException();
+        super(exception.toString(), new Throwable(transaction));
     }
 
 }
