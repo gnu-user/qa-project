@@ -18,11 +18,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class FatalError
+public class FatalError extends Exception
 {
-    private ExceptionCodes exception;
-    private String file;
-
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 888363566861043122L;
 
     /**
      * 
@@ -31,7 +32,6 @@ public class FatalError
      */
     public FatalError(ExceptionCodes exception, String file)
     {
-        throw new UnsupportedOperationException();
+        super(exception.toString(), new Throwable(file));
     }
-
 }
