@@ -23,6 +23,7 @@ public enum ExceptionCodes
     /* Fatal error exception codes */
     ATF_NOT_FOUND("ATF_NOT_FOUND", "Available tickets file not found, check arguments provided."),
     CUA_NOT_FOUND("CUA_NOT_FOUND", "Current user accounts file not found, check arguments provided."),
+    DTF_DIR_FOUND("DTF_DIR_FOUND", "Daily transactions directory not found, check arguments provided."),
     DTF_NOT_FOUND("DTF_NOT_FOUND", "Daily transactions file not found, check arguments provided."),
     CORRUPT_ATF("CORRUPT_ATF", "An error occurred reading the available tickets file, data corrupted."),
     CORRUPT_CUA("CORRUPT_CUA", "An error occurred reading the current user account file, data corrupted."),
