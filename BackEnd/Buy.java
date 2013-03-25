@@ -24,6 +24,7 @@ public class Buy implements Transaction
     private String seller;
     private Integer volume;
     private Double price;
+    private String transaction;
 
 
     /**
@@ -33,12 +34,13 @@ public class Buy implements Transaction
      * @param volume
      * @param price
      */
-    public Buy(String event, String seller, Integer volume, Double price)
+    public Buy(String event, String seller, Integer volume, Double price, String transaction)
     {
         this.event = event;
         this.seller = seller;
         this.volume = volume;
         this.price = price;
+        this.transaction = transaction;
     }
 
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)

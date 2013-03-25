@@ -23,6 +23,7 @@ public class Logout implements Transaction
     private String username;
     private String type;
     private Double credit;
+    private String transaction;
 
 
     /**
@@ -31,11 +32,12 @@ public class Logout implements Transaction
      * @param type
      * @param credit
      */
-    public Logout(String username, String type, Double credit)
+    public Logout(String username, String type, Double credit, String transaction)
     {
         this.username = username;
         this.type = type;
         this.credit = credit;
+        this.transaction = transaction;
     }
 
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)

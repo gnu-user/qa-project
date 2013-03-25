@@ -23,6 +23,7 @@ public class Refund implements Transaction
     private String buyer;
     private String seller;
     private Double credit;
+    private String transaction;
 
 
     /**
@@ -31,11 +32,12 @@ public class Refund implements Transaction
      * @param seller
      * @param credit
      */
-    public Refund(String buyer, String seller, Double credit)
+    public Refund(String buyer, String seller, Double credit, String transaction)
     {
         this.buyer = buyer;
         this.seller = seller;
         this.credit = credit;
+        this.transaction = transaction;
     }
 
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)
