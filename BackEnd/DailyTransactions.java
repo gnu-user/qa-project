@@ -18,26 +18,125 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class DailyTransactions
 {
-    private LinkedHashMap<Transaction, String> Transactions;
+    private ArrayList<String> mergedTransactions;
+    private LinkedHashMap<Transaction, String> transactions;
     private String dtfDirectory;
 
 
     /**
      * 
      * @param dtfDirectory
+     * @throws FatalError 
      */
-    public DailyTransactions(String dtfDirectory)
+    public DailyTransactions(String dtfDirectory) throws FatalError
     {
-        throw new UnsupportedOperationException();
+        File directory = new File(dtfDirectory);
+
+        if (directory.exists() && directory.isDirectory())
+        {
+            this.dtfDirectory = dtfDirectory;
+            this.mergedTransactions = new ArrayList<String>();
+            this.transactions = new LinkedHashMap<Transaction, String>();
+            
+            /* Merge the daily transaction files */
+            merge();
+            
+            /* Parse the merged transactions */
+            //parse();
+        }
+        else
+        {
+            throw new FatalError(ExceptionCodes.DTF_DIR_FOUND, dtfDirectory);
+        }
     }
 
-    private void merge()
+    public LinkedHashMap<Transaction, String> getTransactions()
     {
-        throw new UnsupportedOperationException();
+        return transactions;
+    }
+    
+    public void displayTransactions()
+    {
+        for (String transaction : mergedTransactions)
+        {
+            System.out.println(transaction);
+        }
+    }
+    
+    /**
+     * Merges the collection of all daily transaction files (*.dtf)
+     * into a single array containing each transaction as a line.
+     * 
+     * @throws FatalError 
+     */
+    private void merge() throws FatalError
+    {
+        BufferedReader reader;
+        String line;
+        
+        /* Merge each of the daily transaction files */
+        for (File file : new File(dtfDirectory).listFiles())
+        {
+            if (file.getName().matches("^.+\\.dtf$"))
+            {
+                try
+                {
+                    reader = new BufferedReader(new FileReader(file));
+                }
+                catch (FileNotFoundException e1)
+                {
+                    e1.printStackTrace();
+                    throw new FatalError(ExceptionCodes.DTF_NOT_FOUND, file.getPath());
+                }
+
+                try
+                {
+                    while ((line = reader.readLine()) != null)
+                    {                        
+                        /* If the DTF entry is valid add it to the merged list of transactions */
+                        if (Validate.dtfEntry(line))
+                        {
+                            mergedTransactions.add(line.trim());
+                        }
+                        else
+                        {
+                            throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getCanonicalPath());
+                        }
+                    }
+                    reader.close();
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                    throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getPath());
+                }
+                finally
+                {
+                    try
+                    {
+                        if (reader != null)
+                        {
+                            reader.close();
+                        }
+                    }
+                    catch (IOException ex)
+                    {
+                        ex.printStackTrace();
+                        throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getPath());
+                    }
+                }
+            }
+        }
     }
 
     private void parse()
