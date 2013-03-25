@@ -63,6 +63,11 @@ public class User
         this.credit = credit;
     }
 
+    public void setCreditAdded(Double creditAdded)
+    {
+        this.creditAdded = creditAdded;
+    }
+    
     public Double getCreditAdded()
     {
         return this.creditAdded;
