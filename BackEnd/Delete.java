@@ -33,7 +33,9 @@ public class Delete implements Transaction
      */
     public Delete(String username, String type, Double credit)
     {
-        throw new UnsupportedOperationException();
+        this.username = username;
+        this.type = type;
+        this.credit = credit;
     }
 
     public void execute()
