@@ -41,7 +41,7 @@ public class Buy implements Transaction
         this.price = price;
     }
 
-    public void execute()
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf);
     {
         throw new UnsupportedOperationException();
     }
