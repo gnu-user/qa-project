@@ -45,7 +45,8 @@ public class Create implements Transaction
         throw new UnsupportedOperationException();
     }
 
-	public String getTransaction() {
+	public String getTransaction()
+	{
 		return transaction;
 	}
 

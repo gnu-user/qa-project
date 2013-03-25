@@ -45,7 +45,18 @@ public class Buy implements Transaction
 
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
-        throw new UnsupportedOperationException();
+        //if (cua.hasUser(seller))
+        //{
+            
+        //}
+        //check if buyer exists (cua)
+        //check if seller exists (cua)
+        //check that the amount of money required is available (cua)
+        //check if the money transfer will result in an overflow for the seller's balance (cua)
+        //check if the volume of tickets are available (atf)
+        //take the money out of the buyer (cua)
+        //add the money to the seller (cua)
+        //remove the tickets from the seller (atf)
     }
 
 	public String getTransaction() {
