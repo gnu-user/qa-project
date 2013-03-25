@@ -38,7 +38,7 @@ public class Create implements Transaction
         this.credit = credit;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf);
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
         throw new UnsupportedOperationException();
     }
