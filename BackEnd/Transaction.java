@@ -22,6 +22,6 @@ public interface Transaction
 {
 	public String getTransaction();
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf);
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint;
 
 }
