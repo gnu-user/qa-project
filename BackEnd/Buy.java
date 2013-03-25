@@ -35,7 +35,10 @@ public class Buy implements Transaction
      */
     public Buy(String event, String seller, Integer volume, Double price)
     {
-        throw new UnsupportedOperationException();
+        this.event = event;
+        this.seller = seller;
+        this.volume = volume;
+        this.price = price;
     }
 
     public void execute()
