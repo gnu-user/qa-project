@@ -20,7 +20,9 @@
  */
 public interface Transaction
 {
-
+    /**
+     * Executes the transaction
+     */
     void execute();
 
 }
