@@ -33,7 +33,9 @@ public class Refund implements Transaction
      */
     public Refund(String buyer, String seller, Double credit)
     {
-        throw new UnsupportedOperationException();
+        this.buyer = buyer;
+        this.seller = seller;
+        this.credit = credit;
     }
 
     public void execute()
