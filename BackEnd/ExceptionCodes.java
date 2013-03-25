@@ -36,6 +36,7 @@ public enum ExceptionCodes
     UNKNOWN_USER("UNKNOWN_USER", "Invalid username, username does not exist."),
     USER_CREDIT_NEGATIVE("USER_CREDIT_NEGATIVE", "Invalid credit amount, user credit cannot be less than 0.00."),
     USER_CREDIT_OVERFLOW("USER_CREDIT_OVERFLOW", "Invalid credit amount, user credit cannot exceed 999999.99."),
+    USER_CREDIT_SESSION_OVERFLOW("USER_CREDIT_SESSION_OVERFLOW", "Invalid credit value, amount of credit added per session cannot exceed 1000.00."),
     TICKET_VOLUME_NEGATIVE("TICKET_VOLUME_NEGATIVE", "Invalid number of tickets, volume cannot be less than 0."),
     TICKET_VOLUME_OVERFLOW("TICKET_VOLUME_OVERFLOW", "Invalid number of tickets, volume cannot exceed 100."),
     
