@@ -40,9 +40,33 @@ public class AddCredit implements Transaction
         this.transaction = transaction;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
-        throw new UnsupportedOperationException();
+        if (cua.hasUser(username))
+        {
+        	Double temp_credit;
+        	temp_credit = cua.getUser(username).getCredit();
+        	if (temp_credit + credit > 999999.99)
+        	{
+        		throw new FailedConstraint(ExceptionCodes.USER_CREDIT_OVERFLOW, transaction);
+        	}
+        	else
+        	{
+				if (cua.getUser(username).getCreditAdded() + credit > 1000)
+				{
+					throw new FailedConstraint(ExceptionCodes.USER_CREDIT_SESSION_OVERFLOW, transaction);
+				}
+				else
+				{
+					cua.getUser(username).setCredit(credit + temp_credit);
+					cua.getUser(username).setCreditAdded(cua.getUser(username).getCreditAdded() + credit);
+				}
+        	}
+        }
+        else
+        {
+        	throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);
+        }
     }
 
 	public String getTransaction() {
