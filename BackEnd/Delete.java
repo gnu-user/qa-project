@@ -38,7 +38,7 @@ public class Delete implements Transaction
         this.credit = credit;
     }
 
-    public void execute()
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf);
     {
         throw new UnsupportedOperationException();
     }
