@@ -40,7 +40,7 @@ public class Delete implements Transaction
         this.transaction = transaction;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
         if (cua.hasUser(username))
         {
@@ -48,7 +48,7 @@ public class Delete implements Transaction
         }
         else
         {
-        	//throw new FailedConstraint();
+        	throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);
         }
     }
 
