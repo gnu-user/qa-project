@@ -134,7 +134,7 @@ public class CurrentUserAccounts
 
         String line;
         Pattern re = Pattern.compile("^([A-Za-z0-9_]{1,15}?)_+(AA|FS|BS|SS)_([0-9]{6}\\.[0-9]{2})$");
-        Pattern re_end = Pattern.compile("END_{16}0{6}\\.0{2}");
+        Pattern reEnd = Pattern.compile("END_{16}0{6}\\.0{2}");
         Matcher match;
 
         try
@@ -152,7 +152,7 @@ public class CurrentUserAccounts
             while ((line = reader.readLine()) != null)
             {
                 /* Stop if END of file reached */
-                if (re_end.matcher(line).matches())
+                if (reEnd.matcher(line).matches())
                 {
                     break;
                 }

@@ -131,8 +131,8 @@ public class AvailableTickets
         BufferedReader reader;
 
         String line;
-        Pattern re = Pattern.compile("^(.{1,19}?)_+_([A-Za-z0-9_]{1,15}?)_+([0-9]{3})_([0-9]{3}\\.[0-9]{2})$");
-        Pattern re_end = Pattern.compile("END_{33}0{3}_0{3}\\.0{2}");
+        Pattern re = Pattern.compile("^(.{1,19}?)_+([A-Za-z0-9_]{1,15}?)_+([0-9]{3})_([0-9]{3}\\.[0-9]{2})$");
+        Pattern reEnd = Pattern.compile("END_{33}0{3}_0{3}\\.0{2}");
         Matcher match;
 
         try
@@ -150,7 +150,7 @@ public class AvailableTickets
             while ((line = reader.readLine()) != null)
             {
                 /* Stop if END of file reached */
-                if (re_end.matcher(line).matches())
+                if (reEnd.matcher(line).matches())
                 {
                     break;
                 }
