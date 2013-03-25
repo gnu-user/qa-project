@@ -43,4 +43,10 @@ public class AddCredit implements Transaction
         throw new UnsupportedOperationException();
     }
 
+	@Override
+	public String getTransaction() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

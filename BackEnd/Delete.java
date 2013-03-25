@@ -40,7 +40,20 @@ public class Delete implements Transaction
 
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
-        throw new UnsupportedOperationException();
+        if (cua.hasUser(username))
+        {
+        	cua.deleteUser(username);
+        }
+        else
+        {
+        	//throw new FailedConstraint();
+        }
     }
+
+	@Override
+	public String getTransaction() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
