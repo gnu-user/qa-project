@@ -33,7 +33,9 @@ public class Logout implements Transaction
      */
     public Logout(String username, String type, Double credit)
     {
-        throw new UnsupportedOperationException();
+        this.username = username;
+        this.type = type;
+        this.credit = credit;
     }
 
     public void execute()
