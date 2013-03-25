@@ -21,6 +21,6 @@
 public interface Transaction
 {
 
-    void execute();
+    void execute(CurrentUserAccounts cua, AvailableTickets atf);
 
 }
