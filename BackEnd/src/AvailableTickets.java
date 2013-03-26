@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -19,11 +20,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -120,10 +124,39 @@ public class AvailableTickets
     /**
      * Write the available tickets file in memory to file, over-writing
      * the old available tickets file.
+     * @throws FatalError 
      */
-    public void write()
+    public void write() throws FatalError
     {
-        throw new UnsupportedOperationException();
+        BufferedWriter writer;
+        String entry;
+        
+        try 
+        {
+            File file = new File(atfFile);
+ 
+            /* Create the file if it does not exist since parsed */
+            if (!file.exists())
+            {
+                file.createNewFile();
+            }
+    
+            writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
+            
+            /* Format each entry and write it to the file */
+            for (Ticket ticket : tickets)
+            {
+                entry =
+            }
+            
+            writer.close();
+ 
+        } 
+        catch (IOException e)
+        {
+            e.printStackTrace();
+            throw new FatalError(ExceptionCodes.CORRUPT_ATF, atfFile);
+        }
     }
 
     private void parse() throws FatalError

@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,7 +19,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class Logout implements Transaction
+public class AddCredit implements Transaction
 {
     private String username;
     private String type;
@@ -32,7 +33,7 @@ public class Logout implements Transaction
      * @param type
      * @param credit
      */
-    public Logout(String username, String type, Double credit, String transaction)
+    public AddCredit(String username, String type, Double credit, String transaction)
     {
         this.username = username;
         this.type = type;
@@ -40,9 +41,33 @@ public class Logout implements Transaction
         this.transaction = transaction;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
-        throw new UnsupportedOperationException();
+        if (cua.hasUser(username))
+        {
+        	Double temp_credit;
+        	temp_credit = cua.getUser(username).getCredit();
+        	if (temp_credit + credit > 999999.99)
+        	{
+        		throw new FailedConstraint(ExceptionCodes.USER_CREDIT_OVERFLOW, transaction);
+        	}
+        	else
+        	{
+				if (cua.getUser(username).getCreditAdded() + credit > 1000)
+				{
+					throw new FailedConstraint(ExceptionCodes.USER_CREDIT_SESSION_OVERFLOW, transaction);
+				}
+				else
+				{
+					cua.getUser(username).setCredit(credit + temp_credit);
+					cua.getUser(username).setCreditAdded(cua.getUser(username).getCreditAdded() + credit);
+				}
+        	}
+        }
+        else
+        {
+        	throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);
+        }
     }
 
 	public String getTransaction() {

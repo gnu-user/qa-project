@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,38 +19,70 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class Sell implements Transaction
+public class Ticket
 {
     private String event;
     private String seller;
     private Integer volume;
     private Double price;
-    private String transaction;
 
 
     /**
      * 
      * @param event
-     * @param seller
      * @param volume
      * @param price
      */
-    public Sell(String event, String seller, Integer volume, Double price, String transaction)
+    public Ticket(String event, String seller, Integer volume, Double price)
     {
         this.event = event;
         this.seller = seller;
         this.volume = volume;
         this.price = price;
-        this.transaction = transaction;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    /**
+     * @return the event
+     */
+    public String getEvent()
     {
-        throw new UnsupportedOperationException();
+        return event;
     }
 
-	public String getTransaction() {
-		return transaction;
-	}
+    /**
+     * @return the seller
+     */
+    public String getSeller()
+    {
+        return seller;
+    }
+    
+    public Integer getVolume()
+    {
+        return this.volume;
+    }
+
+    /**
+     * 
+     * @param volume
+     */
+    public void setVolume(Integer volume)
+    {
+        this.volume = volume;
+    }
+
+    public Double getPrice()
+    {
+        return this.price;
+    }
+
+    /**
+     * 
+     * @param price
+     */
+    public void setPrice(Double price)
+    {
+        this.price = price;
+    }
 
 }

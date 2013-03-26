@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,35 +19,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class Refund implements Transaction
+public interface Transaction
 {
-    private String buyer;
-    private String seller;
-    private Double credit;
-    private String transaction;
+	public String getTransaction();
 
-
-    /**
-     * 
-     * @param buyer
-     * @param seller
-     * @param credit
-     */
-    public Refund(String buyer, String seller, Double credit, String transaction)
-    {
-        this.buyer = buyer;
-        this.seller = seller;
-        this.credit = credit;
-        this.transaction = transaction;
-    }
-
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-	public String getTransaction() {
-		return transaction;
-	}
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint;
 
 }

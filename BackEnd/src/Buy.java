@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,70 +19,49 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class Ticket
+public class Buy implements Transaction
 {
     private String event;
     private String seller;
     private Integer volume;
     private Double price;
+    private String transaction;
 
 
     /**
      * 
      * @param event
+     * @param seller
      * @param volume
      * @param price
      */
-    public Ticket(String event, String seller, Integer volume, Double price)
+    public Buy(String event, String seller, Integer volume, Double price, String transaction)
     {
         this.event = event;
         this.seller = seller;
         this.volume = volume;
         this.price = price;
+        this.transaction = transaction;
     }
 
-    /**
-     * @return the event
-     */
-    public String getEvent()
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
-        return event;
+        //if (cua.hasUser(seller))
+        //{
+            
+        //}
+        //check if buyer exists (cua)
+        //check if seller exists (cua)
+        //check that the amount of money required is available (cua)
+        //check if the money transfer will result in an overflow for the seller's balance (cua)
+        //check if the volume of tickets are available (atf)
+        //take the money out of the buyer (cua)
+        //add the money to the seller (cua)
+        //remove the tickets from the seller (atf)
     }
 
-    /**
-     * @return the seller
-     */
-    public String getSeller()
-    {
-        return seller;
-    }
-    
-    public Integer getVolume()
-    {
-        return this.volume;
-    }
-
-    /**
-     * 
-     * @param volume
-     */
-    public void setVolume(Integer volume)
-    {
-        this.volume = volume;
-    }
-
-    public Double getPrice()
-    {
-        return this.price;
-    }
-
-    /**
-     * 
-     * @param price
-     */
-    public void setPrice(Double price)
-    {
-        this.price = price;
-    }
+	public String getTransaction() {
+		return transaction;
+	}
 
 }

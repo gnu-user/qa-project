@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -51,11 +52,15 @@ public class BackEnd
             CurrentUserAccounts currentAccounts = new CurrentUserAccounts(args[1]);
             System.out.println("Available tickets file read successfully.");
             currentAccounts.diplayUsers();
+            
+            DailyTransactions transactions = new DailyTransactions(args[2]);
+            System.out.println("Daily transactions files read successfully.");
+            transactions.displayTransactions();
         }
         catch (FatalError e)
         {
             System.err.println(e.getMessage());
-            System.err.println("File that caused error: " + e.getCause().getMessage());
+            System.err.println("Cause of Error: " + e.getCause().getMessage());
             System.exit(1);
         }
 	}

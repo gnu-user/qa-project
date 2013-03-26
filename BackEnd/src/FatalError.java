@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,21 +19,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class FailedConstraint extends Exception
+public class FatalError extends Exception
 {
     /**
      * 
      */
-    private static final long serialVersionUID = 2801771587969692843L;
+    private static final long serialVersionUID = 888363566861043122L;
 
     /**
      * 
      * @param exception
-     * @param transaction
+     * @param file
      */
-    public FailedConstraint(ExceptionCodes exception, String transaction)
+    public FatalError(ExceptionCodes exception, String file)
     {
-        super(exception.toString(), new Throwable(transaction));
+        super(exception.toString(), new Throwable(file));
     }
-
 }

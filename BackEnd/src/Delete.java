@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,12 +19,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class User
+public class Delete implements Transaction
 {
     private String username;
     private String type;
     private Double credit;
-    private Double creditAdded;
+    private String transaction;
 
 
     /**
@@ -32,45 +33,28 @@ public class User
      * @param type
      * @param credit
      */
-    public User(String username, String type, Double credit)
+    public Delete(String username, String type, Double credit, String transaction)
     {
         this.username = username;
         this.type = type;
         this.credit = credit;
+        this.transaction = transaction;
     }
 
-    public String getUsername()
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
-        return this.username;
+        if (cua.hasUser(username))
+        {
+        	cua.deleteUser(username);
+        }
+        else
+        {
+        	throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);
+        }
     }
 
-    public String getType()
-    {
-        return this.type;
-    }
-
-    public Double getCredit()
-    {
-        return this.credit;
-    }
-
-    /**
-     * 
-     * @param credit
-     */
-    public void setCredit(Double credit)
-    {
-        this.credit = credit;
-    }
-
-    public void setCreditAdded(Double creditAdded)
-    {
-        this.creditAdded = creditAdded;
-    }
-    
-    public Double getCreditAdded()
-    {
-        return this.creditAdded;
-    }
+	public String getTransaction() {
+		return transaction;
+	}
 
 }

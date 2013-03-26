@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,7 +19,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class Create implements Transaction
+public class Logout implements Transaction
 {
     private String username;
     private String type;
@@ -32,7 +33,7 @@ public class Create implements Transaction
      * @param type
      * @param credit
      */
-    public Create(String username, String type, Double credit, String transaction)
+    public Logout(String username, String type, Double credit, String transaction)
     {
         this.username = username;
         this.type = type;
@@ -45,8 +46,7 @@ public class Create implements Transaction
         throw new UnsupportedOperationException();
     }
 
-	public String getTransaction()
-	{
+	public String getTransaction() {
 		return transaction;
 	}
 

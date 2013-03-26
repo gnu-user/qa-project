@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,10 +19,38 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public interface Transaction
+public class Sell implements Transaction
 {
-	public String getTransaction();
+    private String event;
+    private String seller;
+    private Integer volume;
+    private Double price;
+    private String transaction;
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint;
+
+    /**
+     * 
+     * @param event
+     * @param seller
+     * @param volume
+     * @param price
+     */
+    public Sell(String event, String seller, Integer volume, Double price, String transaction)
+    {
+        this.event = event;
+        this.seller = seller;
+        this.volume = volume;
+        this.price = price;
+        this.transaction = transaction;
+    }
+
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    {
+        throw new UnsupportedOperationException();
+    }
+
+	public String getTransaction() {
+		return transaction;
+	}
 
 }

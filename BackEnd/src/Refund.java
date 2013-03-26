@@ -1,3 +1,4 @@
+package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -18,45 +19,31 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class Buy implements Transaction
+public class Refund implements Transaction
 {
-    private String event;
+    private String buyer;
     private String seller;
-    private Integer volume;
-    private Double price;
+    private Double credit;
     private String transaction;
 
 
     /**
      * 
-     * @param event
+     * @param buyer
      * @param seller
-     * @param volume
-     * @param price
+     * @param credit
      */
-    public Buy(String event, String seller, Integer volume, Double price, String transaction)
+    public Refund(String buyer, String seller, Double credit, String transaction)
     {
-        this.event = event;
+        this.buyer = buyer;
         this.seller = seller;
-        this.volume = volume;
-        this.price = price;
+        this.credit = credit;
         this.transaction = transaction;
     }
 
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
-        //if (cua.hasUser(seller))
-        //{
-            
-        //}
-        //check if buyer exists (cua)
-        //check if seller exists (cua)
-        //check that the amount of money required is available (cua)
-        //check if the money transfer will result in an overflow for the seller's balance (cua)
-        //check if the volume of tickets are available (atf)
-        //take the money out of the buyer (cua)
-        //add the money to the seller (cua)
-        //remove the tickets from the seller (atf)
+        throw new UnsupportedOperationException();
     }
 
 	public String getTransaction() {
