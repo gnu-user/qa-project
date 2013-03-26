@@ -1,4 +1,3 @@
-package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -56,6 +55,10 @@ public class BackEnd
             DailyTransactions transactions = new DailyTransactions(args[2]);
             System.out.println("Daily transactions files read successfully.");
             transactions.displayTransactions();
+            
+            /* Write the data in memory to file */
+            availableTickets.write();
+            currentAccounts.write();
         }
         catch (FatalError e)
         {
