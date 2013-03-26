@@ -1,4 +1,3 @@
-package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -27,9 +26,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.google.common.base.Strings;
 
 public class AvailableTickets
 {
@@ -133,7 +133,7 @@ public class AvailableTickets
         
         try 
         {
-            File file = new File(atfFile);
+            File file = new File(atfFile + ".log");
  
             /* Create the file if it does not exist since parsed */
             if (!file.exists())
@@ -146,9 +146,25 @@ public class AvailableTickets
             /* Format each entry and write it to the file */
             for (Ticket ticket : tickets)
             {
-                entry =
+                /* Format the event */
+                entry = ticket.getEvent().replace(' ', '_');
+                entry = Strings.padEnd(entry, 20, '_');
+                
+                /* Format the seller */
+                entry += Strings.padEnd(ticket.getSeller(), 16, '_');
+                
+                /* Format the number of tickets */
+                entry += Strings.padStart(ticket.getVolume().toString(), 3, '0') + "_";
+                
+                /* Format the price of tickets */
+                entry += Strings.padStart(String.format("%.2f", ticket.getPrice()), 6, '0') + "\n";
+                
+                
+                writer.write(entry);
             }
             
+            /* Add the END of file identifier and close the file */
+            writer.write("END_________________________________000_000.00");
             writer.close();
  
         } 
@@ -164,7 +180,7 @@ public class AvailableTickets
         BufferedReader reader;
 
         String line;
-        Pattern re = Pattern.compile("^(.{1,19}?)_+([A-Za-z0-9_]{1,15}?)_+([0-9]{3})_([0-9]{3}\\.[0-9]{2})$");
+        Pattern re = Pattern.compile("^(.{1,19}?)_+_([A-Za-z0-9_]{1,15}?)_+([0-9]{3})_([0-9]{3}\\.[0-9]{2})$");
         Pattern reEnd = Pattern.compile("END_{33}0{3}_0{3}\\.0{2}");
         Matcher match;
 
