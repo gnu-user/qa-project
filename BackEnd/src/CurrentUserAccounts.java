@@ -1,4 +1,3 @@
-package src;
 /**
  * Swift Ticket -- Back End
  *
@@ -20,13 +19,17 @@ package src;
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.google.common.base.Strings;
 
 public class CurrentUserAccounts
 {
@@ -124,9 +127,54 @@ public class CurrentUserAccounts
         }
     }
     
-    public void write()
+    /**
+     * Write the current user accounts file in memory to file, over-writing
+     * the old current user accounts file.
+     * @throws FatalError
+     */
+    public void write() throws FatalError
     {
-        throw new UnsupportedOperationException();
+        BufferedWriter writer;
+        String entry;
+        
+        try 
+        {
+            File file = new File(cuaFile + ".log");
+ 
+            /* Create the file if it does not exist since parsed */
+            if (!file.exists())
+            {
+                file.createNewFile();
+            }
+    
+            writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
+            
+            /* Format each entry and write it to the file */
+            for (User user : users)
+            {                
+                /* Format the username */
+                entry = Strings.padEnd(user.getUsername(), 16, '_');
+                
+                /* Format the account type */
+                entry += user.getType() + "_";
+                
+                /* Format the credit amount */
+                entry += Strings.padStart(String.format("%.2f", user.getCredit()), 9, '0') + "\n";
+                
+                
+                writer.write(entry);
+            }
+            
+            /* Add the END of file identifier and close the file */
+            writer.write("END________________000000.00");
+            writer.close();
+ 
+        } 
+        catch (IOException e)
+        {
+            e.printStackTrace();
+            throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
+        }
     }
 
     private void parse() throws FatalError
