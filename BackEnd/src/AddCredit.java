@@ -41,6 +41,8 @@ public class AddCredit implements Transaction
      * @param username String value for the user to add credit to.
      * @param type String value for the type of user specified in username.
      * @param credit The amount of credit, in dollars, to add to the user specified in username.
+     * @param transaction String containing the original transaction string from the 
+     * daily transaction file.
      */
     public AddCredit(String username, String type, Double credit, String transaction)
     {
