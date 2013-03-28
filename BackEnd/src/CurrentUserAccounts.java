@@ -32,8 +32,12 @@ import java.util.regex.Pattern;
 import com.google.common.base.Strings;
 
 /**
- * @author 100440203
- *
+ * CurrentUserAccounts Provides methods and attributes for interacting with the
+ * current user accounts file in memory, and outputting to disk.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
  */
 public class CurrentUserAccounts
 {
@@ -41,10 +45,14 @@ public class CurrentUserAccounts
     private String cuaFile;
 
 
+
     /**
+     * Constructor for the class. Takes the path to the available tickets file, and opens it.
      * 
-     * @param cuaFile
-     * @throws FatalError 
+     * @param cuaFile The path to the current user accounts file. Unix-style paths only.
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     * 			<br>The Current User Accounts file is missing, or not found at the path specified.
      */
     public CurrentUserAccounts(String cuaFile) throws FatalError
     {
@@ -65,8 +73,9 @@ public class CurrentUserAccounts
     }
 
     /**
+     * addUser Adds a User object to the current user accounts file collection.
      * 
-     * @param user
+     * @param user The User object to add to the current user accounts file collection.
      */
     public void addUser(User user)
     {
@@ -74,8 +83,11 @@ public class CurrentUserAccounts
     }
 
     /**
+     * deleteUser Removes a User object from the current user accounts file collection, based
+     * on the user's name. If there exists no User object with the specified username,
+     * nothing happens.
      * 
-     * @param username
+     * @param username String containing the name of the user to delete.
      */
     public void deleteUser(String username)
     {
@@ -90,7 +102,10 @@ public class CurrentUserAccounts
     }
     
     /**
-     * @return
+     * getAllUsers Access method for the contents of the current user accounts file.
+     * 
+     * @return Returns an ArrayList of User objects, which is the contents of the entire
+     * current user accounts file collection.
      */
     public ArrayList<User> getAllUsers()
     {
@@ -98,8 +113,13 @@ public class CurrentUserAccounts
     }
 
     /**
+     * getUser Access method for a particular User object in the collection, by name. If
+     * there exists no User object with the username specified, nothing happens.
      * 
-     * @param username
+     * @param username String specifying the username of the User object to match to.
+     * 
+     * @return Returns a User object with the username specified. Returns null if
+     * no User object with that name exists.
      */
     public User getUser(String username)
     {
@@ -115,8 +135,13 @@ public class CurrentUserAccounts
     }
 
     /**
+     * hasUser Determines whether a specified User exists in the current user 
+     * accounts file, corresponding to the username specified.
      * 
      * @param username
+     * 
+     * @return Returns true if the username specified is in the current user
+     * accounts file. Returns false if the username is not found.
      */
     public boolean hasUser(String username)
     {
@@ -132,7 +157,8 @@ public class CurrentUserAccounts
     }
 
     /**
-     * 
+     * displayUsers Outputs all the entries in the current user accounts file to the console.
+     * Output contains the username, the user type, and their credit amount.
      */
     public void displayUsers()
     {
@@ -143,9 +169,11 @@ public class CurrentUserAccounts
     }
     
     /**
-     * Write the current user accounts file in memory to file, over-writing
+     * write Writes the current user accounts file in memory to file, over-writing
      * the old current user accounts file.
-     * @throws FatalError
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     * 			<br>The current user accounts file is corrupted.
      */
     public void write() throws FatalError
     {
@@ -193,7 +221,12 @@ public class CurrentUserAccounts
     }
 
     /**
-     * @throws FatalError
+     * parse Parses the current user accounts file entries, matching the specified format
+     * based on regular expressions.
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     * 			<br>The Current User Accounts File is missing, or not found at the path specified.
+     * 			<br>The current user accounts file is corrupted.
      */
     private void parse() throws FatalError
     {
