@@ -37,6 +37,7 @@ public class AddCredit implements Transaction
 
     /**
      * Constructor for the class. Accepts and populates class attributes with values passed in.
+     * 
      * @param username String value for the user to add credit to.
      * @param type String value for the type of user specified in username.
      * @param credit The amount of credit, in dollars, to add to the user specified in username.
@@ -60,6 +61,7 @@ public class AddCredit implements Transaction
      * 			<br>If the user name specified does not exist.
      * 			<br>If the amount of credit added results in a credit overflow for that user.
      * 			<br>If the amount of credit added is beyond the limit acceptable for that user type.
+     * 
      * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
      */
     public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
