@@ -18,6 +18,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * Buy Provides methods and attributes for processing the buy transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class Buy implements Transaction
 {
     private String event;
@@ -28,11 +36,14 @@ public class Buy implements Transaction
 
 
     /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
      * 
-     * @param event
-     * @param seller
-     * @param volume
-     * @param price
+     * @param event String value for the name of the event to buy a ticket to.
+     * @param seller String value for the ticket seller.
+     * @param volume Integer value for the amount of tickets to buy.
+     * @param price Dollar value for the price of the ticket sale.
+     * @param transaction String containing the original transaction string from the 
+     * daily transaction file.
      */
     public Buy(String event, String seller, Integer volume, Double price, String transaction)
     {
@@ -43,6 +54,9 @@ public class Buy implements Transaction
         this.transaction = transaction;
     }
 
+    /* (non-Javadoc)
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
         //if (cua.hasUser(seller))
@@ -59,6 +73,9 @@ public class Buy implements Transaction
         //remove the tickets from the seller (atf)
     }
 
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
 	public String getTransaction() {
 		return transaction;
 	}
