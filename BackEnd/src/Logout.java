@@ -42,7 +42,10 @@ public class Logout implements Transaction
 
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
-        throw new UnsupportedOperationException();
+    	for (User user : cua.getAllUsers())
+    	{
+    		user.setCreditAdded(0.00);
+    	}
     }
 
 	public String getTransaction() {
