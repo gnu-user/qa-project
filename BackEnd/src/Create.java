@@ -20,7 +20,7 @@
  */
 
 /**
- * Buy Provides methods and attributes for processing the create user transaction.
+ * Create Provides methods and attributes for processing the create user transaction.
  * 
  * @author Jonathan Gillett
  * @author Daniel Smullen
