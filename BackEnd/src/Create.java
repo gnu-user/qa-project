@@ -40,9 +40,17 @@ public class Create implements Transaction
         this.transaction = transaction;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
-        throw new UnsupportedOperationException();
+    	if (!cua.hasUser(username))
+    	{
+	    	User newUser = new User(username, type, credit);
+	        cua.addUser(newUser);
+    	}
+    	else
+    	{
+    		throw new FailedConstraint(ExceptionCodes.INVALID_USER_EXISTS, transaction);
+    	}
     }
 
 	public String getTransaction()
