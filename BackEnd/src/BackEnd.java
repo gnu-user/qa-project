@@ -50,7 +50,7 @@ public class BackEnd
             
             CurrentUserAccounts currentAccounts = new CurrentUserAccounts(args[1]);
             System.out.println("Available tickets file read successfully.");
-            currentAccounts.diplayUsers();
+            currentAccounts.displayUsers();
             
             DailyTransactions transactions = new DailyTransactions(args[2]);
             System.out.println("Daily transactions files read successfully.");
