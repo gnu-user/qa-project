@@ -84,6 +84,11 @@ public class CurrentUserAccounts
             }
         }
     }
+    
+    public ArrayList<User> getAllUsers()
+    {
+    	return users;
+    }
 
     /**
      * 
