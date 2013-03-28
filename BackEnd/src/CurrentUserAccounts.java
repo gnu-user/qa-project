@@ -31,6 +31,10 @@ import java.util.regex.Pattern;
 
 import com.google.common.base.Strings;
 
+/**
+ * @author 100440203
+ *
+ */
 public class CurrentUserAccounts
 {
     private ArrayList<User> users;
@@ -85,6 +89,9 @@ public class CurrentUserAccounts
         }
     }
     
+    /**
+     * @return
+     */
     public ArrayList<User> getAllUsers()
     {
     	return users;
@@ -124,7 +131,10 @@ public class CurrentUserAccounts
         return false;
     }
 
-    public void diplayUsers()
+    /**
+     * 
+     */
+    public void displayUsers()
     {
         for (User user : users)
         {
@@ -182,6 +192,9 @@ public class CurrentUserAccounts
         }
     }
 
+    /**
+     * @throws FatalError
+     */
     private void parse() throws FatalError
     {
         BufferedReader reader;
