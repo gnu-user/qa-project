@@ -31,17 +31,26 @@ import java.util.regex.Pattern;
 
 import com.google.common.base.Strings;
 
+/**
+ * AvailableTickets Provides methods and attributes for interacting with the
+ * available tickets file in memory, and outputting to disk.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class AvailableTickets
 {
     private ArrayList<Ticket> tickets;
     private String atfFile;
 
     /**
-     * Available tickets constructor
+     * Constructor for the class. Takes the path to the available tickets file, and opens it.
      * 
-     * @param atfFile
-     * @throws FatalError
-     * @throws FileNotFoundException
+     * @param atfFile The path to the available tickets file. Unix-style paths only.
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     * 			<br>The Available Tickets File is missing, or not found at the path specified.
      */
     public AvailableTickets(String atfFile) throws FatalError
     {
@@ -62,9 +71,9 @@ public class AvailableTickets
     }
 
     /**
-     * Adds a ticket to the available tickets file
+     * addTicket Adds a Ticket object to the available tickets file collection.
      * 
-     * @param ticket
+     * @param ticket The Ticket object to add to the collection.
      */
     public void addTicket(Ticket ticket)
     {
@@ -72,11 +81,14 @@ public class AvailableTickets
     }
 
     /**
+     * getTicket The access method for the collection of available tickets. Requires an
+     * event title and a username for the seller to return the correct Ticket.
      * 
-     * @param event
-     * @param username
+     * @param event String containing the event title for the desired Ticket.
+     * @param username String containing the seller's username for the desired Ticket.
      * 
-     * @return The ticket for the event
+     * @return Returns the Ticket object for the specified event. If the ticket
+     * was not found, the method returns null.
      */
     public Ticket getTicket(String event, String username)
     {
@@ -92,11 +104,15 @@ public class AvailableTickets
     }
 
     /**
+     * hasTicket This method is used to determine whether a Ticket object exists in the
+     * available tickets file collection. Requires that the event title and the seller's
+     * username is specified to match the Ticket against.
      * 
-     * @param event
-     * @param username
+     * @param event String containing the event title for the specified Ticket.
+     * @param username String containing the seller's username for the specified Ticket.
      * 
-     * @return Returns true if the available tickets file has the ticket
+     * @return Returns true if the ticket was found in the collection. Otherwise,
+     * returns false.
      */
     public boolean hasTicket(String event, String username)
     {
@@ -111,6 +127,10 @@ public class AvailableTickets
         return false;
     }
 
+    /**
+     * displayTickets Outputs all the tickets in the collection to the console.
+     * Output contains the event title, seller name, volume of tickets, and price.
+     */
     public void displayTickets()
     {
         for (Ticket ticket : tickets)
@@ -122,9 +142,11 @@ public class AvailableTickets
     }
     
     /**
-     * Write the available tickets file in memory to file, over-writing
+     * write Outputs the available tickets file in memory to file, over-writing
      * the old available tickets file.
-     * @throws FatalError 
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     * 			<br>The Available Tickets File is corrupted.
      */
     public void write() throws FatalError
     {
