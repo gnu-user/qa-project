@@ -43,8 +43,25 @@ public class Sell implements Transaction
         this.transaction = transaction;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
+    	if (atf.hasTicket(event, seller))
+    	{
+    		if (atf.getTicket(event, seller).getVolume() + volume <= 100)
+    		{
+    			atf.getTicket(event, seller).setPrice(price);
+    			atf.getTicket(event, seller).setVolume(atf.getTicket(event, seller).getVolume() + volume);
+    		}
+    		else
+    		{
+    			throw new FailedConstraint(ExceptionCodes.TICKET_VOLUME_OVERFLOW, transaction);
+    		}
+    	}
+    	else
+    	{
+    		atf.addTicket(new Ticket(event, seller, volume, price));
+    	}
+
         throw new UnsupportedOperationException();
     }
 
