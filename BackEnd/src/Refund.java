@@ -40,9 +40,31 @@ public class Refund implements Transaction
         this.transaction = transaction;
     }
 
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
-        throw new UnsupportedOperationException();
+    	if (cua.hasUser(buyer) && cua.hasUser(seller))
+    	{
+    		if (cua.getUser(buyer).getCredit() + credit < 999999.99)
+    		{
+    			if (cua.getUser(seller).getCredit() - credit > 0.00)
+    			{
+    				cua.getUser(buyer).setCredit(cua.getUser(buyer).getCredit() + credit);
+    				cua.getUser(seller).setCredit(cua.getUser(seller).getCredit() - credit);
+    			}
+    			else
+    			{
+    				throw new FailedConstraint(ExceptionCodes.USER_CREDIT_NEGATIVE, transaction);
+    			}
+    		}
+    		else 
+    		{
+    			throw new FailedConstraint(ExceptionCodes.USER_CREDIT_OVERFLOW, transaction);
+    		}
+    	}
+    	else
+    	{
+    		throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);
+    	}
     }
 
 	public String getTransaction() {
