@@ -19,10 +19,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 /**
- * @author 100440203
- *
+ * Delete Provides methods and attributes for processing the delete transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
  */
 public class Delete implements Transaction
 {
