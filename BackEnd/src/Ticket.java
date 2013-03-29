@@ -18,6 +18,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * AvailableTickets Provides methods and attributes for interacting tickets,
+ * which are entries representing events stored in the available tickets file.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class Ticket
 {
     private String event;
@@ -27,10 +36,11 @@ public class Ticket
 
 
     /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
      * 
-     * @param event
-     * @param volume
-     * @param price
+     * @param event String for the title of the event.
+     * @param volume Integer for the amount of tickets available for the event.
+     * @param price Dollar value for the price per ticket.
      */
     public Ticket(String event, String seller, Integer volume, Double price)
     {
@@ -41,7 +51,9 @@ public class Ticket
     }
 
     /**
-     * @return the event
+     * getEvent Access method for event titles.
+     * 
+     * @return Returns a string containing the title for the event.
      */
     public String getEvent()
     {
@@ -49,35 +61,53 @@ public class Ticket
     }
 
     /**
-     * @return the seller
+     * getSeller Access method for the ticket seller.
+     * 
+     * @return Returns a string containing the seller for the event.
      */
     public String getSeller()
     {
         return seller;
     }
     
+    
+    /**
+     * getVolume Access method for the volume of tickets available.
+     * 
+     * @return Returns an integer for the volume of tickets available.
+     */
     public Integer getVolume()
     {
         return this.volume;
     }
 
     /**
+     * setVolume Mutator method which allows the volume of tickets available
+     * to be manipulated.
      * 
-     * @param volume
+     * @param volume An integer to set the volume of tickets to.
      */
     public void setVolume(Integer volume)
     {
         this.volume = volume;
     }
 
+    
+    /**
+     * getPrice Access method for the price per ticket.
+     * 
+     * @return Returns a dollar value containing the price per ticket.
+     */
     public Double getPrice()
     {
         return this.price;
     }
 
     /**
+     * setPrice Mutator method which allows the price per ticket to be
+     * manipulated.
      * 
-     * @param price
+     * @param price The amount, in dollars, to set the ticket price to.
      */
     public void setPrice(Double price)
     {
