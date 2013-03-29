@@ -29,7 +29,11 @@
  */
 public class BackEnd
 {
-
+    static private AvailableTickets availableTickets;
+    static private CurrentUserAccounts currentAccounts;
+    static private DailyTransactions transactions;
+    
+    
 	/**
 	 * main The main execution path for the program.
 	 * 
@@ -56,27 +60,52 @@ public class BackEnd
 	        
 	        System.exit(1);
 	    }
+	    
+	    /* Parse available tickets, current user accounts, and daily transaction file */
 		try
         {
-            AvailableTickets availableTickets = new AvailableTickets(args[0]);
+            availableTickets = new AvailableTickets(args[0]);
             System.out.println("Current user accounts file read successfully.");
             availableTickets.displayTickets();
             
-            CurrentUserAccounts currentAccounts = new CurrentUserAccounts(args[1]);
+            currentAccounts = new CurrentUserAccounts(args[1]);
             System.out.println("Available tickets file read successfully.");
             currentAccounts.displayUsers();
             
-            DailyTransactions transactions = new DailyTransactions(args[2]);
+            transactions = new DailyTransactions(args[2]);
             System.out.println("Daily transactions files read successfully.");
             transactions.displayTransactions();
-            
-            /* Write the data in memory to file */
+        }
+        catch (FatalError e)
+        {
+            System.err.println("ERROR: " + e.getMessage());
+            System.err.println("Cause of Error: " + e.getCause().getMessage());
+            System.exit(1);
+        }
+		
+		/* Execute each transaction, catch any constraint validation errors */
+		for (Transaction transaction : transactions.getTransactions())
+		{
+		    try
+		    {
+		        transaction.execute(currentAccounts, availableTickets);
+		    }
+		    catch (FailedConstraint e)
+		    {
+	            System.err.println("ERROR: " + e.getMessage());
+	            System.err.println("Cause of Error: " + e.getCause().getMessage());   
+		    }
+		}
+		
+        /* All transactions processed, write the new ATF and CUA to file */
+        try
+        {
             availableTickets.write();
             currentAccounts.write();
         }
         catch (FatalError e)
         {
-            System.err.println(e.getMessage());
+            System.err.println("ERROR: " + e.getMessage());
             System.err.println("Cause of Error: " + e.getCause().getMessage());
             System.exit(1);
         }
