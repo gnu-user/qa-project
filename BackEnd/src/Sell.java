@@ -54,7 +54,7 @@ public class Sell implements Transaction
     }
 
     /**
-     * execute Performs the sell transaction. Adds the tickets specified to the seller's
+     * Performs the sell transaction. Adds the tickets specified to the seller's
      * available tickets, or updates the existing listings if the event already exists.
      * 
      * @param cua A reference to the CurrentUserAccounts object used by the back-end.

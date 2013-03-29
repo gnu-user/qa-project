@@ -31,7 +31,7 @@
 public interface Transaction
 {
 	/**
-	 * getTransaction Generic access method for obtaining the original transaction
+	 * Generic access method for obtaining the original transaction
 	 * string for the transaction.
 	 * 
 	 * @return Returns the original transaction string.
@@ -40,7 +40,7 @@ public interface Transaction
 
 	
     /**
-     * execute Signature template for each transaction's method of execution. This method
+     * Signature template for each transaction's method of execution. This method
      * is implemented differently for each transaction.
      * 
      * @param cua A reference to the current user accounts file.

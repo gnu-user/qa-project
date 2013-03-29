@@ -77,7 +77,7 @@ public class DailyTransactions
     }
 
     /**
-     * getTransactions Provides a handle to the ArrayList of transactions
+     * Provides a handle to the ArrayList of transactions
      * that comprise the daily transaction file.
      * 
      * @return Returns an ArrayList of Transaction objects, representing
@@ -89,7 +89,7 @@ public class DailyTransactions
     }
     
     /**
-     * displayTransactions Outputs all transaction entries in the daily transaction
+     * Outputs all transaction entries in the daily transaction
      * file to the console.
      */
     public void displayTransactions()
@@ -101,7 +101,7 @@ public class DailyTransactions
     }
     
     /**
-     * sortModified Sorts an array of files by date modified in descending order,
+     * Sorts an array of files by date modified in descending order,
      * the oldest modified file is the first in the resulting array.
      * 
      * @param files Accepts an array of File objects to be sorted.
@@ -118,7 +118,7 @@ public class DailyTransactions
     }
     
     /**
-     * merge Merges the collection of all daily transaction files (*.dtf)
+     * Merges the collection of all daily transaction files (*.dtf)
      * into a single array containing each transaction as a line.
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
@@ -190,7 +190,7 @@ public class DailyTransactions
     }
 
     /**
-     * parse Reads in the contents of merged daily transaction files, and converts them into
+     * Reads in the contents of merged daily transaction files, and converts them into
      * Transaction entries. Entries which do not conform to the standards for entries are
      * considered corrupted and unreadable.
      * 
@@ -254,7 +254,7 @@ public class DailyTransactions
                         transactions.add(new AddCredit(username, type, credit, entry));
                     }
                 }
-                /* This error should never be thrown -- check merge()! */
+                /* This error should never be thrown, fatal error */
                 else
                 {
                     throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);
@@ -273,12 +273,13 @@ public class DailyTransactions
                     
                     transactions.add(new Refund(buyer, seller, credit, entry));
                 }
-                /* This error should never be thrown -- check merge()! */
+                /* This error should never be thrown, fatal error */
                 else
                 {
                     throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);
                 }
             }
+            /* Buy and sell transactions */
             else if (match.group(1).matches("(03|04)"))
             {
                 match = reBuySell.matcher(entry);
@@ -304,7 +305,7 @@ public class DailyTransactions
                         {
                             match = reLookAhead.matcher(mergedTransactions.get(i));
                             
-                            /* If buyer found in lookahead, add transaction with buyer's name */
+                            /* If buyer is found in lookahead, add transaction with buyer's name */
                             if (match.matches())
                             {
                                 transactions.add(new Buy(event, match.group(2), seller, volume, price, entry));
@@ -312,13 +313,13 @@ public class DailyTransactions
                         }
                     }
                 }
-                /* This error should never be thrown -- check merge()! */
+                /* This error should never be thrown, fatal error */
                 else
                 {
                     throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);
                 }
             }
-            /* This error should never be thrown -- check merge()! */
+            /* This error should never be thrown, fatal error */
             else
             {
                 throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);

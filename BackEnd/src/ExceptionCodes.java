@@ -67,7 +67,7 @@ public enum ExceptionCodes
     }
 
     /**
-     * getType Access method for the enumeration type.
+     * Access method for the enumeration type.
      * 
      * @return Returns a string containing the type of error code.
      */
@@ -77,7 +77,7 @@ public enum ExceptionCodes
     }
 
     /**
-     * getDescription Access method for the enumeration description.
+     * Access method for the enumeration description.
      * 
      * @return Returns a string containing the error description.
      */
@@ -87,7 +87,7 @@ public enum ExceptionCodes
     }
     
     /**
-     * toString Overrides the standard Object toString method, outputting the
+     * Overrides the standard Object toString method, outputting the
      * error code in a human readable string. The format contains the type of error,
      * a colon, and the description.
      */

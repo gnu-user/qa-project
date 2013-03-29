@@ -45,7 +45,6 @@ public class CurrentUserAccounts
     private String cuaFile;
 
 
-
     /**
      * Constructor for the class. Takes the path to the available tickets file, and opens it.
      * 
@@ -73,7 +72,7 @@ public class CurrentUserAccounts
     }
 
     /**
-     * addUser Adds a User object to the current user accounts file collection.
+     * Adds a User object to the current user accounts file collection.
      * 
      * @param user The User object to add to the current user accounts file collection.
      */
@@ -83,7 +82,7 @@ public class CurrentUserAccounts
     }
 
     /**
-     * deleteUser Removes a User object from the current user accounts file collection, based
+     * Removes a User object from the current user accounts file collection, based
      * on the user's name. If there exists no User object with the specified username,
      * nothing happens.
      * 
@@ -102,7 +101,7 @@ public class CurrentUserAccounts
     }
     
     /**
-     * getAllUsers Access method for the contents of the current user accounts file.
+     * Access method for the contents of the current user accounts file.
      * 
      * @return Returns an ArrayList of User objects, which is the contents of the entire
      * current user accounts file collection.
@@ -113,7 +112,7 @@ public class CurrentUserAccounts
     }
 
     /**
-     * getUser Access method for a particular User object in the collection, by name. If
+     * Access method for a particular User object in the collection, by name. If
      * there exists no User object with the username specified, nothing happens.
      * 
      * @param username String specifying the username of the User object to match to.
@@ -135,7 +134,7 @@ public class CurrentUserAccounts
     }
 
     /**
-     * hasUser Determines whether a specified User exists in the current user 
+     * Determines whether a specified User exists in the current user 
      * accounts file, corresponding to the username specified.
      * 
      * @param username
@@ -157,7 +156,7 @@ public class CurrentUserAccounts
     }
 
     /**
-     * displayUsers Outputs all the entries in the current user accounts file to the console.
+     * Outputs all the entries in the current user accounts file to the console.
      * Output contains the username, the user type, and their credit amount.
      */
     public void displayUsers()
@@ -169,7 +168,7 @@ public class CurrentUserAccounts
     }
     
     /**
-     * write Writes the current user accounts file in memory to file, over-writing
+     * Writes the current user accounts file in memory to file, over-writing
      * the old current user accounts file.
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
@@ -221,7 +220,7 @@ public class CurrentUserAccounts
     }
 
     /**
-     * parse Parses the current user accounts file entries, matching the specified format
+     * Parses the current user accounts file entries, matching the specified format
      * based on regular expressions.
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:

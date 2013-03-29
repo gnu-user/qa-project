@@ -52,7 +52,7 @@ public class User
     }
 
     /**
-     * getUserName Access method for the user's name.
+     * Access method for the user's name.
      * 
      * @return Returns a string containing the user's name.
      */
@@ -62,7 +62,7 @@ public class User
     }
 
     /**
-     * getType Access method for the user's type.
+     * Access method for the user's type.
      * 
      * @return Returns a string containing the user's account type.
      */
@@ -72,7 +72,7 @@ public class User
     }
 
     /**
-     * getCredit Access method for the user's credit amount.
+     * Access method for the user's credit amount.
      * 
      * @return Returns the amount of credit the user has in their
      * account, in dollars.
@@ -83,7 +83,7 @@ public class User
     }
 
     /**
-     * setCredit Mutator method, used to set the user's credit amount.
+     * Mutator method, used to set the user's credit amount.
      * 
      * @param credit Dollar value to set the user's credit to.
      */
@@ -93,7 +93,7 @@ public class User
     }
 
     /**
-     * setCreditAdded Mutator method, used to set the amount of credit
+     * Mutator method, used to set the amount of credit
      * that has been added to the user's account this session.
      * 
      * @param creditAdded Dollar value to set the amount of credit added
@@ -105,7 +105,7 @@ public class User
     }
     
     /**
-     * getCreditAdded Access method for the amount of credit that has
+     * Access method for the amount of credit that has
      * been added to this user's account this session.
      * 
      * @return Returns the amount of credit that has been added to the user's

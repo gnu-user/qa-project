@@ -51,7 +51,7 @@ public class Ticket
     }
 
     /**
-     * getEvent Access method for event titles.
+     * Access method for event titles.
      * 
      * @return Returns a string containing the title for the event.
      */
@@ -61,7 +61,7 @@ public class Ticket
     }
 
     /**
-     * getSeller Access method for the ticket seller.
+     * Access method for the ticket seller.
      * 
      * @return Returns a string containing the seller for the event.
      */
@@ -72,7 +72,7 @@ public class Ticket
     
     
     /**
-     * getVolume Access method for the volume of tickets available.
+     * Access method for the volume of tickets available.
      * 
      * @return Returns an integer for the volume of tickets available.
      */
@@ -82,7 +82,7 @@ public class Ticket
     }
 
     /**
-     * setVolume Mutator method which allows the volume of tickets available
+     * Mutator method which allows the volume of tickets available
      * to be manipulated.
      * 
      * @param volume An integer to set the volume of tickets to.
@@ -94,7 +94,7 @@ public class Ticket
 
     
     /**
-     * getPrice Access method for the price per ticket.
+     * Access method for the price per ticket.
      * 
      * @return Returns a dollar value containing the price per ticket.
      */
@@ -104,7 +104,7 @@ public class Ticket
     }
 
     /**
-     * setPrice Mutator method which allows the price per ticket to be
+     * Mutator method which allows the price per ticket to be
      * manipulated.
      * 
      * @param price The amount, in dollars, to set the ticket price to.

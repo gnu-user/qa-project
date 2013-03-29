@@ -51,7 +51,7 @@ public class Delete implements Transaction
     }
 
     /**
-     * execute Performs the delete transaction. Deletes a user account and updates
+     * Performs the delete transaction. Deletes a user account and updates
      * the current user accounts file.
      * 
      * @param cua A reference to the CurrentUserAccounts object used by the back-end.

@@ -20,7 +20,7 @@
  */
 
 /**
- * AddCredit Provides methods and attributes for processing the addcredit
+ * Provides methods and attributes for processing the addcredit
  * transaction.
  * 
  * @author Jonathan Gillett
@@ -53,7 +53,7 @@ public class AddCredit implements Transaction
     }
 
     /**
-     * execute Performs the addcredit transaction. Adds the credit specified to the
+     * Performs the addcredit transaction. Adds the credit specified to the
      * user specified.
      * 
      * @param cua A reference to the CurrentUserAccounts object used by the back-end.
