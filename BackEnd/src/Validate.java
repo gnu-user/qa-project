@@ -18,13 +18,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * Validate Provides methods and attributes for validation of various
+ * strings and entries processed in the back-end. This is a static
+ * class, and therefore must be declared as abstract.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public abstract class Validate
 {
+	
     /**
-     * Validates available tickets file entries, and
+     * atfEntry Validates available tickets file entries, and
      * determines if they conform to the correct format and constraints.
      *
      * @param entry An entry in the available tickets file.
+     * 
      * @return Returns true if the entry is valid, false if not.
      */
     public static boolean atfEntry(String entry)
@@ -33,10 +45,11 @@ public abstract class Validate
     }
 
     /**
-     * Validates current user accounts file entries, and
+     * cuaEntry Validates current user accounts file entries, and
      * determines if they conform to the correct format and constraints.
      * 
      * @param entry An entry in the current user accounts file.
+     * 
      * @return Returns true if the entry is valid, false if not.
      */
     public static boolean cuaEntry(String entry)
@@ -45,10 +58,11 @@ public abstract class Validate
     }
 
     /**
-     * Validates daily transaction file entries and determines if they
+     * dtfEntry Validates daily transaction file entries and determines if they
      * conforms to the correct format and constraints.
      * 
      * @param entry An entry in the daily transaction file.
+     * 
      * @return Returns true if the entry is valid, false if not.
      */
     public static boolean dtfEntry(String entry)
