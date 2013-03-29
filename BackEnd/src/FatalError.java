@@ -18,17 +18,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * FatalError A special type of exception class that results in termination
+ * of the back-end. This class also allows for the inclusion of data
+ * pertaining to the error, specifically which file.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class FatalError extends Exception
 {
-    /**
-     * 
-     */
+	//Must be included in exceptions.
     private static final long serialVersionUID = 888363566861043122L;
 
     /**
+     * The constructor for the class. Allows for the inclusion of data
+     * pertaining to the file that caused the error.
      * 
-     * @param exception
-     * @param file
+     * @param exception The exception string.
+     * @param file The file which caused the fatal error.
      */
     public FatalError(ExceptionCodes exception, String file)
     {

@@ -18,6 +18,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * Logout Provides methods and attributes for processing the logout
+ * transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class Logout implements Transaction
 {
     private String username;
@@ -27,10 +36,11 @@ public class Logout implements Transaction
 
 
     /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
      * 
-     * @param username
-     * @param type
-     * @param credit
+     * @param username String value for the username of the user which is logging out.
+     * @param type String value for the type of the user who is logging out.
+     * @param credit String value for the credit amount of the user who is logging out.
      */
     public Logout(String username, String type, Double credit, String transaction)
     {
@@ -40,6 +50,15 @@ public class Logout implements Transaction
         this.transaction = transaction;
     }
 
+    /**
+     * execute Performs the logout transaction. Resets the amount of credit added this session
+     * and logs the user out.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
     public void execute(CurrentUserAccounts cua, AvailableTickets atf)
     {
     	for (User user : cua.getAllUsers())
@@ -48,6 +67,9 @@ public class Logout implements Transaction
     	}
     }
 
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
 	public String getTransaction() {
 		return transaction;
 	}

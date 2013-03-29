@@ -18,6 +18,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * Refund Provides methods and attributes for processing the refund
+ * transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class Refund implements Transaction
 {
     private String buyer;
@@ -25,12 +34,13 @@ public class Refund implements Transaction
     private Double credit;
     private String transaction;
 
-
     /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
      * 
-     * @param buyer
-     * @param seller
-     * @param credit
+     * @param buyer String for the username of the buyer to refund credit to.
+     * @param seller String for the username of the seller to refund credit from.
+     * @param credit Dollar value for the amount of credit to refund.
+     * @param transaction The transaction string for the refund.
      */
     public Refund(String buyer, String seller, Double credit, String transaction)
     {
@@ -40,6 +50,20 @@ public class Refund implements Transaction
         this.transaction = transaction;
     }
 
+    /**
+     * execute Performs the refund transaction. Refunds the credit specified to the
+     * buyer specified, and deducts that amount from the original seller.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @throws FailedConstraint Throws a failed constraint under the following circumstances:
+     * 			<br>If the user name specified does not exist.
+     * 			<br>If the amount of credit added results in a credit overflow for the buyer.
+     * 			<br>If the amount of credit added will result in a credit underflow for the seller.
+     * 
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
     public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
     	if (cua.hasUser(buyer) && cua.hasUser(seller))
@@ -67,6 +91,9 @@ public class Refund implements Transaction
     	}
     }
 
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
 	public String getTransaction() {
 		return transaction;
 	}

@@ -18,6 +18,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * AddCredit Provides methods and attributes for processing the addcredit
+ * transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class AddCredit implements Transaction
 {
     private String username;
@@ -27,10 +36,13 @@ public class AddCredit implements Transaction
 
 
     /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
      * 
-     * @param username
-     * @param type
-     * @param credit
+     * @param username String value for the user to add credit to.
+     * @param type String value for the type of user specified in username.
+     * @param credit The amount of credit, in dollars, to add to the user specified in username.
+     * @param transaction String containing the original transaction string from the 
+     * daily transaction file.
      */
     public AddCredit(String username, String type, Double credit, String transaction)
     {
@@ -40,6 +52,20 @@ public class AddCredit implements Transaction
         this.transaction = transaction;
     }
 
+    /**
+     * execute Performs the addcredit transaction. Adds the credit specified to the
+     * user specified.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @throws FailedConstraint Throws a failed constraint under the following circumstances:
+     * 			<br>If the user name specified does not exist.
+     * 			<br>If the amount of credit added results in a credit overflow for that user.
+     * 			<br>If the amount of credit added is beyond the limit acceptable for that user type.
+     * 
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
     public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
         if (cua.hasUser(username))
@@ -69,6 +95,9 @@ public class AddCredit implements Transaction
         }
     }
 
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
 	public String getTransaction() {
 		return transaction;
 	}

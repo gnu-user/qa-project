@@ -18,6 +18,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * ExceptionCodes An enumeration that maps various error/exception codes to
+ * phrases and descriptions for easy reading.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public enum ExceptionCodes
 {
     /* Fatal error exception codes */
@@ -45,6 +54,12 @@ public enum ExceptionCodes
     private String type;
     private String description;
     
+    /**
+     * Constructor for the enumeration. Made private in order to fulfil Java enumeration template.
+     * 
+     * @param type The enumeration phrase.
+     * @param description The description of the exception code.
+     */
     private ExceptionCodes(String type, String description)
     {
         this.type = type;
@@ -52,7 +67,9 @@ public enum ExceptionCodes
     }
 
     /**
-     * @return the type
+     * getType Access method for the enumeration type.
+     * 
+     * @return Returns a string containing the type of error code.
      */
     public String getType()
     {
@@ -60,7 +77,9 @@ public enum ExceptionCodes
     }
 
     /**
-     * @return the description
+     * getDescription Access method for the enumeration description.
+     * 
+     * @return Returns a string containing the error description.
      */
     public String getDescription()
     {
@@ -68,7 +87,9 @@ public enum ExceptionCodes
     }
     
     /**
-     * Create a string representation of the exception
+     * toString Overrides the standard Object toString method, outputting the
+     * error code in a human readable string. The format contains the type of error,
+     * a colon, and the description.
      */
     @Override
     public String toString()

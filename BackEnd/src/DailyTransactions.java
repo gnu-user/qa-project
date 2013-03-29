@@ -30,6 +30,14 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * DailyTransactions Provides methods and attributes for interacting with the
+ * daily transactions file in memory, and outputting to disk.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class DailyTransactions
 {
     private CopyOnWriteArrayList<String> mergedTransactions;
@@ -38,9 +46,13 @@ public class DailyTransactions
 
 
     /**
+     * Constructor for the class. Takes the path to the available tickets file, and opens it.
      * 
-     * @param dtfDirectory
-     * @throws FatalError 
+     * @param dtfDirectory String containing the path to the directory storing the daily
+     * transaction files.
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     * 			<br>The Daily Transaction file is missing, or not found at the path specified.
      */
     public DailyTransactions(String dtfDirectory) throws FatalError
     {
@@ -64,11 +76,22 @@ public class DailyTransactions
         }
     }
 
+    /**
+     * getTransactions Provides a handle to the ArrayList of transactions
+     * that comprise the daily transaction file.
+     * 
+     * @return Returns an ArrayList of Transaction objects, representing
+     * all entries in the daily transaction file.
+     */
     public ArrayList<Transaction> getTransactions()
     {
         return transactions;
     }
     
+    /**
+     * displayTransactions Outputs all transaction entries in the daily transaction
+     * file to the console.
+     */
     public void displayTransactions()
     {
         for (Transaction transaction : transactions)
@@ -78,11 +101,12 @@ public class DailyTransactions
     }
     
     /**
-     * Sorts an array of files by date modified in descending order,
+     * sortModified Sorts an array of files by date modified in descending order,
      * the oldest modified file is the first in the resulting array.
      * 
-     * @param files
-     * @return
+     * @param files Accepts an array of File objects to be sorted.
+     * 
+     * @return Returns the sorted array.
      */
     private void sortModified(File[] files)
     {
@@ -94,10 +118,12 @@ public class DailyTransactions
     }
     
     /**
-     * Merges the collection of all daily transaction files (*.dtf)
+     * merge Merges the collection of all daily transaction files (*.dtf)
      * into a single array containing each transaction as a line.
      * 
-     * @throws FatalError 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     * 			<br>The Daily Transaction file is missing, or not found at the path specified.
+     *      	<br>The Daily Transaction file is corrupt. 
      */
     private void merge() throws FatalError
     {
@@ -164,7 +190,12 @@ public class DailyTransactions
     }
 
     /**
-     * @throws FatalError
+     * parse Reads in the contents of merged daily transaction files, and converts them into
+     * Transaction entries. Entries which do not conform to the standards for entries are
+     * considered corrupted and unreadable.
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     *      	<br>The Daily Transaction file is corrupt. 
      */
     private void parse() throws FatalError
     {

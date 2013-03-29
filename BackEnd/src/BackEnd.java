@@ -18,27 +18,41 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * BackEnd The driver class for the back-end. Contains the main methods for
+ * execution of the back-end.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class BackEnd
 {
 
 	/**
+	 * main The main execution path for the program.
 	 * 
-	 */
-	public BackEnd()
-	{
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @param args
+	 * @param args Accepts command-line arguments.
+	 * Arguments must take the following form: 
+	 * <br>
+	 * ./BackEnd path1 path2 path3
+	 * <br>
+	 * The path items specified are:
+	 * <br>path1: The path to the current user accounts file.
+	 * <br>path2: The path to the available tickets file.
+	 * <br>path3: The path to the daily transaction files' directory.
 	 */
 	public static void main(String[] args)
 	{
 	    if (args.length < 3)
 	    {
-	        System.err.println("Usage:   java BackEnd [current user accounts] [available tickets] "
-                             + "[daily transactions directory]");
-	        System.err.println("Example: java BackEnd accounts.cua tickets.atf transactions/");
+	        System.err.println("Usage:   java BackEnd path1 path2 path3");
+	        System.err.println("The path items specified are:");
+	        System.err.println("path1: The path to the current user accounts file.");
+    		System.err.println("path2: The path to the available tickets file.");
+			System.err.println("path3: The path to the daily transaction files' directory.");
+	        System.err.println("\nExample: java BackEnd accounts.cua tickets.atf transactions/");
 	        
 	        System.exit(1);
 	    }
@@ -50,7 +64,7 @@ public class BackEnd
             
             CurrentUserAccounts currentAccounts = new CurrentUserAccounts(args[1]);
             System.out.println("Available tickets file read successfully.");
-            currentAccounts.diplayUsers();
+            currentAccounts.displayUsers();
             
             DailyTransactions transactions = new DailyTransactions(args[2]);
             System.out.println("Daily transactions files read successfully.");
