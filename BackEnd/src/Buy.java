@@ -29,6 +29,7 @@
 public class Buy implements Transaction
 {
     private String event;
+    private String buyer;
     private String seller;
     private Integer volume;
     private Double price;
@@ -45,9 +46,10 @@ public class Buy implements Transaction
      * @param transaction String containing the original transaction string from the 
      * daily transaction file.
      */
-    public Buy(String event, String seller, Integer volume, Double price, String transaction)
+    public Buy(String event, String buyer, String seller, Integer volume, Double price, String transaction)
     {
         this.event = event;
+        this.buyer = buyer;
         this.seller = seller;
         this.volume = volume;
         this.price = price;
@@ -57,20 +59,44 @@ public class Buy implements Transaction
     /* (non-Javadoc)
      * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
      */
-    public void execute(CurrentUserAccounts cua, AvailableTickets atf)
-    {
-        //if (cua.hasUser(seller))
-        //{
-            
-        //}
-        //check if buyer exists (cua)
-        //check if seller exists (cua)
-        //check that the amount of money required is available (cua)
-        //check if the money transfer will result in an overflow for the seller's balance (cua)
-        //check if the volume of tickets are available (atf)
-        //take the money out of the buyer (cua)
-        //add the money to the seller (cua)
-        //remove the tickets from the seller (atf)
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
+    {         
+        /* Check that both the buyer and seller exist */
+        if (! cua.hasUser(buyer) ||  ! cua.hasUser(seller))
+        {
+            throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);
+        }
+        
+        /* Verify that the user has enough credit to purchase the tickets */
+        if (cua.getUser(buyer).getCredit() - (volume * price) >= 0)
+        {
+            /* Verify the seller doesn't overflow credit from the purchase */
+            if (cua.getUser(seller).getCredit() + (volume * price) <= 999999.99)
+            {
+                /* If the seller has enough tickets to sell, complete the transaction */
+                if (atf.getTicket(event, seller).getVolume() >= volume)
+                {
+                    /* Transfer money from the buyer to the seller */
+                    cua.getUser(seller).setCredit(cua.getUser(seller).getCredit() + (volume * price));
+                    cua.getUser(buyer).setCredit(cua.getUser(buyer).getCredit() - (volume * price));
+                    
+                    /* Remove tickets sold from the sellers inventory */
+                    atf.getTicket(event, seller).setVolume(atf.getTicket(event, seller).getVolume() - volume);
+                }
+                else
+                {
+                    throw new FailedConstraint(ExceptionCodes.TICKET_VOLUME_NEGATIVE, transaction);
+                } 
+            }
+            else
+            {
+                throw new FailedConstraint(ExceptionCodes.USER_CREDIT_OVERFLOW, transaction);
+            }
+        }
+        else
+        {
+            throw new FailedConstraint(ExceptionCodes.USER_CREDIT_NEGATIVE, transaction);
+        }
     }
 
 	/* (non-Javadoc)
