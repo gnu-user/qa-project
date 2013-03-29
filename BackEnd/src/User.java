@@ -48,6 +48,7 @@ public class User
         this.username = username;
         this.type = type;
         this.credit = credit;
+        this.creditAdded = 0.0;
     }
 
     /**
