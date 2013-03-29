@@ -26,12 +26,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DailyTransactions
 {
-    private ArrayList<String> mergedTransactions;
+    private CopyOnWriteArrayList<String> mergedTransactions;
     private ArrayList<Transaction> transactions;
     private String dtfDirectory;
 
@@ -48,7 +49,7 @@ public class DailyTransactions
         if (directory.exists() && directory.isDirectory())
         {
             this.dtfDirectory = dtfDirectory;
-            this.mergedTransactions = new ArrayList<String>();
+            this.mergedTransactions = new CopyOnWriteArrayList<String>();
             this.transactions = new ArrayList<Transaction>();
             
             /* Merge the daily transaction files */
@@ -170,6 +171,9 @@ public class DailyTransactions
         /* Get the transaction code */
         Pattern reCode = Pattern.compile("^([0-9]{2})_.*$");
         
+        /* Lookahead regular expression for the logout transaction, used to get buyer */
+        Pattern reLookAhead = Pattern.compile("^(00)_([A-Za-z0-9_]{1,15}?)_+(AA|FS|BS|SS)_([0-9]{6}\\.[0-9]{2})$");
+        
         /* Daily transaction entry matches logout, create, delete, or addcredit */
         Pattern reUserMod = Pattern.compile("^(00|01|02|06)_([A-Za-z0-9_]{1,15}?)_+(AA|FS|BS|SS)_([0-9]{6}\\.[0-9]{2})$");
 
@@ -264,7 +268,17 @@ public class DailyTransactions
                     /* Add a buy transaction */
                     else if (match.group(1).equals("04"))
                     {
-                        transactions.add(new Buy(event, seller, volume, price, entry));
+                        /* For a buy transaction use a lookahead to get the name of the buyer */
+                        for (int i = mergedTransactions.indexOf(entry); i < mergedTransactions.size(); ++i)
+                        {
+                            match = reLookAhead.matcher(mergedTransactions.get(i));
+                            
+                            /* If buyer found in lookahead, add transaction with buyer's name */
+                            if (match.matches())
+                            {
+                                transactions.add(new Buy(event, match.group(2), seller, volume, price, entry));
+                            }
+                        }
                     }
                 }
                 /* This error should never be thrown -- check merge()! */
