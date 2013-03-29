@@ -18,6 +18,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * Sell Provides methods and attributes for processing the sell
+ * transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
 public class Sell implements Transaction
 {
     private String event;
@@ -26,13 +35,14 @@ public class Sell implements Transaction
     private Double price;
     private String transaction;
 
-
     /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
      * 
-     * @param event
-     * @param seller
-     * @param volume
-     * @param price
+     * @param event String for the title of the event.
+     * @param seller String for the username of the ticket seller.
+     * @param volume Integer for the number of tickets being sold.
+     * @param price Dollar value for the price per ticket.
+     * @param transaction The transaction string for the sell transaction.
      */
     public Sell(String event, String seller, Integer volume, Double price, String transaction)
     {
@@ -43,6 +53,18 @@ public class Sell implements Transaction
         this.transaction = transaction;
     }
 
+    /**
+     * execute Performs the sell transaction. Adds the tickets specified to the seller's
+     * available tickets, or updates the existing listings if the event already exists.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @throws FailedConstraint Throws a failed constraint under the following circumstances:
+     * 			<br>If the number of tickets being sold for an event exceeds 100.
+     * 
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
     public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
     {
     	if (atf.hasTicket(event, seller))
@@ -61,10 +83,11 @@ public class Sell implements Transaction
     	{
     		atf.addTicket(new Ticket(event, seller, volume, price));
     	}
-
-        throw new UnsupportedOperationException();
     }
 
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
 	public String getTransaction() {
 		return transaction;
 	}
