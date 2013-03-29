@@ -26,3 +26,17 @@ the following commands, which specifies the classpath for the Google library
 dependency.
 
     java -cp .:../lib/guava-14.0-rc2.jar BackEnd
+
+Alternatively, the program can be executed from the precompiled .jar file,
+in instances where make does not work (such as in cygwin), or for your
+own convenience.
+
+    cd BackEnd/bin/
+    java -jar backend.jar
+
+Test files have been provided in the /bin/ folder, should you desire to use
+the back end on sample input. These can be executed as follows:
+    java -jar backend.jar test.atf test.cua ./bin
+
+For reference, executing the back end without any arguments will output
+usage information to the console.
