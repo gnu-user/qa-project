@@ -1,6 +1,9 @@
 BACK END README
 ==============================
 
+Please note, javadoc documentation has been included in the BackEnd/doc/ 
+folder.
+
 
 How to Build
 ------------------------------
@@ -14,7 +17,6 @@ To build the code simply execute the following commands.
 
     cd BackEnd
     make
-
 
 How to Execute
 ------------------------------
@@ -32,11 +34,13 @@ in instances where make does not work (such as in cygwin), or for your
 own convenience.
 
     cd BackEnd/bin/
-    java -jar backend.jar
+    java -jar Backend.jar
 
-Test files have been provided in the /bin/ folder, should you desire to use
+Test files have been provided in the bin/ folder, should you desire to use
 the back end on sample input. These can be executed as follows:
-    java -jar backend.jar test.atf test.cua ./bin
+
+    cd BackEnd/bin/
+    java -jar Backend.jar test.atf test.cua .
 
 For reference, executing the back end without any arguments will output
 usage information to the console.
