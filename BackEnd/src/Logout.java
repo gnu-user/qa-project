@@ -51,7 +51,7 @@ public class Logout implements Transaction
     }
 
     /**
-     * execute Performs the logout transaction. Resets the amount of credit added this session
+     * Performs the logout transaction. Resets the amount of credit added this session
      * and logs the user out.
      * 
      * @param cua A reference to the CurrentUserAccounts object used by the back-end.

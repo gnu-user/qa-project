@@ -32,7 +32,7 @@ public abstract class Validate
 {
 	
     /**
-     * atfEntry Validates available tickets file entries, and
+     * Validates available tickets file entries, and
      * determines if they conform to the correct format and constraints.
      *
      * @param entry An entry in the available tickets file.
@@ -45,7 +45,7 @@ public abstract class Validate
     }
 
     /**
-     * cuaEntry Validates current user accounts file entries, and
+     * Validates current user accounts file entries, and
      * determines if they conform to the correct format and constraints.
      * 
      * @param entry An entry in the current user accounts file.
@@ -58,7 +58,7 @@ public abstract class Validate
     }
 
     /**
-     * dtfEntry Validates daily transaction file entries and determines if they
+     * Validates daily transaction file entries and determines if they
      * conforms to the correct format and constraints.
      * 
      * @param entry An entry in the daily transaction file.

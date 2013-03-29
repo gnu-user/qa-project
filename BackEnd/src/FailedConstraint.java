@@ -30,7 +30,7 @@
  */
 public class FailedConstraint extends Exception
 {
-	//Must be included in exceptions.
+	// Must be included in exceptions.
     private static final long serialVersionUID = 2801771587969692843L;
 
     /**

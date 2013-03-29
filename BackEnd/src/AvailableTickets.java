@@ -44,6 +44,7 @@ public class AvailableTickets
     private ArrayList<Ticket> tickets;
     private String atfFile;
 
+    
     /**
      * Constructor for the class. Takes the path to the available tickets file, and opens it.
      * 
@@ -71,7 +72,7 @@ public class AvailableTickets
     }
 
     /**
-     * addTicket Adds a Ticket object to the available tickets file collection.
+     * Adds a Ticket object to the available tickets file collection.
      * 
      * @param ticket The Ticket object to add to the collection.
      */
@@ -81,7 +82,7 @@ public class AvailableTickets
     }
 
     /**
-     * getTicket The access method for the collection of available tickets. Requires an
+     * The access method for the collection of available tickets. Requires an
      * event title and a username for the seller to return the correct Ticket.
      * 
      * @param event String containing the event title for the desired Ticket.
@@ -104,7 +105,7 @@ public class AvailableTickets
     }
 
     /**
-     * hasTicket This method is used to determine whether a Ticket object exists in the
+     * This method is used to determine whether a Ticket object exists in the
      * available tickets file collection. Requires that the event title and the seller's
      * username is specified to match the Ticket against.
      * 
@@ -128,7 +129,7 @@ public class AvailableTickets
     }
 
     /**
-     * displayTickets Outputs all the tickets in the collection to the console.
+     * Outputs all the tickets in the collection to the console.
      * Output contains the event title, seller name, volume of tickets, and price.
      */
     public void displayTickets()
@@ -142,7 +143,7 @@ public class AvailableTickets
     }
     
     /**
-     * write Outputs the available tickets file in memory to file, over-writing
+     * Outputs the available tickets file in memory to file, over-writing
      * the old available tickets file.
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
@@ -155,7 +156,7 @@ public class AvailableTickets
         
         try 
         {
-            File file = new File(atfFile + ".log");
+            File file = new File(atfFile);
  
             /* Create the file if it does not exist since parsed */
             if (!file.exists())
@@ -197,6 +198,14 @@ public class AvailableTickets
         }
     }
 
+    /**
+     * Parses the available tickets file entries, matching the specified format
+     * based on regular expressions.
+     * 
+     * @throws FatalError Fatal errors occur under the following circumstances:
+     *          <br>The Current User Accounts File is missing, or not found at the path specified.
+     *          <br>The current user accounts file is corrupted.
+     */
     private void parse() throws FatalError
     {
         BufferedReader reader;

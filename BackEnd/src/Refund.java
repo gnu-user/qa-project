@@ -51,7 +51,7 @@ public class Refund implements Transaction
     }
 
     /**
-     * execute Performs the refund transaction. Refunds the credit specified to the
+     * Performs the refund transaction. Refunds the credit specified to the
      * buyer specified, and deducts that amount from the original seller.
      * 
      * @param cua A reference to the CurrentUserAccounts object used by the back-end.

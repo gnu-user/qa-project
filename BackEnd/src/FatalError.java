@@ -30,7 +30,7 @@
  */
 public class FatalError extends Exception
 {
-	//Must be included in exceptions.
+	// Must be included in exceptions.
     private static final long serialVersionUID = 888363566861043122L;
 
     /**
