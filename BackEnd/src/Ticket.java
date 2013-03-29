@@ -20,7 +20,7 @@
  */
 
 /**
- * Ticket Provides methods and attributes for interacting tickets,
+ * Ticket Provides methods and attributes for interacting with tickets,
  * which are entries representing events stored in the available tickets file.
  * 
  * @author Jonathan Gillett
