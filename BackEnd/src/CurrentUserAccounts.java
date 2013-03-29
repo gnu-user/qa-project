@@ -181,7 +181,7 @@ public class CurrentUserAccounts
         
         try 
         {
-            File file = new File(cuaFile + ".log");
+            File file = new File(cuaFile);
  
             /* Create the file if it does not exist since parsed */
             if (!file.exists())

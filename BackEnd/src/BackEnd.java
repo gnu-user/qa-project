@@ -53,10 +53,10 @@ public class BackEnd
 	    {
 	        System.err.println("Usage:   java BackEnd path1 path2 path3");
 	        System.err.println("The path items specified are:");
-	        System.err.println("path1: The path to the current user accounts file.");
-    		System.err.println("path2: The path to the available tickets file.");
+	        System.err.println("path1: The path to the available tickets file.");
+	        System.err.println("path2: The path to the current user accounts file.");
 			System.err.println("path3: The path to the daily transaction files' directory.");
-	        System.err.println("\nExample: java BackEnd accounts.cua tickets.atf transactions/");
+	        System.err.println("\nExample: java BackEnd tickets.atf accounts.cua transactions/");
 	        
 	        System.exit(1);
 	    }
