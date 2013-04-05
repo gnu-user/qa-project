@@ -127,20 +127,6 @@ public class AvailableTickets
         
         return false;
     }
-
-    /**
-     * Outputs all the tickets in the collection to the console.
-     * Output contains the event title, seller name, volume of tickets, and price.
-     */
-    public void displayTickets()
-    {
-        for (Ticket ticket : tickets)
-        {
-            System.out.println(ticket.getEvent() + " " + ticket.getSeller() + " "
-                    + ticket.getVolume() + " " + ticket.getPrice());
-
-        }
-    }
     
     /**
      * Outputs the available tickets file in memory to file, over-writing
@@ -194,7 +180,7 @@ public class AvailableTickets
         catch (IOException e)
         {
             e.printStackTrace();
-            throw new FatalError(ExceptionCodes.CORRUPT_ATF, atfFile);
+            throw new FatalError(ExceptionCodes.ATF_WRITE_ERROR, atfFile);
         }
     }
 

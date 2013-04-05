@@ -66,15 +66,12 @@ public class BackEnd
         {
             availableTickets = new AvailableTickets(args[0]);
             System.out.println("Current user accounts file read successfully.");
-            availableTickets.displayTickets();
             
             currentAccounts = new CurrentUserAccounts(args[1]);
             System.out.println("Available tickets file read successfully.");
-            currentAccounts.displayUsers();
             
             transactions = new DailyTransactions(args[2]);
             System.out.println("Daily transactions files read successfully.");
-            transactions.displayTransactions();
         }
         catch (FatalError e)
         {

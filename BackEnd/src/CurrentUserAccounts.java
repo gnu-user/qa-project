@@ -154,18 +154,6 @@ public class CurrentUserAccounts
         
         return false;
     }
-
-    /**
-     * Outputs all the entries in the current user accounts file to the console.
-     * Output contains the username, the user type, and their credit amount.
-     */
-    public void displayUsers()
-    {
-        for (User user : users)
-        {
-            System.out.println(user.getUsername() + " " + user.getType() + " " + user.getCredit());
-        }
-    }
     
     /**
      * Writes the current user accounts file in memory to file, over-writing
@@ -215,7 +203,7 @@ public class CurrentUserAccounts
         catch (IOException e)
         {
             e.printStackTrace();
-            throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
+            throw new FatalError(ExceptionCodes.CUA_WRITE_ERROR, cuaFile);
         }
     }
 

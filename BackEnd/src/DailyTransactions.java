@@ -89,18 +89,6 @@ public class DailyTransactions
     }
     
     /**
-     * Outputs all transaction entries in the daily transaction
-     * file to the console.
-     */
-    public void displayTransactions()
-    {
-        for (Transaction transaction : transactions)
-        {
-            System.out.println(transaction.getTransaction());
-        }
-    }
-    
-    /**
      * Sorts an array of files by date modified in descending order,
      * the oldest modified file is the first in the resulting array.
      * 
