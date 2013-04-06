@@ -56,7 +56,20 @@ public class Buy implements Transaction
         this.transaction = transaction;
     }
 
-    /* (non-Javadoc)
+    
+    /**
+     * execute Performs the buy transaction. Removes a ticket from the seller,
+     * and deducts the cost from the buyer.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @throws FailedConstraint Throws a failed constraint under the following circumstances:
+     * 			<br>If the user name specified does not exist.
+     * 			<br>If the sale results in a negative ticket volume for the seller.
+     * 			<br>If the sale results in a credit overflow for the seller.
+     * 			<br>If the sale results in a credit underflow for the buyer.
+     * 
      * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
      */
     public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
