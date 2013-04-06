@@ -93,18 +93,6 @@ public class User
     }
 
     /**
-     * Mutator method, used to set the amount of credit
-     * that has been added to the user's account this session.
-     * 
-     * @param creditAdded Dollar value to set the amount of credit added
-     * this session to.
-     */
-    public void setCreditAdded(Double creditAdded)
-    {
-        this.creditAdded = creditAdded;
-    }
-    
-    /**
      * Access method for the amount of credit that has
      * been added to this user's account this session.
      * 
@@ -115,5 +103,16 @@ public class User
     {
         return this.creditAdded;
     }
-
+    
+    /**
+     * Mutator method, used to set the amount of credit
+     * that has been added to the user's account this session.
+     * 
+     * @param creditAdded Dollar value to set the amount of credit added
+     * this session to.
+     */
+    public void setCreditAdded(Double creditAdded)
+    {
+        this.creditAdded = creditAdded;
+    }
 }
