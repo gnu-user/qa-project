@@ -4,7 +4,9 @@ import org.junit.runners.Suite.SuiteClasses;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({TicketTest.class, UserTest.class, ValidateTest.class, CreateTest.class, DeleteTest.class, BuyTest.class})
+@SuiteClasses({TicketTest.class, UserTest.class, ValidateTest.class, CreateTest.class, 
+    DeleteTest.class, BuyTest.class, ExceptionCodesTest.class, FailedConstraintTest.class, 
+    FatalErrorTest.class})
 public class AllTests
 {
 
