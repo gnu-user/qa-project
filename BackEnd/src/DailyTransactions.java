@@ -242,11 +242,6 @@ public class DailyTransactions
                         transactions.add(new AddCredit(username, type, credit, entry));
                     }
                 }
-                /* This error should never be thrown, fatal error */
-                else
-                {
-                    throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);
-                }
             }
             /* Refund transactions */
             else if (match.group(1).matches("05"))
@@ -260,11 +255,6 @@ public class DailyTransactions
                     Double credit = Double.parseDouble(match.group(4));
                     
                     transactions.add(new Refund(buyer, seller, credit, entry));
-                }
-                /* This error should never be thrown, fatal error */
-                else
-                {
-                    throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);
                 }
             }
             /* Buy and sell transactions */
@@ -301,16 +291,6 @@ public class DailyTransactions
                         }
                     }
                 }
-                /* This error should never be thrown, fatal error */
-                else
-                {
-                    throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);
-                }
-            }
-            /* This error should never be thrown, fatal error */
-            else
-            {
-                throw new FatalError(ExceptionCodes.CORRUPT_DTF, entry);
             }
         }
     }
