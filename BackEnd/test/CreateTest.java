@@ -29,7 +29,8 @@ public class CreateTest
     /* Objects used for executing the create test suite */
     private AvailableTickets availableTickets;
     private CurrentUserAccounts currentAccounts;
- 
+    private Create create;
+    
     /* Parameters used for the tests */
     private static final String username = "newuser";
     private static final String existingUsername = "administrator";
@@ -63,7 +64,7 @@ public class CreateTest
     public void testExecute1() throws FailedConstraint
     {
         /* Create an instance of a create transaction */
-        Create create = new Create(username, type, credit, transaction);
+        create = new Create(username, type, credit, transaction);
         create.execute(currentAccounts, availableTickets);
        
         /* Verify the create statement was executed */
@@ -84,7 +85,7 @@ public class CreateTest
     public void testExecute2() throws FailedConstraint
     {
         /* Create an instance of a create transaction */
-        Create create = new Create(existingUsername, type, credit, transaction);
+        create = new Create(existingUsername, type, credit, transaction);
         create.execute(currentAccounts, availableTickets);
     }
     
@@ -99,7 +100,7 @@ public class CreateTest
     public void testGetTransaction() throws FailedConstraint
     {
         /* Verify the transaction returned is correct */
-        Create create = new Create(username, type, credit, transaction);
+        create = new Create(username, type, credit, transaction);
         assertEquals(create.getTransaction(), transaction);
     }
 }

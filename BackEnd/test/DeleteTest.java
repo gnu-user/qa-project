@@ -30,6 +30,7 @@ public class DeleteTest
     /* Objects used for executing the test suite */
     private AvailableTickets availableTickets;
     private CurrentUserAccounts currentAccounts;
+    private Delete delete;
  
     /* Parameters used for the tests */
     private static final String existingUsername = "buyer";
@@ -62,7 +63,7 @@ public class DeleteTest
     public void testExecute1() throws FailedConstraint
     {
         /* Create an instance of a delete transaction */
-        Delete delete = new Delete(existingUsername, type, credit, transaction);
+        delete = new Delete(existingUsername, type, credit, transaction);
         delete.execute(currentAccounts, availableTickets);
        
         /* Verify the delete statement was executed */
@@ -82,7 +83,7 @@ public class DeleteTest
     public void testExecute2() throws FailedConstraint
     {
         /* Attempt to delete a non-existing user, exception must be thrown */
-        Delete delete = new Delete(unknownUsername, type, credit, transaction);
+        delete = new Delete(unknownUsername, type, credit, transaction);
         delete.execute(currentAccounts, availableTickets);
     }
 
@@ -93,7 +94,7 @@ public class DeleteTest
     public void testGetTransaction()
     {
         /* Verify the transaction returned is correct */
-        Delete delete = new Delete(existingUsername, type, credit, transaction);
+        delete = new Delete(existingUsername, type, credit, transaction);
         assertEquals(delete.getTransaction(), transaction);
     }
 }
