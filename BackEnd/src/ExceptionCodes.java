@@ -65,26 +65,6 @@ public enum ExceptionCodes
         this.type = type;
         this.description = description;
     }
-
-    /**
-     * Access method for the enumeration type.
-     * 
-     * @return Returns a string containing the type of error code.
-     */
-    public String getType()
-    {
-        return type;
-    }
-
-    /**
-     * Access method for the enumeration description.
-     * 
-     * @return Returns a string containing the error description.
-     */
-    public String getDescription()
-    {
-        return description;
-    }
     
     /**
      * Overrides the standard Object toString method, outputting the
