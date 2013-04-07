@@ -45,8 +45,8 @@ public class CreateTest
     @Before
     public void setUp() throws Exception
     {
-        availableTickets = new AvailableTickets("CreateTest.atf");
-        currentAccounts = new CurrentUserAccounts("CreateTest.cua");
+        availableTickets = new AvailableTickets("files/CreateTest.atf");
+        currentAccounts = new CurrentUserAccounts("files/CreateTest.cua");
     }
 
     /**
