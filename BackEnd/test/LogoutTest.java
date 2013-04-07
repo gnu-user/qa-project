@@ -77,5 +77,4 @@ public class LogoutTest
         logout = new Logout(username, type, credit, transaction);
         assertEquals(transaction, logout.getTransaction());
     }
-
 }
