@@ -70,7 +70,7 @@ public class Refund implements Transaction
     	{
     		if (cua.getUser(buyer).getCredit() + credit < 999999.99)
     		{
-    			if (cua.getUser(seller).getCredit() - credit > 0.00)
+    			if (cua.getUser(seller).getCredit() - credit >= 0.00)
     			{
     				cua.getUser(buyer).setCredit(cua.getUser(buyer).getCredit() + credit);
     				cua.getUser(seller).setCredit(cua.getUser(seller).getCredit() - credit);
