@@ -124,7 +124,7 @@ public class DailyTransactions
             }
             else
             {
-                throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getCanonicalPath());
+                throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getPath());
             }
         }
         reader.close();

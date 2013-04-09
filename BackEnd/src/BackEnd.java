@@ -100,5 +100,8 @@ public class BackEnd
         /* All transactions processed, write the new ATF and CUA to file */
         availableTickets.write();
         currentAccounts.write();
+        
+        /* Exit with a return code of success */
+        System.exit(0);
 	}
 }
