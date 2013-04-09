@@ -132,11 +132,20 @@ public class AvailableTicketsTest
 
     /**
      * Test method for {@link AvailableTickets#write()}.
+     * 
+     * Tests the write method in the AvailableTickets class, by executing 
+     * the method, providing a filename that exists. The output must be 
+     * written to the file, and the file closed.
+     * @throws IOException 
+     * @throws FatalError 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testWrite()
+    public void testWrite() throws IOException, NumberFormatException, FatalError
     {
-        fail("Not yet implemented"); // TODO
+        /* Execute the write method with a valid blank ATF file */
+        availableTickets = new AvailableTickets("files/AvailableTicketsTestWrite.atf");
+        availableTickets.write();
     }
 
     /**
@@ -163,20 +172,47 @@ public class AvailableTicketsTest
     
     /**
      * Test method for {@link AvailableTickets#parse()}.
+     * 
+     * Tests the parse method in the AvailableTickets class, by executing the 
+     * AvailableTickets constructor, using a valid path to the available 
+     * tickets file. The contents of the available tickets file must be 
+     * corrupted. A Fatal Error exception must be thrown.
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testParse2()
+    public void testParse2() throws NumberFormatException, IOException
     {
-        fail("Not yet implemented"); // TODO
+        /* Verify that a fatal error ExceptionCodes.CORRUPT_ATF is thrown */
+        try
+        {
+            availableTickets = new AvailableTickets("files/AvailableTicketsTestParse2.atf");
+        }
+        catch (FatalError e)
+        {
+            assertEquals(ExceptionCodes.CORRUPT_ATF.toString(), e.getMessage());
+        }
     }
     
     /**
      * Test method for {@link AvailableTickets#parse()}.
+     * 
+     * Tests the parse method in the AvailableTickets class, by executing the
+     * AvailableTickets constructor, using a valid path to the available tickets 
+     * file. The contents of the available tickets file must be valid. Verify that 
+     * a ticket has been added to the collection.
+     * @throws IOException 
+     * @throws FatalError 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testParse3()
+    public void testParse3() throws NumberFormatException, FatalError, IOException
     {
-        fail("Not yet implemented"); // TODO
+        availableTickets = new AvailableTickets("files/AvailableTicketsTestParse3.atf");
+        
+        /* Verify that the ticket for the event and seller exists */
+        assertEquals(event, availableTickets.getTicket(event, seller).getEvent());
+        assertEquals(seller, availableTickets.getTicket(event, seller).getSeller());
     }
     
     
