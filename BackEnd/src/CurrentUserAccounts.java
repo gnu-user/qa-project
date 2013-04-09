@@ -52,8 +52,10 @@ public class CurrentUserAccounts
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
      * 			<br>The Current User Accounts file is missing, or not found at the path specified.
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
-    public CurrentUserAccounts(String cuaFile) throws FatalError
+    public CurrentUserAccounts(String cuaFile) throws FatalError, NumberFormatException, IOException
     {
         File file = new File(cuaFile);
 
@@ -161,50 +163,42 @@ public class CurrentUserAccounts
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
      * 			<br>The current user accounts file is corrupted.
+     * @throws IOException 
      */
-    public void write() throws FatalError
+    public void write() throws FatalError, IOException
     {
         BufferedWriter writer;
         String entry;
         
-        try 
-        {
-            File file = new File(cuaFile);
+        File file = new File(cuaFile);
  
             /* Create the file if it does not exist since parsed */
-            if (!file.exists())
-            {
-                file.createNewFile();
-            }
-    
-            writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
-            
-            /* Format each entry and write it to the file */
-            for (User user : users)
-            {                
-                /* Format the username */
-                entry = Strings.padEnd(user.getUsername(), 16, '_');
-                
-                /* Format the account type */
-                entry += user.getType() + "_";
-                
-                /* Format the credit amount */
-                entry += Strings.padStart(String.format("%.2f", user.getCredit()), 9, '0') + "\n";
-                
-                
-                writer.write(entry);
-            }
-            
-            /* Add the END of file identifier and close the file */
-            writer.write("END________________000000.00");
-            writer.close();
- 
-        } 
-        catch (IOException e)
+        if (!file.exists())
         {
-            e.printStackTrace();
-            throw new FatalError(ExceptionCodes.CUA_WRITE_ERROR, cuaFile);
+            file.createNewFile();
         }
+
+        writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
+        
+        /* Format each entry and write it to the file */
+        for (User user : users)
+        {                
+            /* Format the username */
+            entry = Strings.padEnd(user.getUsername(), 16, '_');
+            
+            /* Format the account type */
+            entry += user.getType() + "_";
+            
+            /* Format the credit amount */
+            entry += Strings.padStart(String.format("%.2f", user.getCredit()), 9, '0') + "\n";
+            
+            
+            writer.write(entry);
+        }
+        
+        /* Add the END of file identifier and close the file */
+        writer.write("END________________000000.00");
+        writer.close();
     }
 
     /**
@@ -214,8 +208,10 @@ public class CurrentUserAccounts
      * @throws FatalError Fatal errors occur under the following circumstances:
      * 			<br>The Current User Accounts File is missing, or not found at the path specified.
      * 			<br>The current user accounts file is corrupted.
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
-    private void parse() throws FatalError
+    private void parse() throws FatalError, NumberFormatException, IOException
     {
         BufferedReader reader;
 
@@ -234,55 +230,32 @@ public class CurrentUserAccounts
             throw new FatalError(ExceptionCodes.CUA_NOT_FOUND, cuaFile);
         }
 
-        try
+        while ((line = reader.readLine()) != null)
         {
-            while ((line = reader.readLine()) != null)
+            /* Stop if END of file reached */
+            if (reEnd.matcher(line).matches())
             {
-                /* Stop if END of file reached */
-                if (reEnd.matcher(line).matches())
-                {
-                    break;
-                }
-
-                match = re.matcher(line);
-                
-                /* Add each ticket found to the list of tickets */
-                if (Validate.cuaEntry(line) && match.matches())
-                {
-                    /* Get each match from the entry in the file */
-                    String username = match.group(1);
-                    String type = match.group(2);
-                    Double credit = Double.parseDouble(match.group(3));
-
-                    /* Add the ticket object to the array of tickets */
-                    users.add(new User(username, type, credit));
-                }
-                else
-                {
-                    throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
-                }
+                break;
             }
-            reader.close();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-            throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
-        }
-        finally
-        {
-            try
+
+            match = re.matcher(line);
+            
+            /* Add each ticket found to the list of tickets */
+            if (Validate.cuaEntry(line) && match.matches())
             {
-                if (reader != null)
-                {
-                    reader.close();
-                }
+                /* Get each match from the entry in the file */
+                String username = match.group(1);
+                String type = match.group(2);
+                Double credit = Double.parseDouble(match.group(3));
+
+                /* Add the ticket object to the array of tickets */
+                users.add(new User(username, type, credit));
             }
-            catch (IOException ex)
+            else
             {
-                ex.printStackTrace();
                 throw new FatalError(ExceptionCodes.CORRUPT_CUA, cuaFile);
             }
         }
+        reader.close();
     }
 }
