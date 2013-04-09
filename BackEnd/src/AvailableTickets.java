@@ -138,7 +138,7 @@ public class AvailableTickets
      * 			<br>The Available Tickets File is corrupted.
      * @throws IOException 
      */
-    public void write() throws FatalError, IOException
+    public void write() throws IOException
     {
         BufferedWriter writer;
         String entry;

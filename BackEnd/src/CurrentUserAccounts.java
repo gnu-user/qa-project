@@ -165,14 +165,14 @@ public class CurrentUserAccounts
      * 			<br>The current user accounts file is corrupted.
      * @throws IOException 
      */
-    public void write() throws FatalError, IOException
+    public void write() throws IOException
     {
         BufferedWriter writer;
         String entry;
         
         File file = new File(cuaFile);
  
-            /* Create the file if it does not exist since parsed */
+        /* Create the file if it does not exist since parsed */
         if (!file.exists())
         {
             file.createNewFile();

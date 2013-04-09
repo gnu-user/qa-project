@@ -58,8 +58,8 @@ public class BackEnd
 	        System.err.println("The path items specified are:");
 	        System.err.println("path1: The path to the available tickets file.");
 	        System.err.println("path2: The path to the current user accounts file.");
-			System.err.println("path3: The path to the daily transaction files' directory.");
-	        System.err.println("\nExample: java BackEnd tickets.atf accounts.cua transactions/");
+			System.err.println("path3: The path to the merged daily transactions file.");
+	        System.err.println("\nExample: java BackEnd tickets.atf accounts.cua transactions.dtf");
 	        
 	        System.exit(1);
 	    }
@@ -98,16 +98,7 @@ public class BackEnd
 		}
 		
         /* All transactions processed, write the new ATF and CUA to file */
-        try
-        {
-            availableTickets.write();
-            currentAccounts.write();
-        }
-        catch (FatalError e)
-        {
-            System.err.println("ERROR: " + e.getMessage());
-            System.err.println("Cause of Error: " + e.getCause().getMessage());
-            System.exit(1);
-        }
+        availableTickets.write();
+        currentAccounts.write();
 	}
 }
