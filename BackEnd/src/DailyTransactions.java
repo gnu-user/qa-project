@@ -42,37 +42,38 @@ public class DailyTransactions
 {
     private CopyOnWriteArrayList<String> mergedTransactions;
     private ArrayList<Transaction> transactions;
-    private String dtfDirectory;
+    private String mergedDTF;
 
 
     /**
      * Constructor for the class. Takes the path to the available tickets file, and opens it.
      * 
-     * @param dtfDirectory String containing the path to the directory storing the daily
+     * @param mergedDTF String containing the path to the file containing the merged daily
      * transaction files.
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
      * 			<br>The Daily Transaction file is missing, or not found at the path specified.
+     * @throws IOException 
      */
-    public DailyTransactions(String dtfDirectory) throws FatalError
+    public DailyTransactions(String mergedDTF) throws FatalError, IOException
     {
-        File directory = new File(dtfDirectory);
+        File file = new File(mergedDTF);
 
-        if (directory.exists() && directory.isDirectory())
+        if (file.exists())
         {
-            this.dtfDirectory = dtfDirectory;
+            this.mergedDTF = mergedDTF;
             this.mergedTransactions = new CopyOnWriteArrayList<String>();
             this.transactions = new ArrayList<Transaction>();
             
-            /* Merge the daily transaction files */
-            merge();
+            /* Load the contents of the merged daily transaction files */
+            load();
             
             /* Parse the merged transactions */
             parse();
         }
         else
         {
-            throw new FatalError(ExceptionCodes.DTF_DIR_FOUND, dtfDirectory);
+            throw new FatalError(ExceptionCodes.DTF_NOT_FOUND, mergedDTF);
         }
     }
 
@@ -87,94 +88,46 @@ public class DailyTransactions
     {
         return transactions;
     }
+
     
     /**
-     * Sorts an array of files by date modified in descending order,
-     * the oldest modified file is the first in the resulting array.
-     * 
-     * @param files Accepts an array of File objects to be sorted.
-     * 
-     * @return Returns the sorted array.
-     */
-    private void sortModified(File[] files)
-    {
-        Arrays.sort(files, new Comparator<File>(){
-            public int compare(File file1, File file2)
-            {
-                return Long.valueOf(file1.lastModified()).compareTo(file2.lastModified());
-            } }); 
-    }
-    
-    /**
-     * Merges the collection of all daily transaction files (*.dtf)
+     * Load the contents of the merged collection of all daily transaction files
      * into a single array containing each transaction as a line.
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
      * 			<br>The Daily Transaction file is missing, or not found at the path specified.
      *      	<br>The Daily Transaction file is corrupt. 
+     * @throws IOException 
      */
-    private void merge() throws FatalError
+    private void load() throws FatalError, IOException
     {
         BufferedReader reader;
         String line;
-        File[] files = new File(dtfDirectory).listFiles();
+        File file = new File(mergedDTF);
         
-        /* Sort the files by modified date, the older modified file is processed first */
-        sortModified(files);
-        
-        /* Merge each of the daily transaction files */
-        for (File file : files)
+        try
         {
-            if (file.getName().matches("^.+\\.dtf$"))
-            {
-                try
-                {
-                    reader = new BufferedReader(new FileReader(file));
-                }
-                catch (FileNotFoundException e1)
-                {
-                    e1.printStackTrace();
-                    throw new FatalError(ExceptionCodes.DTF_NOT_FOUND, file.getPath());
-                }
+            reader = new BufferedReader(new FileReader(file));
+        }
+        catch (FileNotFoundException e1)
+        {
+            e1.printStackTrace();
+            throw new FatalError(ExceptionCodes.DTF_NOT_FOUND, file.getPath());
+        }
 
-                try
-                {
-                    while ((line = reader.readLine()) != null)
-                    {                        
-                        /* If the DTF entry is valid add it to the merged list of transactions */
-                        if (Validate.dtfEntry(line))
-                        {
-                            mergedTransactions.add(line.trim());
-                        }
-                        else
-                        {
-                            throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getCanonicalPath());
-                        }
-                    }
-                    reader.close();
-                }
-                catch (IOException e)
-                {
-                    e.printStackTrace();
-                    throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getPath());
-                }
-                finally
-                {
-                    try
-                    {
-                        if (reader != null)
-                        {
-                            reader.close();
-                        }
-                    }
-                    catch (IOException ex)
-                    {
-                        ex.printStackTrace();
-                        throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getPath());
-                    }
-                }
+        while ((line = reader.readLine()) != null)
+        {                        
+            /* If the DTF entry is valid add it to the merged list of transactions */
+            if (Validate.dtfEntry(line))
+            {
+                mergedTransactions.add(line.trim());
+            }
+            else
+            {
+                throw new FatalError(ExceptionCodes.CORRUPT_DTF, file.getCanonicalPath());
             }
         }
+        reader.close();
     }
 
     /**
