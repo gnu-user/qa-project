@@ -28,6 +28,7 @@ import org.junit.Test;
 import org.junit.contrib.java.lang.system.Assertion;
 import org.junit.contrib.java.lang.system.ExpectedSystemExit;
 import org.junit.contrib.java.lang.system.StandardErrorStreamLog;
+import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
 
 
 public class BackEndTest
@@ -35,13 +36,17 @@ public class BackEndTest
     /* Parameters used for executing the test suite */
     private static final String corruptDTF = 
             "ERROR: CORRUPT_DTF: An error occurred reading the daily transactions file, data corrupted.\n" +
-            "Cause of Error: /home/jon/Source/github/qa-project/BackEnd/files/BackEndMain2.dtf\n";
+            "Cause of Error: files/BackEndMain2.dtf\n";
+    private static final String sessionOverflow =
+            "ERROR: USER_CREDIT_SESSION_OVERFLOW: Invalid credit value, amount of credit added per session cannot exceed 1000.00.\n" +
+            "Cause of Error: 06_buyer___________BS_002000.00\n";
     
     @Rule
     public final ExpectedSystemExit exit = ExpectedSystemExit.none();
     
     @Rule
     public final StandardErrorStreamLog log = new StandardErrorStreamLog();
+    
     
     /**
      * Test method for {@link BackEnd#main(java.lang.String[])}.
@@ -79,36 +84,57 @@ public class BackEndTest
         /* Execute the BackEnd with two valid files and one that is invalid */
         String[] args = new String[] { "files/BackEndMain2.atf", 
                                         "files/BackEndMain2.cua", 
-                                        "files/"
+                                        "files/BackEndMain2.dtf"
                                      };
         BackEnd.main(args);
     }
     
     /**
      * Test method for {@link BackEnd#main(java.lang.String[])}.
+     * 
+     * Test the main method by executing it, providing arguments for all valid 
+     * files, with an invalid entry that results in a failed constraint in one 
+     * of the files. This must result in a Failed Constraint exception.
+     * @throws IOException 
      */
     @Test
-    public void testMain3()
+    public void testMain3() throws IOException
     {
-        fail("Not yet implemented"); // TODO
+        exit.expectSystemExitWithStatus(0);
+        
+        /* Execute the BackEnd with all valid files */
+        String[] args = new String[] { "files/BackEndMain3.atf", 
+                                        "files/BackEndMain3.cua", 
+                                        "files/BackEndMain3.dtf"
+                                     };
+        BackEnd.main(args);
+        
+        /* Verify that an ExceptionCodes.USER_CREDIT_SESSION_OVERFLOW was thrown */
+        assertEquals(sessionOverflow, log.getLog());    
     }
     
     /**
      * Test method for {@link BackEnd#main(java.lang.String[])}.
+     * 
+     * Test the main method by executing it, providing arguments for all valid 
+     * files, with valid contents. After processing the file contents, verify 
+     * the ATF and CUA are written to disk.
+     * @throws IOException 
      */
     @Test
-    public void testMain4()
+    public void testMain4() throws IOException
     {
-        fail("Not yet implemented"); // TODO
+        /* Verify that the backend exits successfully with exit status 0 */
+        exit.expectSystemExitWithStatus(0);
+        
+        /* Execute the BackEnd with all valid files */
+        String[] args = new String[] { "files/BackEndMain4.atf", 
+                                        "files/BackEndMain4.cua", 
+                                        "files/BackEndMain4.dtf"
+                                     };
+        BackEnd.main(args);
+        
+        /* Verify that no exceptions have been thrown, STDERR empty */
+        assertEquals("", log.getLog());
     }
-    
-    /**
-     * Test method for {@link BackEnd#main(java.lang.String[])}.
-     */
-    @Test
-    public void testMain5()
-    {
-        fail("Not yet implemented"); // TODO
-    }
-
 }

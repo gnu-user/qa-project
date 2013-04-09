@@ -109,7 +109,7 @@ public class AddCreditTest
         catch (FailedConstraint e)
         {
             assertEquals(ExceptionCodes.USER_CREDIT_SESSION_OVERFLOW.toString(), e.getMessage());
-        }    
+        }
     }
 
     /**
