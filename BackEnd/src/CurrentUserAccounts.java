@@ -162,12 +162,6 @@ public class CurrentUserAccounts
         String entry;
         
         File file = new File(cuaFile);
- 
-        /* Create the file if it does not exist since parsed */
-        if (!file.exists())
-        {
-            file.createNewFile();
-        }
 
         writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
         

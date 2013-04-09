@@ -135,12 +135,6 @@ public class AvailableTickets
         String entry;
         
         File file = new File(atfFile);
- 
-        /* Create the file if it does not exist since parsed */
-        if (!file.exists())
-        {
-            file.createNewFile();
-        }
 
         writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
         
