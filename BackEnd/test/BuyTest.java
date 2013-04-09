@@ -19,6 +19,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 import static org.junit.Assert.*;
+
+import java.io.IOException;
+
 import org.junit.Test;
 
 
@@ -46,9 +49,11 @@ public class BuyTest
      * that does not exist. A Failed Constraint exception must result. This is 
      * the first of 5 execution paths.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute1() throws FatalError
+    public void testExecute1() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/BuyTestExecute1.atf");
@@ -76,9 +81,11 @@ public class BuyTest
      * transaction. A Failed Constraint exception must result. This is the second 
      * of 5 execution paths.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute2() throws FatalError
+    public void testExecute2() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/BuyTestExecute2.atf");
@@ -107,9 +114,11 @@ public class BuyTest
      * resulting in an overflow. A Failed Constraint exception must result. 
      * This is the third of 5 execution paths.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute3() throws FatalError
+    public void testExecute3() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/BuyTestExecute3.atf");
@@ -139,9 +148,11 @@ public class BuyTest
      * A Failed Constraint exception must result. This is the fourth of 5 
      * execution paths.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute4() throws FatalError
+    public void testExecute4() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/BuyTestExecute4.atf");
@@ -172,9 +183,11 @@ public class BuyTest
      * execution paths.
      * @throws FatalError 
      * @throws FailedConstraint 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute5() throws FatalError, FailedConstraint
+    public void testExecute5() throws FatalError, FailedConstraint, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/BuyTestExecute5.atf");

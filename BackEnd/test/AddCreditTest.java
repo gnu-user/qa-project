@@ -20,6 +20,8 @@
  */
 import static org.junit.Assert.*;
 
+import java.io.IOException;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -51,9 +53,11 @@ public class AddCreditTest
      * the credit beyond that value. This must result in a Failed Constraint exception. 
      * This test covers the first of 4 possible execution paths.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute1() throws FatalError
+    public void testExecute1() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/AddCreditTest.atf");
@@ -84,9 +88,11 @@ public class AddCreditTest
      * 1000. This must result in a Failed Constraint exception. This test covers
      * the second of 4 possible execution paths.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute2() throws FatalError
+    public void testExecute2() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/AddCreditTest.atf");
@@ -107,6 +113,8 @@ public class AddCreditTest
     }
 
     /**
+     * @throws IOException 
+     * @throws NumberFormatException 
      * Test method for {@link AddCredit#execute(CurrentUserAccounts, AvailableTickets)}.
      * 
      * Test the execute method in the Create class, by providing a valid username, 
@@ -121,7 +129,7 @@ public class AddCreditTest
      * @throws  
      */
     @Test
-    public void testExecute3() throws FatalError, FailedConstraint
+    public void testExecute3() throws FatalError, FailedConstraint, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/AddCreditTest.atf");
@@ -145,9 +153,11 @@ public class AddCreditTest
      * username, resulting in the false execution branch. This must result 
      * in a Failed Constraint exception.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute4() throws FatalError
+    public void testExecute4() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/AddCreditTest.atf");

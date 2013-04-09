@@ -20,6 +20,8 @@
  */
 import static org.junit.Assert.*;
 
+import java.io.IOException;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -47,9 +49,11 @@ public class RefundTest
      * providing an invalid username for both the buyer and seller. A Failed 
      * Constraint exception must be thrown.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute1() throws FatalError
+    public void testExecute1() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/RefundTestExecute1.atf");
@@ -76,9 +80,11 @@ public class RefundTest
      * providing a valid username for both the buyer and seller. The buyer’s 
      * credit must be 999,999.99. A Failed Constraint exception must be thrown.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute2() throws FatalError
+    public void testExecute2() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/RefundTestExecute2.atf");
@@ -104,9 +110,11 @@ public class RefundTest
      * a valid username for both the buyer and seller. The seller’s credit must be zero. 
      * A Failed Constraint exception must be thrown.
      * @throws FatalError 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute3() throws FatalError
+    public void testExecute3() throws FatalError, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/RefundTestExecute3.atf");
@@ -136,9 +144,11 @@ public class RefundTest
      * credit is decremented accordingly.
      * @throws FatalError 
      * @throws FailedConstraint 
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testExecute4() throws FatalError, FailedConstraint
+    public void testExecute4() throws FatalError, FailedConstraint, NumberFormatException, IOException
     {
         /* Create an instance of the ATF and CUA file for this test */
         availableTickets = new AvailableTickets("files/RefundTestExecute4.atf");
