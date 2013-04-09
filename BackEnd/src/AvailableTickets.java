@@ -52,8 +52,10 @@ public class AvailableTickets
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
      * 			<br>The Available Tickets File is missing, or not found at the path specified.
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
-    public AvailableTickets(String atfFile) throws FatalError
+    public AvailableTickets(String atfFile) throws FatalError, NumberFormatException, IOException
     {
         File file = new File(atfFile);
 
@@ -134,54 +136,46 @@ public class AvailableTickets
      * 
      * @throws FatalError Fatal errors occur under the following circumstances:
      * 			<br>The Available Tickets File is corrupted.
+     * @throws IOException 
      */
-    public void write() throws FatalError
+    public void write() throws FatalError, IOException
     {
         BufferedWriter writer;
         String entry;
         
-        try 
-        {
-            File file = new File(atfFile);
+        File file = new File(atfFile);
  
-            /* Create the file if it does not exist since parsed */
-            if (!file.exists())
-            {
-                file.createNewFile();
-            }
-    
-            writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
-            
-            /* Format each entry and write it to the file */
-            for (Ticket ticket : tickets)
-            {
-                /* Format the event */
-                entry = ticket.getEvent().replace(' ', '_');
-                entry = Strings.padEnd(entry, 20, '_');
-                
-                /* Format the seller */
-                entry += Strings.padEnd(ticket.getSeller(), 16, '_');
-                
-                /* Format the number of tickets */
-                entry += Strings.padStart(ticket.getVolume().toString(), 3, '0') + "_";
-                
-                /* Format the price of tickets */
-                entry += Strings.padStart(String.format("%.2f", ticket.getPrice()), 6, '0') + "\n";
-                
-                
-                writer.write(entry);
-            }
-            
-            /* Add the END of file identifier and close the file */
-            writer.write("END_________________________________000_000.00");
-            writer.close();
- 
-        } 
-        catch (IOException e)
+        /* Create the file if it does not exist since parsed */
+        if (!file.exists())
         {
-            e.printStackTrace();
-            throw new FatalError(ExceptionCodes.ATF_WRITE_ERROR, atfFile);
+            file.createNewFile();
         }
+
+        writer = new BufferedWriter(new FileWriter(file.getAbsoluteFile()));
+        
+        /* Format each entry and write it to the file */
+        for (Ticket ticket : tickets)
+        {
+            /* Format the event */
+            entry = ticket.getEvent().replace(' ', '_');
+            entry = Strings.padEnd(entry, 20, '_');
+            
+            /* Format the seller */
+            entry += Strings.padEnd(ticket.getSeller(), 16, '_');
+            
+            /* Format the number of tickets */
+            entry += Strings.padStart(ticket.getVolume().toString(), 3, '0') + "_";
+            
+            /* Format the price of tickets */
+            entry += Strings.padStart(String.format("%.2f", ticket.getPrice()), 6, '0') + "\n";
+            
+            
+            writer.write(entry);
+        }
+        
+        /* Add the END of file identifier and close the file */
+        writer.write("END_________________________________000_000.00");
+        writer.close();
     }
 
     /**
@@ -191,8 +185,11 @@ public class AvailableTickets
      * @throws FatalError Fatal errors occur under the following circumstances:
      *          <br>The Current User Accounts File is missing, or not found at the path specified.
      *          <br>The current user accounts file is corrupted.
+     *
+     * @throws NumberFormatException
+     * @throws IOException 
      */
-    private void parse() throws FatalError
+    private void parse() throws FatalError, NumberFormatException, IOException
     {
         BufferedReader reader;
 
@@ -211,58 +208,35 @@ public class AvailableTickets
             throw new FatalError(ExceptionCodes.ATF_NOT_FOUND, atfFile);
         }
 
-        try
+        while ((line = reader.readLine()) != null)
         {
-            while ((line = reader.readLine()) != null)
+            /* Stop if END of file reached */
+            if (reEnd.matcher(line).matches())
             {
-                /* Stop if END of file reached */
-                if (reEnd.matcher(line).matches())
-                {
-                    break;
-                }
-
-                match = re.matcher(line);
-                
-                /* Add each ticket found to the list of tickets */
-                if (Validate.atfEntry(line) && match.matches())
-                {
-                    /* Replace each _ in the event title with a space character */
-                    String event = match.group(1).replace('_', ' ');
-
-                    /* Get the seller, volume, and price from regex groups */
-                    String seller = match.group(2);
-                    Integer volume = Integer.parseInt(match.group(3));
-                    Double price = Double.parseDouble(match.group(4));
-
-                    /* Add the ticket object to the array of tickets */
-                    tickets.add(new Ticket(event, seller, volume, price));
-                }
-                else
-                {
-                    throw new FatalError(ExceptionCodes.CORRUPT_ATF, atfFile);
-                }
+                break;
             }
-            reader.close();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-            throw new FatalError(ExceptionCodes.CORRUPT_ATF, atfFile);
-        }
-        finally
-        {
-            try
+
+            match = re.matcher(line);
+            
+            /* Add each ticket found to the list of tickets */
+            if (Validate.atfEntry(line) && match.matches())
             {
-                if (reader != null)
-                {
-                    reader.close();
-                }
+                /* Replace each _ in the event title with a space character */
+                String event = match.group(1).replace('_', ' ');
+
+                /* Get the seller, volume, and price from regex groups */
+                String seller = match.group(2);
+                Integer volume = Integer.parseInt(match.group(3));
+                Double price = Double.parseDouble(match.group(4));
+
+                /* Add the ticket object to the array of tickets */
+                tickets.add(new Ticket(event, seller, volume, price));
             }
-            catch (IOException ex)
+            else
             {
-                ex.printStackTrace();
                 throw new FatalError(ExceptionCodes.CORRUPT_ATF, atfFile);
             }
         }
+        reader.close();
     }
 }

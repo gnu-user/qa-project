@@ -18,6 +18,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+import java.io.IOException;
+
 
 /**
  * BackEnd The driver class for the back-end. Contains the main methods for
@@ -46,8 +48,9 @@ public class BackEnd
 	 * <br>path1: The path to the current user accounts file.
 	 * <br>path2: The path to the available tickets file.
 	 * <br>path3: The path to the daily transaction files' directory.
+	 * @throws IOException 
 	 */
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
 	    if (args.length < 3)
 	    {
