@@ -230,14 +230,8 @@ public class CurrentUserAccounts
             throw new FatalError(ExceptionCodes.CUA_NOT_FOUND, cuaFile);
         }
 
-        while ((line = reader.readLine()) != null)
+        while ((line = reader.readLine()) != null && !reEnd.matcher(line).matches())
         {
-            /* Stop if END of file reached */
-            if (reEnd.matcher(line).matches())
-            {
-                break;
-            }
-
             match = re.matcher(line);
             
             /* Add each ticket found to the list of tickets */
