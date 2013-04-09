@@ -123,5 +123,4 @@ public class TicketTest
         ticket.setPrice(newPrice);
         assertEquals(ticket.getPrice(), newPrice);
     }
-
 }

@@ -22,8 +22,9 @@ import static org.junit.Assert.*;
 
 import java.io.IOException;
 
-import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.contrib.java.lang.system.StandardErrorStreamLog;
 
 
 public class CurrentUserAccountsTest
@@ -36,7 +37,9 @@ public class CurrentUserAccountsTest
 	private static final String userType = "AA";
 	private static final Double userCredit = 100.00;
 	
-
+    @Rule
+    public final StandardErrorStreamLog log = new StandardErrorStreamLog();
+    
     /**
      * Test method for {@link CurrentUserAccounts#addUser(User)}.
      * 

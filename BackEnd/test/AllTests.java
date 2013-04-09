@@ -24,10 +24,25 @@ import org.junit.runners.Suite.SuiteClasses;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({TicketTest.class, UserTest.class, ValidateTest.class, CreateTest.class, 
-    DeleteTest.class, BuyTest.class, ExceptionCodesTest.class, FailedConstraintTest.class, 
-    FatalErrorTest.class, LogoutTest.class, SellTest.class, RefundTest.class, AddCreditTest.class, 
-    BackEndTest.class, AvailableTicketsTest.class, CurrentUserAccountsTest.class, DailyTransactionsTest.class})
+@SuiteClasses({
+    AddCreditTest.class,
+    AvailableTicketsTest.class,
+    BackEndTest.class,
+    BuyTest.class,
+    CreateTest.class,
+    CurrentUserAccountsTest.class, 
+    DailyTransactionsTest.class, 
+    DeleteTest.class,
+    ExceptionCodesTest.class, 
+    FailedConstraintTest.class, 
+    FatalErrorTest.class,
+    LogoutTest.class,
+    RefundTest.class,
+    SellTest.class,
+    TicketTest.class, 
+    UserTest.class, 
+    ValidateTest.class
+})
 public class AllTests
 {
 

@@ -26,7 +26,6 @@ import org.junit.Test;
 
 public class UserTest
 {
-
     /* User object used for the tests */
     private User user;
     

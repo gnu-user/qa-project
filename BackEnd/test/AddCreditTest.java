@@ -22,7 +22,6 @@ import static org.junit.Assert.*;
 
 import java.io.IOException;
 
-import org.junit.Before;
 import org.junit.Test;
 
 
@@ -113,8 +112,6 @@ public class AddCreditTest
     }
 
     /**
-     * @throws IOException 
-     * @throws NumberFormatException 
      * Test method for {@link AddCredit#execute(CurrentUserAccounts, AvailableTickets)}.
      * 
      * Test the execute method in the Create class, by providing a valid username, 
@@ -126,7 +123,8 @@ public class AddCreditTest
      * credit must be added to the user’s account. This test covers the third of 
      * 4 possible execution paths.
      * @throws FailedConstraint 
-     * @throws  
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
     public void testExecute3() throws FatalError, FailedConstraint, NumberFormatException, IOException
@@ -187,5 +185,4 @@ public class AddCreditTest
         addCredit = new AddCredit(username, type, credit, transaction);
         assertEquals(transaction, addCredit.getTransaction());
     }
-
 }

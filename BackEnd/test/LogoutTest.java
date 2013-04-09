@@ -69,6 +69,9 @@ public class LogoutTest
 
     /**
      * Test method for {@link Logout#getTransaction()}.
+     * 
+     * Tests the getTransaction method in the Logout class, by executing the method. 
+     * This method is a simple accessor method with only one return call.
      */
     @Test
     public void testGetTransaction()

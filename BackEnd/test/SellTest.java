@@ -106,7 +106,6 @@ public class SellTest
     {
         /* Get a record of the current ticket volume and price */
         Integer prevVolume = availableTickets.getTicket(currentEvent, seller).getVolume();
-        Double prevPrice = availableTickets.getTicket(currentEvent, seller).getPrice();
         
         /* Execute the transaction and verify the ticket data has been updated */
         sell = new Sell(currentEvent, seller, volume, newPrice, transaction);
@@ -130,5 +129,4 @@ public class SellTest
         sell = new Sell(currentEvent, seller, volume, price, transaction);
         assertEquals(transaction, sell.getTransaction());
     }
-
 }

@@ -203,6 +203,9 @@ public class BuyTest
     
     /**
      * Test method for {@link Buy#getTransaction()}.
+     * 
+     * Tests the getTransaction method in the Buy class, by executing the method. 
+     * This method is a simple accessor method with only one return call.
      */
     @Test
     public void testGetTransaction()
@@ -213,5 +216,4 @@ public class BuyTest
         /* Verify the correct transaction code returned */
         assertEquals(transaction, buy.getTransaction());
     }
-
 }

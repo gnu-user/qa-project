@@ -25,6 +25,8 @@ public class FailedConstraintTest
 {
     /* Parameters used for the test */
     private static final String transaction = "04_The_Godfather_______unknownuser___004_010.00";
+    
+    
     /**
      * Test method for {@link FailedConstraint#FailedConstraint(ExceptionCodes, java.lang.String)}.
      * 

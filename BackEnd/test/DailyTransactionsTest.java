@@ -22,7 +22,9 @@ import static org.junit.Assert.*;
 
 import java.io.IOException;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.contrib.java.lang.system.StandardErrorStreamLog;
 
 
 public class DailyTransactionsTest
@@ -38,6 +40,9 @@ public class DailyTransactionsTest
     private static final String refundTransaction = "05_buyer___________seller__________000005.00";
     private static final String sellTransaction = "03_The_Goosebumps______administrator___023_012.00";
     private static final String buyTransaction = "04_The_Godfather_______seller__________004_010.00";
+    
+    @Rule
+    public final StandardErrorStreamLog log = new StandardErrorStreamLog();
     
     /**
      * Test method for {@link DailyTransactions#getTransactions()}.

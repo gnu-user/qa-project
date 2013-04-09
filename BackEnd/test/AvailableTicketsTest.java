@@ -22,8 +22,9 @@ import static org.junit.Assert.*;
 
 import java.io.IOException;
 
-import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.contrib.java.lang.system.StandardErrorStreamLog;
 
 public class AvailableTicketsTest
 {
@@ -36,6 +37,9 @@ public class AvailableTicketsTest
     private static final String seller = "seller";
     private static final Integer volume = 25;
     private static final Double price = 10.00;
+    
+    @Rule
+    public final StandardErrorStreamLog log = new StandardErrorStreamLog();
     
     /**
      * Test method for {@link AvailableTickets#addTicket(Ticket)}.
@@ -81,6 +85,9 @@ public class AvailableTicketsTest
 
     /**
      * Test method for {@link AvailableTickets#getTicket(java.lang.String, java.lang.String)}.
+     * 
+     * Tests the getTicket method in the AvailableTickets class, by executing the 
+     * method with an invalid ticket name and seller. Null must be returned.
      * @throws IOException 
      * @throws FatalError 
      * @throws NumberFormatException 
@@ -213,7 +220,5 @@ public class AvailableTicketsTest
         /* Verify that the ticket for the event and seller exists */
         assertEquals(event, availableTickets.getTicket(event, seller).getEvent());
         assertEquals(seller, availableTickets.getTicket(event, seller).getSeller());
-    }
-    
-    
+    }    
 }
