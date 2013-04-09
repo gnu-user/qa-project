@@ -214,80 +214,74 @@ public class DailyTransactions
             if (match.matches() && match.group(1).matches("(00|01|02|06)"))
             {
                 match = reUserMod.matcher(entry);
-            
-                if (match.matches())
+                match.matches();
+                
+                String username = match.group(2);
+                String type = match.group(3);
+                Double credit = Double.parseDouble(match.group(4));
+                
+                /* Add a logout transaction */
+                if (match.group(1).equals("00"))
                 {
-                    String username = match.group(2);
-                    String type = match.group(3);
-                    Double credit = Double.parseDouble(match.group(4));
-                    
-                    /* Add a logout transaction */
-                    if (match.group(1).equals("00"))
-                    {
-                        transactions.add(new Logout(username, type, credit, entry));
-                    }
-                    /* Add a create transaction */
-                    else if (match.group(1).equals("01"))
-                    {
-                        transactions.add(new Create(username, type, credit, entry));
-                    }
-                    /* Add a delete transaction */
-                    else if (match.group(1).equals("02"))
-                    {
-                        transactions.add(new Delete(username, type, credit, entry));
-                    }
-                    /* Add a addcredit transaction */
-                    else if (match.group(1).equals("06"))
-                    {
-                        transactions.add(new AddCredit(username, type, credit, entry));
-                    }
+                    transactions.add(new Logout(username, type, credit, entry));
+                }
+                /* Add a create transaction */
+                else if (match.group(1).equals("01"))
+                {
+                    transactions.add(new Create(username, type, credit, entry));
+                }
+                /* Add a delete transaction */
+                else if (match.group(1).equals("02"))
+                {
+                    transactions.add(new Delete(username, type, credit, entry));
+                }
+                /* Add a addcredit transaction */
+                else if (match.group(1).equals("06"))
+                {
+                    transactions.add(new AddCredit(username, type, credit, entry));
                 }
             }
             /* Refund transactions */
             else if (match.group(1).matches("05"))
             {
                 match = reRefund.matcher(entry);
+                match.matches();
                 
-                if (match.matches())
-                {
-                    String buyer = match.group(2);
-                    String seller = match.group(3);
-                    Double credit = Double.parseDouble(match.group(4));
-                    
-                    transactions.add(new Refund(buyer, seller, credit, entry));
-                }
+                String buyer = match.group(2);
+                String seller = match.group(3);
+                Double credit = Double.parseDouble(match.group(4));
+                
+                transactions.add(new Refund(buyer, seller, credit, entry));
             }
             /* Buy and sell transactions */
             else if (match.group(1).matches("(03|04)"))
             {
                 match = reBuySell.matcher(entry);
+                match.matches();
                 
-                if (match.matches())
+                /* Replace each _ in the event title with a space character */
+                String event = match.group(2).replace('_', ' ');
+                String seller = match.group(3);
+                Integer volume = Integer.parseInt(match.group(4));
+                Double price = Double.parseDouble(match.group(5));
+                
+                /* Add a sell transaction */
+                if (match.group(1).equals("03"))
                 {
-                    /* Replace each _ in the event title with a space character */
-                    String event = match.group(2).replace('_', ' ');
-                    String seller = match.group(3);
-                    Integer volume = Integer.parseInt(match.group(4));
-                    Double price = Double.parseDouble(match.group(5));
-                    
-                    /* Add a sell transaction */
-                    if (match.group(1).equals("03"))
+                    transactions.add(new Sell(event, seller, volume, price, entry));
+                }
+                /* Add a buy transaction */
+                else if (match.group(1).equals("04"))
+                {
+                    /* For a buy transaction use a lookahead to get the name of the buyer */
+                    for (int i = mergedTransactions.indexOf(entry); i < mergedTransactions.size(); ++i)
                     {
-                        transactions.add(new Sell(event, seller, volume, price, entry));
-                    }
-                    /* Add a buy transaction */
-                    else if (match.group(1).equals("04"))
-                    {
-                        /* For a buy transaction use a lookahead to get the name of the buyer */
-                        for (int i = mergedTransactions.indexOf(entry); i < mergedTransactions.size(); ++i)
+                        match = reLookAhead.matcher(mergedTransactions.get(i));
+                        
+                        /* If buyer is found in lookahead, add transaction with buyer's name */
+                        if (match.matches())
                         {
-                            match = reLookAhead.matcher(mergedTransactions.get(i));
-                            
-                            /* If buyer is found in lookahead, add transaction with buyer's name */
-                            if (match.matches())
-                            {
-                                transactions.add(new Buy(event, match.group(2), seller, volume, price, entry));
-                            }
+                            transactions.add(new Buy(event, match.group(2), seller, volume, price, entry));
                         }
                     }
                 }
