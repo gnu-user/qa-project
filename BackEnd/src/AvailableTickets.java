@@ -57,20 +57,11 @@ public class AvailableTickets
      */
     public AvailableTickets(String atfFile) throws FatalError, NumberFormatException, IOException
     {
-        File file = new File(atfFile);
-
-        if (file.exists())
-        {
-            this.atfFile = atfFile;
-            this.tickets = new ArrayList<Ticket>();
-            
-            /* Parse the available tickets file */
-            parse();
-        }
-        else
-        {
-            throw new FatalError(ExceptionCodes.ATF_NOT_FOUND, atfFile);
-        }
+        this.atfFile = atfFile;
+        this.tickets = new ArrayList<Ticket>();
+        
+        /* Parse the available tickets file */
+        parse();
     }
 
     /**
@@ -189,6 +180,7 @@ public class AvailableTickets
      * @throws NumberFormatException
      * @throws IOException 
      */
+    @SuppressWarnings("resource")
     private void parse() throws FatalError, NumberFormatException, IOException
     {
         BufferedReader reader;

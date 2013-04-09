@@ -57,20 +57,11 @@ public class CurrentUserAccounts
      */
     public CurrentUserAccounts(String cuaFile) throws FatalError, NumberFormatException, IOException
     {
-        File file = new File(cuaFile);
-
-        if (file.exists())
-        {
-            this.cuaFile = cuaFile;
-            this.users = new ArrayList<User>();
-            
-            /* Parse the current user accounts file */
-            parse();
-        }
-        else
-        {
-            throw new FatalError(ExceptionCodes.CUA_NOT_FOUND, cuaFile);
-        }
+        this.cuaFile = cuaFile;
+        this.users = new ArrayList<User>();
+        
+        /* Parse the current user accounts file */
+        parse();
     }
 
     /**
@@ -211,6 +202,7 @@ public class CurrentUserAccounts
      * @throws IOException 
      * @throws NumberFormatException 
      */
+    @SuppressWarnings("resource")
     private void parse() throws FatalError, NumberFormatException, IOException
     {
         BufferedReader reader;

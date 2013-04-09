@@ -24,8 +24,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -57,24 +55,15 @@ public class DailyTransactions
      */
     public DailyTransactions(String mergedDTF) throws FatalError, IOException
     {
-        File file = new File(mergedDTF);
-
-        if (file.exists())
-        {
-            this.mergedDTF = mergedDTF;
-            this.mergedTransactions = new CopyOnWriteArrayList<String>();
-            this.transactions = new ArrayList<Transaction>();
-            
-            /* Load the contents of the merged daily transaction files */
-            load();
-            
-            /* Parse the merged transactions */
-            parse();
-        }
-        else
-        {
-            throw new FatalError(ExceptionCodes.DTF_NOT_FOUND, mergedDTF);
-        }
+        this.mergedDTF = mergedDTF;
+        this.mergedTransactions = new CopyOnWriteArrayList<String>();
+        this.transactions = new ArrayList<Transaction>();
+        
+        /* Load the contents of the merged daily transaction files */
+        load();
+        
+        /* Parse the merged transactions */
+        parse();
     }
 
     /**
@@ -99,6 +88,7 @@ public class DailyTransactions
      *      	<br>The Daily Transaction file is corrupt. 
      * @throws IOException 
      */
+    @SuppressWarnings("resource")
     private void load() throws FatalError, IOException
     {
         BufferedReader reader;
