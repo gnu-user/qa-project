@@ -211,28 +211,64 @@ public class CurrentUserAccountsTest
     
     /**
      * Test method for {@link CurrentUserAccounts#parse()}.
+     * 
+     * Tests the parse method in the CurrentUserAccounts class, by executing the 
+     * CurrentUserAccounts constructor, providing a filename that does not exist. 
+     * A Fatal Error exception must be thrown.
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testParse1()
+    public void testParse1() throws NumberFormatException, IOException
     {
-        fail("Not yet implemented"); // TODO
+        /* Verify that a fatal error ExceptionCodes.CUA_NOT_FOUND is thrown */
+        try
+        {
+            currentAccounts = new CurrentUserAccounts("files/InvalidFileName.cua");
+        }
+        catch (FatalError e)
+        {
+            assertEquals(ExceptionCodes.CUA_NOT_FOUND.toString(), e.getMessage());
+        }
     }
     
     /**
      * Test method for {@link CurrentUserAccounts#parse()}.
+     * 
+     * Tests the parse method in the CurrentUserAccounts class, 
+     * by executing the CurrentUserAccounts constructor, providing a valid filename,
+     * but with corrupted contents. A Fatal Error exception must be thrown.
+     * @throws IOException 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testParse2()
+    public void testParse2() throws NumberFormatException, IOException
     {
-        fail("Not yet implemented"); // TODO
+        /* Verify that a fatal error ExceptionCodes.CORRUPT_CUA is thrown */
+        try
+        {
+            currentAccounts = new CurrentUserAccounts("files/CurrentUserAccountsTestParse2.cua");
+        }
+        catch (FatalError e)
+        {
+            assertEquals(ExceptionCodes.CORRUPT_CUA.toString(), e.getMessage());
+        }
     }
     
     /**
      * Test method for {@link CurrentUserAccounts#parse()}.
+     * 
+     * Tests the parse method in the CurrentUserAccounts class, by executing the 
+     * CurrentUserAccounts constructor, providing a valid filename, and with valid 
+     * contents. Verify that a user is added to the collection.
+     * @throws IOException 
+     * @throws FatalError 
+     * @throws NumberFormatException 
      */
     @Test
-    public void testParse3()
+    public void testParse3() throws NumberFormatException, FatalError, IOException
     {
-        fail("Not yet implemented"); // TODO
+    	currentAccounts = new CurrentUserAccounts("files/CurrentUserAccountsTestParse3.cua");
+        assertTrue(currentAccounts.hasUser(knownUser));
     }
 }
