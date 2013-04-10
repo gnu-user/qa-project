@@ -164,6 +164,7 @@ public class AvailableTicketsTest
      * @throws IOException 
      * @throws NumberFormatException 
      */
+    @Test
     public void testParse1() throws NumberFormatException, IOException
     {
         /* Verify that a fatal error ExceptionCodes.ATF_NOT_FOUND is thrown */
