@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>Sell.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (Apr 9, 2013 8:02:48 PM)</a> &gt; <a href="../../index.html" class="el_group">BackEnd</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.html" class="el_package">default</a> &gt; <span class="el_source">Sell.java</span></div><h1>Sell.java</h1><pre class="source lang-java linenums">/**
+ * Swift Ticket -- Back End
+ *
+ * Copyright (C) 2013, Jonathan Gillett, Daniel Smullen, and Rayan Alfaheid
+ * All rights reserved.
+ *
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ */
+
+/**
+ * Sell Provides methods and attributes for processing the sell
+ * transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
+public class Sell implements Transaction
+{
+    private String event;
+    private String seller;
+    private Integer volume;
+    private Double price;
+    private String transaction;
+
+    /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
+     * 
+     * @param event String for the title of the event.
+     * @param seller String for the username of the ticket seller.
+     * @param volume Integer for the number of tickets being sold.
+     * @param price Dollar value for the price per ticket.
+     * @param transaction The transaction string for the sell transaction.
+     */
+<span class="fc" id="L47">    public Sell(String event, String seller, Integer volume, Double price, String transaction)</span>
+    {
+<span class="fc" id="L49">        this.event = event;</span>
+<span class="fc" id="L50">        this.seller = seller;</span>
+<span class="fc" id="L51">        this.volume = volume;</span>
+<span class="fc" id="L52">        this.price = price;</span>
+<span class="fc" id="L53">        this.transaction = transaction;</span>
+<span class="fc" id="L54">    }</span>
+
+    /**
+     * Performs the sell transaction. Adds the tickets specified to the seller's
+     * available tickets, or updates the existing listings if the event already exists.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @throws FailedConstraint Throws a failed constraint under the following circumstances:
+     * 			&lt;br&gt;If the number of tickets being sold for an event exceeds 100.
+     * 
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
+    {
+<span class="fc bfc" id="L70" title="All 2 branches covered.">    	if (atf.hasTicket(event, seller))</span>
+    	{
+<span class="fc bfc" id="L72" title="All 2 branches covered.">    		if (atf.getTicket(event, seller).getVolume() + volume &lt;= 100)</span>
+    		{
+<span class="fc" id="L74">    			atf.getTicket(event, seller).setPrice(price);</span>
+<span class="fc" id="L75">    			atf.getTicket(event, seller).setVolume(atf.getTicket(event, seller).getVolume() + volume);</span>
+<span class="fc" id="L76">    		}</span>
+    		else
+    		{
+<span class="fc" id="L79">    			throw new FailedConstraint(ExceptionCodes.TICKET_VOLUME_OVERFLOW, transaction);</span>
+    		}
+    	}
+    	else
+    	{
+<span class="fc" id="L84">    		atf.addTicket(new Ticket(event, seller, volume, price));</span>
+    	}
+<span class="fc" id="L86">    }</span>
+
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
+	public String getTransaction() {
+<span class="fc" id="L92">		return transaction;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.0.201210061924</span>AllTests (Apr 9, 2013 8:02:48 PM)</div></body></html>

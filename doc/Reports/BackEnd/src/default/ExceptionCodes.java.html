@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>ExceptionCodes.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (Apr 9, 2013 8:02:48 PM)</a> &gt; <a href="../../index.html" class="el_group">BackEnd</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.html" class="el_package">default</a> &gt; <span class="el_source">ExceptionCodes.java</span></div><h1>ExceptionCodes.java</h1><pre class="source lang-java linenums"><span class="nc" id="L1">/**</span>
+ * Swift Ticket -- Back End
+ *
+ * Copyright (C) 2013, Jonathan Gillett, Daniel Smullen, and Rayan Alfaheid
+ * All rights reserved.
+ *
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ */
+
+/**
+ * ExceptionCodes An enumeration that maps various error/exception codes to
+ * phrases and descriptions for easy reading.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
+<span class="fc" id="L30">public enum ExceptionCodes</span>
+{
+<span class="fc" id="L32">    /* Fatal error exception codes */</span>
+<span class="fc" id="L33">    ATF_NOT_FOUND(&quot;ATF_NOT_FOUND&quot;, &quot;Available tickets file not found, check arguments provided.&quot;),</span>
+<span class="fc" id="L34">    CUA_NOT_FOUND(&quot;CUA_NOT_FOUND&quot;, &quot;Current user accounts file not found, check arguments provided.&quot;),</span>
+<span class="fc" id="L35">    DTF_NOT_FOUND(&quot;DTF_NOT_FOUND&quot;, &quot;Merged daily transactions file not found, check arguments provided.&quot;),</span>
+<span class="fc" id="L36">    CORRUPT_ATF(&quot;CORRUPT_ATF&quot;, &quot;An error occurred reading the available tickets file, data corrupted.&quot;),</span>
+<span class="fc" id="L37">    CORRUPT_CUA(&quot;CORRUPT_CUA&quot;, &quot;An error occurred reading the current user account file, data corrupted.&quot;),</span>
+<span class="fc" id="L38">    CORRUPT_DTF(&quot;CORRUPT_DTF&quot;, &quot;An error occurred reading the daily transactions file, data corrupted.&quot;),</span>
+<span class="fc" id="L39">    ATF_WRITE_ERROR(&quot;ATF_WRITE_ERROR&quot;, &quot;An error occurred writing the available tickets file.&quot;),</span>
+<span class="fc" id="L40">    CUA_WRITE_ERROR(&quot;CUA_WRITE_ERROR&quot;, &quot;An error occurred writing the current user accounts file.&quot;),</span>
+    
+<span class="fc" id="L42">    /* Failed constraints exception codes */</span>
+<span class="fc" id="L43">    INVALID_USER_EXISTS(&quot;INVALID_USER_EXISTS&quot;, &quot;Invalid username, user already exists.&quot;),</span>
+<span class="fc" id="L44">    UNKNOWN_USER(&quot;UNKNOWN_USER&quot;, &quot;Invalid username, username does not exist.&quot;),</span>
+<span class="fc" id="L45">    USER_CREDIT_NEGATIVE(&quot;USER_CREDIT_NEGATIVE&quot;, &quot;Invalid credit amount, user credit cannot be less than 0.00.&quot;),</span>
+<span class="fc" id="L46">    USER_CREDIT_OVERFLOW(&quot;USER_CREDIT_OVERFLOW&quot;, &quot;Invalid credit amount, user credit cannot exceed 999999.99.&quot;),</span>
+<span class="fc" id="L47">    USER_CREDIT_SESSION_OVERFLOW(&quot;USER_CREDIT_SESSION_OVERFLOW&quot;, &quot;Invalid credit value, amount of credit added per session cannot exceed 1000.00.&quot;),</span>
+<span class="fc" id="L48">    TICKET_VOLUME_NEGATIVE(&quot;TICKET_VOLUME_NEGATIVE&quot;, &quot;Invalid number of tickets, volume cannot be less than 0.&quot;),</span>
+<span class="fc" id="L49">    TICKET_VOLUME_OVERFLOW(&quot;TICKET_VOLUME_OVERFLOW&quot;, &quot;Invalid number of tickets, volume cannot exceed 100.&quot;),</span>
+    
+<span class="fc" id="L51">    NOT_YET_IMPLEMENTED(&quot;NOT_YET_IMPLEMENTED&quot;, &quot;Not yet implemented&quot;);</span>
+    
+    private String type;
+    private String description;
+    
+    /**
+     * Constructor for the enumeration. Made private in order to fulfil Java enumeration template.
+     * 
+     * @param type The enumeration phrase.
+     * @param description The description of the exception code.
+     */
+<span class="fc" id="L62">    private ExceptionCodes(String type, String description)</span>
+    {
+<span class="fc" id="L64">        this.type = type;</span>
+<span class="fc" id="L65">        this.description = description;</span>
+<span class="fc" id="L66">    }</span>
+    
+    /**
+     * Overrides the standard Object toString method, outputting the
+     * error code in a human readable string. The format contains the type of error,
+     * a colon, and the description.
+     */
+    @Override
+    public String toString()
+    {
+<span class="fc" id="L76">        return type + &quot;: &quot; + description;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.0.201210061924</span>AllTests (Apr 9, 2013 8:02:48 PM)</div></body></html>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>Ticket.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (Apr 9, 2013 8:02:48 PM)</a> &gt; <a href="../../index.html" class="el_group">BackEnd</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.html" class="el_package">default</a> &gt; <span class="el_source">Ticket.java</span></div><h1>Ticket.java</h1><pre class="source lang-java linenums">/**
+ * Swift Ticket -- Back End
+ *
+ * Copyright (C) 2013, Jonathan Gillett, Daniel Smullen, and Rayan Alfaheid
+ * All rights reserved.
+ *
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ */
+
+/**
+ * Ticket Provides methods and attributes for interacting with tickets,
+ * which are entries representing events stored in the available tickets file.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
+public class Ticket
+{
+    private String event;
+    private String seller;
+    private Integer volume;
+    private Double price;
+
+
+    /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
+     * 
+     * @param event String for the title of the event.
+     * @param volume Integer for the amount of tickets available for the event.
+     * @param price Dollar value for the price per ticket.
+     */
+<span class="fc" id="L45">    public Ticket(String event, String seller, Integer volume, Double price)</span>
+    {
+<span class="fc" id="L47">        this.event = event;</span>
+<span class="fc" id="L48">        this.seller = seller;</span>
+<span class="fc" id="L49">        this.volume = volume;</span>
+<span class="fc" id="L50">        this.price = price;</span>
+<span class="fc" id="L51">    }</span>
+
+    /**
+     * Access method for event titles.
+     * 
+     * @return Returns a string containing the title for the event.
+     */
+    public String getEvent()
+    {
+<span class="fc" id="L60">        return event;</span>
+    }
+
+    /**
+     * Access method for the ticket seller.
+     * 
+     * @return Returns a string containing the seller for the event.
+     */
+    public String getSeller()
+    {
+<span class="fc" id="L70">        return seller;</span>
+    }
+    
+    
+    /**
+     * Access method for the volume of tickets available.
+     * 
+     * @return Returns an integer for the volume of tickets available.
+     */
+    public Integer getVolume()
+    {
+<span class="fc" id="L81">        return this.volume;</span>
+    }
+
+    /**
+     * Mutator method which allows the volume of tickets available
+     * to be manipulated.
+     * 
+     * @param volume An integer to set the volume of tickets to.
+     */
+    public void setVolume(Integer volume)
+    {
+<span class="fc" id="L92">        this.volume = volume;</span>
+<span class="fc" id="L93">    }</span>
+
+    
+    /**
+     * Access method for the price per ticket.
+     * 
+     * @return Returns a dollar value containing the price per ticket.
+     */
+    public Double getPrice()
+    {
+<span class="fc" id="L103">        return this.price;</span>
+    }
+
+    /**
+     * Mutator method which allows the price per ticket to be
+     * manipulated.
+     * 
+     * @param price The amount, in dollars, to set the ticket price to.
+     */
+    public void setPrice(Double price)
+    {
+<span class="fc" id="L114">        this.price = price;</span>
+<span class="fc" id="L115">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.0.201210061924</span>AllTests (Apr 9, 2013 8:02:48 PM)</div></body></html>

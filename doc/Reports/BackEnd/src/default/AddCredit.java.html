@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>AddCredit.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (Apr 9, 2013 8:02:48 PM)</a> &gt; <a href="../../index.html" class="el_group">BackEnd</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.html" class="el_package">default</a> &gt; <span class="el_source">AddCredit.java</span></div><h1>AddCredit.java</h1><pre class="source lang-java linenums">/**
+ * Swift Ticket -- Back End
+ *
+ * Copyright (C) 2013, Jonathan Gillett, Daniel Smullen, and Rayan Alfaheid
+ * All rights reserved.
+ *
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ */
+
+/**
+ * Provides methods and attributes for processing the addcredit
+ * transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
+public class AddCredit implements Transaction
+{
+    private String username;
+    private String type;
+    private Double credit;
+    private String transaction;
+
+
+    /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
+     * 
+     * @param username String value for the user to add credit to.
+     * @param type String value for the type of user specified in username.
+     * @param credit The amount of credit, in dollars, to add to the user specified in username.
+     * @param transaction String containing the original transaction string from the 
+     * daily transaction file.
+     */
+<span class="fc" id="L47">    public AddCredit(String username, String type, Double credit, String transaction)</span>
+    {
+<span class="fc" id="L49">        this.username = username;</span>
+<span class="fc" id="L50">        this.type = type;</span>
+<span class="fc" id="L51">        this.credit = credit;</span>
+<span class="fc" id="L52">        this.transaction = transaction;</span>
+<span class="fc" id="L53">    }</span>
+
+    /**
+     * Performs the addcredit transaction. Adds the credit specified to the
+     * user specified.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @throws FailedConstraint Throws a failed constraint under the following circumstances:
+     * 			&lt;br&gt;If the user name specified does not exist.
+     * 			&lt;br&gt;If the amount of credit added results in a credit overflow for that user.
+     * 			&lt;br&gt;If the amount of credit added is beyond the limit acceptable for that user type.
+     * 
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
+    {
+<span class="fc bfc" id="L71" title="All 2 branches covered.">        if (cua.hasUser(username))</span>
+        {
+        	Double temp_credit;
+<span class="fc" id="L74">        	temp_credit = cua.getUser(username).getCredit();</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">        	if (temp_credit + credit &gt; 999999.99)</span>
+        	{
+<span class="fc" id="L77">        		throw new FailedConstraint(ExceptionCodes.USER_CREDIT_OVERFLOW, transaction);</span>
+        	}
+        	else
+        	{
+<span class="fc bfc" id="L81" title="All 2 branches covered.">				if (cua.getUser(username).getCreditAdded() + credit &gt; 1000)</span>
+				{
+<span class="fc" id="L83">					throw new FailedConstraint(ExceptionCodes.USER_CREDIT_SESSION_OVERFLOW, transaction);</span>
+				}
+				else
+				{
+<span class="fc" id="L87">					cua.getUser(username).setCredit(credit + temp_credit);</span>
+<span class="fc" id="L88">					cua.getUser(username).setCreditAdded(cua.getUser(username).getCreditAdded() + credit);</span>
+				}
+        	}
+<span class="fc" id="L91">        }</span>
+        else
+        {
+<span class="fc" id="L94">        	throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);</span>
+        }
+<span class="fc" id="L96">    }</span>
+
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
+	public String getTransaction() {
+<span class="fc" id="L102">		return transaction;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.0.201210061924</span>AllTests (Apr 9, 2013 8:02:48 PM)</div></body></html>

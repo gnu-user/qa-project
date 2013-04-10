@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>Delete.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (Apr 9, 2013 8:02:48 PM)</a> &gt; <a href="../../index.html" class="el_group">BackEnd</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.html" class="el_package">default</a> &gt; <span class="el_source">Delete.java</span></div><h1>Delete.java</h1><pre class="source lang-java linenums">/**
+ * Swift Ticket -- Back End
+ *
+ * Copyright (C) 2013, Jonathan Gillett, Daniel Smullen, and Rayan Alfaheid
+ * All rights reserved.
+ *
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ */
+
+/**
+ * Delete Provides methods and attributes for processing the delete transaction.
+ * 
+ * @author Jonathan Gillett
+ * @author Daniel Smullen
+ * @author Rayan Alfaheid
+ */
+public class Delete implements Transaction
+{
+    private String username;
+    private String type;
+    private Double credit;
+    private String transaction;
+
+
+    /**
+     * Constructor for the class. Accepts and populates class attributes with values passed in.
+     *
+     * @param username String containing the username of the user to delete.
+     * @param type String containing the type of the user to delete.
+     * @param credit Dollar value containing the credit amount of the user to be deleted.
+     * @param transaction String containing the transaction string from the daily transaction file.
+     */
+<span class="fc" id="L45">    public Delete(String username, String type, Double credit, String transaction)</span>
+    {
+<span class="fc" id="L47">        this.username = username;</span>
+<span class="fc" id="L48">        this.type = type;</span>
+<span class="fc" id="L49">        this.credit = credit;</span>
+<span class="fc" id="L50">        this.transaction = transaction;</span>
+<span class="fc" id="L51">    }</span>
+
+    /**
+     * Performs the delete transaction. Deletes a user account and updates
+     * the current user accounts file.
+     * 
+     * @param cua A reference to the CurrentUserAccounts object used by the back-end.
+     * @param atf A reference to the AvailableTickets object used by the back-end.
+     * 
+     * @throws FailedConstraint Throws a failed constraint under the following circumstances:
+     * 			&lt;br&gt;If the user name specified does not exist.
+     * 
+     * @see Transaction#execute(CurrentUserAccounts, AvailableTickets)
+     */
+    public void execute(CurrentUserAccounts cua, AvailableTickets atf) throws FailedConstraint
+    {
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (cua.hasUser(username))</span>
+        {
+<span class="fc" id="L69">        	cua.deleteUser(username);</span>
+<span class="fc" id="L70">        }</span>
+        else
+        {
+<span class="fc" id="L73">        	throw new FailedConstraint(ExceptionCodes.UNKNOWN_USER, transaction);</span>
+        }
+<span class="fc" id="L75">    }</span>
+
+	/* (non-Javadoc)
+	 * @see Transaction#getTransaction()
+	 */
+	public String getTransaction() {
+<span class="fc" id="L81">		return transaction;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.0.201210061924</span>AllTests (Apr 9, 2013 8:02:48 PM)</div></body></html>
