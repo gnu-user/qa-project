@@ -281,9 +281,7 @@ public class DailyTransactionsTest
         transactions = new DailyTransactions("files/DailyTransactionsTestParse7.dtf");
         
         /* Verify that the buy transaction was parsed and is in memory */
-        for (Transaction transaction : transactions.getTransactions())
-        {
-            assertEquals(buyTransaction, transaction.getTransaction());
-        }
+        Transaction transaction = transactions.getTransactions().get(0);
+        assertEquals(buyTransaction, transaction.getTransaction());
     }
 }
