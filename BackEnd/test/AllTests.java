@@ -38,6 +38,7 @@ import org.junit.runners.Suite.SuiteClasses;
     FailedConstraintTest.class, 
     FatalErrorTest.class,
     LogoutTest.class,
+    LoopCoverageTest.class,
     RefundTest.class,
     SellTest.class,
     TicketTest.class, 
