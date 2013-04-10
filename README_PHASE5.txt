@@ -1,8 +1,11 @@
 BACK END README
 ========================================
 
-Please note, javadoc documentation has been included in the BackEnd/doc/ 
-folder.
+*** PLEASE NOTE ***
+JUnit 4 and Eclipse Juno (which is the current version of Eclipse) are required
+in order to execute the test suites.
+
+JavaDoc documentation has been included in the BackEnd/doc/ folder.
 
 
 How to Execute Tests
