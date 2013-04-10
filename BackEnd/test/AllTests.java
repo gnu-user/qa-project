@@ -32,6 +32,7 @@ import org.junit.runners.Suite.SuiteClasses;
     CreateTest.class,
     CurrentUserAccountsTest.class, 
     DailyTransactionsTest.class, 
+    DecisionCoverageTest.class,
     DeleteTest.class,
     ExceptionCodesTest.class, 
     FailedConstraintTest.class, 
