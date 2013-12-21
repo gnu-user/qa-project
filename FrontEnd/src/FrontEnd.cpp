@@ -87,7 +87,7 @@ int main(int argc, char** argv)
     {
         cout << "Welcome." << endl;
 
-        /* Parase the current user accounts file */
+        /* Parse the current user accounts file */
         current_accounts = CurrentUserAccounts(argv[1]);
         cout << "Current user accounts file read successfully." << endl;
 
